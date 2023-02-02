@@ -29,19 +29,20 @@ May the force be with you!
 
 ## 🛠 Estrutura de pastas
 
--Raiz<br>
-|<br>
-|-->docs<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
+```
+📂Raiz
+  └ 📂docs
+  └ 📂documentos
+      └ 📂antigos
+      └ 📄GDD.docx ou Documentação.docx
+  └ 📂executáveis
+      └ 📂windows
+      └ 📂android
+      └ 📂HTML
+  └ 📂imagens
+  └ 📂src
+  └ 📄readme.md
+```
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
