@@ -6,16 +6,14 @@
 
 # Unipixel
 
-## Unipixel
-
-## Integrantes: <a href="https://www.linkedin.com/in/gabriel-demacedosantos/">Gabriel de Macedo Santos</a>, <a href="https://www.linkedin.com/in/vitto-mazeto-b62592203/">Vitto Mazeto</a>, <a href="https://www.linkedin.com/in/anna-aragao/">Anna Aragão</a>, <a href="https://www.linkedin.com/in/eduardosbarreto/">Eduardo Barreto</a>, <a href="https://www.linkedin.com/in/hugo-noyma-19737b238/">Hugo Noyma</a>, <a href="https://www.linkedin.com/in/raissa-moraes-a89179264/">Raissa Moraes</a>, <a href="https://www.linkedin.com/in/bruna-brasil-alexandre-734055214/">Bruna Brasil</a>
+## Integrantes: [Gabriel de Macedo Santos](https://www.linkedin.com/in/gabriel-demacedosantos/), [Vitto Mazeto](https://www.linkedin.com/in/vitto-mazeto-b62592203/), [Anna Aragão](https://www.linkedin.com/in/anna-aragao/), [Eduardo Barreto](https://www.linkedin.com/in/eduardosbarreto/), [Hugo Noyma](https://www.linkedin.com/in/hugo-noyma-19737b238/), [Raissa Moraes](https://www.linkedin.com/in/raissa-moraes-a89179264/), [Bruna Brasil](https://www.linkedin.com/in/bruna-brasil-alexandre-734055214/)
 
 ## Descrição
 
 📜 Descrição curta sobre o que seu projeto faz.
-<br><br>
+
 Meu projeto é um exemplo de como utilizar o github.
-<br><br>
+
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
@@ -23,11 +21,11 @@ Meu projeto é um exemplo de como utilizar o github.
 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
+
 Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
+
 May the force be with you!
-<br><br>
+
 
 ## 🛠 Estrutura de pastas
 
@@ -47,32 +45,32 @@ May the force be with you!
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+**README.MD**: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
 Há também 4 pastas que seguem da seguinte forma:
 
-<b>docs</b>: Aqui serão colocados os arquivos compilados em HTML do jogo.
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+**docs**: Aqui serão colocados os arquivos compilados em HTML do jogo.
+**documentos**: Aqui estarão todos os documentos do projeto, mas principalmente o **GDD (Game Design Document)/Documentação do Sistema**. Há uma pasta **antigos** onde estarão todas as versões antigas da documentação.
 
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+**executáveis**: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários **Windows**, uma para binários **android** e uma para a **Web/HTML**
 
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
+**imagens**: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
 
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+**src**: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
 
-<b>Android:</b>
+**Android:**
 
 Faça o Download do JOGO.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
 
-<b>Windows:</b>
+**Windows:**
 
 Não há instalação! Apenas executável!
 Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
 
-<b>HTML:</b>
+**HTML:**
 
 Não há instalação!
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
@@ -85,7 +83,7 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+- [GODOT](https://godotengine.org/download)
 
 ## 🗃 Histórico de lançamentos
 
@@ -116,4 +114,4 @@ Aqui estão as referências usadas no projeto.
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
 4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+5. Músicas por: [DaveJf](https://freesound.org/people/DaveJf/sounds/616544/) e [DRFX](https://freesound.org/people/DRFX/sounds/338986/) ambas com Licença CC 0.
