@@ -5,6 +5,7 @@ export (int) var jump_speed = -400 #velocidade do pulo
 export (int) var gravity = 1200 #velocidade da gravidade
 
 onready var sprite = get_node("Sprite")
+onready var animation = get_node("Animation")
 
 var velocity = Vector2()
 var jumping = false
@@ -20,9 +21,11 @@ func get_input():
 		velocity.y = jump_speed
 	if right:
 		velocity.x += run_speed
+		animation.play("run")
 		sprite.flip_h = false
 	if left:
 		velocity.x -= run_speed
+		animation.play("run")
 		sprite.flip_h = true
 
 func _physics_process(delta):
