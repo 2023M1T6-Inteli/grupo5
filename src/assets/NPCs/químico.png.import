@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2d1-removebg-preview.png-fabce396f60bbc4e311acbab6426f663.stex"
+path="res://.import/químico.png-9d12bc344429adb893b357f620feff55.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/run_animaton/2d1-removebg-preview.png"
-dest_files=[ "res://.import/2d1-removebg-preview.png-fabce396f60bbc4e311acbab6426f663.stex" ]
+source_file="res://assets/NPCs/químico.png"
+dest_files=[ "res://.import/químico.png-9d12bc344429adb893b357f620feff55.stex" ]
 
 [params]
 

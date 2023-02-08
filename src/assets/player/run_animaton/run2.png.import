@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2d4-removebg-preview (1).png-3586eae661dfbed9504af96c5408a318.stex"
+path="res://.import/run2.png-61b759beaa721a69ef5e52d46a05f3ae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/run_animaton/2d4-removebg-preview (1).png"
-dest_files=[ "res://.import/2d4-removebg-preview (1).png-3586eae661dfbed9504af96c5408a318.stex" ]
+source_file="res://assets/player/run_animaton/run2.png"
+dest_files=[ "res://.import/run2.png-61b759beaa721a69ef5e52d46a05f3ae.stex" ]
 
 [params]
 

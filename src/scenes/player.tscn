@@ -1,12 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
-[ext_resource path="res://assets/player/run_animaton/2d2-removebg-preview.png" type="Texture" id=2]
-[ext_resource path="res://assets/player/run_animaton/2d4-removebg-preview (1).png" type="Texture" id=3]
-[ext_resource path="res://assets/player/run_animaton/2d5-removebg-preview.png" type="Texture" id=4]
+[ext_resource path="res://assets/player/run_animaton/idle.png" type="Texture" id=2]
+[ext_resource path="res://assets/player/run_animaton/run4.png" type="Texture" id=3]
+[ext_resource path="res://assets/player/run_animaton/run3.png" type="Texture" id=4]
+[ext_resource path="res://assets/player/run_animaton/run2.png" type="Texture" id=5]
+[ext_resource path="res://assets/player/run_animaton/run1.png" type="Texture" id=6]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 10, 16.5 )
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 25.0
+height = 84.0
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -25,7 +28,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "run"
-length = 0.8
+length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -33,10 +36,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.4, 0.6 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ]
+"values": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ) ]
 }
 
 [node name="player" type="KinematicBody2D" groups=["Player"]]
@@ -45,12 +48,12 @@ run_speed = 500
 jump_speed = -1250
 gravity = 3000
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -0.5 )
-shape = SubResource( 1 )
-
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3, -12 )
+shape = SubResource( 4 )
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://scripts/main.gd" type="Script" id=1]
 [ext_resource path="res://assets/Tiles/tile_0000.png" type="Texture" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/epi.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/cap_epi.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/npc_quimic.tscn" type="PackedScene" id=18]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 17, 0, 17, 17, 0, 17 )
@@ -324,13 +325,16 @@ scale = Vector2( 2.5, 2.5 )
 tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -65530, 1, 0, -65529, 2, 0, -65528, 2, 0, -65527, 2, 0, -65526, 2, 0, -65525, 3, 0, 131072, 4, 0, 131073, 5, 0, 131074, 5, 0, 131075, 5, 0, 131076, 5, 0, 131077, 6, 0, 524272, -1610612725, 0, 524273, -1610612725, 0, 524274, -1610612725, 0, 524275, 11, 0, 524276, 11, 0, 524277, 11, 0, 524278, 11, 0, 524279, 11, 0, 524280, 11, 0, 524281, 11, 0, 524282, 11, 0, 524283, 11, 0, 524284, 11, 0, 524285, 11, 0, 524286, 11, 0, 524287, 11, 0, 458752, 11, 0, 458753, 11, 0, 458754, 11, 0, 458755, 11, 0, 458756, 11, 0, 458757, 11, 0, 458758, 11, 0, 458759, 11, 0, 458760, 11, 0, 458761, 11, 0, 458762, 11, 0, 458763, 11, 0, 458764, 11, 0, 458765, 11, 0, 458766, 11, 0, 458767, 11, 0 )
+tile_data = PoolIntArray( -65530, 1, 0, -65529, 2, 0, -65528, 2, 0, -65527, 2, 0, -65526, 2, 0, -65525, 3, 0, 131057, 1, 0, 131058, 2, 0, 131059, 2, 0, 131060, 2, 0, 131061, 2, 0, 131062, 3, 0, 131072, 4, 0, 131073, 5, 0, 131074, 5, 0, 131075, 5, 0, 131076, 5, 0, 131077, 6, 0, 524272, -1610612725, 0, 524273, -1610612725, 0, 524274, -1610612725, 0, 524275, 11, 0, 524276, 11, 0, 524277, 11, 0, 524278, 11, 0, 524279, 11, 0, 524280, 11, 0, 524281, 11, 0, 524282, 11, 0, 524283, 11, 0, 524284, 11, 0, 524285, 11, 0, 524286, 11, 0, 524287, 11, 0, 458752, 11, 0, 458753, 11, 0, 458754, 11, 0, 458755, 11, 0, 458756, 11, 0, 458757, 11, 0, 458758, 11, 0, 458759, 11, 0, 458760, 11, 0, 458761, 11, 0, 458762, 11, 0, 458763, 11, 0, 458764, 11, 0, 458765, 11, 0, 458766, 11, 0, 458767, 11, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
+[node name="npc_quimico" parent="." instance=ExtResource( 18 )]
+position = Vector2( -294, 214 )
+
 [node name="player" parent="." groups=["Player_cap_epi"] instance=ExtResource( 15 )]
-position = Vector2( -202, 56 )
+position = Vector2( -541, 211 )
 
 [node name="Epi" parent="." instance=ExtResource( 16 )]
 position = Vector2( 492, -11 )

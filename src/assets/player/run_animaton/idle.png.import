@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2d5-removebg-preview.png-c076789f8743ac621c4f19a4f81ee257.stex"
+path="res://.import/idle.png-131d0727295ce949ada377766b9ffa3c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/run_animaton/2d5-removebg-preview.png"
-dest_files=[ "res://.import/2d5-removebg-preview.png-c076789f8743ac621c4f19a4f81ee257.stex" ]
+source_file="res://assets/player/run_animaton/idle.png"
+dest_files=[ "res://.import/idle.png-131d0727295ce949ada377766b9ffa3c.stex" ]
 
 [params]
 
