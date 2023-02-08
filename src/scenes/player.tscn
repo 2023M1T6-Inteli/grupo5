@@ -39,7 +39,7 @@ tracks/0/keys = {
 "values": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ]
 }
 
-[node name="player" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D" groups=["Player"]]
 script = ExtResource( 1 )
 run_speed = 500
 jump_speed = -1250

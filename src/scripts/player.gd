@@ -7,8 +7,16 @@ export (int) var gravity = 1200 #velocidade da gravidade
 onready var sprite = get_node("Sprite")
 onready var animation = get_node("Animation")
 
+# var epi recebe um valor bool false para que a função referenciada no script de epi mude tal valor e o personagem
+# pegue a bota. # Gabriel de Macedo
+var epi:bool = false
+# var cap_epi recebe um valor bool false para que a função no script em cap_epi mude tal valor para true e o objeto suma
+# Gabriel de Macedo
+var cap_epi:bool = false
+
 var velocity = Vector2()
 var jumping = false
+
 
 func get_input():
 	velocity.x = 0

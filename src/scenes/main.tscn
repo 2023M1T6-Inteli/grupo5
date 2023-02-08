@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://scripts/main.gd" type="Script" id=1]
 [ext_resource path="res://assets/Tiles/tile_0000.png" type="Texture" id=2]
@@ -15,6 +15,8 @@
 [ext_resource path="res://assets/background/background.png" type="Texture" id=13]
 [ext_resource path="res://assets/Tiles/vazio.png" type="Texture" id=14]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/epi.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/cap_epi.tscn" type="PackedScene" id=17]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 17, 0, 17, 17, 0, 17 )
@@ -327,5 +329,11 @@ tile_data = PoolIntArray( -65530, 1, 0, -65529, 2, 0, -65528, 2, 0, -65527, 2, 0
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
-[node name="player" parent="." instance=ExtResource( 15 )]
+[node name="player" parent="." groups=["Player_cap_epi"] instance=ExtResource( 15 )]
 position = Vector2( -202, 56 )
+
+[node name="Epi" parent="." instance=ExtResource( 16 )]
+position = Vector2( 492, -11 )
+
+[node name="Cap_Epi" parent="." instance=ExtResource( 17 )]
+position = Vector2( 404, -48 )
