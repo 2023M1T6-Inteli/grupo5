@@ -20,25 +20,25 @@ var jumping = false
 
 func get_input():
 	velocity.x = 0
-	var right = Input.is_action_pressed("move_right")
-	var left = Input.is_action_pressed("move_left")
-	var jump = Input.is_action_just_pressed("jump")
+	var right = Input.is_action_pressed("move_right") #Recebe o input do teclado, mover para direita
+	var left = Input.is_action_pressed("move_left") #Recebe o input do teclado, mover para esquerda
+	var jump = Input.is_action_just_pressed("jump") #Recebe o input do teclado, pular
 
-	if jump and is_on_floor():
-		jumping = true
-		velocity.y = jump_speed
-	if right:
-		velocity.x += run_speed
-		animation.play("run")
-		sprite.flip_h = false
+	if jump and is_on_floor(): #Verifica se está em contato com o chão, para poder pular
+		jumping = true 
+		velocity.y = jump_speed #altera a velocidade no eixo y
+	if right: 
+		velocity.x += run_speed #altera a velocidade no eixo x
+		animation.play("run") #da play na animação de correr
+		sprite.flip_h = false 
 	if left:
 		velocity.x -= run_speed
 		animation.play("run")
-		sprite.flip_h = true
+		sprite.flip_h = true #inverte o sentido da sprite ao mudar de lado
 
-func _physics_process(delta):
-	get_input()
-	velocity.y += gravity * delta
+func _physics_process(delta): 
+	get_input() #chama a função do get input (movimentação)
+	velocity.y += gravity * delta #faz a gravidade funcionar 
 	if jumping and is_on_floor():
-		jumping = false
+		jumping = false #deixa o modo jumping falso, para poder 'recarregar' o pulo ao tocar no chão
 	velocity = move_and_slide(velocity, Vector2(0, -1))
