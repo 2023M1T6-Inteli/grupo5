@@ -9,7 +9,7 @@
 
 [sub_resource type="CapsuleShape2D" id=4]
 radius = 25.0
-height = 84.0
+height = 74.0
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -52,7 +52,7 @@ gravity = 3000
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3, -12 )
+position = Vector2( -4, -6 )
 shape = SubResource( 4 )
 
 [node name="Animation" type="AnimationPlayer" parent="."]
