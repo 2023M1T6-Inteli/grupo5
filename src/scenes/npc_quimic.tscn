@@ -23,5 +23,30 @@ visible = false
 texture = ExtResource( 3 )
 flip_h = true
 
+[node name="dialog" type="ColorRect" parent="."]
+visible = false
+margin_left = -321.0
+margin_top = -229.0
+margin_right = 51.0
+margin_bottom = -91.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialog"]
+margin_left = 11.0
+margin_top = 9.0
+margin_right = 356.0
+margin_bottom = 125.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+meta_underlined = false
+text = "caixa de texto"
+fit_content_height = true
+
+[node name="Button" type="Button" parent="dialog"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 125.0
+margin_top = 2.0
+margin_right = 373.0
+margin_bottom = 137.0
+
 [connection signal="body_entered" from="." to="." method="_on_npc_quimico_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_npc_quimico_body_exited"]
+[connection signal="pressed" from="dialog/Button" to="." method="_on_Button_pressed"]

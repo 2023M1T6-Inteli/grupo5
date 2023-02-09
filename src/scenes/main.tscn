@@ -1709,16 +1709,16 @@ tile_data = PoolIntArray( -65530, 12, 0, -65528, 14, 0, -65526, 14, 0, 131057, 1
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
-[node name="npc_quimico" parent="." instance=ExtResource( 18 )]
-position = Vector2( -300, 227 )
-
-[node name="player" parent="." groups=["Player_cap_epi"] instance=ExtResource( 15 )]
-position = Vector2( -541, 211 )
+[node name="Cap_Epi" parent="." instance=ExtResource( 17 )]
+position = Vector2( -500, 29 )
+scale = Vector2( 1.5, 1.5 )
 
 [node name="Epi" parent="." instance=ExtResource( 16 )]
 position = Vector2( 463, -55 )
 scale = Vector2( 1.5, 1.5 )
 
-[node name="Cap_Epi" parent="." instance=ExtResource( 17 )]
-position = Vector2( -500, 29 )
-scale = Vector2( 1.5, 1.5 )
+[node name="npc_quimico" parent="." instance=ExtResource( 18 )]
+position = Vector2( -300, 227 )
+
+[node name="player" parent="." groups=["Player_cap_epi"] instance=ExtResource( 15 )]
+position = Vector2( -541, 211 )

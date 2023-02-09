@@ -35,6 +35,7 @@ func get_input():
 		sprite.flip_h = true # inverte o sentido da sprite ao mudar de lado
 
 
+
 func _physics_process(delta): 
 	get_input() # chama a função do get input (movimentação)
 	velocity.y += gravity * delta # atualiza a velocidade no eixo y com o valor da gravidade
