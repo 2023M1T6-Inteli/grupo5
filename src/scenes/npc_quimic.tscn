@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/NPCs/químico.png" type="Texture" id=1]
 [ext_resource path="res://scripts/npc_quimic.gd" type="Script" id=2]
 [ext_resource path="res://assets/NPCs/quimico_stroke.png" type="Texture" id=3]
+[ext_resource path="res://assets/NPCs/msgbox.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 43, 45.5 )
@@ -23,29 +24,41 @@ visible = false
 texture = ExtResource( 3 )
 flip_h = true
 
-[node name="dialog" type="ColorRect" parent="."]
+[node name="dialog" type="TextureRect" parent="."]
 visible = false
-margin_left = -321.0
-margin_top = -229.0
-margin_right = 51.0
-margin_bottom = -91.0
+margin_left = -279.0
+margin_top = -280.0
+margin_right = 99.0
+margin_bottom = -81.0
+texture = ExtResource( 4 )
+stretch_mode = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="dialog"]
-margin_left = 11.0
-margin_top = 9.0
-margin_right = 356.0
-margin_bottom = 125.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+margin_left = 14.0
+margin_top = 58.0
+margin_right = 357.0
+margin_bottom = 182.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 meta_underlined = false
-text = "caixa de texto"
+text = "Texto do personagem"
 fit_content_height = true
 
 [node name="Button" type="Button" parent="dialog"]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 125.0
-margin_top = 2.0
-margin_right = 373.0
-margin_bottom = 137.0
+margin_left = 113.0
+margin_top = 45.0
+margin_right = 361.0
+margin_bottom = 180.0
+
+[node name="name" type="RichTextLabel" parent="dialog"]
+anchor_right = 0.459
+margin_left = 55.0
+margin_top = 16.0
+margin_right = -11.502
+margin_bottom = 49.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+text = "Nome"
 
 [connection signal="body_entered" from="." to="." method="_on_npc_quimico_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_npc_quimico_body_exited"]
