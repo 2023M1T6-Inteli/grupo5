@@ -1,14 +1,14 @@
 extends Area2D
 
 
-#Essa função inicia a flutuação do objeto
+# essa função inicia a flutuação do objeto
 func _ready():
 	$Animation.play('idle')
 
 
-# Está função verifica se o personagem está entrando em contato com a bota
+# essa função verifica se o personagem está entrando em contato com a bota
 func on_body_entered(body):
-	if body.name == 'player':
+	if body.name == 'Player':
 		body.epi = true
 		position.x = -600
 		position.y = -200

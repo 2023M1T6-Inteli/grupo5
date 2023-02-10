@@ -1702,12 +1702,12 @@ scale = Vector2( 2.5, 2.5 )
 tile_set = SubResource( 14 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -65530, 12, 0, -65528, 14, 0, -65526, 14, 0, 131057, 12, 0, 131059, 14, 0, 131061, 14, 0, 131072, 12, 0, 131074, 14, 0, 131076, 14, 0, 524272, 3, 0, 524274, 4, 0, 524276, 4, 0, 524278, 4, 0, 524280, 4, 0, 524282, 4, 0, 524284, 4, 0, 524286, 4, 0, 458752, 4, 0, 458754, 4, 0, 458756, 4, 0, 458758, 4, 0, 458760, 4, 0, 458762, 4, 0, 458764, 4, 0, 458766, 5, 0 )
+tile_data = PoolIntArray( -524306, 20, 0, -589808, 18, 0, -393234, 20, 0, -458736, 18, 0, -262162, 20, 0, -327664, 18, 0, -131090, 20, 0, -196592, 18, 0, -18, 20, 0, -65530, 12, 0, -65528, 14, 0, -65526, 14, 0, -65520, 18, 0, 131054, 20, 0, 131057, 12, 0, 131059, 14, 0, 131061, 14, 0, 65552, 18, 0, 131072, 12, 0, 131074, 14, 0, 131076, 14, 0, 262126, 20, 0, 196624, 18, 0, 393198, 20, 0, 327696, 18, 0, 524272, 3, 0, 524274, 4, 0, 524276, 4, 0, 524278, 4, 0, 524280, 4, 0, 524282, 4, 0, 524284, 4, 0, 524286, 4, 0, 458752, 4, 0, 458754, 4, 0, 458756, 4, 0, 458758, 4, 0, 458760, 4, 0, 458762, 4, 0, 458764, 4, 0, 458766, 5, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
-[node name="Cap_Epi" parent="." instance=ExtResource( 17 )]
+[node name="CapEpi" parent="." instance=ExtResource( 17 )]
 position = Vector2( -500, 29 )
 scale = Vector2( 1.5, 1.5 )
 
@@ -1715,8 +1715,8 @@ scale = Vector2( 1.5, 1.5 )
 position = Vector2( 463, -55 )
 scale = Vector2( 1.5, 1.5 )
 
-[node name="npc_quimico" parent="." instance=ExtResource( 18 )]
+[node name="NPC" parent="." instance=ExtResource( 18 )]
 position = Vector2( -300, 227 )
 
-[node name="player" parent="." instance=ExtResource( 15 )]
+[node name="Player" parent="." instance=ExtResource( 15 )]
 position = Vector2( -541, 211 )

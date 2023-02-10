@@ -44,11 +44,9 @@ tracks/0/keys = {
 
 [node name="player" type="KinematicBody2D" groups=["Player"]]
 script = ExtResource( 1 )
-run_speed = 500
-jump_speed = -1250
-gravity = 3000
 
 [node name="Sprite" type="Sprite" parent="."]
+physics_interpolation_mode = 2
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

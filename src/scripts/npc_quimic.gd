@@ -9,61 +9,61 @@ var dialogues = [
 ]
 
 # flag para indicar se o jogador está na área de interação com o NPC
-var can_interact = false
+var canInteract = false
 
 # representa o diálogo atual (índice na lista)
-var current_dialog = 0
+var currentDialog = 0
 
 
 func _on_npc_quimico_body_entered(_body):
 	# quando o player se aproximar, destaca o NPC e liga a interação
 	$Stroke.visible = true
-	can_interact = true
+	canInteract = true
 
 
 func _on_npc_quimico_body_exited(_body):
 	# quando o player se aproximar, destaca o NPC e liga a interação
 	$Stroke.visible = false
-	can_interact = false
+	canInteract = false
 
 
-func load_dialogue():
+func loadDialogue():
 	# inicia o diálogo
-	$dialog.visible = true
-	next_dialogue()
+	$Dialog.visible = true
+	nextDialogue()
 
 
-func close_dialogue():
+func closeDialogue():
 	# finaliza o diálogo
-	$dialog.visible = false
-	current_dialog = 0
+	$Dialog.visible = false
+	currentDialog = 0
 
 
-func next_dialogue():
+func nextDialogue():
 	# passa para a próxima frase do diálogo
-	if current_dialog >= len(dialogues):
+	if currentDialog >= len(dialogues):
 		# se acabaram as frases, finaliza o diálogo
-		close_dialogue()
+		closeDialogue()
 		return
 
 	# altera o nome do personagem para o da fala atual
-	$dialog/name.text = dialogues[current_dialog].get('name')
+	$Dialog/Name.text = dialogues[currentDialog].get('name')
 	# altera o texto para a fala atual
-	$dialog/RichTextLabel.text = dialogues[current_dialog].get('text')
+	$Dialog/RichTextLabel.text = dialogues[currentDialog].get('text')
 	# atualiza o índice do diálogo atual
-	current_dialog += 1
+	currentDialog += 1
 
 
 func _on_Button_pressed():
 	# ao pressionar o botão invisível, avança o diálogo
-	next_dialogue()
+	nextDialogue()
 
 
 func _input(event):
-	if ($dialog.visible and event.is_action_released('skip')):
+	if ($Dialog.visible and event.is_action_released('skip')):
 		# ao pressionar um botão de skip, avança o diálogo
-		next_dialogue()
+		nextDialogue()
 
-	if (not $dialog.visible and can_interact and event.is_action_pressed('interact')):
+	if (not $Dialog.visible and canInteract and event.is_action_pressed('interact')):
 		# estando na área de interação e apertando o botão de interação, inicia o diálogo
-		load_dialogue()
+		loadDialogue()

@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-export (int) var run_speed = 300 
-export (int) var jump_speed = -400 
-export (int) var gravity = 1200 
+export (int) var runSpeed = 500
+export (int) var jumpSpeed = -1250
+export (int) var gravity = 3000
 onready var sprite = get_node('Sprite')
 onready var animation = get_node('Animation')
 
@@ -15,7 +15,7 @@ var cap_epi:bool = false
 var velocity = Vector2()
 
 
-func move_player():
+func movePlayer():
 	# interpreta os inputs de movimentação e aplica as velocidades	
 	velocity.x = 0
 	# recebe os inputs de movimentação
@@ -25,20 +25,20 @@ func move_player():
 
 	# aplica as velocidades de acordo com o movimento desejado
 	if jump and is_on_floor():
-		velocity.y = jump_speed
+		velocity.y = jumpSpeed
 	if right: 
-		velocity.x += run_speed
+		velocity.x += runSpeed
 		animation.play('run')
 		sprite.flip_h = false 
 	if left:
-		velocity.x -= run_speed
+		velocity.x -= runSpeed
 		animation.play('run')
 		sprite.flip_h = true
 
 
 func _physics_process(delta):
 	# realiza a movimentação do player
-	move_player()
+	movePlayer()
 	# calcula a velocidade em y de acordo com a gravidade
 	velocity.y += gravity * delta
 	velocity = move_and_slide(velocity, Vector2(0, -1))

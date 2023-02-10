@@ -24,7 +24,7 @@ visible = false
 texture = ExtResource( 3 )
 flip_h = true
 
-[node name="dialog" type="TextureRect" parent="."]
+[node name="Dialog" type="TextureRect" parent="."]
 visible = false
 margin_left = -279.0
 margin_top = -280.0
@@ -33,7 +33,7 @@ margin_bottom = -81.0
 texture = ExtResource( 4 )
 stretch_mode = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="dialog"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialog"]
 margin_left = 14.0
 margin_top = 58.0
 margin_right = 357.0
@@ -43,14 +43,14 @@ meta_underlined = false
 text = "Texto do personagem"
 fit_content_height = true
 
-[node name="Button" type="Button" parent="dialog"]
+[node name="Button" type="Button" parent="Dialog"]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 113.0
 margin_top = 45.0
 margin_right = 361.0
 margin_bottom = 180.0
 
-[node name="name" type="RichTextLabel" parent="dialog"]
+[node name="Name" type="RichTextLabel" parent="Dialog"]
 anchor_right = 0.459
 margin_left = 55.0
 margin_top = 16.0
@@ -62,4 +62,4 @@ text = "Nome"
 
 [connection signal="body_entered" from="." to="." method="_on_npc_quimico_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_npc_quimico_body_exited"]
-[connection signal="pressed" from="dialog/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Dialog/Button" to="." method="_on_Button_pressed"]
