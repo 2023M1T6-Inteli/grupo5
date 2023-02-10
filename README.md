@@ -6,7 +6,14 @@
 
 # Unipixel
 
-## Integrantes: [Gabriel de Macedo Santos](https://www.linkedin.com/in/gabriel-demacedosantos/), [Vitto Mazeto](https://www.linkedin.com/in/vitto-mazeto-b62592203/), [Anna Aragão](https://www.linkedin.com/in/anna-aragao/), [Eduardo Barreto](https://www.linkedin.com/in/eduardosbarreto/), [Hugo Noyma](https://www.linkedin.com/in/hugo-noyma-19737b238/), [Raissa Moraes](https://www.linkedin.com/in/raissa-moraes-a89179264/), [Bruna Brasil](https://www.linkedin.com/in/bruna-brasil-alexandre-734055214/)
+## Integrantes:
+- [Anna Aragão](https://www.linkedin.com/in/ann-aragao/)
+- [Bruna Brasil](https://www.linkedin.com/in/bruna-brasil-alexandre-734055214/)
+- [Eduardo Barreto](https://www.linkedin.com/in/eduardosbarreto/)
+- [Gabriel de Macedo Santos](https://www.linkedin.com/in/gabriel-demacedosantos/)
+- [Hugo Noyma](https://www.linkedin.com/in/hugo-noyma-19737b238/)
+- [Raissa Moraes](https://www.linkedin.com/in/raissa-moraes-a89179264/)
+- [Vitto Mazeto](https://www.linkedin.com/in/vitto-mazeto-b62592203/)
 
 ## Descrição
 
