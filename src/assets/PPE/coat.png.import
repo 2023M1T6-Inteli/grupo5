@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/protetor_de_ouvido_epi.png-4d194c32c5bf33e9e12e707865483cff.stex"
+path="res://.import/coat.png-2fde06248a60022283056327bd28153c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/epi/protetor_de_ouvido_epi.png"
-dest_files=[ "res://.import/protetor_de_ouvido_epi.png-4d194c32c5bf33e9e12e707865483cff.stex" ]
+source_file="res://assets/PPE/coat.png"
+dest_files=[ "res://.import/coat.png-2fde06248a60022283056327bd28153c.stex" ]
 
 [params]
 

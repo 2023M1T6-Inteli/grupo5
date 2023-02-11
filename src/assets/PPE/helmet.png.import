@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cinto_epi.png-5a0ff8fc81a43cd45582777b31597e30.stex"
+path="res://.import/helmet.png-d9572b04dbc232f58a614bbb95a858a7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/epi/cinto_epi.png"
-dest_files=[ "res://.import/cinto_epi.png-5a0ff8fc81a43cd45582777b31597e30.stex" ]
+source_file="res://assets/PPE/helmet.png"
+dest_files=[ "res://.import/helmet.png-d9572b04dbc232f58a614bbb95a858a7.stex" ]
 
 [params]
 

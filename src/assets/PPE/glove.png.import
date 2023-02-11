@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/capacete_de_proteção_epi.png-90c2aa54a7a15f30e58a47a02f29bf9e.stex"
+path="res://.import/glove.png-17ebc35b676add52f683b7e6d83803d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/epi/capacete_de_proteção_epi.png"
-dest_files=[ "res://.import/capacete_de_proteção_epi.png-90c2aa54a7a15f30e58a47a02f29bf9e.stex" ]
+source_file="res://assets/PPE/glove.png"
+dest_files=[ "res://.import/glove.png-17ebc35b676add52f683b7e6d83803d1.stex" ]
 
 [params]
 

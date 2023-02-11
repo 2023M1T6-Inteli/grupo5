@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/oculos_de_protecao_epi.png-19fff0bed368cf5fe9a383b08a46c819.stex"
+path="res://.import/clipboardBG.png-e05c88a81501d3175f1b6a6e64a5302c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/epi/oculos_de_protecao_epi.png"
-dest_files=[ "res://.import/oculos_de_protecao_epi.png-19fff0bed368cf5fe9a383b08a46c819.stex" ]
+source_file="res://assets/clipboard/clipboardBG.png"
+dest_files=[ "res://.import/clipboardBG.png-e05c88a81501d3175f1b6a6e64a5302c.stex" ]
 
 [params]
 

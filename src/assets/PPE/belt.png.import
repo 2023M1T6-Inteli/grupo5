@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bota_epi.png-3fd4d9ed1d794f9185b0943027e527d1.stex"
+path="res://.import/belt.png-8a775ed77e72b6f106d85c596632aeca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/epi/bota_epi.png"
-dest_files=[ "res://.import/bota_epi.png-3fd4d9ed1d794f9185b0943027e527d1.stex" ]
+source_file="res://assets/PPE/belt.png"
+dest_files=[ "res://.import/belt.png-8a775ed77e72b6f106d85c596632aeca.stex" ]
 
 [params]
 

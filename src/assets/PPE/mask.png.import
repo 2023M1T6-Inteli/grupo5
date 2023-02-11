@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mascara_epi.png-a2adf57e6d59dad2c3625a706172b48f.stex"
+path="res://.import/mask.png-0f3abb85e55731720a0a1a0d7c8cc301.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/epi/mascara_epi.png"
-dest_files=[ "res://.import/mascara_epi.png-a2adf57e6d59dad2c3625a706172b48f.stex" ]
+source_file="res://assets/PPE/mask.png"
+dest_files=[ "res://.import/mask.png-0f3abb85e55731720a0a1a0d7c8cc301.stex" ]
 
 [params]
 

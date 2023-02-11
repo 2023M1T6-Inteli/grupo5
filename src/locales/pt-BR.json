@@ -3,6 +3,11 @@
         "chemical": "Químico",
         "player": "Operador"
     },
+    "levels": [
+        "Nível 1",
+        "Nível 2",
+        "Nível 3"
+    ],
     "dialogs": [
         {
             "character": "chemical",
