@@ -1,5 +1,6 @@
-[gd_scene load_steps=140 format=2]
+[gd_scene load_steps=141 format=2]
 
+[ext_resource path="res://scenes/locales.gd" type="Script" id=1]
 [ext_resource path="res://assets/industrial/IndustrialTile_03_light.jpg" type="Texture" id=2]
 [ext_resource path="res://assets/industrial/IndustrialTile_05_flipped.png" type="Texture" id=3]
 [ext_resource path="res://assets/background/background.png" type="Texture" id=4]
@@ -1720,3 +1721,6 @@ position = Vector2( -300, 227 )
 
 [node name="Player" parent="." instance=ExtResource( 15 )]
 position = Vector2( -541, 211 )
+
+[node name="Locales" type="Node" parent="."]
+script = ExtResource( 1 )

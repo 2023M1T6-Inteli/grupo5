@@ -1,0 +1,24 @@
+{
+    "characters": {
+        "chemical": "Chemical",
+        "player": "Operator"
+    },
+    "dialogs": [
+        {
+            "character": "chemical",
+            "text": "Hello! How are you? I am your manager. You must be the new employee of Unipar, right? Welcome!"
+        },
+        {
+            "character": "player",
+            "text": "Hello! I am the new employee! I am here to learn about the daily life in the company and what safety protocols I should follow to keep my safety."
+        },
+        {
+            "character": "chemical",
+            "text": "Right! You can already know the areas of our factory and their rules. But first, take the PPE's and stay safe! An accident occurred in a factory of one of our competitors here in Camaçari and we don't want the same to happen here! Let's go! You have a lot to do!"
+        },
+        {
+            "character": "player",
+            "text": "Ok! I will be very careful!."
+        }
+    ]
+}
