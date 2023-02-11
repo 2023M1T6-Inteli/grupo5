@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/NPCs/msgbox.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 43, 45.5 )
+extents = Vector2( 65, 45.5 )
 
 [node name="npc_quimico" type="Area2D"]
 script = ExtResource( 2 )
@@ -16,7 +16,7 @@ texture = ExtResource( 1 )
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2, -19.5 )
+position = Vector2( 0, -22 )
 shape = SubResource( 1 )
 
 [node name="Stroke" type="Sprite" parent="."]
@@ -52,13 +52,16 @@ margin_bottom = 180.0
 
 [node name="Name" type="RichTextLabel" parent="Dialog"]
 anchor_right = 0.459
-margin_left = 55.0
-margin_top = 16.0
-margin_right = 15.498
-margin_bottom = 49.0
+margin_left = 19.0
+margin_top = 15.0
+margin_right = -20.502
+margin_bottom = 48.0
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 bbcode_enabled = true
-text = "characters: dialogs/level/name"
+bbcode_text = "[center]characters:
+dialogs/level/name[/center]"
+text = "characters:
+dialogs/level/name"
 
 [connection signal="body_entered" from="." to="." method="_on_npc_quimico_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_npc_quimico_body_exited"]

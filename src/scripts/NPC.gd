@@ -19,27 +19,28 @@ func _on_npc_quimico_body_exited(_body):
 	canInteract = false
 
 
-func loadDialogue():
+func loadDialog():
 	# inicia o diálogo
 	$Dialog.visible = true
-	nextDialogue()
+	nextDialog()
 
 
-func closeDialogue():
+func closeDialog():
 	# finaliza o diálogo
 	$Dialog.visible = false
 	currentDialog = 0
 
 
-func nextDialogue():
+func nextDialog():
 	# passa para a próxima frase do diálogo
 	if currentDialog >= len(Locales.dialogs):
 		# se acabaram as frases, finaliza o diálogo
-		closeDialogue()
+		closeDialog()
 		return
 
 	# altera o nome do personagem para o da fala atual
-	$Dialog/Name.text = Locales.characters.get(Locales.dialogs[currentDialog].character)
+	var characterName = Locales.characters.get(Locales.dialogs[currentDialog].character)
+	$Dialog/Name.bbcode_text = '[center]' + characterName + '[/center]'
 	# altera o texto para a fala atual
 	$Dialog/RichTextLabel.text = Locales.dialogs[currentDialog].text
 	# atualiza o índice do diálogo atual
@@ -48,14 +49,14 @@ func nextDialogue():
 
 func _on_Button_pressed():
 	# ao pressionar o botão invisível, avança o diálogo
-	nextDialogue()
+	nextDialog()
 
 
 func _input(event):
 	if ($Dialog.visible and event.is_action_released('skip')):
 		# ao pressionar um botão de skip, avança o diálogo
-		nextDialogue()
+		nextDialog()
 
 	if (not $Dialog.visible and canInteract and event.is_action_pressed('interact')):
 		# estando na área de interação e apertando o botão de interação, inicia o diálogo
-		loadDialogue()
+		loadDialog()
