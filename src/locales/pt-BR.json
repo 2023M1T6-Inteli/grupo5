@@ -1,4 +1,9 @@
 {
+    "buttons": {
+        "play": "Jogar",
+        "quit": "Sair",
+        "selectLanguage": "Selecionar idioma"
+    },
     "characters": {
         "chemical": "Químico",
         "player": "Operador"

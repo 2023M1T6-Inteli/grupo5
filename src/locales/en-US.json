@@ -1,4 +1,9 @@
 {
+    "buttons": {
+        "play": "Play",
+        "quit": "Quit",
+        "selectLanguage": "Select Language"
+    },
     "characters": {
         "chemical": "Chemical",
         "player": "Operator"

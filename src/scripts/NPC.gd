@@ -6,8 +6,6 @@ var canInteract = false
 # representa o diálogo atual (índice na lista)
 var currentDialog = 0
 
-onready var locales = $"../Locales"
-
 
 func _on_npc_quimico_body_entered(_body):
 	# quando o player se aproximar, destaca o NPC e liga a interação
@@ -35,15 +33,15 @@ func closeDialogue():
 
 func nextDialogue():
 	# passa para a próxima frase do diálogo
-	if currentDialog >= len(locales.dialogs):
+	if currentDialog >= len(Locales.dialogs):
 		# se acabaram as frases, finaliza o diálogo
 		closeDialogue()
 		return
 
 	# altera o nome do personagem para o da fala atual
-	$Dialog/Name.text = locales.characters.get(locales.dialogs[currentDialog].get('character'))
+	$Dialog/Name.text = Locales.characters.get(Locales.dialogs[currentDialog].character)
 	# altera o texto para a fala atual
-	$Dialog/RichTextLabel.text = locales.dialogs[currentDialog].get('text')
+	$Dialog/RichTextLabel.text = Locales.dialogs[currentDialog].text
 	# atualiza o índice do diálogo atual
 	currentDialog += 1
 

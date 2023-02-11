@@ -11,8 +11,12 @@ config_version=4
 [application]
 
 config/name="Unipixel"
-run/main_scene="res://scenes/Level1.tscn"
+run/main_scene="res://scenes/Main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Locales="*res://scripts/locales.gd"
 
 [display]
 
