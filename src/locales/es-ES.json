@@ -1,0 +1,34 @@
+{
+    "buttons": {
+        "play": "Jugar",
+        "quit": "Salir",
+        "selectLanguage": "Seleccione El Idioma"
+    },
+    "characters": {
+        "chemical": "Quimico",
+        "player": "Operador"
+    },
+    "levels": [
+        "Nivel 1",
+        "Nivel 2",
+        "Nivel 3"
+    ],
+    "dialogs": [
+        {
+            "character": "chemical",
+            "text": "¡Hola! ¿Todo bien? Soy tu gerente. Debes ser el nuevo empleado de Unipar, ¿correcto? ¡Sea bienvenido!"
+        },
+        {
+            "character": "player",
+            "text": "¡Hola! Soy yo mismo. ¡El nuevo empleado! Estoy aquí para aprender sobre el día a día en la empresa y qué protocolos debo seguir para evitar accidentes."
+        },
+        {
+            "character": "chemical",
+            "text": "¡Bien! Ya puedes conocer las áreas de nuestra fábrica y sus normas. ¡Pero primero, pónganse los EPP y manténganse seguros! ¡Hubo un accidente en una fábrica de uno de nuestros competidores aquí en Camaçari y no queremos que pase lo mismo aquí! ¡Vamos, tienes mucho que hacer!"
+        },
+        {
+            "character": "player",
+            "text": "¡Puede dejar! ¡Estoy súper seguro para el primer día!."
+        }
+    ]
+}

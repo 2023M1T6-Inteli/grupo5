@@ -21,9 +21,9 @@ tracks/0/keys = {
 
 [node name="Clipboard" type="TextureButton"]
 margin_left = 120.0
-margin_top = 200.0
+margin_top = 300.0
 margin_right = 520.0
-margin_bottom = 700.0
+margin_bottom = 800.0
 texture_normal = ExtResource( 1 )
 script = ExtResource( 2 )
 
