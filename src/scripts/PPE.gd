@@ -7,6 +7,7 @@ export var storePositionY = -200
 # essa função inicia a flutuação do objeto
 func _ready():
 	$Animation.play('Float')
+	# carrega a imagem de acordo com o nome do EPI
 	$Sprite.texture = load('res://assets/PPE/' + PPEName + '.png')
 
 

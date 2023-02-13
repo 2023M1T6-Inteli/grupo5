@@ -1,21 +1,21 @@
 extends Node2D
 
 
-func _ready():
+func loadMenuLanguage():
 	# configura os textos dos botões de acordo com o idiomas escolhida
 	$PlayButton.text = Locales.buttons.play
 	$QuitButton.text = Locales.buttons.quit
 	$LanguageButton.text = Locales.buttons.selectLanguage
 
+func _ready():
+	loadMenuLanguage()
 	# pega a referência do menu de opções
 	var popup = $LanguageButton.get_popup()
 	# limpa as opções
 	popup.clear()
-	
-	# se ainda não existe a conexão
-	if popup.get_signal_connection_list('id_pressed').empty():
-		# conecta a seleção de um idioma com a função de mudar o idiomas
-		popup.connect("id_pressed", self, "changeLanguage")
+
+	# conecta a seleção de um idioma com a função de mudar o idiomas
+	popup.connect("id_pressed", self, "changeLanguage")
 
 	# adiciona os idiomas disponíveis nas opções
 	for language in Locales.getAvailableLanguages():
@@ -27,7 +27,7 @@ func changeLanguage(id):
 	Locales.language = Locales.getAvailableLanguages()[id]
 	Locales.loadLanguage()
 	# atuailza o menu
-	_ready()
+	loadMenuLanguage()
 
 
 func _on_PlayButton_pressed():

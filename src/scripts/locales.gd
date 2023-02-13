@@ -39,8 +39,8 @@ func loadLanguage():
 	# lê e carrega o arquivo de idioma
 	var file = File.new()
 	file.open('res://locales/' + language + '.json', File.READ)
-	var data = parse_json(file.get_as_text())
-	locale = data
+	locale = parse_json(file.get_as_text())
+	file.close()
 	
 	# carrega os idiomas por categoria
 	characters = locale.characters

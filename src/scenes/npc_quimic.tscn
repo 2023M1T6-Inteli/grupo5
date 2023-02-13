@@ -33,7 +33,7 @@ margin_bottom = -81.0
 texture = ExtResource( 4 )
 stretch_mode = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Dialog"]
+[node name="DialogText" type="RichTextLabel" parent="Dialog"]
 margin_left = 14.0
 margin_top = 58.0
 margin_right = 357.0

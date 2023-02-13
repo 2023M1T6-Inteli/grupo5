@@ -42,7 +42,7 @@ func nextDialog():
 	var characterName = Locales.characters.get(Locales.dialogs[currentDialog].character)
 	$Dialog/Name.bbcode_text = '[center]' + characterName + '[/center]'
 	# altera o texto para a fala atual
-	$Dialog/RichTextLabel.text = Locales.dialogs[currentDialog].text
+	$Dialog/DialogText.text = Locales.dialogs[currentDialog].text
 	# atualiza o índice do diálogo atual
 	currentDialog += 1
 
@@ -53,10 +53,10 @@ func _on_Button_pressed():
 
 
 func _input(event):
-	if ($Dialog.visible and event.is_action_released('skip')):
-		# ao pressionar um botão de skip, avança o diálogo
-		nextDialog()
-
-	if (not $Dialog.visible and canInteract and event.is_action_pressed('interact')):
-		# estando na área de interação e apertando o botão de interação, inicia o diálogo
-		loadDialog()
+	if event.is_action_released('interact'):
+		if $Dialog.visible:
+			# se o diálogo já está ativo, avança o diálogo
+			nextDialog()
+		elif canInteract:
+			# se o diálogo não está ativo e o personagem está na área de interação, carrega o diálogo
+			loadDialog()
