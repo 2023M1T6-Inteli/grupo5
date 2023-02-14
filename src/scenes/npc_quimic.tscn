@@ -26,18 +26,22 @@ flip_h = true
 
 [node name="Dialog" type="TextureRect" parent="."]
 visible = false
-margin_left = -279.0
-margin_top = -280.0
-margin_right = 99.0
-margin_bottom = -81.0
+anchor_left = 620.0
+anchor_top = 70.0
+anchor_right = 620.0
+anchor_bottom = 70.0
+margin_left = -320.0
+margin_top = 65.0
+margin_right = 920.0
+margin_bottom = 205.0
 texture = ExtResource( 4 )
 stretch_mode = 1
 
 [node name="DialogText" type="RichTextLabel" parent="Dialog"]
-margin_left = 14.0
-margin_top = 58.0
-margin_right = 357.0
-margin_bottom = 182.0
+margin_left = 38.0
+margin_top = 57.0
+margin_right = 1163.0
+margin_bottom = 108.0
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 meta_underlined = false
 text = "dialogs/level/text"
@@ -45,17 +49,17 @@ fit_content_height = true
 
 [node name="Button" type="Button" parent="Dialog"]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 113.0
-margin_top = 45.0
-margin_right = 361.0
-margin_bottom = 180.0
+margin_left = 293.0
+margin_top = 18.0
+margin_right = 1173.0
+margin_bottom = 127.0
 
 [node name="Name" type="RichTextLabel" parent="Dialog"]
 anchor_right = 0.459
-margin_left = 19.0
-margin_top = 15.0
-margin_right = -20.502
-margin_bottom = 48.0
+margin_left = 36.0
+margin_top = 16.0
+margin_right = -378.16
+margin_bottom = 49.0
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]characters:
