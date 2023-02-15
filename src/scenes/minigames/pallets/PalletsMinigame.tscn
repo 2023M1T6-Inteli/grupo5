@@ -6,7 +6,7 @@
 [ext_resource path="res://scripts/minigames/PalletsMinigame.gd" type="Script" id=4]
 [ext_resource path="res://scripts/minigames/Position.gd" type="Script" id=5]
 
-[node name="Node2D" type="Node2D"]
+[node name="PalletsMinigame" type="Node2D"]
 script = ExtResource( 4 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
@@ -37,11 +37,14 @@ position = Vector2( 942, 376 )
 script = ExtResource( 5 )
 
 [node name="PalletWood" parent="." instance=ExtResource( 3 )]
+position = Vector2( 950, 368 )
 
 [node name="PalletWood2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 948, 286 )
 dropPoint = 1
 
 [node name="PalletWood3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 942, 188 )
 dropPoint = 2
 
 [node name="FixedWood" parent="." instance=ExtResource( 2 )]
