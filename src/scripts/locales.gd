@@ -1,7 +1,7 @@
 extends Node
 
 # idioma escolhido
-var language = 'pt-BR'
+var language = OS.get_locale()
 
 # configuração de idiomas
 var locale = {}
