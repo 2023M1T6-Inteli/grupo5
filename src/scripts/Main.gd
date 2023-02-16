@@ -15,7 +15,7 @@ func _ready():
 	popup.clear()
 
 	# conecta a seleção de um idioma com a função de mudar o idiomas
-	popup.connect("id_pressed", self, "changeLanguage")
+	popup.connect('id_pressed', self, 'changeLanguage')
 
 	# adiciona os idiomas disponíveis nas opções
 	for language in Locales.getAvailableLanguages():
@@ -32,8 +32,8 @@ func changeLanguage(id):
 
 func _on_PlayButton_pressed():
 	# ao apertar start, abre o nível 1
-	if get_tree().change_scene("res://scenes/Level1.tscn") != OK:
-		print ("An unexpected error occured when trying to switch to level 1 scene")
+	if get_tree().change_scene('res://scenes/Level1.tscn') != OK:
+		print ('An unexpected error occured when trying to switch to level 1 scene')
 
 
 func _on_QuitButton_pressed():

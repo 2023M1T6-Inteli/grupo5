@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/background/background.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Main.gd" type="Script" id=2]
-[ext_resource path="res://scripts/locales.gd" type="Script" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
 
 [node name="Main" type="Node2D"]
@@ -40,9 +39,6 @@ margin_top = 211.0
 margin_right = 156.0
 margin_bottom = 310.0
 text = "buttons/quit"
-
-[node name="Locales" type="Node" parent="."]
-script = ExtResource( 3 )
 
 [node name="LanguageButton" type="MenuButton" parent="."]
 margin_left = -155.0

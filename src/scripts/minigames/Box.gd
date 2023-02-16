@@ -17,10 +17,9 @@ func _physics_process(delta):
 		elif position.x < 325:
 			horizontalVelocity = 50000
 
-		print(position.x)
 		velocity.x = horizontalVelocity * delta
 		velocity = move_and_slide(velocity, Vector2(-11, 0))
 
 func _input(event):
-	if event.is_action_pressed("interact"):
+	if event.is_action_pressed('interact'):
 		falling = true

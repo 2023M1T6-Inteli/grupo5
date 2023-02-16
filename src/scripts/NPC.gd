@@ -21,14 +21,14 @@ func _on_npc_quimico_body_exited(_body):
 
 func loadDialog():
 	# inicia o diálogo
-	$"../Clipboard".visible = false
+	$'../Clipboard'.visible = false
 	$Dialog.visible = true
 	nextDialog()
 
 
 func closeDialog():
 	# finaliza o diálogo
-	$"../Clipboard".visible = true
+	$'../Clipboard'.visible = true
 	$Dialog.visible = false
 	currentDialog = 0
 

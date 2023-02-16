@@ -1,31 +1,21 @@
 extends Node2D
 
-var lastBoxPosition = Vector2(630, 610)
-onready var currentBox = $Box
-var playing = true
-var lastRegionWidth = 500
-var rect = Rect2()
 var score = 0
+var playing = true
+onready var currentBox = $Box
+var lastBoxPosition = Vector2(630, 610)
 var currentRectSize = Vector2(500, 50)
 var currentRectPosition = -250
 var currentCollisionShape = Vector2(250, 25)
 var currentCollisionPosition = 0
 
 
-func _ready():
-	print(currentBox.get_node("ColorRect").rect_size)
-	print(currentBox.get_node("ColorRect").rect_position.x)
-	
-	print(currentBox.get_node("CollisionShape2D").shape.extents)
-	print(currentBox.get_node("CollisionShape2D").position.x)
-
-
 func duplicateBox():
 	cropBox()
 	lastBoxPosition = currentBox.position
-	currentBox = preload("res://scenes/minigames/stack/Box.tscn")
+	currentBox = preload('res://scenes/minigames/stack/Box.tscn')
 	currentBox = currentBox.instance()
-	currentBox.set_script(load("res://scenes/minigames/stack/Box.gd"))
+	currentBox.set_script(load('res://scripts/minigames/Box.gd'))
 	add_child(currentBox)
 	updateBox()
 
@@ -42,21 +32,21 @@ func cropBox():
 	updateBox()
 
 func updateBox():
-	currentBox.get_node("ColorRect").rect_size = currentRectSize
-	currentBox.get_node("ColorRect").rect_position.x = currentRectPosition
+	currentBox.get_node('ColorRect').rect_size = currentRectSize
+	currentBox.get_node('ColorRect').rect_position.x = currentRectPosition
 
-	currentBox.get_node("CollisionShape2D").shape.extents = currentCollisionShape
-	currentBox.get_node("CollisionShape2D").position.x = currentCollisionPosition
+	currentBox.get_node('CollisionShape2D').shape.extents = currentCollisionShape
+	currentBox.get_node('CollisionShape2D').position.x = currentCollisionPosition
 
 func win():
 	playing = false
-	currentBox.get_node("ColorRect").modulate = Color(0, 1, 0, 1)
+	currentBox.get_node('ColorRect').modulate = Color(0, 1, 0, 1)
 	print('ganhou oba')
 	
 
 func lose():
 	playing = false
-	currentBox.get_node("ColorRect").modulate = Color(1, 0, 0, 1)
+	currentBox.get_node('ColorRect').modulate = Color(1, 0, 0, 1)
 	print('perdeu af')
 
 
