@@ -1,25 +1,61 @@
 extends KinematicBody2D
 
-export (int) var gravity = 3000
-export (int) var horizontalVelocity = 0
+export var gravity = 3000
 var velocity = Vector2()
-
 var falling = false
+var reversedTween = false
 
+
+func _ready():
+	visible = false
+	runTween(null, null)
+	$Tween.start()
+	visible = true
+
+
+func startTween():
+	var boxSize = ($ColorRect.rect_size.x/2)*scale.x
+	$Tween.interpolate_property(
+		self,
+		'global_position',
+		Vector2(160+boxSize, 95),
+		Vector2(1120-boxSize, 95),
+		1,
+		Tween.TRANS_SINE,
+		Tween.EASE_IN_OUT
+	)
+
+
+func reverseTween():
+	var boxSize = ($ColorRect.rect_size.x/2)*scale.x
+	$Tween.interpolate_property(
+		self,
+		'global_position',
+		Vector2(1120-boxSize, 95),
+		Vector2(160+boxSize, 95),
+		1,
+		Tween.TRANS_SINE,
+		Tween.EASE_IN_OUT
+	)
+	
+	
 func _physics_process(delta):
 	if falling:
-		velocity.x = 0
+		$Tween.stop_all()
 		velocity.y += gravity * delta
 		velocity = move_and_slide(velocity, Vector2(0, -1))
-	else:
-		if position.x > 960:
-			horizontalVelocity = -50000
-		elif position.x < 325:
-			horizontalVelocity = 50000
 
-		velocity.x = horizontalVelocity * delta
-		velocity = move_and_slide(velocity, Vector2(-11, 0))
 
 func _input(event):
 	if event.is_action_pressed('interact'):
 		falling = true
+
+
+func runTween(_object, _key):
+	# direita positivo esquerda negativo
+	if reversedTween:
+		reversedTween = false
+		startTween()
+	else:
+		reverseTween()
+		reversedTween = true

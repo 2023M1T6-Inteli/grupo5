@@ -3,40 +3,33 @@ extends Node2D
 var score = 0
 var playing = true
 onready var currentBox = $Box
-var lastBoxPosition = Vector2(630, 610)
-var currentRectSize = Vector2(500, 50)
-var currentRectPosition = -250
-var currentCollisionShape = Vector2(250, 25)
-var currentCollisionPosition = 0
+var lastBoxPosition = Vector2(630, 615)
+var lastScale = 1
+var deltaPosition = 0
 
 
 func duplicateBox():
 	cropBox()
+	updateBox()
 	lastBoxPosition = currentBox.position
-	currentBox = preload('res://scenes/minigames/stack/Box.tscn')
+	currentBox = load('res://scenes/minigames/stack/Box.tscn')
 	currentBox = currentBox.instance()
 	currentBox.set_script(load('res://scripts/minigames/Box.gd'))
-	add_child(currentBox)
 	updateBox()
+	add_child(currentBox)
 
 
 func cropBox():
-	var deltaPosition = (lastBoxPosition.x - currentBox.position.x) * -1
-	currentRectSize = Vector2(currentRectSize.x-abs(deltaPosition), 50)
+	deltaPosition = (lastBoxPosition.x - currentBox.position.x) * -1
+	var percentage = abs(deltaPosition)/(500*lastScale)
+	lastScale = lastScale * (1-percentage)
+	print(lastScale)
 
-	if deltaPosition < 0:
-		currentRectPosition -= deltaPosition
-
-	currentCollisionShape = Vector2((currentCollisionShape.x-abs(deltaPosition)/2), 25)
-	currentCollisionPosition -= (deltaPosition/2)
-	updateBox()
 
 func updateBox():
-	currentBox.get_node('ColorRect').rect_size = currentRectSize
-	currentBox.get_node('ColorRect').rect_position.x = currentRectPosition
+	currentBox.position.x -= deltaPosition/2
+	currentBox.scale.x = lastScale
 
-	currentBox.get_node('CollisionShape2D').shape.extents = currentCollisionShape
-	currentBox.get_node('CollisionShape2D').position.x = currentCollisionPosition
 
 func win():
 	playing = false
