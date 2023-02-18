@@ -9,7 +9,8 @@ func _ready():
 
 func _on_mouse_entered():
 	$Animation.play('slideToScreen')
-
+	get_parent().get_node("HUD/Gamepad/interact").hide()
 
 func _on_mouse_exited():
 	$Animation.play_backwards('slideToScreen')
+	get_parent().get_node("HUD/Gamepad/interact").show()
