@@ -12,6 +12,8 @@ var characters = {}
 var dialogs = {}
 # textos de botões
 var buttons = {}
+# nomes de levels
+var levels = []
 
 
 func getAvailableLanguages():
@@ -46,6 +48,7 @@ func loadLanguage():
 	characters = locale.characters
 	dialogs = locale.dialogs
 	buttons = locale.buttons
+	levels = locale.levels
 
 
 func _ready():

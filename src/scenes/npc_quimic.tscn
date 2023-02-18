@@ -1,27 +1,31 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/NPCs/químico.png" type="Texture" id=1]
+[ext_resource path="res://assets/NPCs/chemical.png" type="Texture" id=1]
 [ext_resource path="res://scripts/NPC.gd" type="Script" id=2]
-[ext_resource path="res://assets/NPCs/quimico_stroke.png" type="Texture" id=3]
+[ext_resource path="res://assets/NPCs/chemicalStroke.png" type="Texture" id=3]
 [ext_resource path="res://assets/NPCs/msgbox.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 65, 45.5 )
+extents = Vector2( 50, 50 )
 
 [node name="npc_quimico" type="Area2D"]
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
-flip_h = true
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -22 )
+position = Vector2( 0, -12 )
 shape = SubResource( 1 )
 
 [node name="Stroke" type="Sprite" parent="."]
 visible = false
+position = Vector2( 0, 5 )
+scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 3 )
+flip_h = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 5 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 1 )
 flip_h = true
 
 [node name="Dialog" type="TextureRect" parent="."]

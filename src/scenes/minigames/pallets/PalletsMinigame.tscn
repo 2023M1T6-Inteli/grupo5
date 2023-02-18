@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/box.png" type="Texture" id=1]
+[ext_resource path="res://assets/background/pallet.png" type="Texture" id=1]
 [ext_resource path="res://scenes/minigames/pallets/FixedWood.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/minigames/pallets/PalletWood.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scripts/minigames/PalletsMinigame.gd" type="Script" id=4]
@@ -9,51 +9,53 @@
 [node name="PalletsMinigame" type="Node2D"]
 script = ExtResource( 4 )
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+[node name="Darkener" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.3 )
+
+[node name="Background" type="TextureRect" parent="."]
 margin_left = 50.0
 margin_top = 50.0
 margin_right = 1230.0
 margin_bottom = 670.0
+mouse_filter = 2
 texture = ExtResource( 1 )
-patch_margin_left = 12
-patch_margin_top = 13
-patch_margin_right = 15
-patch_margin_bottom = 11
 
 [node name="StorePosition" type="Position2D" parent="." groups=["dropNodes"]]
-position = Vector2( 942, 184 )
+position = Vector2( 894, 250 )
 script = ExtResource( 5 )
 
 [node name="StorePosition2" type="Position2D" parent="." groups=["dropNodes"]]
-position = Vector2( 942, 280 )
+position = Vector2( 894, 346 )
 script = ExtResource( 5 )
 
 [node name="StorePosition3" type="Position2D" parent="." groups=["dropNodes"]]
-position = Vector2( 942, 376 )
+position = Vector2( 894, 442 )
 script = ExtResource( 5 )
 
 [node name="PalletWood" parent="." instance=ExtResource( 3 )]
-position = Vector2( 950, 368 )
+position = Vector2( 902, 434 )
 
 [node name="PalletWood2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 948, 286 )
+position = Vector2( 900, 352 )
 dropPoint = 1
 
 [node name="PalletWood3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 942, 188 )
+position = Vector2( 894, 254 )
 dropPoint = 2
 
 [node name="FixedWood" parent="." instance=ExtResource( 2 )]
+position = Vector2( 222, 416 )
 
 [node name="FixedWood2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 380, 350 )
+position = Vector2( 332, 416 )
 
 [node name="FixedWood3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 490, 350 )
+position = Vector2( 442, 416 )
 
 [node name="FixedWood4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 600, 350 )
+position = Vector2( 552, 416 )

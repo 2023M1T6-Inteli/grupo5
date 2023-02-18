@@ -22,14 +22,16 @@ func movePlayer():
 	# aplica as velocidades de acordo com o movimento desejado
 	if jump and is_on_floor():
 		velocity.y = jumpSpeed
-	if right: 
+	elif right: 
 		velocity.x += runSpeed
 		animation.play('run')
 		sprite.flip_h = false 
-	if left:
+	elif left:
 		velocity.x -= runSpeed
 		animation.play('run')
 		sprite.flip_h = true
+	else:
+		animation.play("RESET")
 
 
 func _physics_process(delta):
