@@ -4,9 +4,8 @@ var closing = false
 
 
 func _ready():
-	var levelIndex = $"..".name.replace('Level', '')
-	levelIndex = int(levelIndex)-1
-	$LevelName.bbcode_text = '[center]' + Locales.levels[levelIndex] + '[/center]'
+	var levelName = $"../..".name
+	$LevelName.bbcode_text = '[center]' + Locales.levels.get(levelName) + '[/center]'
 
 
 func _on_mouse_entered():

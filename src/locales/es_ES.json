@@ -8,11 +8,13 @@
         "chemical": "Quimico",
         "player": "Operador"
     },
-    "levels": [
-        "Nivel 1",
-        "Nivel 2",
-        "Nivel 3"
-    ],
+    "levels": {
+        "Level1": "Nivel 1",
+        "Stack": "Stack",
+        "Pallets": "Palets",
+        "Level2": "Nivel 2",
+        "Level3": "Nivel 3"
+    },
     "dialogs": [
         {
             "character": "chemical",
