@@ -1,4 +1,4 @@
-[gd_scene load_steps=141 format=2]
+[gd_scene load_steps=142 format=2]
 
 [ext_resource path="res://assets/industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
@@ -72,6 +72,7 @@
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=70]
 [ext_resource path="res://scenes/npc_quimic.tscn" type="PackedScene" id=71]
 [ext_resource path="res://scenes/interface/HUD.tscn" type="PackedScene" id=72]
+[ext_resource path="res://assets/NPCs/msgbox.png" type="Texture" id=73]
 [ext_resource path="res://scenes/PPE.tscn" type="PackedScene" id=74]
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
@@ -1600,11 +1601,11 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 69/shape_offset = Vector2( 0, 0 )
 69/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 69/shape = SubResource( 83 )
-69/shape_one_way = false
+69/shape_one_way = true
 69/shape_one_way_margin = 1.0
 69/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 83 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -1621,11 +1622,11 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 70/shape_offset = Vector2( 0, 0 )
 70/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 70/shape = SubResource( 84 )
-70/shape_one_way = false
+70/shape_one_way = true
 70/shape_one_way_margin = 1.0
 70/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 84 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -1642,11 +1643,11 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 71/shape_offset = Vector2( 0, 0 )
 71/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 71/shape = SubResource( 85 )
-71/shape_one_way = false
+71/shape_one_way = true
 71/shape_one_way_margin = 1.0
 71/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 85 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -1690,52 +1691,95 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
 [node name="Level1" type="Node2D"]
 
-[node name="Background" type="TextureRect" parent="."]
-margin_left = -640.0
-margin_top = -410.0
-margin_right = 640.0
-margin_bottom = 310.0
-rect_pivot_offset = Vector2( -538, -259 )
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.3, 0 )
+motion_mirroring = Vector2( 2494, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 600, -10 )
 texture = ExtResource( 3 )
-stretch_mode = 5
 
 [node name="Ground" type="TileMap" parent="."]
 scale = Vector2( 2.5, 2.5 )
 tile_set = SubResource( 14 )
-cell_size = Vector2( 16, 16 )
+cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( -524306, 20, 0, -589808, 18, 0, -393234, 20, 0, -458736, 18, 0, -262162, 20, 0, -327664, 18, 0, -131090, 20, 0, -196602, 12, 0, -196600, 14, 0, -196598, 14, 0, -196592, 18, 0, -18, 20, 0, -15, 12, 0, -13, 14, 0, -11, 14, 0, -65520, 18, 0, 0, 12, 0, 2, 14, 0, 4, 14, 0, 131054, 20, 0, 65552, 18, 0, 262126, 20, 0, 196624, 18, 0, 393198, 20, 0, 393200, 3, 0, 393202, 4, 0, 393204, 4, 0, 393206, 4, 0, 393208, 4, 0, 393210, 4, 0, 393212, 4, 0, 393214, 4, 0, 327680, 4, 0, 327682, 4, 0, 327684, 4, 0, 327686, 4, 0, 327688, 4, 0, 327690, 4, 0, 327692, 4, 0, 327694, 5, 0, 327696, 18, 0, 524272, 18, 0, 524274, 19, 0, 524276, 19, 0, 524278, 19, 0, 524280, 19, 0, 524282, 19, 0, 524284, 19, 0, 524286, 19, 0, 458752, 19, 0, 458754, 19, 0, 458756, 19, 0, 458758, 19, 0, 458760, 19, 0, 458762, 19, 0, 458764, 19, 0, 458766, 20, 0 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
+tile_data = PoolIntArray( -262153, 20, 0, -196617, 20, 0, -131081, 20, 0, -65545, 20, 0, -131068, 69, 0, -131067, 70, 0, -131066, 71, 0, -9, 20, 0, -7, 69, 0, -6, 70, 0, -5, 71, 0, 65527, 20, 0, 65535, 69, 0, 0, 70, 0, 1, 70, 0, 2, 71, 0, 131063, 20, 0, 196599, 20, 0, 262135, 10, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 196624, 4, 0, 196625, 4, 0, 196626, 4, 0, 196627, 4, 0, 196628, 4, 0, 196629, 4, 0, 196630, 4, 0, 196631, 4, 0, 196632, 4, 0, 196633, 4, 0, 196634, 4, 0, 196635, 4, 0, 196636, 4, 0, 196637, 4, 0, 196638, 4, 0, 196639, 4, 0, 196640, 4, 0, 196641, 4, 0, 196642, 4, 0, 196643, 4, 0, 196644, 4, 0, 196645, 4, 0, 196646, 4, 0, 196647, 4, 0, 196648, 4, 0, 196649, 4, 0, 196650, 4, 0, 196651, 4, 0, 196652, 4, 0, 196653, 4, 0, 196654, 4, 0, 196655, 4, 0, 196656, 4, 0, 196657, 4, 0, 196658, 4, 0, 196659, 4, 0, 196660, 4, 0, 196661, 4, 0, 196662, 4, 0, 196663, 4, 0, 196664, 4, 0, 196665, 4, 0, 196666, 4, 0, 196667, 4, 0, 196668, 4, 0, 196669, 4, 0, 196670, 4, 0, 196671, 4, 0, 196672, 4, 0, 196673, 4, 0, 196674, 4, 0, 196675, 4, 0, 327671, 10, 0, 327672, 19, 0, 327673, 19, 0, 327674, 19, 0, 327675, 19, 0, 327676, 19, 0, 327677, 19, 0, 327678, 19, 0, 327679, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262148, 19, 0, 262149, 19, 0, 262150, 19, 0, 262151, 19, 0, 262152, 19, 0, 262153, 19, 0, 262154, 19, 0, 262155, 19, 0, 262156, 19, 0, 262157, 19, 0, 262158, 19, 0, 262159, 19, 0, 262160, 19, 0, 262161, 19, 0, 262162, 19, 0, 262163, 19, 0, 262164, 19, 0, 262165, 19, 0, 262166, 19, 0, 262167, 19, 0, 262168, 19, 0, 262169, 19, 0, 262170, 19, 0, 262171, 19, 0, 262172, 19, 0, 262173, 19, 0, 262174, 19, 0, 262175, 19, 0, 262176, 19, 0, 262177, 19, 0, 262178, 19, 0, 262179, 19, 0, 262180, 19, 0, 262181, 19, 0, 262182, 19, 0, 262183, 19, 0, 262184, 19, 0, 262185, 19, 0, 262186, 19, 0, 262187, 19, 0, 262188, 19, 0, 262189, 19, 0, 262190, 19, 0, 262191, 19, 0, 262192, 19, 0, 262193, 19, 0, 262194, 19, 0, 262195, 19, 0, 262196, 19, 0, 262197, 19, 0, 262198, 19, 0, 262199, 19, 0, 262200, 19, 0, 262201, 19, 0, 262202, 19, 0, 262203, 19, 0, 262204, 19, 0, 262205, 19, 0, 262206, 19, 0, 262207, 19, 0, 262208, 19, 0, 262209, 19, 0, 262210, 19, 0, 262211, 19, 0 )
 
 [node name="PPE1" parent="." instance=ExtResource( 74 )]
-position = Vector2( 458, -145 )
+position = Vector2( 458, -201 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="PPE2" parent="." instance=ExtResource( 74 )]
-position = Vector2( -500, -65 )
+position = Vector2( -500, -124 )
 scale = Vector2( 0.2, 0.2 )
 PPEName = "helmet"
 storePositionY = -250
 
-[node name="Clipboard" parent="." instance=ExtResource( 69 )]
-
 [node name="NPC" parent="." instance=ExtResource( 71 )]
-position = Vector2( -300, 145 )
+position = Vector2( -300, 182 )
 
 [node name="Player" parent="." instance=ExtResource( 70 )]
-position = Vector2( -540, 150 )
+position = Vector2( -540, 187 )
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+current = true
+limit_left = -700
+limit_top = -360
+limit_bottom = 400
+limit_smoothed = true
+smoothing_enabled = true
+drag_margin_top = 1.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
 
 [node name="HUD" parent="." instance=ExtResource( 72 )]
+follow_viewport_enable = false
 
-[connection signal="pressed" from="HUD/Gamepad/left" to="Player" method="_on_left_pressed"]
-[connection signal="released" from="HUD/Gamepad/left" to="Player" method="_on_left_released"]
-[connection signal="pressed" from="HUD/Gamepad/right" to="Player" method="_on_right_pressed"]
-[connection signal="released" from="HUD/Gamepad/right" to="Player" method="_on_right_released"]
-[connection signal="pressed" from="HUD/Gamepad/jump" to="Player" method="_on_jump_pressed"]
-[connection signal="released" from="HUD/Gamepad/jump" to="Player" method="_on_jump_released"]
-[connection signal="pressed" from="HUD/Gamepad/interact" to="NPC" method="_on_interact_pressed"]
-[connection signal="released" from="HUD/Gamepad/interact" to="NPC" method="_on_interact_released"]
+[node name="Clipboard" parent="HUD" instance=ExtResource( 69 )]
 
-[editable path="HUD"]
+[node name="Dialog" type="TextureRect" parent="HUD"]
+visible = false
+anchor_left = 620.0
+anchor_top = 70.0
+anchor_right = 620.0
+anchor_bottom = 70.0
+margin_left = -793580.0
+margin_top = -49830.0
+margin_right = -792340.0
+margin_bottom = -49690.0
+texture = ExtResource( 73 )
+stretch_mode = 1
+
+[node name="DialogText" type="RichTextLabel" parent="HUD/Dialog"]
+margin_left = 38.0
+margin_top = 57.0
+margin_right = 1163.0
+margin_bottom = 108.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+meta_underlined = false
+text = "dialogs/level/text"
+fit_content_height = true
+
+[node name="Button" type="Button" parent="HUD/Dialog"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 293.0
+margin_top = 18.0
+margin_right = 1173.0
+margin_bottom = 127.0
+
+[node name="Name" type="RichTextLabel" parent="HUD/Dialog"]
+anchor_right = 0.459
+margin_left = 36.0
+margin_top = 16.0
+margin_right = -378.16
+margin_bottom = 49.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]characters:
+dialogs/level/name[/center]"
+text = "characters:
+dialogs/level/name"

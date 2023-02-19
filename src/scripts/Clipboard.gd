@@ -1,5 +1,7 @@
 extends Button
 
+var closing = false
+
 
 func _ready():
 	var levelIndex = $"..".name.replace('Level', '')
@@ -8,9 +10,18 @@ func _ready():
 
 
 func _on_mouse_entered():
+	get_parent().get_node("Gamepad/interact").hide()
 	$Animation.play('slideToScreen')
-	get_parent().get_node("HUD/Gamepad/interact").hide()
+
 
 func _on_mouse_exited():
 	$Animation.play_backwards('slideToScreen')
-	get_parent().get_node("HUD/Gamepad/interact").show()
+	closing = true
+
+
+func _on_Animation_animation_finished(_anim_name):
+	print(_anim_name)
+	if closing:
+		get_parent().get_node("Gamepad/interact").show()
+
+	closing = false

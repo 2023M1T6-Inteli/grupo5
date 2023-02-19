@@ -6,7 +6,6 @@ var canInteract = false
 # representa o diálogo atual (índice na lista)
 var currentDialog = 0
 
-var touch_interact = false
 
 
 func _on_npc_quimico_body_entered(_body):
@@ -25,17 +24,17 @@ func _on_npc_quimico_body_exited(_body):
 
 func loadDialog():
 	# inicia o diálogo
-	$'../Clipboard'.visible = false
-	$Dialog.visible = true
-	get_parent().get_node("HUD").hide()
+	$"../HUD/Clipboard".visible = false
+	$"../HUD/Dialog".visible = true
+	get_parent().get_node("HUD/Gamepad").hide()
 	nextDialog()
 
 
 func closeDialog():
 	# finaliza o diálogo
-	$'../Clipboard'.visible = true
-	$Dialog.visible = false
-	get_parent().get_node("HUD").show()
+	$"../HUD/Clipboard".visible = true
+	$"../HUD/Dialog".visible = false
+	get_parent().get_node("HUD/Gamepad").show()
 	currentDialog = 0
 
 
@@ -48,9 +47,9 @@ func nextDialog():
 
 	# altera o nome do personagem para o da fala atual
 	var characterName = Locales.characters.get(Locales.dialogs[currentDialog].character)
-	$Dialog/Name.bbcode_text = '[center]' + characterName + '[/center]'
+	$"../HUD/Dialog"/Name.bbcode_text = '[center]' + characterName + '[/center]'
 	# altera o texto para a fala atual
-	$Dialog/DialogText.text = Locales.dialogs[currentDialog].text
+	$"../HUD/Dialog"/DialogText.text = Locales.dialogs[currentDialog].text
 	# atualiza o índice do diálogo atual
 	currentDialog += 1
 
@@ -61,19 +60,10 @@ func _on_Button_pressed():
 
 
 func _input(event):
-	if event.is_action_released('interact') or touch_interact:
-		if $Dialog.visible:
+	if event.is_action_released('interact'):
+		if $"../HUD/Dialog".visible:
 			# se o diálogo já está ativo, avança o diálogo
 			nextDialog()
 		elif canInteract:
 			# se o diálogo não está ativo e o personagem está na área de interação, carrega o diálogo
 			loadDialog()
-
-
-func _on_interact_pressed():
-	touch_interact = true
-	
-
-
-func _on_interact_released():
-	touch_interact = false

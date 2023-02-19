@@ -13,28 +13,31 @@
 follow_viewport_enable = true
 
 [node name="Gamepad" type="Node2D" parent="."]
-position = Vector2( -640, -360 )
 
 [node name="left" type="TouchScreenButton" parent="Gamepad"]
 position = Vector2( 26, 642 )
 scale = Vector2( 3, 3 )
 normal = ExtResource( 5 )
 pressed = ExtResource( 3 )
+action = "move_left"
 
 [node name="right" type="TouchScreenButton" parent="Gamepad"]
 position = Vector2( 125, 642 )
 scale = Vector2( 3, 3 )
 normal = ExtResource( 8 )
 pressed = ExtResource( 2 )
+action = "move_right"
 
 [node name="jump" type="TouchScreenButton" parent="Gamepad"]
 position = Vector2( 76, 584 )
 scale = Vector2( 3, 3 )
 normal = ExtResource( 1 )
 pressed = ExtResource( 7 )
+action = "jump"
 
 [node name="interact" type="TouchScreenButton" parent="Gamepad"]
 position = Vector2( 1121, 602 )
 scale = Vector2( 3, 3 )
 normal = ExtResource( 6 )
 pressed = ExtResource( 4 )
+action = "interact"
