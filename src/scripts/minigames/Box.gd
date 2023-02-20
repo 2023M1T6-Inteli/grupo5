@@ -7,10 +7,8 @@ var reversedTween = false
 
 
 func _ready():
-	visible = false
 	runTween(null, null)
 	$Tween.start()
-	visible = true
 
 
 func startTween():

@@ -16,6 +16,7 @@ func duplicateBox():
 	currentBox = currentBox.instance()
 	currentBox.set_script(load('res://scripts/minigames/Box.gd'))
 	updateBox()
+	# currentBox.position.y = -1000
 	add_child(currentBox)
 
 
@@ -23,7 +24,6 @@ func cropBox():
 	deltaPosition = (lastBoxPosition.x - currentBox.position.x) * -1
 	var percentage = abs(deltaPosition)/(500*lastScale)
 	lastScale = lastScale * (1-percentage)
-	print(lastScale)
 
 
 func updateBox():
