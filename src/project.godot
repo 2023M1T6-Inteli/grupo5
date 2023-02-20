@@ -62,6 +62,10 @@ interact={
 pointing/emulate_touch_from_mouse=true
 pointing/emulate_mouse_from_touch=false
 
+[locale]
+
+fallback="en_US"
+
 [physics]
 
 common/enable_pause_aware_picking=true
