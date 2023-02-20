@@ -15,6 +15,11 @@
         "Level2": "Level 2",
         "Level3": "Level 3"
     },
+    "clipboard": {
+        "Level1": [
+            "Welcome to souUni, talk to the chemical operator and collect the PPE's"
+        ]
+    },
     "dialogs": [
         {
             "character": "chemical",
@@ -30,7 +35,7 @@
         },
         {
             "character": "player",
-            "text": "Ok! I will be very careful!."
+            "text": "Ok! I will be very careful!"
         }
     ]
 }

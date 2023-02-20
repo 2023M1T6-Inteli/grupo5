@@ -15,6 +15,11 @@
         "Level2": "Nivel 2",
         "Level3": "Nivel 3"
     },
+    "clipboard": {
+        "Level1": [
+            "Sea bienvenido a souUni, hable con el operador químico y recoja los EPIs"
+        ]
+    },
     "dialogs": [
         {
             "character": "chemical",
@@ -30,7 +35,7 @@
         },
         {
             "character": "player",
-            "text": "¡Puede dejar! ¡Estoy muy emocionado para el primer día!."
+            "text": "¡Puede dejar! ¡Estoy muy emocionado para el primer día!"
         }
     ]
 }

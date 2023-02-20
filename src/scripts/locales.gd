@@ -14,6 +14,8 @@ var dialogs = {}
 var buttons = {}
 # nomes de levels
 var levels = []
+# textos da prancheta
+var clipboard = {}
 
 
 func getAvailableLanguages():
@@ -49,6 +51,7 @@ func loadLanguage():
 	dialogs = locale.dialogs
 	buttons = locale.buttons
 	levels = locale.levels
+	clipboard = locale.clipboard
 
 
 func _ready():
