@@ -6,6 +6,7 @@ var canInteract = false
 # representa o diálogo atual (índice na lista)
 var currentDialog = 0
 
+# flag para indicar se a frase atual foi finalizada
 var phraseFinished = false
 
 
@@ -51,16 +52,21 @@ func nextDialog():
 	$"../HUD/Dialog/Name".bbcode_text = '[center]' + characterName + '[/center]'
 	# altera o texto para a fala atual
 	$"../HUD/Dialog/DialogText".text = Locales.dialogs[currentDialog].text
-	
+
+	# reseta a flag
 	phraseFinished = false
+	# deixa o texto invisível
 	$"../HUD/Dialog/DialogText".visible_characters = 0
 
 	while $"../HUD/Dialog/DialogText".visible_characters < len($"../HUD/Dialog/DialogText".text):
+		# incrementa os caracteres visíveis: efeito de escrever
 		$"../HUD/Dialog/DialogText".visible_characters += 1
-		
+
+		# espera um tempo para o próximo caracter
 		$Timer.start()
 		yield($Timer, 'timeout')
-		
+
+	# ao finalizar, liga a flag de finalizado
 	phraseFinished = true
 
 	# atualiza o índice do diálogo atual
@@ -69,16 +75,24 @@ func nextDialog():
 
 func _on_Button_pressed():
 	# ao pressionar o botão invisível, avança o diálogo
-	nextDialog()
+	if phraseFinished:
+		# se a frase já está finalizada, avança o diálogo
+		nextDialog()
+	else:
+		# senão, finaliza a frase
+		$"../HUD/Dialog/DialogText".visible_characters = len($"../HUD/Dialog/DialogText".text)
+
 
 
 func _input(event):
 	if event.is_action_released('interact'):
 		if $"../HUD/Dialog".visible:
+			# se o diálogo já está ativo, avança o diálogo
 			if phraseFinished:
-				# se o diálogo já está ativo, avança o diálogo
+				# se a frase já está finalizada, avança o diálogo
 				nextDialog()
 			else:
+				# senão, finaliza a frase
 				$"../HUD/Dialog/DialogText".visible_characters = len($"../HUD/Dialog/DialogText".text)
 		elif canInteract:
 			# se o diálogo não está ativo e o personagem está na área de interação, carrega o diálogo

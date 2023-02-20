@@ -57,6 +57,7 @@ func _input(event):
 			dropPoint.ocuppied = true
 
 
+# controle da propriedade que indica se o mouse está no pallet
 func _on_mouse_entered():
 	hovering = true
 
