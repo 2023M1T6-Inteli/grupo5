@@ -71,6 +71,10 @@ dialogs/level/name[/center]"
 text = "characters:
 dialogs/level/name"
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.001
+one_shot = true
+
 [connection signal="body_entered" from="." to="." method="_on_npc_quimico_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_npc_quimico_body_exited"]
 [connection signal="pressed" from="Dialog/Button" to="." method="_on_Button_pressed"]

@@ -6,6 +6,7 @@ var canInteract = false
 # representa o diálogo atual (índice na lista)
 var currentDialog = 0
 
+var phraseFinished = false
 
 
 func _on_npc_quimico_body_entered(_body):
@@ -47,9 +48,21 @@ func nextDialog():
 
 	# altera o nome do personagem para o da fala atual
 	var characterName = Locales.characters.get(Locales.dialogs[currentDialog].character)
-	$"../HUD/Dialog"/Name.bbcode_text = '[center]' + characterName + '[/center]'
+	$"../HUD/Dialog/Name".bbcode_text = '[center]' + characterName + '[/center]'
 	# altera o texto para a fala atual
-	$"../HUD/Dialog"/DialogText.text = Locales.dialogs[currentDialog].text
+	$"../HUD/Dialog/DialogText".text = Locales.dialogs[currentDialog].text
+	
+	phraseFinished = false
+	$"../HUD/Dialog/DialogText".visible_characters = 0
+
+	while $"../HUD/Dialog/DialogText".visible_characters < len($"../HUD/Dialog/DialogText".text):
+		$"../HUD/Dialog/DialogText".visible_characters += 1
+		
+		$Timer.start()
+		yield($Timer, 'timeout')
+		
+	phraseFinished = true
+
 	# atualiza o índice do diálogo atual
 	currentDialog += 1
 
@@ -62,8 +75,11 @@ func _on_Button_pressed():
 func _input(event):
 	if event.is_action_released('interact'):
 		if $"../HUD/Dialog".visible:
-			# se o diálogo já está ativo, avança o diálogo
-			nextDialog()
+			if phraseFinished:
+				# se o diálogo já está ativo, avança o diálogo
+				nextDialog()
+			else:
+				$"../HUD/Dialog/DialogText".visible_characters = len($"../HUD/Dialog/DialogText".text)
 		elif canInteract:
 			# se o diálogo não está ativo e o personagem está na área de interação, carrega o diálogo
 			loadDialog()
