@@ -20,6 +20,8 @@ func _ready():
 	# adiciona os idiomas disponíveis nas opções
 	for language in Locales.getAvailableLanguages():
 		popup.add_item(language)
+		
+	
 
 
 func changeLanguage(id):
