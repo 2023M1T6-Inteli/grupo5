@@ -19,7 +19,6 @@ func _on_mouse_exited():
 
 
 func _on_Animation_animation_finished(_anim_name):
-	print(_anim_name)
 	if closing:
 		get_parent().get_node("Gamepad/interact").show()
 

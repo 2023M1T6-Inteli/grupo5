@@ -18,5 +18,4 @@ func _on_body_entered(body):
 		$Animation.seek(0.5, true)
 		$Animation.stop()
 		body.PPEs.append(PPEName)
-		position.x = storePositionX
-		position.y = storePositionY
+		queue_free()
