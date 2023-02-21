@@ -83,7 +83,6 @@ func _on_Button_pressed():
 		$"../HUD/Dialog/DialogText".visible_characters = len($"../HUD/Dialog/DialogText".text)
 
 
-
 func _input(event):
 	if event.is_action_released('interact'):
 		if $"../HUD/Dialog".visible:

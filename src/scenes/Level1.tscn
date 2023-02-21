@@ -1844,9 +1844,9 @@ fit_content_height = true
 [node name="Button" type="Button" parent="HUD/Dialog"]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 293.0
-margin_top = 18.0
-margin_right = 1173.0
-margin_bottom = 127.0
+margin_top = -14.0
+margin_right = 1260.0
+margin_bottom = 145.0
 
 [node name="Name" type="RichTextLabel" parent="HUD/Dialog"]
 anchor_right = 0.459
@@ -1859,3 +1859,5 @@ custom_fonts/normal_font = SubResource( 88 )
 bbcode_enabled = true
 bbcode_text = "[center]------------------[/center]"
 text = "------------------"
+
+[connection signal="pressed" from="HUD/Dialog/Button" to="NPC" method="_on_Button_pressed"]
