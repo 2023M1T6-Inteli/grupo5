@@ -1,8 +1,8 @@
 extends Node
 
-# idioma escolhido
+# idioma escolhido e padrão
 var language = OS.get_locale()
-var defaultLanguage = 'en_US'
+var defaultLanguage = 'pt_BR'
 
 # configuração de idiomas
 var locale = {}
