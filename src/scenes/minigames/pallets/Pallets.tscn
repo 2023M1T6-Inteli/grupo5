@@ -1,21 +1,58 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scripts/minigames/Position.gd" type="Script" id=1]
 [ext_resource path="res://assets/background/pallet.png" type="Texture" id=2]
 [ext_resource path="res://scripts/minigames/PalletsMinigame.gd" type="Script" id=3]
 [ext_resource path="res://scenes/minigames/pallets/FixedWood.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/minigames/pallets/PalletWood.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://assets/box.png" type="Texture" id=7]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.45098 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0, 0, 0, 0.45098 )
+corner_radius_top_left = 13
+corner_radius_top_right = 13
+corner_radius_bottom_right = 13
+corner_radius_bottom_left = 13
+
+[sub_resource type="DynamicFont" id=9]
+size = 50
+font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=10]
+Button/styles/disabled = null
+Button/styles/focus = SubResource( 4 )
+Button/styles/hover = SubResource( 5 )
+Button/styles/normal = SubResource( 6 )
+Button/styles/pressed = SubResource( 7 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 30
+font_data = ExtResource( 6 )
 
 [node name="Pallets" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Darkener" type="ColorRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="Darkener" type="Panel" parent="."]
 margin_right = 1280.0
 margin_bottom = 720.0
 mouse_filter = 2
-color = Color( 0, 0, 0, 0.3 )
+custom_styles/panel = SubResource( 1 )
 
 [node name="Background" type="TextureRect" parent="."]
 margin_left = 50.0
@@ -59,3 +96,56 @@ position = Vector2( 442, 416 )
 
 [node name="FixedWood4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 552, 416 )
+
+[node name="WinScreen" type="Panel" parent="."]
+visible = false
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 1230.0
+margin_bottom = 670.0
+custom_styles/panel = SubResource( 8 )
+
+[node name="Background2" type="NinePatchRect" parent="WinScreen"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -295.0
+margin_top = -155.0
+margin_right = 295.0
+margin_bottom = 155.0
+texture = ExtResource( 7 )
+patch_margin_left = 12
+patch_margin_top = 13
+patch_margin_right = 15
+patch_margin_bottom = 11
+
+[node name="Lose" type="Label" parent="WinScreen/Background2"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -44.0
+margin_bottom = 20.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 9 )
+text = "Você venceu!"
+align = 1
+valign = 1
+
+[node name="ContinueButton" type="Button" parent="WinScreen/Background2"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 25.0
+margin_bottom = 64.0
+focus_neighbour_top = NodePath("../QuitButton")
+focus_neighbour_bottom = NodePath("../LanguageButton")
+theme = SubResource( 10 )
+custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
+custom_colors/font_color = Color( 0.988235, 0.984314, 0.984314, 1 )
+custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
+custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
+custom_fonts/font = SubResource( 11 )
+text = "Continuar"
+
+[connection signal="pressed" from="WinScreen/Background2/ContinueButton" to="." method="_on_ContinueButton_pressed"]

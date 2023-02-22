@@ -1750,7 +1750,7 @@ PPEName = "coat"
 position = Vector2( -300, 182 )
 
 [node name="Player" parent="." instance=ExtResource( 70 )]
-position = Vector2( -540, 187 )
+position = Vector2( -540, 185 )
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 current = true

@@ -19,6 +19,5 @@ rotation = -1.57079
 script = ExtResource( 2 )
 
 [node name="MiddlePosition" type="Position2D" parent="." groups=["dropNodes"]]
-position = Vector2( 0, -56 )
-rotation = -3.14159
+position = Vector2( -3.05176e-05, -56 )
 script = ExtResource( 2 )
