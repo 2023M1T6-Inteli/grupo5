@@ -49,8 +49,6 @@ func win():
 	playing = false
 	# pinta a box atual de verde
 	currentBox.get_node('ColorRect').modulate = Color(0, 1, 0, 1)
-	# TODO: Tela de win
-	print('ganhou oba')
 	$WinScreen.visible = true
 	
 
@@ -59,18 +57,17 @@ func lose():
 	playing = false
 	# pinta a box atual de vermelho
 	currentBox.get_node('ColorRect').modulate = Color(1, 0, 0, 1)
-	# TODO: Tela de lose
-	print('perdeu af')
 	$LoseScreen.visible = true
 
 
 func _on_RestartButton_pressed():
-	get_tree().reload_current_scene()
+	if get_tree().reload_current_scene() != OK:
+		print('An unexpected error occured when trying to reload stack scene')
 
 
 func _on_ContinueButton_pressed():
 	queue_free()
-	
+
 
 func _ready():
 	$LoseScreen.visible = false

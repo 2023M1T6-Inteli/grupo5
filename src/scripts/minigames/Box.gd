@@ -8,12 +8,6 @@ var falling = false
 var reversedTween = false
 
 
-func _ready():
-	# inicia a animação
-	runTween(null, null)
-	$Tween.start()
-
-
 func startTween():
 	# calcula tamanho da caixa para compensar a borda
 	var boxSize = ($ColorRect.rect_size.x/2)*scale.x
@@ -40,20 +34,6 @@ func reverseTween():
 		Tween.TRANS_SINE,
 		Tween.EASE_IN_OUT
 	)
-	
-	
-func _physics_process(delta):
-	if falling:
-		# desativa a animação e aplica gravidade
-		$Tween.stop_all()
-		velocity.y += gravity * delta
-		velocity = move_and_slide(velocity, Vector2(0, -1))
-
-
-func _input(event):
-	if event.is_action_pressed('interact'):
-		# ao apertar uma tecla de interação, a box começa a cair
-		falling = true
 
 
 func runTween(_object, _key):
@@ -64,3 +44,23 @@ func runTween(_object, _key):
 	else:
 		reverseTween()
 		reversedTween = true
+
+
+func _input(event):
+	if event.is_action_pressed('interact'):
+		# ao apertar uma tecla de interação, a box começa a cair
+		falling = true
+
+
+func _ready():
+	# inicia a animação
+	runTween(null, null)
+	$Tween.start()
+
+
+func _physics_process(delta):
+	if falling:
+		# desativa a animação e aplica gravidade
+		$Tween.stop_all()
+		velocity.y += gravity * delta
+		velocity = move_and_slide(velocity, Vector2(0, -1))

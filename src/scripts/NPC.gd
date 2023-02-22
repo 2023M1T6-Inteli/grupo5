@@ -10,20 +10,6 @@ var currentDialog = 0
 var phraseFinished = false
 
 
-func _on_npc_quimico_body_entered(_body):
-	# quando o player se aproximar, destaca o NPC e liga a interação
-	$Stroke.visible = true
-	canInteract = true
-	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 0.4)
-
-
-func _on_npc_quimico_body_exited(_body):
-	# quando o player se aproximar, destaca o NPC e liga a interação
-	$Stroke.visible = false
-	canInteract = false
-	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 1)
-
-
 func loadDialog():
 	# inicia o diálogo
 	$"../HUD/Clipboard".visible = false
@@ -73,6 +59,20 @@ func nextDialog():
 	currentDialog += 1
 
 
+func _on_npc_quimico_body_entered(_body):
+	# quando o player se aproximar, destaca o NPC e liga a interação
+	$Stroke.visible = true
+	canInteract = true
+	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 0.4)
+
+
+func _on_npc_quimico_body_exited(_body):
+	# quando o player se aproximar, destaca o NPC e liga a interação
+	$Stroke.visible = false
+	canInteract = false
+	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 1)
+
+
 func _on_Button_pressed():
 	# ao pressionar o botão invisível, avança o diálogo
 	if phraseFinished:
@@ -96,3 +96,7 @@ func _input(event):
 		elif canInteract:
 			# se o diálogo não está ativo e o personagem está na área de interação, carrega o diálogo
 			loadDialog()
+
+
+func _ready():
+	closeDialog()

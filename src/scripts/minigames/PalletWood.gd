@@ -9,18 +9,14 @@ var hovering = false
 # indica o slot que o pallet
 export var dropPoint = 0
 
-func _ready():
-	# carrega o pallet em um dos slots iniciais do store
-	dropPoint = dropNodes[dropPoint]
-	dropPoint.ocuppied = true
 
-func _physics_process(delta):
-	if selected:
-		# se estiver selecionado, o pallet segue o mouse
-		global_position = lerp(global_position, get_global_mouse_position(), 25*delta)
-	else:
-		# senão, vai para o slot selecionado
-		global_position = lerp(global_position, dropPoint.global_position, 25*delta)
+# controle da propriedade que indica se o mouse está no pallet
+func _on_mouse_entered():
+	hovering = true
+
+func _on_mouse_exited():
+	hovering = false
+
 
 func _input(event):
 	if $'..'.palletSelected != null and $'..'.palletSelected != $'.':
@@ -54,12 +50,20 @@ func _input(event):
 					# atualiza o node e a distância selecionado
 					dropPoint = node
 					shortDistance = distance
+
 			dropPoint.ocuppied = true
 
 
-# controle da propriedade que indica se o mouse está no pallet
-func _on_mouse_entered():
-	hovering = true
+func _ready():
+	# carrega o pallet em um dos slots iniciais do store
+	dropPoint = dropNodes[dropPoint]
+	dropPoint.ocuppied = true
 
-func _on_mouse_exited():
-	hovering = false
+
+func _physics_process(delta):
+	if selected:
+		# se estiver selecionado, o pallet segue o mouse
+		global_position = lerp(global_position, get_global_mouse_position(), 25*delta)
+	else:
+		# senão, vai para o slot selecionado
+		global_position = lerp(global_position, dropPoint.global_position, 25*delta)

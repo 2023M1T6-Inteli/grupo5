@@ -3,18 +3,13 @@ extends Button
 # flag que indica que a prancheta está recuando
 var closing = false
 
+func _on_Animation_animation_finished(_anim_name):
+	if closing:
+		# ao terminar a animação de recuo, mostra o botão de interação novamente
+		get_parent().get_node("Gamepad/interact").show()
 
-func _ready():
-	# coleta o nome do nível de acordo com o node root
-	var levelName = $"../..".name
-	# atualiza o nome na prancheta
-	$LevelName.bbcode_text = '[center]' + Locales.levels.get(levelName) + '[/center]'
-	
-	# atualiza todos os textos da prancheta de acordo com o nível
-	var nodeCounter = 0
-	for node in get_tree().get_nodes_in_group('LevelText'):
-		node.bbcode_text = '[center]' + Locales.clipboard.get(levelName)[nodeCounter] + '[/center]'
-		nodeCounter += 1
+	# reseta a flag de recuo
+	closing = false
 
 
 func _on_mouse_entered():
@@ -41,10 +36,14 @@ func _on_mouse_exited():
 	closing = true
 
 
-func _on_Animation_animation_finished(_anim_name):
-	if closing:
-		# ao terminar a animação de recuo, mostra o botão de interação novamente
-		get_parent().get_node("Gamepad/interact").show()
-
-	# reseta a flag de recuo
-	closing = false
+func _ready():
+	# coleta o nome do nível de acordo com o node root
+	var levelName = $"../..".name
+	# atualiza o nome na prancheta
+	$LevelName.bbcode_text = '[center]' + Locales.levels.get(levelName) + '[/center]'
+	
+	# atualiza todos os textos da prancheta de acordo com o nível
+	var nodeCounter = 0
+	for node in get_tree().get_nodes_in_group('LevelText'):
+		node.bbcode_text = '[center]' + Locales.clipboard.get(levelName)[nodeCounter] + '[/center]'
+		nodeCounter += 1

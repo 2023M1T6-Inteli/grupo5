@@ -3,8 +3,6 @@ extends KinematicBody2D
 export (int) var runSpeed = 500
 export (int) var jumpSpeed = -1250
 export (int) var gravity = 3000
-onready var sprite = get_node('Sprite')
-onready var animation = get_node('Animation')
 
 var PPEs = []
 
@@ -24,14 +22,14 @@ func movePlayer():
 		velocity.y = jumpSpeed
 	elif right: 
 		velocity.x += runSpeed
-		animation.play('run')
-		sprite.flip_h = false 
+		$Animation.play('run')
+		$Sprite.flip_h = false 
 	elif left:
 		velocity.x -= runSpeed
-		animation.play('run')
-		sprite.flip_h = true
+		$Animation.play('run')
+		$Sprite.flip_h = true
 	else:
-		animation.play("RESET")
+		$Animation.play("RESET")
 
 
 func _physics_process(delta):
