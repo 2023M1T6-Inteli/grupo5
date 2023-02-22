@@ -17,9 +17,7 @@
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
-
-Meu projeto é um exemplo de como utilizar o github.
+📜 Nosso projeto consiste em um jogo de plataforma 2D, com minigames e quizzes visando conscientizar e reforçar as regras e condutas para os operadores, com o objetivo de diminuir significantemente os acidentes dentro da [Unipar](https://www.unipar.com/). Assim, de forma divertida, os trabalhadores podem usar o seu intervalo na empresa para revisar os procedimentos e ganhar bonificações com o jogo. 
 
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
@@ -27,12 +25,9 @@ Meu projeto é um exemplo de como utilizar o github.
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+💡   O souUni é um jogo 2D, feito na engine Godot, que visa revisar as regras para os operadores químicos dentro da indústria da Unipar, tanto em unidades nacionais quanto internacionais. Dessa forma, ele foi pensado e dividido em 3 modalidades: os níveis de plataforma, os minigames e o quiz final. A proposta de cada etapa busca reforçar o conhecimento de maneiras diferentes, a coleta de EPI's na fase inicial, demonstra que o operador deve estar sempre com os equipamentos corretos para então trabalhar dentro do setor químico.
 
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-
-May the force be with you!
-
+💡   Ademais, há os minigames, que exemplificam e ensinam praticas de segurança e execução de protocolos, com curiosidades sobre o material trabalhado. Então, após passar por níveis de PVC, Cloro e Soda, que são os principais produtos da Unipar, o jogador chega ao quiz final, em que haverão perguntas relacionadas a todo o processo que ele vivenciou no jogo, com um sistema de ranking que mostra sua colocação final.
 
 ## 🛠 Estrutura de pastas
 
@@ -51,27 +46,11 @@ May the force be with you!
   └ 📄readme.md
 ```
 
-A pasta raiz contem dois arquivos que devem ser alterados:
-
-**README.MD**: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
-
-Há também 4 pastas que seguem da seguinte forma:
-
-**docs**: Aqui serão colocados os arquivos compilados em HTML do jogo.
-**documentos**: Aqui estarão todos os documentos do projeto, mas principalmente o **GDD (Game Design Document)/Documentação do Sistema**. Há uma pasta **antigos** onde estarão todas as versões antigas da documentação.
-
-**executáveis**: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários **Windows**, uma para binários **android** e uma para a **Web/HTML**
-
-**imagens**: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
-
-**src**: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
-
 ## 🛠 Instalação
 
 **Android:**
 
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
+Por enquanto não há a versão android, mas é possível jogar o jogo mobile através do GitHub Pages
 
 **Windows:**
 
@@ -85,9 +64,17 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 💻 Configuração para Desenvolvimento
 
-1 - Faça o download do GODOT e deste repositório.
-2 - Abra o GODOT, ao ser prontificado clique em IMPORTAR.
-3 - Selecione a pasta onde descompactou este repositório.
+1 - Clone o repositório. 
+
+2 - Abra a engine de desenvolvimento (godot).
+
+3 - No gerenciador de projetos inicial, clique no botão "importar" e, em seguida, no botão "navegar".
+
+4 - Navegue até o repositório clonado e abra a pasta "src".
+
+5 - Selecione o arquivo "project.godot" e em seguida clique no botão "abrir".
+
+6 - Pronto. O seu ambiente de desenvolvimento está configurado.
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
