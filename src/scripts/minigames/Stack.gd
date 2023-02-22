@@ -27,7 +27,7 @@ func duplicateBox():
 	# configura a nova box com as configurações atuais 
 	updateBox()
 	# adiciona o node na cena
-	add_child(currentBox)
+	add_child_below_node($Box, currentBox)
 
 
 func cropBox():
@@ -51,6 +51,7 @@ func win():
 	currentBox.get_node('ColorRect').modulate = Color(0, 1, 0, 1)
 	# TODO: Tela de win
 	print('ganhou oba')
+	$WinScreen.visible = true
 	
 
 func lose():
@@ -60,6 +61,20 @@ func lose():
 	currentBox.get_node('ColorRect').modulate = Color(1, 0, 0, 1)
 	# TODO: Tela de lose
 	print('perdeu af')
+	$LoseScreen.visible = true
+
+
+func _on_RestartButton_pressed():
+	get_tree().reload_current_scene()
+
+
+func _on_ContinueButton_pressed():
+	queue_free()
+	
+
+func _ready():
+	$LoseScreen.visible = false
+	$WinScreen.visible = false
 
 
 func _process(_delta):
@@ -74,7 +89,7 @@ func _process(_delta):
 			# se a box atual colide com a anterior
 			# aumenta o score
 			score += 1
-			if score == 10:
+			if score == 2:
 				# ganha ao atingir 10 caixas
 				win()
 				return
