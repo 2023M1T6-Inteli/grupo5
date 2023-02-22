@@ -86,7 +86,7 @@ func _process(_delta):
 			# se a box atual colide com a anterior
 			# aumenta o score
 			score += 1
-			if score == 2:
+			if score == 10:
 				# ganha ao atingir 10 caixas
 				win()
 				return
