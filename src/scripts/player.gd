@@ -10,6 +10,10 @@ var velocity = Vector2()
 
 
 func movePlayer():
+	if Global.minigameRunning:
+		velocity = Vector2(0, 0)
+		return
+
 	# interpreta os inputs de movimentação e aplica as velocidades	
 	velocity.x = 0
 	# recebe os inputs de movimentação

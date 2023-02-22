@@ -5,6 +5,7 @@ var palletSelected
 
 
 func _on_ContinueButton_pressed():
+	Global.minigameRunning = false
 	queue_free()
 
 

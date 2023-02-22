@@ -20,8 +20,7 @@ func duplicateBox():
 	lastBoxPosition = currentBox.position
 	
 	# carrega e instancia uma nova box na cena
-	currentBox = load('res://scenes/minigames/stack/Box.tscn')
-	currentBox = currentBox.instance()
+	currentBox = Global.stackBox.instance()
 
 	# configura a nova box com as configurações atuais 
 	updateBox()
@@ -60,10 +59,13 @@ func lose():
 
 
 func _on_RestartButton_pressed():
-	if get_tree().reload_current_scene() != OK:
-		print('An unexpected error occured when trying to reload stack scene')
+	var newScene = Global.stackMinigame.instance()
+	get_node("/root/Level1/HUD").add_child(newScene)
+	queue_free()
+
 
 func _on_ContinueButton_pressed():
+	Global.minigameRunning = false
 	queue_free()
 
 

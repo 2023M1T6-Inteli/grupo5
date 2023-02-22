@@ -3,8 +3,8 @@
 [ext_resource path="res://scripts/minigames/Position.gd" type="Script" id=1]
 [ext_resource path="res://assets/background/pallet.png" type="Texture" id=2]
 [ext_resource path="res://scripts/minigames/PalletsMinigame.gd" type="Script" id=3]
-[ext_resource path="res://scenes/minigames/pallets/FixedWood.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/minigames/pallets/PalletWood.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Minigames/Pallets/FixedWood.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Minigames/Pallets/PalletWood.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://assets/box.png" type="Texture" id=7]
 

@@ -41,7 +41,7 @@ func _ready():
 	var levelName = $"../..".name
 	# atualiza o nome na prancheta
 	$LevelName.bbcode_text = '[center]' + Locales.levels.get(levelName) + '[/center]'
-	
+
 	# atualiza todos os textos da prancheta de acordo com o nível
 	var nodeCounter = 0
 	for node in get_tree().get_nodes_in_group('LevelText'):
