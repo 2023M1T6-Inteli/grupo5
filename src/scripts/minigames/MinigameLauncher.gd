@@ -1,6 +1,6 @@
 extends Area2D
 
-export (String) var minigamePath
+export (String) var minigameName
 export (Texture) var spriteTexture
 export (Texture) var strokeTexture
 
@@ -25,7 +25,8 @@ func _input(event):
 		return
 
 	if event.is_action_released('interact') and canInteract:
-		var minigame = load(minigamePath)
+		var minigame = Global.minigames.get(minigameName)
+		Global.currentLevel = minigameName
 		minigame = minigame.instance()
 		$"../HUD".add_child(minigame)
 		Global.minigameRunning = true

@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/Minigames/Stack/Box.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/minigames/Stack.gd" type="Script" id=2]
 [ext_resource path="res://assets/box.png" type="Texture" id=3]
 [ext_resource path="res://assets/minigames/finishedPallet.png" type="Texture" id=4]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=6]
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0, 0, 0, 0.45098 )
@@ -44,6 +45,12 @@ Button/styles/pressed = SubResource( 15 )
 
 [sub_resource type="DynamicFont" id=10]
 size = 30
+font_data = ExtResource( 5 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 640, 27 )
+
+[sub_resource type="DynamicFont" id=16]
 font_data = ExtResource( 5 )
 
 [node name="Stack" type="Node2D"]
@@ -193,6 +200,42 @@ custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
 custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
 custom_fonts/font = SubResource( 10 )
 text = "Continuar"
+
+[node name="Floor" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2( 640, 692 )
+shape = SubResource( 17 )
+
+[node name="Clipboard" parent="." instance=ExtResource( 6 )]
+margin_left = 870.0
+margin_right = 1274.0
+
+[node name="LevelText2" type="RichTextLabel" parent="Clipboard" groups=["LevelText"]]
+margin_left = 64.0
+margin_top = 219.0
+margin_right = 347.0
+margin_bottom = 373.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 16 )
+bbcode_enabled = true
+bbcode_text = "[center]Empilhe caixas no pallet para otimizar o armazenamento. É importante se atentar à centralização delas para distribuir o peso eficientemente.[/center]"
+text = "Empilhe caixas no pallet para otimizar o armazenamento. É importante se atentar à centralização delas para distribuir o peso eficientemente."
+fit_content_height = true
+
+[node name="LevelText3" type="RichTextLabel" parent="Clipboard" groups=["LevelText"]]
+margin_left = 87.0
+margin_top = 378.0
+margin_right = 339.0
+margin_bottom = 466.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 16 )
+bbcode_enabled = true
+bbcode_text = "[center]Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 corretamente para prosseguir[/center]"
+text = "Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 corretamente para prosseguir"
+fit_content_height = true
 
 [connection signal="pressed" from="LoseScreen/Background2/RestartButton" to="." method="_on_RestartButton_pressed"]
 [connection signal="pressed" from="WinScreen/Background2/ContinueButton" to="." method="_on_ContinueButton_pressed"]

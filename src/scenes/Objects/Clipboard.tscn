@@ -1,24 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/Clipboard.gd" type="Script" id=2]
 [ext_resource path="res://assets/clipboard/clipboardBG.png" type="Texture" id=3]
-
-[sub_resource type="Animation" id=1]
-resource_name = "slideToScreen"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect_position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 0.5, 0.5 ),
-"update": 0,
-"values": [ Vector2( 650, 570 ), Vector2( 650, 130 ) ]
-}
 
 [sub_resource type="DynamicFont" id=2]
 size = 40
@@ -46,9 +30,6 @@ patch_margin_top = 143
 patch_margin_right = 88
 patch_margin_bottom = 101
 
-[node name="Animation" type="AnimationPlayer" parent="."]
-anims/slideToScreen = SubResource( 1 )
-
 [node name="LevelName" type="RichTextLabel" parent="."]
 margin_left = 48.0
 margin_top = 134.0
@@ -63,6 +44,8 @@ bbcode_enabled = true
 bbcode_text = "[center]LEVEL NAME[/center]"
 text = "LEVEL NAME"
 
+[node name="Tween" type="Tween" parent="."]
+
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
-[connection signal="animation_finished" from="Animation" to="." method="_on_Animation_animation_finished"]
+[connection signal="tween_completed" from="Tween" to="." method="_on_tween_completed"]

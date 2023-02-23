@@ -1,8 +1,8 @@
 {
     "buttons": {
         "play": "Jogar",
-        "quit": "Sair",
-        "selectLanguage": "Selecionar idioma"
+        "selectLanguage": "Selecionar idioma",
+        "quit": "Sair"
     },
     "characters": {
         "chemical": "Químico",
@@ -17,7 +17,15 @@
     },
     "clipboard": {
         "Level1": [
-            "Seja bem vindo ao souUni, converse com o operador químico e colete os EPIs"
+            "Seja bem vindo ao soUni, converse com o operador químico e colete os EPIs"
+        ],
+        "Pallets": [
+            "Siga as instruções abaixo pra montar o seu pallet",
+            "Use as madeiras de dentro da caixa para preencher os espaços restantes nas madeiras fixas, elas devem estar alinhadas e a uma distância predeterminada e seguindo o padrão de encaixe, como mostra a imagem acima"
+        ],
+        "Stack": [
+            "Empilhe caixas no pallet para otimizar o armazenamento. É importante se atentar à centralização delas para distribuir o peso eficientemente.",
+            "Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 corretamente para prosseguir"
         ]
     },
     "dialogs": [

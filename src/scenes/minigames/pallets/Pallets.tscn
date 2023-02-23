@@ -1,13 +1,15 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scripts/minigames/Position.gd" type="Script" id=1]
 [ext_resource path="res://assets/background/pallet.png" type="Texture" id=2]
 [ext_resource path="res://scripts/minigames/PalletsMinigame.gd" type="Script" id=3]
 [ext_resource path="res://scenes/Minigames/Pallets/FixedWood.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://assets/box.png" type="Texture" id=7]
 [ext_resource path="res://assets/minigames/woodBox/3.png" type="Texture" id=8]
 [ext_resource path="res://scripts/minigames/WoodBox.gd" type="Script" id=9]
+[ext_resource path="res://assets/minigames/examplePallet.png" type="Texture" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.45098 )
@@ -44,6 +46,9 @@ Button/styles/pressed = SubResource( 7 )
 
 [sub_resource type="DynamicFont" id=11]
 size = 30
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=12]
 font_data = ExtResource( 6 )
 
 [node name="Pallets" type="Node2D"]
@@ -148,5 +153,39 @@ custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
 custom_fonts/font = SubResource( 11 )
 text = "Continuar"
 
-[connection signal="pressed" from="WoodBox" to="WoodBox" method="_on_WoodBox_pressed"]
+[node name="Clipboard" parent="." instance=ExtResource( 5 )]
+
+[node name="LevelText" type="RichTextLabel" parent="Clipboard" groups=["LevelText"]]
+margin_left = 64.0
+margin_top = 206.0
+margin_right = 259.0
+margin_bottom = 294.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 12 )
+bbcode_enabled = true
+bbcode_text = "[center]Siga as instruções abaixo pra montar o seu pallet[/center]"
+text = "Siga as instruções abaixo pra montar o seu pallet"
+fit_content_height = true
+
+[node name="LevelText2" type="RichTextLabel" parent="Clipboard" groups=["LevelText"]]
+margin_left = 60.0
+margin_top = 292.0
+margin_right = 351.0
+margin_bottom = 490.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 12 )
+bbcode_enabled = true
+bbcode_text = "[center]Use as madeiras de dentro da caixa para preencher os espaços restantes nas madeiras fixas, elas devem estar alinhadas e a uma distância predeterminada e seguindo o padrão de encaixe, como mostra a imagem acima[/center]"
+text = "Use as madeiras de dentro da caixa para preencher os espaços restantes nas madeiras fixas, elas devem estar alinhadas e a uma distância predeterminada e seguindo o padrão de encaixe, como mostra a imagem acima"
+fit_content_height = true
+
+[node name="TextureRect" type="TextureRect" parent="Clipboard"]
+margin_left = 258.0
+margin_top = 194.0
+margin_right = 348.0
+margin_bottom = 285.0
+texture = ExtResource( 10 )
+expand = true
+
+[connection signal="button_down" from="WoodBox" to="WoodBox" method="_on_WoodBox_pressed"]
 [connection signal="pressed" from="WinScreen/Background2/ContinueButton" to="." method="_on_ContinueButton_pressed"]
