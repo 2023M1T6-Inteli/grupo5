@@ -1,4 +1,4 @@
-[gd_scene load_steps=148 format=2]
+[gd_scene load_steps=150 format=2]
 
 [ext_resource path="res://assets/industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
@@ -78,6 +78,8 @@
 [ext_resource path="res://scripts/Level1/Inventory.gd" type="Script" id=76]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=77]
 [ext_resource path="res://icon.png" type="Texture" id=78]
+[ext_resource path="res://assets/minigames/palletIcon.png" type="Texture" id=79]
+[ext_resource path="res://assets/minigames/palletStroke.png" type="Texture" id=80]
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -1752,12 +1754,13 @@ PPEName = "coat"
 position = Vector2( -300, 182 )
 
 [node name="PalletsLauncher" parent="." instance=ExtResource( 77 )]
-position = Vector2( 2019, 172 )
+position = Vector2( 2020, 188 )
 minigamePath = "res://scenes/Minigames/Pallets/Pallets.tscn"
-spriteTexture = ExtResource( 78 )
+spriteTexture = ExtResource( 79 )
+strokeTexture = ExtResource( 80 )
 
 [node name="StackLauncher" parent="." instance=ExtResource( 77 )]
-position = Vector2( 2197, 171 )
+position = Vector2( 2200, 188 )
 minigamePath = "res://scenes/Minigames/Stack/Stack.tscn"
 spriteTexture = ExtResource( 78 )
 

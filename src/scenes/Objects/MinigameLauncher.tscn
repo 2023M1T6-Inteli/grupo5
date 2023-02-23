@@ -24,8 +24,6 @@ texture = ExtResource( 2 )
 
 [node name="Stroke" type="Sprite" parent="."]
 visible = false
-scale = Vector2( 0.7, 0.7 )
-flip_h = true
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/Float = SubResource( 90 )

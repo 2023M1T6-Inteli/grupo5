@@ -20,11 +20,6 @@ func _on_minigame_body_exited(_body):
 	$"../HUD/Gamepad/interact".modulate = Color(1, 1, 1)
 
 
-func _ready():
-	$Sprite.texture = spriteTexture
-	$Stroke.texture = strokeTexture
-
-
 func _input(event):
 	if Global.minigameRunning:
 		return
@@ -34,3 +29,8 @@ func _input(event):
 		minigame = minigame.instance()
 		$"../HUD".add_child(minigame)
 		Global.minigameRunning = true
+
+
+func _ready():
+	$Sprite.texture = spriteTexture
+	$Stroke.texture = strokeTexture
