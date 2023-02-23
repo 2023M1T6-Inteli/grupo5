@@ -24,6 +24,7 @@ func closeDialog():
 	$"../HUD/Dialog".visible = false
 	get_parent().get_node("HUD/Gamepad").show()
 	currentDialog = 0
+	canInteract = false
 
 
 func nextDialog():
