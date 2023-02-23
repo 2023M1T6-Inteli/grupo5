@@ -47,7 +47,11 @@ func runTween(_object, _key):
 
 
 func _input(event):
-	if event.is_action_pressed('interact'):
+	if (
+		(event is InputEventMouseButton and event.pressed) or
+		(event is InputEventScreenTouch) or
+		(event.is_action_pressed('interact'))
+	):
 		# ao apertar uma tecla de interação, a box começa a cair
 		falling = true
 
