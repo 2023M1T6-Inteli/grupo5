@@ -4,9 +4,17 @@ extends Node2D
 var palletSelected
 
 
-func _on_ContinueButton_pressed():
+func closeMinigame():
 	Global.minigameRunning = false
 	queue_free()
+
+
+func _on_ContinueButton_pressed():
+	closeMinigame()
+	
+func _input(event):
+	if event.is_action_pressed('ui_cancel'):
+		closeMinigame()
 
 
 func _ready():

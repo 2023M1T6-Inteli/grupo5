@@ -48,7 +48,7 @@ func win():
 	# pinta a box atual de verde
 	currentBox.get_node('ColorRect').modulate = Color(0, 1, 0, 1)
 	$WinScreen.visible = true
-	
+
 
 func lose():
 	# desativa o jogo
@@ -58,15 +58,24 @@ func lose():
 	$LoseScreen.visible = true
 
 
+func closeMinigame():
+	Global.minigameRunning = false
+	queue_free()
+
+
 func _on_RestartButton_pressed():
-	var newScene = Global.stackMinigame.instance()
+	var newScene = Global.minigames.Stack.instance()
 	get_node("/root/Level1/HUD").add_child(newScene)
 	queue_free()
 
 
 func _on_ContinueButton_pressed():
-	Global.minigameRunning = false
-	queue_free()
+	closeMinigame()
+
+
+func _input(event):
+	if event.is_action_pressed('ui_cancel'):
+		closeMinigame()
 
 
 func _ready():
