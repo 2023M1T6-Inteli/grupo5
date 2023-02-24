@@ -25,6 +25,9 @@ func _input(event):
 		return
 
 	if event.is_action_released('interact') and canInteract:
+		if not $"../Player".canPlayMinigame():
+			return
+
 		var minigame = Global.minigames.get(minigameName)
 		Global.currentLevel = minigameName
 		minigame = minigame.instance()

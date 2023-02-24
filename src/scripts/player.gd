@@ -9,9 +9,13 @@ var PPEs = []
 var velocity = Vector2()
 
 
+func canPlayMinigame():
+	return (len(PPEs) >= 6)
+
+
 func movePlayer():
 	if Global.minigameRunning:
-		velocity = Vector2(0, 0)
+		velocity = Vector2.ZERO
 		return
 
 	# interpreta os inputs de movimentação e aplica as velocidades	
