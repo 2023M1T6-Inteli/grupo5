@@ -11,7 +11,7 @@
     "levels": {
         "Level1": "Nivel 1",
         "Stack": "Stack",
-        "Pallets": "Palets",
+        "Pallets": "Tarimas",
         "Level2": "Nivel 2",
         "Level3": "Nivel 3"
     },
@@ -20,12 +20,12 @@
             "Sea bienvenido a soUni, hable con el operador químico y recoja los EPIs"
         ],
         "Pallets": [
-            "Siga as instruções abaixo pra montar o seu pallet",
-            "Use as madeiras de dentro da caixa para preencher os espaços restantes nas madeiras fixas, elas devem estar alinhadas e a uma distância predeterminada e seguindo o padrão de encaixe, como mostra a imagem acima"
+            "Siga las instrucciones abajo para armar su tarima",
+            "Utilice la madera dentro de la caja para rellenar los espacios restantes en las maderas fijas, la tarima debe estar alineada y a una distancia predeterminada y siguiendo el patrón de ajuste, como se muestra en la imagen de arriba."
         ],
         "Stack": [
-            "Empilhe caixas no pallet para otimizar o armazenamento. É importante se atentar à centralização delas para distribuir o peso eficientemente.",
-            "Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 corretamente para prosseguir"
+            "Apile las cajas en la tarima para optimizar el almacenamiento. Es importante prestar atención a la centralización de los mismos para repartir el peso de manera eficiente.",
+            "Al apilar una caja, aparecerá una nueva, apila 10 correctamente para continuar"
         ]
     },
     "dialogs": [

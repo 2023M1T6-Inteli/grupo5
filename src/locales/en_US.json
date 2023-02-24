@@ -20,12 +20,12 @@
             "Welcome to soUni, talk to the chemical operator and collect the PPE's"
         ],
         "Pallets": [
-            "Siga as instruções abaixo pra montar o seu pallet",
-            "Use as madeiras de dentro da caixa para preencher os espaços restantes nas madeiras fixas, elas devem estar alinhadas e a uma distância predeterminada e seguindo o padrão de encaixe, como mostra a imagem acima"
+            "Follow the instructions below to assemble your pallet",
+            "Use the wood inside the box to fill in the remaining spaces in the fixed wood, they must be aligned and at a predetermined distance and following the fitting pattern, as shown in the image above"
         ],
         "Stack": [
-            "Empilhe caixas no pallet para otimizar o armazenamento. É importante se atentar à centralização delas para distribuir o peso eficientemente.",
-            "Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 corretamente para prosseguir"
+            "Stack boxes on the pallet to optimize storage. It is important to pay attention to the centralization of them to distribute the weight efficiently.",
+            "When stacking a box, a new one will appear, stack 10 correctly to proceed"
         ]
     },
     "dialogs": [
