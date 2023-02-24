@@ -101,6 +101,7 @@ texture = ExtResource( 1 )
 current = true
 
 [node name="Logo" type="TextureRect" parent="."]
+visible = false
 margin_left = -226.0
 margin_top = -264.0
 margin_right = 229.0
@@ -114,9 +115,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -242.0
-margin_top = -17.0
+margin_top = -112.0
 margin_right = 245.0
-margin_bottom = 22.0
+margin_bottom = -73.0
 focus_neighbour_top = NodePath("../QuitButton")
 focus_neighbour_bottom = NodePath("../LanguageButton")
 theme = SubResource( 8 )
@@ -131,9 +132,9 @@ text = "buttons/play"
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -244.0
-margin_top = 166.0
+margin_top = 71.0
 margin_right = 243.0
-margin_bottom = 205.0
+margin_bottom = 110.0
 focus_neighbour_top = NodePath("../LanguageButton")
 focus_neighbour_bottom = NodePath("../PlayButton")
 theme = SubResource( 18 )
@@ -146,9 +147,9 @@ text = "buttons/quit"
 
 [node name="LanguageButton" type="MenuButton" parent="."]
 margin_left = -243.0
-margin_top = 77.0
+margin_top = -18.0
 margin_right = 244.0
-margin_bottom = 116.0
+margin_bottom = 21.0
 focus_neighbour_top = NodePath("../PlayButton")
 focus_neighbour_bottom = NodePath("../QuitButton")
 theme = SubResource( 13 )
