@@ -5,8 +5,7 @@ export (String) var PPEName = 'boot'
 
 func _on_body_entered(body):
 	if body.name == 'Player':
-		# se o player entrar em contato com o EPI
-		# para a animação
+		# para a animação se o player entrar em contato com o EPI
 		$Animation.seek(0.5, true)
 		$Animation.stop()
 		# adiciona o EPI ao inventário

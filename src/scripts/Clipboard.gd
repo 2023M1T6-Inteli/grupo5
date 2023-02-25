@@ -5,6 +5,7 @@ var isOpened = false
 
 func slideToScreen():
 	animationPlaying = true
+	# configura a animação de aparecer na tela, apenas em Y
 	$Tween.interpolate_property(
 		self,
 		'rect_position:y',
@@ -14,11 +15,13 @@ func slideToScreen():
 		Tween.TRANS_SINE,
 		Tween.EASE_IN_OUT
 	)
+	# inicia a animação
 	$Tween.start()
 
 
 func slideOffScreen():
 	animationPlaying = true
+	# configura a animação de aparecer na tela, apenas em Y
 	$Tween.interpolate_property(
 		self,
 		'rect_position:y',
@@ -28,6 +31,7 @@ func slideOffScreen():
 		Tween.TRANS_SINE,
 		Tween.EASE_IN_OUT
 	)
+	# inicia a animação
 	$Tween.start()
 
 

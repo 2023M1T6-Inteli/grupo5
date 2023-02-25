@@ -38,6 +38,7 @@ func cropBox():
 
 
 func updateBox():
+	# atualiza escala e posição da box atual
 	currentBox.position.x -= deltaPosition/2
 	currentBox.scale.x = lastScale
 
@@ -64,6 +65,7 @@ func closeMinigame():
 
 
 func _on_RestartButton_pressed():
+	# recarrega a cena na tela
 	var newScene = Global.minigames.Stack.instance()
 	get_node("/root/Level1/HUD").add_child(newScene)
 	queue_free()
@@ -75,10 +77,12 @@ func _on_ContinueButton_pressed():
 
 func _input(event):
 	if event.is_action_pressed('ui_cancel'):
+		# tecla ESC fecha o minigame
 		closeMinigame()
 
 
 func _ready():
+	# desabilita a visualização da tela de vencedor e perdedor
 	$LoseScreen.visible = false
 	$WinScreen.visible = false
 
