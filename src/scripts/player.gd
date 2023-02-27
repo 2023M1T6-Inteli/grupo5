@@ -14,7 +14,7 @@ func canPlayMinigame():
 
 
 func movePlayer():
-	if Global.minigameRunning:
+	if Global.minigameRunning or $"../HUD/Dialog".visible:
 		velocity = Vector2.ZERO
 		return
 

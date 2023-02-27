@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/NPCs/chemicalStroke.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 50, 50 )
+extents = Vector2( 65, 50 )
 
 [node name="npc_quimico" type="Area2D"]
 script = ExtResource( 2 )
