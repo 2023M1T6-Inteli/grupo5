@@ -48,7 +48,8 @@ func nextDialog():
 	while $"../HUD/Dialog/DialogText".visible_characters < len($"../HUD/Dialog/DialogText".text):
 		# incrementa os caracteres visíveis: efeito de escrever
 		$"../HUD/Dialog/DialogText".visible_characters += 1
-
+		# emite o som da máquina de escrever enquanto aparece o diálogo
+		$dialog_sound.play() 
 		# espera um tempo para o próximo caracter
 		$Timer.start()
 		yield($Timer, 'timeout')
