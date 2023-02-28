@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/player/run_animaton/run7.png" type="Texture" id=2]
@@ -9,9 +9,7 @@
 [ext_resource path="res://assets/player/run_animaton/run4.png" type="Texture" id=7]
 [ext_resource path="res://assets/player/run_animaton/run3.png" type="Texture" id=8]
 [ext_resource path="res://assets/player/run_animaton/run1.png" type="Texture" id=9]
-[ext_resource path="res://assets/sounds/sfx/footstep_concrete.ogg" type="AudioStream" id=10]
 [ext_resource path="res://assets/sounds/sfx/jump_sound.ogg" type="AudioStream" id=11]
-[ext_resource path="res://assets/sounds/sfx/landing_sound.ogg" type="AudioStream" id=12]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 35, 52 )
@@ -30,18 +28,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [ ExtResource( 4 ) ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("run_sound:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ false ]
-}
 
 [sub_resource type="Animation" id=5]
 resource_name = "run"
@@ -58,18 +44,6 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 9 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 2 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("run_sound:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
 }
 
 [node name="player" type="KinematicBody2D" groups=["Player"]]
@@ -89,14 +63,7 @@ scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 4 )
 region_rect = Rect2( 24.0732, 9.39769, 853.919, 173.352 )
 
-[node name="run_sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 10 )
-volume_db = -11.361
-
 [node name="jump_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 11 )
-volume_db = -30.706
-
-[node name="fall_sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 12 )
-volume_db = -7.02
+volume_db = -25.0
+pitch_scale = 0.8
