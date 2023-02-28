@@ -5,7 +5,7 @@ export (int) var jumpSpeed = -1250
 export (int) var gravity = 3000
 
 var PPEs = []
-
+var midAir = false
 var velocity = Vector2()
 
 
@@ -25,9 +25,18 @@ func movePlayer():
 	var left = Input.is_action_pressed('move_left')
 	var jump = Input.is_action_just_pressed('jump')
 
+	# Verifica se o player está no ar para parar o som dos passos e permitir que haja o som de queda ao tocar no chão
+	if midAir:
+		$run_sound.stop()
+		if is_on_floor():
+			midAir = false
+			$fall_sound.play()
+	if !is_on_floor():
+		midAir = true
 	# aplica as velocidades de acordo com o movimento desejado
 	if jump and is_on_floor():
 		velocity.y = jumpSpeed
+		$jump_sound.play() 
 	elif right: 
 		velocity.x += runSpeed
 		$Animation.play('run')
@@ -38,6 +47,12 @@ func movePlayer():
 		$Sprite.flip_h = true
 	else:
 		$Animation.play("RESET")
+	
+			
+			
+
+			
+			
 
 
 func _physics_process(delta):

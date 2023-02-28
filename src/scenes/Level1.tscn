@@ -1765,9 +1765,10 @@ minigameName = "Stack"
 spriteTexture = ExtResource( 78 )
 
 [node name="Player" parent="." instance=ExtResource( 70 )]
-position = Vector2( -540, 185 )
+position = Vector2( -563, 126 )
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2( 1, 7 )
 current = true
 limit_left = -700
 limit_top = -320
