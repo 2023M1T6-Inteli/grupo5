@@ -1,6 +1,5 @@
 extends Node2D
 
-
 func loadMenuLanguage():
 	# configura os textos dos botões de acordo com o idiomas escolhida
 	$PlayButton.text = Locales.buttons.play
