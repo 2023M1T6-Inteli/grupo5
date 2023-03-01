@@ -20,7 +20,7 @@ func _input(event):
 
 
 func _ready():
-	# desailita a visibilidade da tela de vencedor
+	# desabilita a visibilidade da tela de vencedor
 	$WinScreen.visible = false
 
 
