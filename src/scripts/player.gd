@@ -5,7 +5,6 @@ export (int) var jumpSpeed = -1250
 export (int) var gravity = 3000
 
 var PPEs = []
-
 var velocity = Vector2()
 
 
@@ -28,6 +27,7 @@ func movePlayer():
 	# aplica as velocidades de acordo com o movimento desejado
 	if jump and is_on_floor():
 		velocity.y = jumpSpeed
+		$jump_sound.play() 
 	elif right: 
 		velocity.x += runSpeed
 		$Animation.play('run')
@@ -38,6 +38,12 @@ func movePlayer():
 		$Sprite.flip_h = true
 	else:
 		$Animation.play("RESET")
+	
+			
+			
+
+			
+			
 
 
 func _physics_process(delta):

@@ -23,16 +23,19 @@ func closeDialog():
 	$"../HUD/Clipboard".visible = true
 	$"../HUD/Dialog".visible = false
 	get_parent().get_node("HUD/Gamepad").show()
+	$dialog_sound.stop()
 	currentDialog = 0
 	canInteract = false
 
 
 func nextDialog():
+	$dialog_sound.play()
 	# passa para a próxima frase do diálogo
 	if currentDialog >= len(Locales.dialogs):
 		# se acabaram as frases, finaliza o diálogo
 		closeDialog()
 		return
+	
 
 	# altera o nome do personagem para o da fala atual
 	var characterName = Locales.characters.get(Locales.dialogs[currentDialog].character)
@@ -48,17 +51,18 @@ func nextDialog():
 	while $"../HUD/Dialog/DialogText".visible_characters < len($"../HUD/Dialog/DialogText".text):
 		# incrementa os caracteres visíveis: efeito de escrever
 		$"../HUD/Dialog/DialogText".visible_characters += 1
-
+		# emite o som da máquina de escrever enquanto aparece o diálogo
 		# espera um tempo para o próximo caracter
 		$Timer.start()
 		yield($Timer, 'timeout')
 
 	# ao finalizar, liga a flag de finalizado
 	phraseFinished = true
+	$dialog_sound.stop()
 
 	# atualiza o índice do diálogo atual
 	currentDialog += 1
-
+	
 
 func _on_npc_quimico_body_entered(_body):
 	# quando o player se aproximar, destaca o NPC e liga a interação

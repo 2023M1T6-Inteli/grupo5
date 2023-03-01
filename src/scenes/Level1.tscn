@@ -1,4 +1,4 @@
-[gd_scene load_steps=150 format=2]
+[gd_scene load_steps=151 format=2]
 
 [ext_resource path="res://assets/industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
@@ -80,6 +80,7 @@
 [ext_resource path="res://icon.png" type="Texture" id=78]
 [ext_resource path="res://assets/minigames/palletIcon.png" type="Texture" id=79]
 [ext_resource path="res://assets/minigames/palletStroke.png" type="Texture" id=80]
+[ext_resource path="res://assets/sounds/music/HeatleyBros-HeatleyBros-III-12-8-Bit-Move.ogg" type="AudioStream" id=81]
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -1765,9 +1766,10 @@ minigameName = "Stack"
 spriteTexture = ExtResource( 78 )
 
 [node name="Player" parent="." instance=ExtResource( 70 )]
-position = Vector2( -540, 185 )
+position = Vector2( -563, 126 )
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2( 1, 7 )
 current = true
 limit_left = -700
 limit_top = -320
@@ -1875,5 +1877,13 @@ custom_fonts/normal_font = SubResource( 88 )
 bbcode_enabled = true
 bbcode_text = "[center]------------------[/center]"
 text = "------------------"
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 4074, 825 )
+stream = ExtResource( 81 )
+volume_db = -22.0
+autoplay = true
+max_distance = 1e+09
+attenuation = 1e-05
 
 [connection signal="pressed" from="HUD/Dialog/Button" to="NPC" method="_on_Button_pressed"]

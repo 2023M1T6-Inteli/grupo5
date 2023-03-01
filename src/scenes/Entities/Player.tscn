@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/player/run_animaton/run7.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/player/run_animaton/run4.png" type="Texture" id=7]
 [ext_resource path="res://assets/player/run_animaton/run3.png" type="Texture" id=8]
 [ext_resource path="res://assets/player/run_animaton/run1.png" type="Texture" id=9]
+[ext_resource path="res://assets/sounds/sfx/jump_sound.ogg" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 35, 52 )
@@ -61,3 +62,8 @@ physics_interpolation_mode = 2
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 4 )
 region_rect = Rect2( 24.0732, 9.39769, 853.919, 173.352 )
+
+[node name="jump_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 11 )
+volume_db = -25.0
+pitch_scale = 0.8
