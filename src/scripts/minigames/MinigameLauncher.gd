@@ -29,7 +29,7 @@ func _input(event):
 
 	if event.is_action_released('interact') and canInteract:
 		# se o usuário está na área de interação e aperta uma tecla de interação
-		if not $"../Player".canPlayMinigame():
+		if not $"..".canPlayMinigame():
 			# se o player ainda não consegue rodar, retorna
 			return
 

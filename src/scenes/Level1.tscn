@@ -1,4 +1,4 @@
-[gd_scene load_steps=151 format=2]
+[gd_scene load_steps=152 format=2]
 
 [ext_resource path="res://assets/industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
@@ -81,6 +81,7 @@
 [ext_resource path="res://assets/minigames/palletIcon.png" type="Texture" id=79]
 [ext_resource path="res://assets/minigames/palletStroke.png" type="Texture" id=80]
 [ext_resource path="res://assets/sounds/music/HeatleyBros-HeatleyBros-III-12-8-Bit-Move.ogg" type="AudioStream" id=81]
+[ext_resource path="res://scripts/Level1/Level1.gd" type="Script" id=82]
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -1703,6 +1704,7 @@ font_data = ExtResource( 75 )
 font_data = ExtResource( 75 )
 
 [node name="Level1" type="Node2D"]
+script = ExtResource( 82 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_ignore_camera_zoom = true

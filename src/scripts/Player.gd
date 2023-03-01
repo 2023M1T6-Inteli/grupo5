@@ -8,10 +8,6 @@ var PPEs = []
 var velocity = Vector2()
 
 
-func canPlayMinigame():
-	return (len(PPEs) >= 6)
-
-
 func movePlayer():
 	if Global.minigameRunning or $"../HUD/Dialog".visible:
 		velocity = Vector2.ZERO
