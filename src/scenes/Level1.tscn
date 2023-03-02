@@ -1735,22 +1735,22 @@ PPEName = "helmet"
 [node name="PPE3" parent="." instance=ExtResource( 74 )]
 position = Vector2( 911, -190 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "belt"
+PPEName = "glove"
 
 [node name="PPE4" parent="." instance=ExtResource( 74 )]
 position = Vector2( 2552, -58 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "glove"
+PPEName = "coat"
 
 [node name="PPE5" parent="." instance=ExtResource( 74 )]
 position = Vector2( 1238, -142 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "headset"
+PPEName = "belt"
 
 [node name="PPE6" parent="." instance=ExtResource( 74 )]
 position = Vector2( 1475, -30 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "coat"
+PPEName = "headset"
 
 [node name="NPC" parent="." instance=ExtResource( 71 )]
 position = Vector2( -300, 182 )
@@ -1770,7 +1770,6 @@ spriteTexture = ExtResource( 78 )
 position = Vector2( -566, 171 )
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 1, 7 )
 current = true
 limit_left = -700
 limit_top = -320
@@ -1822,7 +1821,7 @@ PPEName = "glove"
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 108, 416 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "headset"
+PPEName = "coat"
 
 [node name="PPE5" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
 modulate = Color( 0, 0, 0, 1 )
@@ -1834,7 +1833,7 @@ PPEName = "belt"
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 302, 416 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "coat"
+PPEName = "headset"
 
 [node name="Dialog" type="TextureRect" parent="HUD"]
 visible = false
