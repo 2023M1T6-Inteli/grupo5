@@ -3,7 +3,7 @@
 [ext_resource path="res://scripts/Music.gd" type="Script" id=1]
 [ext_resource path="res://assets/sounds/music/8bit_lets_go.ogg" type="AudioStream" id=2]
 
-[node name="Music" type="AudioStreamPlayer2D"]
+[node name="Music" type="AudioStreamPlayer"]
 stream = ExtResource( 2 )
 volume_db = -80.0
 script = ExtResource( 1 )

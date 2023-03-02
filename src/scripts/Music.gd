@@ -1,8 +1,8 @@
-extends AudioStreamPlayer2D
+extends AudioStreamPlayer
 
 onready var tween = $Tween
 var minVolume = -80
-var volume = 0
+var volume = -15
 
 var currentMusic = 'Main'
 var fadingOut = false
@@ -18,7 +18,7 @@ func fadeIn():
 		'volume_db', 
 		minVolume, 
 		volume, 
-		1.5, 
+		3, 
 		Tween.TRANS_LINEAR, 
 		Tween.EASE_IN
 	)
@@ -31,7 +31,7 @@ func fadeOut():
 		'volume_db', 
 		volume, 
 		minVolume, 
-		2, 
+		1.2, 
 		Tween.TRANS_LINEAR, 
 		Tween.EASE_IN
 	)
