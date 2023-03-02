@@ -121,5 +121,5 @@ region_rect = Rect2( 24.0732, 9.39769, 853.919, 173.352 )
 
 [node name="jump_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 11 )
-volume_db = -25.0
+volume_db = -10.0
 pitch_scale = 0.8
