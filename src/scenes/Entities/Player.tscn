@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/player/run_animaton/run7.png" type="Texture" id=2]
@@ -9,12 +9,48 @@
 [ext_resource path="res://assets/player/run_animaton/run4.png" type="Texture" id=7]
 [ext_resource path="res://assets/player/run_animaton/run3.png" type="Texture" id=8]
 [ext_resource path="res://assets/player/run_animaton/run1.png" type="Texture" id=9]
+[ext_resource path="res://assets/player/run_animaton/bia/run1.png" type="Texture" id=10]
 [ext_resource path="res://assets/sounds/sfx/jump_sound.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/player/run_animaton/bia/run3.png" type="Texture" id=12]
+[ext_resource path="res://assets/player/run_animaton/bia/idle.png" type="Texture" id=13]
+[ext_resource path="res://assets/player/run_animaton/bia/run4.png" type="Texture" id=14]
+[ext_resource path="res://assets/player/run_animaton/bia/run5.png" type="Texture" id=15]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 35, 52 )
 
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 13 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "resetBeatriz"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 13 ) ]
+}
+
 [sub_resource type="Animation" id=2]
+resource_name = "resetGabriel"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -29,8 +65,25 @@ tracks/0/keys = {
 "values": [ ExtResource( 4 ) ]
 }
 
+[sub_resource type="Animation" id=7]
+resource_name = "runBeatriz"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 10 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ) ]
+}
+
 [sub_resource type="Animation" id=5]
-resource_name = "run"
+resource_name = "runGabriel"
 length = 0.6
 loop = true
 tracks/0/type = "value"
@@ -54,13 +107,16 @@ position = Vector2( -1, -1 )
 shape = SubResource( 6 )
 
 [node name="Animation" type="AnimationPlayer" parent="."]
-anims/RESET = SubResource( 2 )
-anims/run = SubResource( 5 )
+anims/RESET = SubResource( 8 )
+anims/resetBeatriz = SubResource( 9 )
+anims/resetGabriel = SubResource( 2 )
+anims/runBeatriz = SubResource( 7 )
+anims/runGabriel = SubResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
 physics_interpolation_mode = 2
 scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 4 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 24.0732, 9.39769, 853.919, 173.352 )
 
 [node name="jump_sound" type="AudioStreamPlayer2D" parent="."]

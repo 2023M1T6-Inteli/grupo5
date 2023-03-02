@@ -1,5 +1,7 @@
 extends Node
 
+var characterName = 'Gabriel'
+
 # load das cenas dos minigames
 var minigames = {
 	'Stack': load("res://scenes/Minigames/Stack/Stack.tscn"),

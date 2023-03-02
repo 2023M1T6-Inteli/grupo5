@@ -10,6 +10,7 @@ var velocity = Vector2()
 
 func movePlayer():
 	if Global.minigameRunning or $"../HUD/Dialog".visible:
+		$Animation.play("reset" + Global.characterName)
 		velocity = Vector2.ZERO
 		return
 
@@ -26,14 +27,14 @@ func movePlayer():
 		$jump_sound.play()
 	elif right: 
 		velocity.x += runSpeed
-		$Animation.play('run')
+		$Animation.play('run' + Global.characterName)
 		$Sprite.flip_h = false 
 	elif left:
 		velocity.x -= runSpeed
-		$Animation.play('run')
+		$Animation.play('run' + Global.characterName)
 		$Sprite.flip_h = true
 	else:
-		$Animation.play("RESET")
+		$Animation.play("reset" + Global.characterName)
 
 
 func _physics_process(delta):
