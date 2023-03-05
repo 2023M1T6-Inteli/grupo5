@@ -22,6 +22,9 @@ func _input(event):
 func _ready():
 	# desabilita a visibilidade da tela de vencedor
 	$WinScreen.visible = false
+	# carrega os textos da tela de vitória do minigame
+	$WinScreen/Background2/Lose.text = Locales.others.win
+	$WinScreen/Background2/ContinueButton.text = Locales.others.continue
 
 
 func _process(_delta):

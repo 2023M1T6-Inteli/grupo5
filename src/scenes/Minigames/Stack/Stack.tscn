@@ -130,7 +130,6 @@ margin_top = -44.0
 margin_bottom = 20.0
 grow_horizontal = 0
 custom_fonts/font = SubResource( 2 )
-text = "Você perdeu!"
 align = 1
 valign = 1
 
@@ -148,7 +147,6 @@ custom_colors/font_color = Color( 0.988235, 0.984314, 0.984314, 1 )
 custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
 custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
 custom_fonts/font = SubResource( 10 )
-text = "Reiniciar"
 
 [node name="WinScreen" type="Panel" parent="."]
 visible = false
@@ -181,7 +179,6 @@ margin_top = -44.0
 margin_bottom = 20.0
 grow_horizontal = 0
 custom_fonts/font = SubResource( 2 )
-text = "Você venceu!"
 align = 1
 valign = 1
 

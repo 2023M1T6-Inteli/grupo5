@@ -45,5 +45,11 @@
             "character": "player",
             "text": "Ok! I will be very careful!"
         }
-    ]
+    ],
+    "others": {
+        "win": "You win!",
+        "lose": "You lost!",
+        "continue": "Continue",
+        "restart": "Restart"
+    }
 }

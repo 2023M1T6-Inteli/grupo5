@@ -85,6 +85,11 @@ func _ready():
 	# desabilita a visualização da tela de vencedor e perdedor
 	$LoseScreen.visible = false
 	$WinScreen.visible = false
+	# carrega os textos da tela de vitória e derrota do mingame
+	$LoseScreen/Background2/Lose.text = Locales.others.lose
+	$LoseScreen/Background2/RestartButton.text = Locales.others.restart
+	$WinScreen/Background2/Lose.text = Locales.others.win
+	$WinScreen/Background2/ContinueButton.text = Locales.others.continue
 
 
 func _process(_delta):

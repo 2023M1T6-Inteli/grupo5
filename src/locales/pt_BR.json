@@ -45,5 +45,11 @@
             "character": "player",
             "text": "Pode deixar! Estou super confiante para o primeiro dia!"
         }
-    ]
+    ],
+    "others": {
+        "win": "Você venceu!",
+        "lose": "Você perdeu!",
+        "continue": "Continuar",
+        "restart": "Reiniciar"
+    }
 }
