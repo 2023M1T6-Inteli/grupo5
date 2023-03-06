@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vbbb.png-50e25df73e8b9f967f7430beab41dc8b.stex"
+path="res://.import/button_left.png-a6fc8a5c3d4db63494bec0b5627316f7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/minigames/vbbb.png"
-dest_files=[ "res://.import/vbbb.png-50e25df73e8b9f967f7430beab41dc8b.stex" ]
+source_file="res://assets/Tutorial/Keys/button_left.png"
+dest_files=[ "res://.import/button_left.png-a6fc8a5c3d4db63494bec0b5627316f7.stex" ]
 
 [params]
 
