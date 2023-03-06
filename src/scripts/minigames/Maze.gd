@@ -18,7 +18,7 @@ func _on_continueButton_pressed():
 	closeMinigame()
 
 func _on_Parking_body_entered(body):
-	if body.name == "Empilhadeira":
+	if body.name == 'Forklift':
 		$WinScreen.visible = true
 
 func _ready():

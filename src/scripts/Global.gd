@@ -4,10 +4,11 @@ var characterName = 'Gabriel'
 
 # load das cenas dos minigames
 var minigames = {
-	'Stack': load("res://scenes/Minigames/Stack/Stack.tscn"),
-	'Pallets': load("res://scenes/Minigames/Pallets/Pallets.tscn")
+	'Stack': load('res://scenes/Minigames/Stack/Stack.tscn'),
+	'Pallets': load('res://scenes/Minigames/Pallets/Pallets.tscn'),
+	'Maze': load('res://scenes/minigames/Maze/Maze.tscn')
 }
 
 var minigameRunning = false
-var stackBox = load("res://scenes/Minigames/Stack/Box.tscn")
+var stackBox = load('res://scenes/Minigames/Stack/Box.tscn')
 var currentLevel = 'Level1'

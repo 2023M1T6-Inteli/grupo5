@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var movespeed = 200
-onready var animationEmpilhadeira = $AnimatedSprite
+onready var animationForklift = $AnimatedSprite
 
 func _physics_process(_delta):
 	var velocity = Vector2()
@@ -9,16 +9,16 @@ func _physics_process(_delta):
 	# interpreta os inputs de movimentação, aplica as velocidades e seleciona a animação certa para cada direção
 	if Input.is_action_pressed("ui_left"):
 		velocity.x= -1
-		animationEmpilhadeira.play("left")
+		animationForklift.play("left")
 	if Input.is_action_pressed("ui_right"):
 		velocity.x= 1
-		animationEmpilhadeira.play("right")
+		animationForklift.play("right")
 	if Input.is_action_pressed("ui_down"):
 		velocity.y = 1
-		animationEmpilhadeira.play("down")
+		animationForklift.play("down")
 	if Input.is_action_pressed("ui_up"):
 		velocity.y = -1
-		animationEmpilhadeira.play("up")
+		animationForklift.play("up")
 	velocity = move_and_slide(velocity*movespeed)
 	
 	

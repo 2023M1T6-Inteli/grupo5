@@ -15,12 +15,12 @@ visible = false
 position = Vector2( 553, 409 )
 shape = SubResource( 1 )
 
-[node name="Tracejados" type="Sprite" parent="."]
+[node name="Dashed" type="Sprite" parent="."]
 position = Vector2( 555, 407 )
 scale = Vector2( 0.265849, 0.241309 )
 texture = ExtResource( 1 )
 
-[node name="TracejadoBranco" type="Sprite" parent="."]
+[node name="DashedWhithe" type="Sprite" parent="."]
 visible = false
 position = Vector2( 555, 407 )
 scale = Vector2( 0.265849, 0.241309 )

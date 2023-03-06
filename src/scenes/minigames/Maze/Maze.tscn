@@ -1,14 +1,14 @@
 [gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://assets/box.png" type="Texture" id=1]
-[ext_resource path="res://scenes/minigames/Labirinto/Empilhadeira.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://assets/minigames/contêiner pequeno.png" type="Texture" id=4]
-[ext_resource path="res://assets/minigames/contêiner.2.png" type="Texture" id=5]
-[ext_resource path="res://scripts/minigames/labirinto.gd" type="Script" id=6]
-[ext_resource path="res://assets/minigames/green Unipar.png" type="Texture" id=7]
-[ext_resource path="res://scenes/minigames/Labirinto/Parking.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/minigames/Maze/Fork_lift.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/minigames/Maze/Parking.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/minigames/Maze.gd" type="Script" id=5]
+[ext_resource path="res://assets/minigames/green Unipar.png" type="Texture" id=6]
+[ext_resource path="res://assets/box.png" type="Texture" id=7]
+[ext_resource path="res://assets/minigames/contêiner pequeno.png" type="Texture" id=8]
+[ext_resource path="res://assets/minigames/contêiner.2.png" type="Texture" id=9]
 
 [sub_resource type="CanvasItemMaterial" id=4]
 
@@ -26,7 +26,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
 [sub_resource type="TileSet" id=8]
 0/name = "box.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 96, 32, 64, 64 )
@@ -47,7 +47,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 0/z_index = 0
 3/name = "contêiner.2.png 3"
-3/texture = ExtResource( 5 )
+3/texture = ExtResource( 9 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 320, 32, 64, 64 )
@@ -68,7 +68,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 3/z_index = 0
 4/name = "contêiner (4).png 4"
-4/texture = ExtResource( 4 )
+4/texture = ExtResource( 8 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 64, 64 )
@@ -89,7 +89,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 4/z_index = 0
 6/name = "green Unipar.png 6"
-6/texture = ExtResource( 7 )
+6/texture = ExtResource( 6 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 32, 32, 64, 64 )
@@ -112,7 +112,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 20
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StreamTexture" id=15]
 flags = 4
@@ -120,13 +120,13 @@ load_path = "res://.import/box.png-52cc4e41fddadef836f9ad4dbe7936fa.stex"
 
 [sub_resource type="DynamicFont" id=16]
 size = 50
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="Theme" id=17]
 
 [sub_resource type="DynamicFont" id=18]
 size = 30
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=19]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -142,14 +142,14 @@ bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
 [sub_resource type="DynamicFont" id=24]
 size = 20
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StreamTexture" id=25]
 flags = 4
 load_path = "res://assets/minigames/empilhadeira_direita.png-9f0dfc3e1b13831a8a9482ed0550c90e.stex"
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 
 [node name="TileMap" type="TileMap" parent="."]
 material = SubResource( 4 )
@@ -168,6 +168,12 @@ custom_fonts/font = SubResource( 3 )
 text = "Estacione aqui"
 align = 1
 valign = 1
+
+[node name="Parking" parent="." instance=ExtResource( 4 )]
+position = Vector2( 613, -316 )
+
+[node name="Forklift" parent="." instance=ExtResource( 2 )]
+position = Vector2( 146, 448 )
 
 [node name="WinScreen" type="Panel" parent="."]
 visible = false
@@ -220,10 +226,7 @@ custom_styles/focus = SubResource( 21 )
 custom_styles/normal = SubResource( 22 )
 text = "Continuar"
 
-[node name="Empilhadeira" parent="." instance=ExtResource( 2 )]
-position = Vector2( 146, 448 )
-
-[node name="Clipboard" parent="." instance=ExtResource( 9 )]
+[node name="Clipboard" parent="." instance=ExtResource( 3 )]
 margin_left = 878.0
 margin_top = 603.0
 margin_right = 1282.0
@@ -248,8 +251,5 @@ margin_bottom = 504.0
 texture = SubResource( 25 )
 expand = true
 
-[node name="Parking" parent="." instance=ExtResource( 8 )]
-position = Vector2( 613, -316 )
-
-[connection signal="pressed" from="WinScreen/continueButton" to="." method="_on_continueButton_pressed"]
 [connection signal="body_entered" from="Parking" to="." method="_on_Parking_body_entered"]
+[connection signal="pressed" from="WinScreen/continueButton" to="." method="_on_continueButton_pressed"]
