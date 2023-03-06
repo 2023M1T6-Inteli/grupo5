@@ -77,7 +77,7 @@
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=75]
 [ext_resource path="res://scripts/Level1/Inventory.gd" type="Script" id=76]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=77]
-[ext_resource path="res://icon.png" type="Texture" id=78]
+[ext_resource path="res://assets/minigames/SacariasIcon.png" type="Texture" id=78]
 [ext_resource path="res://assets/minigames/palletIcon.png" type="Texture" id=79]
 [ext_resource path="res://assets/minigames/palletStroke.png" type="Texture" id=80]
 [ext_resource path="res://scripts/Level1/Level1.gd" type="Script" id=82]
