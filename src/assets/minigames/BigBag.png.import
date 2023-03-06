@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SacariasIcon.png-9141d28edf221676919296318ef3115f.stex"
+path="res://.import/BigBag.png-2eec6e286998fd71084479bea6d004e8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/minigames/SacariasIcon.png"
-dest_files=[ "res://.import/SacariasIcon.png-9141d28edf221676919296318ef3115f.stex" ]
+source_file="res://assets/minigames/BigBag.png"
+dest_files=[ "res://.import/BigBag.png-2eec6e286998fd71084479bea6d004e8.stex" ]
 
 [params]
 

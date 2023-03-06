@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sacaria.png-1b7ea99c6a4c10a3a4d2cedeedeba925.stex"
+path="res://.import/InitialBackground.png-8eacb38445a374906785c01bad2fe7e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/minigames/sacaria.png"
-dest_files=[ "res://.import/sacaria.png-1b7ea99c6a4c10a3a4d2cedeedeba925.stex" ]
+source_file="res://assets/background/InitialBackground.png"
+dest_files=[ "res://.import/InitialBackground.png-8eacb38445a374906785c01bad2fe7e6.stex" ]
 
 [params]
 
