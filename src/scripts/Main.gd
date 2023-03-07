@@ -16,10 +16,9 @@ func changeLanguage(id):
 
 
 func _on_PlayButton_pressed():
-	# ao apertar start, abre o nível 1
-	Global.currentLevel = 'Level1'
-	if get_tree().change_scene("res://assets/Tutorial/Interactions/Node2D.tscn") != OK:
-		print ('An unexpected error occured when trying to switch to level 1 scene')
+	# ao apertar start, abre a escolha de personagem
+	if get_tree().change_scene('res://scenes/Tutorial/Character.tscn') != OK:
+		print ('An unexpected error occured when trying to switch to next scene')
 
 
 func _on_QuitButton_pressed():

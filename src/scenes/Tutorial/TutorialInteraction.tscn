@@ -195,9 +195,13 @@ texture = ExtResource( 4 )
 position = Vector2( 632, 360 )
 texture = ExtResource( 3 )
 
-[node name="Back" type="Sprite" parent="."]
-position = Vector2( 96, 640 )
-texture = ExtResource( 8 )
+[node name="Back" type="Button" parent="."]
+margin_left = 64.0
+margin_top = 605.0
+margin_right = 130.0
+margin_bottom = 674.0
+icon = ExtResource( 8 )
+flat = true
 
 [node name="Text1" type="Label" parent="."]
 margin_left = 128.0
@@ -223,9 +227,13 @@ diversas coisas que poderá interagir.
       aparece, destacando e indicando a
                      possibilidade de interação."
 
-[node name="Next" type="Sprite" parent="."]
-position = Vector2( 1176, 640 )
-texture = ExtResource( 6 )
+[node name="Next" type="Button" parent="."]
+margin_left = 1144.0
+margin_top = 621.0
+margin_right = 1186.0
+margin_bottom = 660.0
+icon = ExtResource( 6 )
+flat = true
 
 [node name="Interactions" type="Label" parent="."]
 margin_left = 368.0
@@ -259,3 +267,6 @@ region_rect = Rect2( 0, 0, 974.358, 704.481 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2"]
 anims/RESET = SubResource( 6 )
 anims/animation-box = SubResource( 7 )
+
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]

@@ -1,12 +1,15 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/Tutorial/Keys/Box.png" type="Texture" id=1]
 [ext_resource path="res://assets/Tutorial/Keys/Vector.png" type="Texture" id=2]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://assets/Tutorial/Keys/key_w 1.png" type="Texture" id=4]
 [ext_resource path="res://assets/Tutorial/Keys/key_e.png" type="Texture" id=5]
+[ext_resource path="res://assets/character/Background.png" type="Texture" id=6]
 [ext_resource path="res://assets/Tutorial/Keys/button_right.png" type="Texture" id=7]
 [ext_resource path="res://assets/Tutorial/Keys/key_d.png" type="Texture" id=8]
+[ext_resource path="res://scripts/Tutorial/Tutorial.gd" type="Script" id=9]
+[ext_resource path="res://assets/Tutorial/Interactions/Next.png" type="Texture" id=10]
 [ext_resource path="res://assets/Tutorial/Keys/key_space 1.png" type="Texture" id=11]
 [ext_resource path="res://assets/Tutorial/Keys/button_up.png" type="Texture" id=12]
 [ext_resource path="res://assets/Tutorial/Keys/key_a.png" type="Texture" id=14]
@@ -33,6 +36,11 @@ size = 20
 font_data = ExtResource( 3 )
 
 [node name="Tutorial" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 638, 361 )
+texture = ExtResource( 6 )
 
 [node name="Box" type="Sprite" parent="."]
 position = Vector2( 654, 365 )
@@ -119,3 +127,13 @@ custom_fonts/font = SubResource( 5 )
 text = "       Use o Mouse para
  interagir com a prancheta 
       e com os minigames"
+
+[node name="Next" type="Button" parent="."]
+margin_left = 1064.0
+margin_top = 618.0
+margin_right = 1106.0
+margin_bottom = 657.0
+icon = ExtResource( 10 )
+flat = true
+
+[connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]

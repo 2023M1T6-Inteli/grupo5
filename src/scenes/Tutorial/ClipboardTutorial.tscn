@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/clipboardTutorial/A prancheta está sempre com você.  Ela serve como um guia detalhado de todas as suas tarefas.png" type="Texture" id=1]
 [ext_resource path="res://assets/clipboardTutorial/Box (1).png" type="Texture" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://assets/clipboardTutorial/gif_spritesheet.png" type="Texture" id=8]
 [ext_resource path="res://assets/clipboardTutorial/Fico sempre no canto da sua tela, para me consultar basta me chamar passando o mouse por cima de mim!.png" type="Texture" id=9]
 [ext_resource path="res://scripts/Tutorial/ClipboardTutorial.gd" type="Script" id=10]
+[ext_resource path="res://assets/Tutorial/Interactions/Next.png" type="Texture" id=11]
+[ext_resource path="res://assets/Tutorial/Interactions/Back.png" type="Texture" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -124,3 +126,22 @@ vframes = 5
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 anims/gif = SubResource( 3 )
+
+[node name="Next" type="Button" parent="."]
+margin_left = 1126.0
+margin_top = 606.0
+margin_right = 1196.0
+margin_bottom = 668.0
+icon = ExtResource( 11 )
+flat = true
+
+[node name="Back" type="Button" parent="."]
+margin_left = 97.0
+margin_top = 606.0
+margin_right = 163.0
+margin_bottom = 675.0
+icon = ExtResource( 12 )
+flat = true
+
+[connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
