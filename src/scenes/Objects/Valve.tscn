@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scenes/Objects/Valve.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Valve.gd" type="Script" id=1]
 [ext_resource path="res://assets/valves/valve.png" type="Texture" id=2]
 [ext_resource path="res://assets/valves/stroke_valve.png" type="Texture" id=3]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 269, 201.5 )
