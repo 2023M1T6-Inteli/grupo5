@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gabriel.png-7cc172921890c23312ca8051dcee1096.stex"
+path="res://.import/GifBox.png-0f8db9dc46ca8ce222c6bfda1ce86034.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character/Gabriel.png"
-dest_files=[ "res://.import/Gabriel.png-7cc172921890c23312ca8051dcee1096.stex" ]
+source_file="res://assets/clipboardTutorial/GifBox.png"
+dest_files=[ "res://.import/GifBox.png-0f8db9dc46ca8ce222c6bfda1ce86034.stex" ]
 
 [params]
 

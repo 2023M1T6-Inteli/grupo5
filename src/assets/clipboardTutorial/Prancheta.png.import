@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gabriel.png-7cc172921890c23312ca8051dcee1096.stex"
+path="res://.import/Prancheta.png-8fb6cb7af0be5faf081b721f1ce5e353.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character/Gabriel.png"
-dest_files=[ "res://.import/Gabriel.png-7cc172921890c23312ca8051dcee1096.stex" ]
+source_file="res://assets/clipboardTutorial/Prancheta.png"
+dest_files=[ "res://.import/Prancheta.png-8fb6cb7af0be5faf081b721f1ce5e353.stex" ]
 
 [params]
 

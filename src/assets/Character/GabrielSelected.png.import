@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GabrielSelected.png-dcc97b92dfa228af6d17d02a0285243a.stex"
+path="res://.import/GabrielSelected.png-168576b321a19be91b93db8aa08d0e82.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character/GabrielSelected.png"
-dest_files=[ "res://.import/GabrielSelected.png-dcc97b92dfa228af6d17d02a0285243a.stex" ]
+source_file="res://assets/character/GabrielSelected.png"
+dest_files=[ "res://.import/GabrielSelected.png-168576b321a19be91b93db8aa08d0e82.stex" ]
 
 [params]
 

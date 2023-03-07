@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gabriel.png-7cc172921890c23312ca8051dcee1096.stex"
+path="res://.import/Clipboard.png-ed4ebfa04bd6044b6c7d588bdc7defb3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character/Gabriel.png"
-dest_files=[ "res://.import/Gabriel.png-7cc172921890c23312ca8051dcee1096.stex" ]
+source_file="res://assets/clipboardTutorial/Clipboard.png"
+dest_files=[ "res://.import/Clipboard.png-ed4ebfa04bd6044b6c7d588bdc7defb3.stex" ]
 
 [params]
 

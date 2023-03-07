@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/Tutorial/Character.gd" type="Script" id=2]
-[ext_resource path="res://assets/Character/Personagens.png" type="Texture" id=3]
 [ext_resource path="res://assets/Character/Background.png" type="Texture" id=4]
 [ext_resource path="res://assets/Character/Bia.png" type="Texture" id=5]
 [ext_resource path="res://assets/Character/Gabriel.png" type="Texture" id=6]
@@ -55,12 +54,6 @@ margin_right = 913.0
 margin_bottom = 142.0
 custom_fonts/font = SubResource( 1 )
 text = "Personagens"
-
-[node name="Fundo" type="TextureRect" parent="."]
-visible = false
-margin_right = 1280.0
-margin_bottom = 721.0
-texture = ExtResource( 3 )
 
 [connection signal="mouse_entered" from="Bia" to="." method="_on_Bia_mouse_entered"]
 [connection signal="mouse_exited" from="Bia" to="." method="_on_Bia_mouse_exited"]
