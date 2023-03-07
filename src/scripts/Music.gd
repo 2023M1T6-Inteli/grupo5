@@ -18,7 +18,7 @@ func fadeIn():
 		'volume_db', 
 		minVolume, 
 		volume, 
-		3, 
+		1.3, 
 		Tween.TRANS_LINEAR, 
 		Tween.EASE_IN
 	)
@@ -31,7 +31,7 @@ func fadeOut():
 		'volume_db', 
 		volume, 
 		minVolume, 
-		1.2, 
+		0.5, 
 		Tween.TRANS_LINEAR, 
 		Tween.EASE_IN
 	)
