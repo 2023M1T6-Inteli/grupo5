@@ -7,6 +7,7 @@ var woodSelected
 func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena
 	Global.minigameRunning = false
+	get_parent().get_node('Clipboard').visible = true
 	queue_free()
 
 
@@ -25,6 +26,7 @@ func _ready():
 	# carrega os textos da tela de vitória do minigame
 	$WinScreen/Background2/Lose.text = Locales.others.win
 	$WinScreen/Background2/ContinueButton.text = Locales.others.continue
+	get_parent().get_node('Clipboard').visible = false
 
 
 func _process(_delta):

@@ -61,6 +61,7 @@ func lose():
 
 func closeMinigame():
 	Global.minigameRunning = false
+	get_parent().get_node('Clipboard').visible = true
 	queue_free()
 
 
@@ -90,6 +91,7 @@ func _ready():
 	$LoseScreen/Background2/RestartButton.text = Locales.others.restart
 	$WinScreen/Background2/Lose.text = Locales.others.win
 	$WinScreen/Background2/ContinueButton.text = Locales.others.continue
+	get_parent().get_node('Clipboard').visible = false
 
 
 func _process(_delta):
