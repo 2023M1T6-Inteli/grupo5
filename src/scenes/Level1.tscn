@@ -1791,6 +1791,7 @@ margin_left = 57.0
 margin_top = 192.0
 margin_right = 352.0
 margin_bottom = 262.0
+mouse_filter = 2
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 87 )
 bbcode_enabled = true
