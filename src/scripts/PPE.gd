@@ -2,6 +2,8 @@ extends Area2D
 
 export (String) var PPEName = 'boot'
 
+var collecting = false
+
 
 func _on_body_entered(body):
 	if body.name == 'Player':
@@ -10,8 +12,11 @@ func _on_body_entered(body):
 		$Animation.stop()
 		# adiciona o EPI ao inventário
 		body.PPEs.append(PPEName)
-		# destrói o EPI
-		queue_free()
+		# chama a animação de coleta
+		if !collecting:
+			# a animação dá queue_free() no PPE ao finalizar
+			$Animation.play('collect')
+			collecting = true
 
 
 func _ready():
@@ -19,3 +24,5 @@ func _ready():
 	$Animation.play('Float')
 	# carrega a imagem de acordo com o nome do EPI
 	$Sprite.texture = load('res://assets/PPE/' + PPEName + '.png')
+
+
