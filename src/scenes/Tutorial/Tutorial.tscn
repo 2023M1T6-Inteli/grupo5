@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/Tutorial/Keys/Box.png" type="Texture" id=1]
 [ext_resource path="res://assets/Tutorial/Keys/Vector.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://assets/Tutorial/Interactions/Next.png" type="Texture" id=10]
 [ext_resource path="res://assets/Tutorial/Keys/key_space 1.png" type="Texture" id=11]
 [ext_resource path="res://assets/Tutorial/Keys/button_up.png" type="Texture" id=12]
+[ext_resource path="res://assets/Tutorial/Interactions/Back.png" type="Texture" id=13]
 [ext_resource path="res://assets/Tutorial/Keys/key_a.png" type="Texture" id=14]
 [ext_resource path="res://assets/Tutorial/Keys/button_left.png" type="Texture" id=15]
 
@@ -136,4 +137,13 @@ margin_bottom = 657.0
 icon = ExtResource( 10 )
 flat = true
 
+[node name="Back" type="Button" parent="."]
+margin_left = 192.0
+margin_top = 610.0
+margin_right = 258.0
+margin_bottom = 679.0
+icon = ExtResource( 13 )
+flat = true
+
 [connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

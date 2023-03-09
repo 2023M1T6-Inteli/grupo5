@@ -43,3 +43,13 @@ func _physics_process(delta):
 	# calcula a velocidade em y de acordo com a gravidade
 	velocity.y += gravity * delta
 	velocity = move_and_slide(velocity, Vector2(0, -1))
+	
+	for platforms in get_slide_count():
+		var collision = get_slide_collision(platforms)
+		if not collision.collider.has_method('fall'):
+			return
+
+		if collision.collider.animationPlaying:
+			return
+
+		collision.collider.fall()

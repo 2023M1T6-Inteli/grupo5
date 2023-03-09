@@ -16,6 +16,7 @@ func _on_body_entered(body):
 		if !collecting:
 			# a animação dá queue_free() no PPE ao finalizar
 			$Animation.play('collect')
+			$CollectSound.play()
 			collecting = true
 
 
