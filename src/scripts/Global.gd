@@ -6,7 +6,7 @@ var characterName = 'Gabriel'
 var minigames = {
 	'Stack': load('res://scenes/Minigames/Stack/Stack.tscn'),
 	'Pallets': load('res://scenes/Minigames/Pallets/Pallets.tscn'),
-	'Maze': load('res://scenes/minigames/Maze/Maze.tscn')
+	'Maze': load('res://scenes/Minigames/Maze/Maze.tscn')
 }
 
 var minigameRunning = false

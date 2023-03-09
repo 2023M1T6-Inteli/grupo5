@@ -20,10 +20,11 @@ script = ExtResource( 1 )
 shape = SubResource( 89 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1, -2 )
+scale = Vector2( 1.18854, 1.06376 )
 texture = ExtResource( 2 )
 
 [node name="Stroke" type="Sprite" parent="."]
-visible = false
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/Float = SubResource( 90 )

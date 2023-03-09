@@ -4,6 +4,9 @@ var movespeed = 200
 onready var animationForklift = $AnimatedSprite
 
 func _physics_process(_delta):
+	if $"../WinScreen".visible:
+		return
+
 	var velocity = Vector2()
 	
 	# interpreta os inputs de movimentação, aplica as velocidades e seleciona a animação certa para cada direção
