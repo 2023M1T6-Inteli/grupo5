@@ -1775,13 +1775,16 @@ position = Vector2( 3411, 174 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="FallingPlatform" parent="." instance=ExtResource( 84 )]
-position = Vector2( 2276, 26 )
+position = Vector2( 2296, 26 )
+
+[node name="FallingPlatform4" parent="." instance=ExtResource( 84 )]
+position = Vector2( 2044, 26 )
 
 [node name="FallingPlatform2" parent="." instance=ExtResource( 84 )]
-position = Vector2( 2525, 26 )
+position = Vector2( 2545, 26 )
 
 [node name="FallingPlatform3" parent="." instance=ExtResource( 84 )]
-position = Vector2( 2777, 26 )
+position = Vector2( 2797, 26 )
 
 [node name="Player" parent="." instance=ExtResource( 70 )]
 position = Vector2( -566, 171 )
