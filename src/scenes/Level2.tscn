@@ -1,4 +1,4 @@
-[gd_scene load_steps=163 format=2]
+[gd_scene load_steps=157 format=2]
 
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Entities/NPC.tscn" type="PackedScene" id=2]
@@ -79,12 +79,6 @@
 [ext_resource path="res://assets/container/container_1.png" type="Texture" id=77]
 [ext_resource path="res://assets/container/container_2.png" type="Texture" id=78]
 [ext_resource path="res://scenes/Objects/MovingPlatform.tscn" type="PackedScene" id=79]
-[ext_resource path="res://scenes/Objects/MovingPlatform2.gd" type="Script" id=80]
-[ext_resource path="res://scenes/Objects/MovingPlatform3.gd" type="Script" id=81]
-[ext_resource path="res://scenes/Objects/MovingPlatform4.gd" type="Script" id=82]
-[ext_resource path="res://scenes/Objects/MovingPlatform5.gd" type="Script" id=83]
-[ext_resource path="res://scenes/Objects/MovingPlatform6.gd" type="Script" id=84]
-[ext_resource path="res://scenes/Objects/MovingPlatform7.gd" type="Script" id=85]
 [ext_resource path="res://assets/vent/ventilador.png" type="Texture" id=86]
 [ext_resource path="res://scenes/Objects/Rode.tscn" type="PackedScene" id=87]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=88]
@@ -1554,11 +1548,11 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 66/shape_offset = Vector2( 0, 0 )
 66/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 66/shape = SubResource( 151 )
-66/shape_one_way = false
+66/shape_one_way = true
 66/shape_one_way_margin = 1.0
 66/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 151 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -1575,11 +1569,11 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 67/shape_offset = Vector2( 0, 0 )
 67/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 67/shape = SubResource( 152 )
-67/shape_one_way = false
+67/shape_one_way = true
 67/shape_one_way_margin = 1.0
 67/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 152 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -1596,11 +1590,11 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 68/shape_offset = Vector2( 0, 0 )
 68/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 68/shape = SubResource( 153 )
-68/shape_one_way = false
+68/shape_one_way = true
 68/shape_one_way_margin = 1.0
 68/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 153 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -1750,42 +1744,38 @@ position = Vector2( -143, -268 )
 
 [node name="MovingPlatform2" parent="." instance=ExtResource( 79 )]
 position = Vector2( 2091, -102 )
-script = ExtResource( 80 )
 distance = 400
 
 [node name="MovingPlatform3" parent="." instance=ExtResource( 79 )]
 position = Vector2( 2815, -96 )
-script = ExtResource( 81 )
 horizontal = false
 distance = 200
+waitDuration = 2.5
 
 [node name="MovingPlatform4" parent="." instance=ExtResource( 79 )]
 position = Vector2( 2265, -419 )
-script = ExtResource( 82 )
 speed = 15
 distance = 400
 
 [node name="MovingPlatform5" parent="." instance=ExtResource( 79 )]
 position = Vector2( 3411, -162 )
-script = ExtResource( 83 )
 speed = 15
 distance = 200
 
 [node name="MovingPlatform6" parent="." instance=ExtResource( 79 )]
 position = Vector2( 3787, 240 )
-script = ExtResource( 84 )
 horizontal = false
 distance = 250
+waitDuration = 2.5
 
 [node name="MovingPlatform7" parent="." instance=ExtResource( 79 )]
 position = Vector2( 3810, -287 )
-script = ExtResource( 85 )
 horizontal = false
 distance = 200
+waitDuration = 2.8
 
 [node name="MovingPlatform8" parent="." instance=ExtResource( 79 )]
 position = Vector2( 7377, -375 )
-script = ExtResource( 83 )
 speed = 15
 distance = 200
 
@@ -1804,18 +1794,16 @@ position = Vector2( 6904, 24 )
 shape = SubResource( 158 )
 
 [node name="Container_1" type="StaticBody2D" parent="."]
-position = Vector2( 4, 0 )
+position = Vector2( 389, 191 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Container_1"]
-position = Vector2( 385, 191 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 77 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Container_1"]
-position = Vector2( 385.5, 196 )
 shape = SubResource( 89 )
 
 [node name="Container_2" type="StaticBody2D" parent="."]
