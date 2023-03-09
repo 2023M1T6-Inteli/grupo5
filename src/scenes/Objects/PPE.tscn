@@ -103,4 +103,3 @@ stream = ExtResource( 3 )
 pitch_scale = 1.85
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="animation_finished" from="Animation" to="." method="_on_Animation_animation_finished"]
