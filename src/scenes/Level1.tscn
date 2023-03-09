@@ -1,4 +1,4 @@
-[gd_scene load_steps=152 format=2]
+[gd_scene load_steps=153 format=2]
 
 [ext_resource path="res://assets/industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
@@ -82,6 +82,7 @@
 [ext_resource path="res://assets/minigames/palletStroke.png" type="Texture" id=80]
 [ext_resource path="res://scenes/Objects/Elevator.tscn" type="PackedScene" id=81]
 [ext_resource path="res://scripts/Level1/Level1.gd" type="Script" id=82]
+[ext_resource path="res://assets/minigames/stackStroke.png" type="Texture" id=83]
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -1766,6 +1767,7 @@ strokeTexture = ExtResource( 80 )
 position = Vector2( 3086, 186 )
 minigameName = "Stack"
 spriteTexture = ExtResource( 78 )
+strokeTexture = ExtResource( 83 )
 
 [node name="Elevator" parent="." instance=ExtResource( 81 )]
 position = Vector2( 3411, 174 )
