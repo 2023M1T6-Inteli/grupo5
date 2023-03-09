@@ -9,6 +9,7 @@ func _ready():
 
 
 func reset():
+	# reseta a posição do pallet após o tempo de retorno
 	$Tween.interpolate_property(self, 'position:y', initialPosition.y+25, initialPosition.y, 0.2, $Tween.TRANS_LINEAR, $Tween.EASE_IN_OUT)
 	$Tween.interpolate_property(self, "modulate:a", 0.0, 1.0, 0.3, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	$Tween.start()

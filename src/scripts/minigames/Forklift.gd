@@ -23,5 +23,3 @@ func _physics_process(_delta):
 		velocity.y = -1
 		animationForklift.play("up")
 	velocity = move_and_slide(velocity*movespeed)
-	
-	

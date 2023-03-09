@@ -6,6 +6,7 @@ func _ready():
 
 
 func _on_Bia_mouse_entered():
+	# função que junto com a exited simula o hover, e muda o sprite o icone
 	$Bia.icon = load('res://assets/Character/BiaSelected.png')
 	$Bia.rect_position = Vector2(145, 144)
 
@@ -16,6 +17,7 @@ func _on_Bia_mouse_exited():
 
 
 func _on_Bia_pressed():
+	# função para passar para a próxima tela do tutorial ao clicar no personagem
 	Global.characterName = 'Beatriz'
 	if get_tree().change_scene('res://scenes/Tutorial/Tutorial.tscn') != OK:
 		print ('An unexpected error occured when trying to switch to next scene')
@@ -35,4 +37,3 @@ func _on_Gabriel_pressed():
 	Global.characterName = 'Gabriel'
 	if get_tree().change_scene('res://scenes/Tutorial/Tutorial.tscn') != OK:
 		print ('An unexpected error occured when trying to switch to next scene')
-
