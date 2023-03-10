@@ -2066,6 +2066,7 @@ position = Vector2( 384, 194 )
 shape = SubResource( 90 )
 
 [node name="NPC" parent="." instance=ExtResource( 2 )]
+visible = false
 position = Vector2( -206, 223 )
 
 [node name="Rope" parent="." instance=ExtResource( 87 )]
