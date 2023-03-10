@@ -22,6 +22,8 @@ func _ready():
 	# roda as animações dos gifs de tutorial
 	$Sprite/AnimationPlayer.play('InteractionChemical')
 	$Sprite2/AnimationPlayer.play('animation-box')
+
+	# atualiza todos os textos da tela
 	var nodeCounter = 0
 	for node in get_children():
 		if not node.is_in_group('TutorialText'):

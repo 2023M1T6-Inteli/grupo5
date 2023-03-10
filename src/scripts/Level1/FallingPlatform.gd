@@ -28,12 +28,11 @@ func fall():
 	# Inicia o Tween
 	$Tween.start()
 	
+	# Espera o tween finalizar
 	yield($Tween, "tween_completed")
+	
+	# Espera um tempo até resetar a plataforma
 	$Timer.start()
 	yield($Timer, 'timeout')
 	reset()
 	animationPlaying = false
-
-
-func _ready():
-	initialPosition = position

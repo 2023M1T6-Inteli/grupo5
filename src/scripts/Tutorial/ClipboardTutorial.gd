@@ -25,6 +25,7 @@ func _ready():
 	# roda o gif de tutorial da prancheta
 	$Animation.play('gif')
 
+	# atualiza todos os textos da tela
 	var nodeCounter = 0
 	for node in get_children():
 		if not node.is_in_group('TutorialText'):

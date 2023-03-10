@@ -1721,7 +1721,7 @@ script = ExtResource( 89 )
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.3, 0 )
+motion_scale = Vector2( 0.3, 0.7 )
 motion_mirroring = Vector2( 2525, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
@@ -2138,12 +2138,6 @@ margin_left = 89.0
 margin_top = 207.0
 margin_right = 328.0
 margin_bottom = 272.0
-
-[node name="Inventory" type="Control" parent="HUD/Clipboard"]
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="Valvula" type="Area2D" parent="HUD/Clipboard/Inventory"]
 
 [node name="Dialog" type="TextureRect" parent="HUD"]
 visible = false

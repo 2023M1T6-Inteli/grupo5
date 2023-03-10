@@ -2,7 +2,6 @@ extends Area2D
 
 var canInteract = false
 var verticalVelocity = 200
-var currentVelocity = Vector2()
 
 
 func _on_body_entered(body):
@@ -21,10 +20,12 @@ func _process(_delta):
 	if not canInteract:
 		$"../Player".paused = false
 		return
-		
+
+	# Pausa o processamento padrão de movimentação do player
 	$"../Player".paused = true
 	$"../Player/Animation".play("reset" + Global.characterName)
 
+	# Interpreta os inputs de movimentação
 	if Input.is_action_pressed("climb_up"):
 		$"../Player".position.y -= 10
 	if Input.is_action_pressed("climb_down"):

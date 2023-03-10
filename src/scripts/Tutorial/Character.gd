@@ -36,6 +36,7 @@ func _on_Gabriel_pressed():
 
 
 func _ready():
+	# atualiza todos os textos da tela
 	var nodeCounter = 0
 	for node in get_children():
 		if not node.is_in_group('TutorialText'):
