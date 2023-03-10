@@ -4,7 +4,11 @@ var animationPlaying = false
 var isOpened = false
 
 func slideToScreen():
+	if isOpened:
+		return
+
 	animationPlaying = true
+	isOpened = true
 	# configura a animação de aparecer na tela, apenas em Y
 	$Tween.interpolate_property(
 		self,
@@ -20,7 +24,11 @@ func slideToScreen():
 
 
 func slideOffScreen():
+	if not isOpened:
+		return
+
 	animationPlaying = true
+	isOpened = false
 	# configura a animação de aparecer na tela, apenas em Y
 	$Tween.interpolate_property(
 		self,
@@ -37,13 +45,12 @@ func slideOffScreen():
 
 func _on_mouse_entered():
 	# ao passar o mouse na prancheta, ela aparece na tela
-	if animationPlaying or isOpened:
+	if animationPlaying:
 		# impede que as animações entrem em conflito
 		return
 
 	# inicia a animação
 	slideToScreen()
-	isOpened = true
 
 
 func _on_mouse_exited():
@@ -54,7 +61,6 @@ func _on_mouse_exited():
 
 	# inicia a animação ao contrário
 	slideOffScreen()
-	isOpened = false
 
 
 func _ready():

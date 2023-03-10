@@ -7,3 +7,4 @@ func canPlayMinigame():
 
 func _ready():
 	Music.change('Level1')
+	$HUD/Clipboard.slideToScreen()
