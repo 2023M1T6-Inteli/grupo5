@@ -80,9 +80,9 @@
 [ext_resource path="res://assets/container/container_2.png" type="Texture" id=78]
 [ext_resource path="res://scenes/Objects/MovingPlatform.tscn" type="PackedScene" id=79]
 [ext_resource path="res://assets/vent/ventilador.png" type="Texture" id=86]
-[ext_resource path="res://scenes/Objects/Rode.tscn" type="PackedScene" id=87]
+[ext_resource path="res://scenes/Objects/Rope.tscn" type="PackedScene" id=87]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=88]
-[ext_resource path="res://scripts/Level2.gd" type="Script" id=89]
+[ext_resource path="res://scripts/Level2/Level2.gd" type="Script" id=89]
 [ext_resource path="res://assets/minigames/empilhadeira_direita_icon.png" type="Texture" id=90]
 
 [sub_resource type="ConvexPolygonShape2D" id=92]
@@ -2067,7 +2067,7 @@ shape = SubResource( 90 )
 [node name="NPC" parent="." instance=ExtResource( 2 )]
 position = Vector2( -206, 223 )
 
-[node name="Rode" parent="." instance=ExtResource( 87 )]
+[node name="Rope" parent="." instance=ExtResource( 87 )]
 position = Vector2( 5077, -208 )
 
 [node name="Valve_1" parent="." instance=ExtResource( 75 )]
@@ -2149,10 +2149,10 @@ anchor_left = 620.0
 anchor_top = 70.0
 anchor_right = 620.0
 anchor_bottom = 70.0
-margin_left = -1.58718e+06
-margin_top = -100230.0
-margin_right = -1.58594e+06
-margin_bottom = -100090.0
+margin_left = -793580.0
+margin_top = -49830.0
+margin_right = -792340.0
+margin_bottom = -49690.0
 texture = ExtResource( 74 )
 stretch_mode = 1
 

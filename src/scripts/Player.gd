@@ -7,6 +7,8 @@ export (int) var gravity = 3000
 var PPEs = []
 var velocity = Vector2()
 
+var paused = false
+
 
 func movePlayer():
 	if Global.minigameRunning or $"../HUD/Dialog".visible:
@@ -38,6 +40,9 @@ func movePlayer():
 
 
 func _physics_process(delta):
+	if paused:
+		return
+
 	# realiza a movimentação do player
 	movePlayer()
 	# calcula a velocidade em y de acordo com a gravidade

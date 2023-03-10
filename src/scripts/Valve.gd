@@ -16,6 +16,5 @@ func _on_Valve_body_exited(_body):
 
 
 func _input(event):
-	if event.is_action_pressed('interact'):
+	if event.is_action_pressed('interact') and canInteract:
 		print('Válvula') # colocar som de valvula
-		
