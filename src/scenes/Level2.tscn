@@ -1,4 +1,4 @@
-[gd_scene load_steps=157 format=2]
+[gd_scene load_steps=158 format=2]
 
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Entities/NPC.tscn" type="PackedScene" id=2]
@@ -79,6 +79,7 @@
 [ext_resource path="res://assets/container/container_1.png" type="Texture" id=77]
 [ext_resource path="res://assets/container/container_2.png" type="Texture" id=78]
 [ext_resource path="res://scenes/Objects/MovingPlatform.tscn" type="PackedScene" id=79]
+[ext_resource path="res://assets/minigames/mazeStroke.png" type="Texture" id=80]
 [ext_resource path="res://assets/vent/ventilador.png" type="Texture" id=86]
 [ext_resource path="res://scenes/Objects/Rope.tscn" type="PackedScene" id=87]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=88]
@@ -2106,6 +2107,7 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 7574, 162 )
 minigameName = "Maze"
 spriteTexture = ExtResource( 90 )
+strokeTexture = ExtResource( 80 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -527, 126 )
