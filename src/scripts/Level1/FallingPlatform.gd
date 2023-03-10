@@ -4,10 +4,6 @@ var animationPlaying = false
 onready var initialPosition = position
 
 
-func _ready():
-	initialPosition = position
-
-
 func reset():
 	# reseta a posição do pallet após o tempo de retorno
 	$Tween.interpolate_property(self, 'position:y', initialPosition.y+25, initialPosition.y, 0.2, $Tween.TRANS_LINEAR, $Tween.EASE_IN_OUT)
@@ -37,3 +33,7 @@ func fall():
 	yield($Timer, 'timeout')
 	reset()
 	animationPlaying = false
+
+
+func _ready():
+	initialPosition = position

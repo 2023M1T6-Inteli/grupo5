@@ -1731,7 +1731,7 @@ position = Vector2( 277, 42 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="PPE2" parent="." instance=ExtResource( 74 )]
-position = Vector2( 1735, -128 )
+position = Vector2( 1707, -167 )
 scale = Vector2( 0.2, 0.2 )
 PPEName = "helmet"
 

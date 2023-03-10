@@ -17,6 +17,8 @@ var buttons = {}
 var levels = []
 # textos da prancheta
 var clipboard = {}
+# textos do tutorial
+var tutorial = {}
 # outros textos
 var others = {}
 
@@ -59,6 +61,7 @@ func loadLanguage():
 	buttons = locale.buttons
 	levels = locale.levels
 	clipboard = locale.clipboard
+	tutorial = locale.tutorial
 	others = locale.others
 
 

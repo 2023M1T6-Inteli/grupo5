@@ -16,6 +16,29 @@
         "Maze": "Maze",
         "Level3": "Level 3"
     },
+    "tutorial": {
+        "Character": [
+            "Characters"
+        ],
+        "Controls": [
+            "Movement",
+            "Use these keys to move the character around the map",
+            "Interaction",
+            "Use one of these keys to interact with characters, objects, minigames and dialogues",
+            "Use the mouse to interact with the clipboard and the minigames."
+        ],
+        "Interactions": [
+            "Interactions",
+            "Throughout the game you will find different things that you can interact with. As you approach, a white outline appears, highlighting and indicating the possibility of interaction.",
+            "This interaction can be a dialogue, a minigame, or part of the challenge for the current level. When you see a highlighted object, press one of the interaction keys to view the available action."
+        ],
+        "Clipboard": [
+            "Clipboard",
+            "The clipboard is always with you. It serves as a detailed guide for all your tasks.",
+            "Hello! I'm your clipboard!",
+            "I'm always in the corner of your screen, to consult me ​​just call me hovering the mouse over me!"
+        ]
+    },
     "clipboard": {
         "Level1": [
             "Welcome to soUni, talk to the chemical operator and collect the PPE's"

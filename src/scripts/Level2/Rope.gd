@@ -4,6 +4,7 @@ var canInteract = false
 var verticalVelocity = 200
 var currentVelocity = Vector2()
 
+
 func _on_body_entered(body):
 	if body.name != 'Player':
 		return

@@ -22,3 +22,10 @@ func _ready():
 	# roda as animações dos gifs de tutorial
 	$Sprite/AnimationPlayer.play('InteractionChemical')
 	$Sprite2/AnimationPlayer.play('animation-box')
+	var nodeCounter = 0
+	for node in get_children():
+		if not node.is_in_group('TutorialText'):
+			continue
+
+		node.text = Locales.tutorial.get('Interactions')[nodeCounter]
+		nodeCounter += 1

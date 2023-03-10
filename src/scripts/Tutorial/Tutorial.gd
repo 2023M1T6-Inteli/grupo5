@@ -16,3 +16,13 @@ func _on_Next_pressed():
 func _on_Back_pressed():
 	if get_tree().change_scene('res://scenes/Tutorial/Character.tscn') != OK:
 			print ('An unexpected error occured when trying to switch to next scene')
+
+
+func _ready():
+	var nodeCounter = 0
+	for node in get_children():
+		if not node.is_in_group('TutorialText'):
+			continue
+
+		node.text = Locales.tutorial.get('Controls')[nodeCounter]
+		nodeCounter += 1

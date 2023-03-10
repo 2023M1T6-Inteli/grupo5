@@ -16,6 +16,29 @@
         "Maze": "Laberinto",
         "Level3": "Nivel 3"
     },
+    "tutorial": {
+        "Character": [
+            "Personajes"
+        ],
+        "Controls": [
+            "Movimiento",
+            "Utiliza estas teclas para mover a tu personaje por el nivel",
+            "Interacción",
+            "Utiliza una de estas teclas para interactuar con personajes, objetos y diálogos",
+            "Utiliza el ratón para interactuar con el portapapeles y los minijuegos."
+        ],
+        "Interactions": [
+            "Interacciones",
+            "A lo largo del juego encontrarás diferentes cosas con las que puedes interactuar. A medida que se acerca, aparece un contorno blanco, resaltando y indicando la posibilidad de interacción.",
+            "Esta interacción puede ser un diálogo, un minijuego o parte del desafío del nivel actual. Cuando vea un objeto resaltado, presione una de las teclas de interacción para experimentar la acción disponible."
+        ],
+        "Clipboard": [
+            "Portapapeles",
+            "El portapapeles está siempre contigo. Sirve como una guía detallada para todas sus tareas.",
+            "¡Hola! ¡Soy tu portapapeles!",
+            "Siempre estoy en la esquina de tu pantalla, para consultarme solo llamame pasando el raton sobre mi!"
+        ]
+    },
     "clipboard": {
         "Level1": [
             "Sea bienvenido a soUni, hable con el operador químico y recoja los EPIs"

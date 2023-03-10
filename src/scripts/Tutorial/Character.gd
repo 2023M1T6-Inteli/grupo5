@@ -1,10 +1,6 @@
 extends Node2D
 
 
-func _ready():
-	pass
-
-
 func _on_Bia_mouse_entered():
 	# função que junto com a exited simula o hover, e muda o sprite o icone
 	$Bia.icon = load('res://assets/Character/BiaSelected.png')
@@ -37,3 +33,13 @@ func _on_Gabriel_pressed():
 	Global.characterName = 'Gabriel'
 	if get_tree().change_scene('res://scenes/Tutorial/Tutorial.tscn') != OK:
 		print ('An unexpected error occured when trying to switch to next scene')
+
+
+func _ready():
+	var nodeCounter = 0
+	for node in get_children():
+		if not node.is_in_group('TutorialText'):
+			continue
+
+		node.text = Locales.tutorial.get('Character')[nodeCounter]
+		nodeCounter += 1

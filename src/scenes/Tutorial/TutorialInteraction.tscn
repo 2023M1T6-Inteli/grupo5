@@ -9,16 +9,16 @@
 [ext_resource path="res://assets/Tutorial/Interactions/ChemicalFrames/all frames box.png" type="Texture" id=7]
 [ext_resource path="res://assets/Tutorial/Interactions/Back.png" type="Texture" id=8]
 
-[sub_resource type="DynamicFont" id=2]
-size = 20
+[sub_resource type="DynamicFont" id=1]
+size = 64
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 20
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=1]
-size = 64
+[sub_resource type="DynamicFont" id=2]
+size = 20
 font_data = ExtResource( 1 )
 
 [sub_resource type="Animation" id=4]
@@ -196,36 +196,42 @@ position = Vector2( 632, 360 )
 texture = ExtResource( 3 )
 
 [node name="Back" type="Button" parent="."]
-margin_left = 64.0
+margin_left = 75.0
 margin_top = 605.0
 margin_right = 130.0
 margin_bottom = 674.0
 icon = ExtResource( 8 )
 flat = true
 
-[node name="Text1" type="Label" parent="."]
-margin_left = 128.0
-margin_top = 432.0
-margin_right = 756.0
-margin_bottom = 574.0
-custom_fonts/font = SubResource( 2 )
-text = "Essa interação pode ser um diálogo, um
- minigame ou parte do desafio do nível atual.
-Quando vir um objeto destacado, pressione
- uma das teclas de interação para 
-experimentar a ação disponível"
+[node name="Interactions" type="Label" parent="." groups=["TutorialText"]]
+margin_left = 354.0
+margin_top = 75.0
+margin_right = 830.0
+margin_bottom = 157.0
+custom_fonts/font = SubResource( 1 )
+text = "Interações"
+align = 1
 
-[node name="Text2" type="Label" parent="."]
-margin_left = 576.0
-margin_top = 208.0
-margin_right = 1083.0
-margin_bottom = 350.0
+[node name="Text1" type="Label" parent="." groups=["TutorialText"]]
+margin_left = 645.0
+margin_top = 219.0
+margin_right = 1152.0
+margin_bottom = 361.0
 custom_fonts/font = SubResource( 3 )
-text = "       Ao longo do jogo você encontrará
-diversas coisas que poderá interagir.
-  Ao se aproximar, um contorno branco
-      aparece, destacando e indicando a
-                     possibilidade de interação."
+text = "Ao longo do jogo você encontrará diversas coisas que poderá interagir. Ao se aproximar, um contorno branco aparece, destacando e indicando a possibilidade de interação."
+align = 2
+autowrap = true
+
+[node name="Text2" type="Label" parent="." groups=["TutorialText"]]
+margin_left = 145.0
+margin_top = 476.0
+margin_right = 773.0
+margin_bottom = 618.0
+custom_fonts/font = SubResource( 2 )
+text = "Essa interação pode ser um diálogo, um minigame ou parte do desafio do nível atual.
+Quando vir um objeto destacado, pressione uma das teclas de interação para experimentar a ação disponível"
+valign = 1
+autowrap = true
 
 [node name="Next" type="Button" parent="."]
 margin_left = 1144.0
@@ -235,16 +241,8 @@ margin_bottom = 660.0
 icon = ExtResource( 6 )
 flat = true
 
-[node name="Interactions" type="Label" parent="."]
-margin_left = 368.0
-margin_top = 80.0
-margin_right = 844.0
-margin_bottom = 162.0
-custom_fonts/font = SubResource( 1 )
-text = "Interações"
-
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 304, 264 )
+position = Vector2( 372, 315 )
 texture = ExtResource( 5 )
 hframes = 3
 vframes = 4

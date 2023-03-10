@@ -7,8 +7,6 @@ export var waitDuration = 1.0
 
 onready var initialPosition = position
 
-func _ready():
-	startTween()
 
 func startTween():
 	var targetPosition = initialPosition
@@ -43,3 +41,7 @@ func startTween():
 	)
 
 	$Tween.start()
+
+
+func _ready():
+	startTween()

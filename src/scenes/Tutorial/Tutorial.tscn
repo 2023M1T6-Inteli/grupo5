@@ -24,12 +24,12 @@ font_data = ExtResource( 3 )
 size = 20
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=3]
-size = 20
-font_data = ExtResource( 3 )
-
 [sub_resource type="DynamicFont" id=4]
 size = 64
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=5]
@@ -83,7 +83,7 @@ texture = ExtResource( 7 )
 position = Vector2( 81, 0 )
 texture = ExtResource( 12 )
 
-[node name="Movimentation" type="Label" parent="."]
+[node name="Movimentation" type="Label" parent="." groups=["TutorialText"]]
 margin_left = 362.0
 margin_top = 73.0
 margin_right = 921.0
@@ -92,26 +92,18 @@ custom_fonts/font = SubResource( 1 )
 text = "Movimentação"
 align = 1
 
-[node name="KeysText" type="Label" parent="."]
-margin_left = 408.0
+[node name="KeysText" type="Label" parent="." groups=["TutorialText"]]
+margin_left = 348.0
 margin_top = 291.0
-margin_right = 879.0
+margin_right = 928.0
 margin_bottom = 346.0
 custom_fonts/font = SubResource( 2 )
-text = "Use essas teclas para movimentar o
-            personagem pelo mapa"
+text = "Use essas teclas para movimentar o personagem pelo mapa"
+align = 1
+valign = 1
+autowrap = true
 
-[node name="SpaceText" type="Label" parent="."]
-margin_left = 246.0
-margin_top = 554.0
-margin_right = 646.0
-margin_bottom = 638.0
-custom_fonts/font = SubResource( 3 )
-text = "  Use uma dessas teclas para 
-interagir com os personagens,
-       objetos e diálogos"
-
-[node name="Interaction" type="Label" parent="."]
+[node name="Interaction" type="Label" parent="." groups=["TutorialText"]]
 margin_left = 429.0
 margin_top = 351.0
 margin_right = 855.0
@@ -119,15 +111,26 @@ margin_bottom = 433.0
 custom_fonts/font = SubResource( 4 )
 text = "Interação"
 
-[node name="MouseText" type="Label" parent="."]
-margin_left = 692.0
-margin_top = 548.0
-margin_right = 1047.0
-margin_bottom = 632.0
+[node name="SpaceText" type="Label" parent="." groups=["TutorialText"]]
+margin_left = 245.0
+margin_top = 553.0
+margin_right = 669.0
+margin_bottom = 666.0
+custom_fonts/font = SubResource( 3 )
+text = "Use uma dessas teclas para interagir com os personagens, objetos e diálogos"
+align = 1
+autowrap = true
+
+[node name="MouseText" type="Label" parent="." groups=["TutorialText"]]
+margin_left = 672.0
+margin_top = 554.0
+margin_right = 1027.0
+margin_bottom = 638.0
 custom_fonts/font = SubResource( 5 )
-text = "       Use o Mouse para
- interagir com a prancheta 
-      e com os minigames"
+text = "Use o Mouse para interagir com a prancheta e com os minigames."
+align = 1
+valign = 1
+autowrap = true
 
 [node name="Next" type="Button" parent="."]
 margin_left = 1064.0

@@ -16,6 +16,29 @@
         "Maze": "Labirinto",
         "Level3": "Nível 3"
     },
+    "tutorial": {
+        "Character": [
+            "Personagens"
+        ],
+        "Controls": [
+            "Movimentação",
+            "Use essas teclas para movimentar o personagem pelo mapa",
+            "Interação",
+            "Use uma dessas teclas para interagir com os personagens, objetos e diálogos",
+            "Use o Mouse para interagir com a prancheta e com os minigames."
+        ],
+        "Interactions": [
+            "Interações",
+            "Ao longo do jogo você encontrará diversas coisas que poderá interagir. Ao se aproximar, um contorno branco aparece, destacando e indicando a possibilidade de interação.",
+            "Essa interação pode ser um diálogo, um minigame ou parte do desafio do nível atual. Quando vir um objeto destacado, pressione uma das teclas de interação para experimentar a ação disponível"
+        ],
+        "Clipboard": [
+            "Prancheta",
+            "A prancheta está sempre com você. Ela serve como um guia detalhado de todas as suas tarefas",
+            "Olá! Sou sua prancheta!",
+            "Fico sempre no canto da sua tela, para me consultar basta me chamar passando o mouse por cima de mim!"
+        ]
+    },
     "clipboard": {
         "Level1": [
             "Seja bem vindo ao soUni, converse com o operador químico e colete os EPIs"
