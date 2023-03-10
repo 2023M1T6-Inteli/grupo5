@@ -19,5 +19,6 @@ func _on_Elevator_body_exited(_body):
 
 func _input(event):
 	if event.is_action_released('interact') and canInteract:
+		Global.currentLevel = 'Level2'
 		if get_tree().change_scene('res://scenes/Level2.tscn') != OK:
 			print ('An unexpected error occured when trying to switch to next scene')
