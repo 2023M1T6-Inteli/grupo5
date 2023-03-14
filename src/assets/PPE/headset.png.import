@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/headset.png-8d1640137df478c03ecfcc89fb10da30.stex"
+path="res://.import/Headset.png-4e1d9acc446ab2387a8eeff7ba1bcb70.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PPE/headset.png"
-dest_files=[ "res://.import/headset.png-8d1640137df478c03ecfcc89fb10da30.stex" ]
+source_file="res://assets/PPE/Headset.png"
+dest_files=[ "res://.import/Headset.png-4e1d9acc446ab2387a8eeff7ba1bcb70.stex" ]
 
 [params]
 

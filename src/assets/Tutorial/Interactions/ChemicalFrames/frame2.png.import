@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/frame2.png-81d9a9e6d5a7ec998df91887911c8b7d.stex"
+path="res://.import/Frame2.png-8ebefd9b0472680dee0cc0f24a2d5a63.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tutorial/Interactions/ChemicalFrames/frame2.png"
-dest_files=[ "res://.import/frame2.png-81d9a9e6d5a7ec998df91887911c8b7d.stex" ]
+source_file="res://assets/Tutorial/Interactions/ChemicalFrames/Frame2.png"
+dest_files=[ "res://.import/Frame2.png-8ebefd9b0472680dee0cc0f24a2d5a63.stex" ]
 
 [params]
 

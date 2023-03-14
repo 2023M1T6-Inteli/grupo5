@@ -1,20 +1,21 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://assets/player/run_animaton/run7.png" type="Texture" id=2]
-[ext_resource path="res://assets/player/run_animaton/run5.png" type="Texture" id=3]
-[ext_resource path="res://assets/player/run_animaton/reset.png" type="Texture" id=4]
-[ext_resource path="res://assets/player/run_animaton/run2.png" type="Texture" id=5]
-[ext_resource path="res://assets/player/run_animaton/run6.png" type="Texture" id=6]
-[ext_resource path="res://assets/player/run_animaton/run4.png" type="Texture" id=7]
-[ext_resource path="res://assets/player/run_animaton/run3.png" type="Texture" id=8]
-[ext_resource path="res://assets/player/run_animaton/run1.png" type="Texture" id=9]
-[ext_resource path="res://assets/player/run_animaton/bia/run1.png" type="Texture" id=10]
-[ext_resource path="res://assets/sounds/sfx/jump_sound.ogg" type="AudioStream" id=11]
-[ext_resource path="res://assets/player/run_animaton/bia/run3.png" type="Texture" id=12]
-[ext_resource path="res://assets/player/run_animaton/bia/idle.png" type="Texture" id=13]
-[ext_resource path="res://assets/player/run_animaton/bia/run4.png" type="Texture" id=14]
-[ext_resource path="res://assets/player/run_animaton/bia/run5.png" type="Texture" id=15]
+[ext_resource path="res://assets/Player/RunAnimation/Run7.png" type="Texture" id=2]
+[ext_resource path="res://assets/Player/RunAnimation/Run5.png" type="Texture" id=3]
+[ext_resource path="res://assets/Player/RunAnimation/Reset.png" type="Texture" id=4]
+[ext_resource path="res://assets/Player/RunAnimation/Run2.png" type="Texture" id=5]
+[ext_resource path="res://assets/Player/RunAnimation/Run6.png" type="Texture" id=6]
+[ext_resource path="res://assets/Player/RunAnimation/Run4.png" type="Texture" id=7]
+[ext_resource path="res://assets/Player/RunAnimation/Run3.png" type="Texture" id=8]
+[ext_resource path="res://assets/Player/RunAnimation/Run1.png" type="Texture" id=9]
+[ext_resource path="res://assets/Player/RunAnimation/Bia/Run1.png" type="Texture" id=10]
+[ext_resource path="res://assets/Sounds/sfx/JumpSound.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/Player/RunAnimation/Bia/Run3.png" type="Texture" id=12]
+[ext_resource path="res://assets/Player/RunAnimation/Bia/Run2.png" type="Texture" id=13]
+[ext_resource path="res://assets/Player/RunAnimation/Bia/Run4.png" type="Texture" id=14]
+[ext_resource path="res://assets/Player/RunAnimation/Bia/Run5.png" type="Texture" id=15]
+[ext_resource path="res://assets/Player/RunAnimation/Bia/Idle.png" type="Texture" id=16]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 35, 52 )
@@ -31,11 +32,12 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ ExtResource( 13 ) ]
+"values": [ null ]
 }
 
 [sub_resource type="Animation" id=9]
 resource_name = "resetBeatriz"
+length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -46,7 +48,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 13 ) ]
+"values": [ ExtResource( 16 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -76,10 +78,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 10 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ) ]
+"values": [ ExtResource( 10 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ) ]
 }
 
 [sub_resource type="Animation" id=5]
@@ -116,7 +118,6 @@ anims/runGabriel = SubResource( 5 )
 [node name="Sprite" type="Sprite" parent="."]
 physics_interpolation_mode = 2
 scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 13 )
 region_rect = Rect2( 24.0732, 9.39769, 853.919, 173.352 )
 
 [node name="jump_sound" type="AudioStreamPlayer2D" parent="."]

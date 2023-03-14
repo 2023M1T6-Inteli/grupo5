@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/msgbox.png-0bdd12d94197aa3fbb2917b94c137a54.stex"
+path="res://.import/MsgBox.png-61f51b393be277cd09cacb3258bb2754.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NPCs/msgbox.png"
-dest_files=[ "res://.import/msgbox.png-0bdd12d94197aa3fbb2917b94c137a54.stex" ]
+source_file="res://assets/NPCs/MsgBox.png"
+dest_files=[ "res://.import/MsgBox.png-61f51b393be277cd09cacb3258bb2754.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boot.png-da55da22a245c40ac5c1b260755c6672.stex"
+path="res://.import/Boot.png-547cc78a0530ab8c7ca870eb880fa0f3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PPE/boot.png"
-dest_files=[ "res://.import/boot.png-da55da22a245c40ac5c1b260755c6672.stex" ]
+source_file="res://assets/PPE/Boot.png"
+dest_files=[ "res://.import/Boot.png-547cc78a0530ab8c7ca870eb880fa0f3.stex" ]
 
 [params]
 

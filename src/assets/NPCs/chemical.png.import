@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chemical.png-5baeb57b9135149bae385f245aa8be7f.stex"
+path="res://.import/Chemical.png-b8e43508b24ae89c8272c2fb287868f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NPCs/chemical.png"
-dest_files=[ "res://.import/chemical.png-5baeb57b9135149bae385f245aa8be7f.stex" ]
+source_file="res://assets/NPCs/Chemical.png"
+dest_files=[ "res://.import/Chemical.png-b8e43508b24ae89c8272c2fb287868f9.stex" ]
 
 [params]
 
