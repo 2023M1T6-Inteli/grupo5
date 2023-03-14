@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/8bit_lets_go.ogg-3fd30a16a7965a502b0d82505a1f65d2.oggstr"
+path="res://.import/8bit_lets_go.ogg-8a48e3d2d92683420cbca96842650a3d.oggstr"
 
 [deps]
 
-source_file="res://assets/sounds/Music/8bit_lets_go.ogg"
-dest_files=[ "res://.import/8bit_lets_go.ogg-3fd30a16a7965a502b0d82505a1f65d2.oggstr" ]
+source_file="res://assets/Sounds/Music/8bit_lets_go.ogg"
+dest_files=[ "res://.import/8bit_lets_go.ogg-8a48e3d2d92683420cbca96842650a3d.oggstr" ]
 
 [params]
 
