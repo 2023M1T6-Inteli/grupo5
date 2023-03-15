@@ -10,6 +10,43 @@ var currentDialog = 0
 var phraseFinished = false
 
 
+func showE():
+	$E.visible = true
+	$Tween.interpolate_property(
+		$E,
+		'position:y',
+		-55,
+		-80,
+		0.2
+	)
+	$Tween.interpolate_property(
+		$E,
+		'modulate:a',
+		0,
+		1,
+		0.3
+	)
+	$Tween.start()
+
+
+func hideE():
+	$Tween.interpolate_property(
+		$E,
+		'position:y',
+		-80,
+		-55,
+		0.2
+	)
+	$Tween.interpolate_property(
+		$E,
+		'modulate:a',
+		1,
+		0,
+		0.3
+	)
+	$Tween.start()
+
+
 func loadDialog():
 	# inicia o diálogo
 	$"../HUD/Clipboard".visible = false
@@ -69,6 +106,8 @@ func _on_npc_quimico_body_entered(_body):
 	$Stroke.visible = true
 	canInteract = true
 	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 0.4)
+	showE()
+	
 
 
 func _on_npc_quimico_body_exited(_body):
@@ -76,6 +115,7 @@ func _on_npc_quimico_body_exited(_body):
 	$Stroke.visible = false
 	canInteract = false
 	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 1)
+	hideE()
 
 
 func _on_Button_pressed():

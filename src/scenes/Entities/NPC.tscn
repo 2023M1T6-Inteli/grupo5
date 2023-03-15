@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/NPCs/Chemical.png" type="Texture" id=1]
 [ext_resource path="res://scripts/NPC.gd" type="Script" id=2]
 [ext_resource path="res://assets/NPCs/ChemicalStroke.png" type="Texture" id=3]
 [ext_resource path="res://assets/Sounds/sfx/DialogSound.ogg" type="AudioStream" id=4]
+[ext_resource path="res://assets/Tutorial/Keys/E.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 65, 50 )
@@ -14,6 +15,12 @@ script = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -12 )
 shape = SubResource( 1 )
+
+[node name="E" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -70 )
+scale = Vector2( 0.452941, 0.452941 )
+texture = ExtResource( 5 )
 
 [node name="Stroke" type="Sprite" parent="."]
 visible = false
@@ -36,6 +43,8 @@ one_shot = true
 stream = ExtResource( 4 )
 volume_db = -12.0
 pitch_scale = 1.25
+
+[node name="Tween" type="Tween" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_npc_quimico_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_npc_quimico_body_exited"]
