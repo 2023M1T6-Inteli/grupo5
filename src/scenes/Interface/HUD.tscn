@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/keys/KeyUpReleased.jpg" type="Texture" id=1]
-[ext_resource path="res://assets/keys/EPressed.jpg" type="Texture" id=4]
-[ext_resource path="res://assets/keys/KeyLeftReleased.jpg" type="Texture" id=5]
-[ext_resource path="res://assets/keys/EReleased.jpg" type="Texture" id=6]
-[ext_resource path="res://assets/keys/KeyUpPressed.jpg" type="Texture" id=7]
-[ext_resource path="res://assets/keys/KeyRightReleased.jpg" type="Texture" id=8]
+[ext_resource path="res://assets/Keys/KeyUpReleased.jpg" type="Texture" id=1]
+[ext_resource path="res://assets/Keys/EPressed.jpg" type="Texture" id=4]
+[ext_resource path="res://assets/Keys/KeyLeftReleased.jpg" type="Texture" id=5]
+[ext_resource path="res://assets/Keys/EReleased.jpg" type="Texture" id=6]
+[ext_resource path="res://assets/Keys/KeyUpPressed.jpg" type="Texture" id=7]
+[ext_resource path="res://assets/Keys/KeyRightReleased.jpg" type="Texture" id=8]
 
 [node name="HUD" type="CanvasLayer"]
 follow_viewport_enable = true

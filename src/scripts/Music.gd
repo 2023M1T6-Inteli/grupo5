@@ -7,8 +7,8 @@ var currentMusic = 'Main'
 var fadingOut = false
 
 var musics = {
-	'Main' : load("res://assets/sounds/music/8bit_lets_go.ogg"),
-	'Level1' : load("res://assets/sounds/music/8bit_move.ogg")
+	'Main' : load("res://assets/Sounds/Music/8bit_lets_go.ogg"),
+	'Level1' : load("res://assets/Sounds/Music/8bit_move.ogg")
 }
 
 

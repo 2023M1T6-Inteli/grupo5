@@ -2,12 +2,12 @@
 
 [ext_resource path="res://assets/Minigames/ExamplePallet.png" type="Texture" id=1]
 [ext_resource path="res://assets/Background/Pallet.png" type="Texture" id=2]
-[ext_resource path="res://scripts/minigames/PalletsMinigame.gd" type="Script" id=3]
+[ext_resource path="res://scripts/Minigames/PalletsMinigame.gd" type="Script" id=3]
 [ext_resource path="res://scenes/Minigames/Pallets/FixedWood.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://assets/minigames/woodBox/3.png" type="Texture" id=8]
-[ext_resource path="res://scripts/minigames/WoodBox.gd" type="Script" id=9]
+[ext_resource path="res://scripts/Minigames/WoodBox.gd" type="Script" id=7]
+[ext_resource path="res://assets/Minigames/WoodBox/3.png" type="Texture" id=8]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.45098 )
@@ -90,7 +90,7 @@ margin_bottom = 475.0
 mouse_default_cursor_shape = 6
 texture_normal = ExtResource( 8 )
 expand = true
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [node name="WinScreen" type="Panel" parent="."]
 visible = false

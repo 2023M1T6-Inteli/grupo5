@@ -20,7 +20,7 @@ func _on_WoodBox_pressed():
 	get_parent().add_child_below_node($"../FixedWood4", newWood)
 	
 	# carrega a textura de acordo com a quantidade de madeiras
-	texture_normal = load('res://assets/minigames/woodBox/' + str(woodCounter) + '.png')
+	texture_normal = load('res://assets/Minigames/WoodBox/' + str(woodCounter) + '.png')
 	woodCounter -= 1
 
 	# atualiza a madeira selecionada
