@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
-[ext_resource path="res://assets/background/background.png" type="Texture" id=3]
+[ext_resource path="res://assets/Background/Background.png" type="Texture" id=3]
 [ext_resource path="res://assets/industrial/IndustrialTile_07.png" type="Texture" id=4]
 [ext_resource path="res://assets/industrial/IndustrialTile_27.png" type="Texture" id=5]
 [ext_resource path="res://assets/industrial/IndustrialTile_05.png" type="Texture" id=6]
@@ -72,17 +72,17 @@
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=70]
 [ext_resource path="res://scenes/Entities/NPC.tscn" type="PackedScene" id=71]
 [ext_resource path="res://scenes/interface/HUD.tscn" type="PackedScene" id=72]
-[ext_resource path="res://assets/NPCs/msgbox.png" type="Texture" id=73]
+[ext_resource path="res://assets/NPCs/MsgBox.png" type="Texture" id=73]
 [ext_resource path="res://scenes/Objects/PPE.tscn" type="PackedScene" id=74]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=75]
 [ext_resource path="res://scripts/Level1/Inventory.gd" type="Script" id=76]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=77]
-[ext_resource path="res://assets/minigames/BigBagsIcon.png" type="Texture" id=78]
-[ext_resource path="res://assets/minigames/palletIcon.png" type="Texture" id=79]
-[ext_resource path="res://assets/minigames/palletStroke.png" type="Texture" id=80]
+[ext_resource path="res://assets/Minigames/StackStroke.png" type="Texture" id=78]
+[ext_resource path="res://assets/Minigames/PalletIcon.png" type="Texture" id=79]
+[ext_resource path="res://assets/Minigames/PalletStroke.png" type="Texture" id=80]
 [ext_resource path="res://scenes/Objects/Elevator.tscn" type="PackedScene" id=81]
 [ext_resource path="res://scripts/Level1/Level1.gd" type="Script" id=82]
-[ext_resource path="res://assets/minigames/stackStroke.png" type="Texture" id=83]
+[ext_resource path="res://assets/Minigames/BigBagsIcon.png" type="Texture" id=83]
 [ext_resource path="res://scenes/Objects/FallingPlatform.tscn" type="PackedScene" id=84]
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
@@ -1729,31 +1729,32 @@ tile_data = PoolIntArray( -262153, 20, 0, -327636, 18, 0, -196617, 20, 0, -26210
 [node name="PPE1" parent="." instance=ExtResource( 74 )]
 position = Vector2( 277, 42 )
 scale = Vector2( 0.2, 0.2 )
+PPEName = "Boot"
 
 [node name="PPE2" parent="." instance=ExtResource( 74 )]
 position = Vector2( 1707, -167 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "helmet"
+PPEName = "Helmet"
 
 [node name="PPE3" parent="." instance=ExtResource( 74 )]
 position = Vector2( 911, -190 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "glove"
+PPEName = "Glove"
 
 [node name="PPE4" parent="." instance=ExtResource( 74 )]
 position = Vector2( 2552, -128 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "coat"
+PPEName = "Coat"
 
 [node name="PPE5" parent="." instance=ExtResource( 74 )]
 position = Vector2( 1238, -142 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "belt"
+PPEName = "Belt"
 
 [node name="PPE6" parent="." instance=ExtResource( 74 )]
 position = Vector2( 1475, -30 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "headset"
+PPEName = "Headset"
 
 [node name="NPC" parent="." instance=ExtResource( 71 )]
 position = Vector2( -300, 182 )
@@ -1767,8 +1768,8 @@ strokeTexture = ExtResource( 80 )
 [node name="StackLauncher" parent="." instance=ExtResource( 77 )]
 position = Vector2( 3086, 186 )
 minigameName = "Stack"
-spriteTexture = ExtResource( 78 )
-strokeTexture = ExtResource( 83 )
+spriteTexture = ExtResource( 83 )
+strokeTexture = ExtResource( 78 )
 
 [node name="Elevator" parent="." instance=ExtResource( 81 )]
 position = Vector2( 3411, 174 )
@@ -1825,36 +1826,37 @@ script = ExtResource( 76 )
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 108, 319 )
 scale = Vector2( 0.2, 0.2 )
+PPEName = "Boot"
 
 [node name="PPE2" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 205, 319 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "helmet"
+PPEName = "Helmet"
 
 [node name="PPE3" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 302, 319 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "glove"
+PPEName = "Glove"
 
 [node name="PPE4" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 108, 416 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "coat"
+PPEName = "Coat"
 
 [node name="PPE5" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 205, 416 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "belt"
+PPEName = "Belt"
 
 [node name="PPE6" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 302, 416 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "headset"
+PPEName = "Headset"
 
 [node name="Dialog" type="TextureRect" parent="HUD"]
 visible = false

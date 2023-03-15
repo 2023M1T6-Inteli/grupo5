@@ -73,18 +73,18 @@
 [ext_resource path="res://scenes/interface/HUD.tscn" type="PackedScene" id=71]
 [ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=72]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=73]
-[ext_resource path="res://assets/NPCs/msgbox.png" type="Texture" id=74]
+[ext_resource path="res://assets/NPCs/MsgBox.png" type="Texture" id=74]
 [ext_resource path="res://scenes/Objects/Valve.tscn" type="PackedScene" id=75]
 [ext_resource path="res://scenes/Objects/Elevator.tscn" type="PackedScene" id=76]
 [ext_resource path="res://assets/container/ContainerSide.png" type="Texture" id=77]
 [ext_resource path="res://assets/container/ContainerFront.png" type="Texture" id=78]
 [ext_resource path="res://scenes/Objects/MovingPlatform.tscn" type="PackedScene" id=79]
-[ext_resource path="res://assets/minigames/mazeStroke.png" type="Texture" id=80]
-[ext_resource path="res://assets/vent/ventilador.png" type="Texture" id=86]
+[ext_resource path="res://assets/Minigames/MazeStroke.png" type="Texture" id=80]
+[ext_resource path="res://assets/Minigames/MazeIcon.png" type="Texture" id=81]
+[ext_resource path="res://assets/vent/Fan.png" type="Texture" id=86]
 [ext_resource path="res://scenes/Objects/Rope.tscn" type="PackedScene" id=87]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=88]
 [ext_resource path="res://scripts/Level2/Level2.gd" type="Script" id=89]
-[ext_resource path="res://assets/minigames/empilhadeira_direita_icon.png" type="Texture" id=90]
 
 [sub_resource type="ConvexPolygonShape2D" id=92]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -2104,10 +2104,10 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 7984, 211 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="MinigameLauncher" parent="." instance=ExtResource( 88 )]
+[node name="MazeLauncher" parent="." instance=ExtResource( 88 )]
 position = Vector2( 7574, 162 )
 minigameName = "Maze"
-spriteTexture = ExtResource( 90 )
+spriteTexture = ExtResource( 81 )
 strokeTexture = ExtResource( 80 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]

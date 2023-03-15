@@ -1,20 +1,23 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/minigames/Maze/Fork_lift.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/minigames/Maze/Parking.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scripts/minigames/Maze.gd" type="Script" id=5]
-[ext_resource path="res://assets/minigames/green Unipar.png" type="Texture" id=6]
-[ext_resource path="res://assets/box.png" type="Texture" id=7]
-[ext_resource path="res://assets/minigames/contêiner pequeno.png" type="Texture" id=8]
-[ext_resource path="res://assets/minigames/contêiner.2.png" type="Texture" id=9]
-[ext_resource path="res://assets/minigames/background maze 2.png" type="Texture" id=10]
+[ext_resource path="res://assets/Minigames/GreenTile.png" type="Texture" id=6]
+[ext_resource path="res://assets/minigames/ContainerTile.png" type="Texture" id=9]
+[ext_resource path="res://assets/Background/Maze.png" type="Texture" id=10]
+[ext_resource path="res://assets/Box.png" type="Texture" id=11]
 
 [sub_resource type="CanvasItemMaterial" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="StreamTexture" id=13]
+flags = 4
+load_path = "res://.import/Box.png-7ddde33a7ad93770c050f8e72a057b52.stex"
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -27,7 +30,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
 [sub_resource type="TileSet" id=8]
 0/name = "box.png 0"
-0/texture = ExtResource( 7 )
+0/texture = SubResource( 13 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 96, 32, 64, 64 )
@@ -69,7 +72,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 3/z_index = 0
 4/name = "contêiner (4).png 4"
-4/texture = ExtResource( 8 )
+4/texture = ExtResource( 9 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 64, 64 )
@@ -115,10 +118,6 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 size = 20
 font_data = ExtResource( 1 )
 
-[sub_resource type="StreamTexture" id=15]
-flags = 4
-load_path = "res://.import/box.png-52cc4e41fddadef836f9ad4dbe7936fa.stex"
-
 [sub_resource type="DynamicFont" id=16]
 size = 50
 font_data = ExtResource( 1 )
@@ -147,12 +146,11 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="StreamTexture" id=25]
 flags = 4
-load_path = "res://assets/minigames/empilhadeira_direita.png-9f0dfc3e1b13831a8a9482ed0550c90e.stex"
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 5 )
 
-[node name="BackgroundMaze2" type="Sprite" parent="."]
+[node name="Background" type="Sprite" parent="."]
 position = Vector2( 625, 359.5 )
 scale = Vector2( 1.74095, 1.81186 )
 texture = ExtResource( 10 )
@@ -203,10 +201,11 @@ margin_left = -399.5
 margin_top = -235.0
 margin_right = 388.5
 margin_bottom = 234.0
-texture = SubResource( 15 )
-region_rect = Rect2( 15, 8, 1217, 129 )
-patch_margin_right = 7
-patch_margin_bottom = 5
+texture = ExtResource( 11 )
+patch_margin_left = 15
+patch_margin_top = 10
+patch_margin_right = 20
+patch_margin_bottom = 13
 
 [node name="win" type="Label" parent="WinScreen"]
 margin_left = 80.0

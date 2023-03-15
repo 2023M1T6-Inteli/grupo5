@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/Rope/rope.png" type="Texture" id=1]
+[ext_resource path="res://assets/Rope/Rope.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Level2/Rope.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]

@@ -1,9 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/elevator/elevator1.png" type="Texture" id=1]
-[ext_resource path="res://assets/elevator/elevator2.png" type="Texture" id=2]
-[ext_resource path="res://assets/elevator/elevator3.png" type="Texture" id=3]
 [ext_resource path="res://scripts/Elevator.gd" type="Script" id=4]
+[ext_resource path="res://assets/Elevator/Elevator2.png" type="Texture" id=5]
+[ext_resource path="res://assets/Elevator/Elevator3.png" type="Texture" id=6]
+[ext_resource path="res://assets/Elevator/Elevator1.png" type="Texture" id=7]
+
+[sub_resource type="StreamTexture" id=5]
+flags = 4
+load_path = "res://.import/Elevator1.png-2e4376da4a8b1f514adbff372ce68936.stex"
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 139, 164.5 )
@@ -20,12 +24,12 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ ExtResource( 1 ) ]
+"values": [ SubResource( 5 ) ]
 }
 
 [sub_resource type="Animation" id=3]
 resource_name = "close"
-length = 0.6
+length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -36,12 +40,12 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ) ]
+"values": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ) ]
 }
 
 [sub_resource type="Animation" id=4]
 resource_name = "open"
-length = 0.6
+length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -52,14 +56,14 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ]
+"values": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ) ]
 }
 
 [node name="Elevator" type="Area2D"]
 script = ExtResource( 4 )
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
+texture = SubResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 3, -34 )

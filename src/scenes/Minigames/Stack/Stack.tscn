@@ -2,13 +2,16 @@
 
 [ext_resource path="res://scenes/Minigames/Stack/Box.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/minigames/Stack.gd" type="Script" id=2]
-[ext_resource path="res://assets/box.png" type="Texture" id=3]
-[ext_resource path="res://assets/minigames/finishedPallet.png" type="Texture" id=4]
+[ext_resource path="res://assets/Minigames/SupportPallet.png" type="Texture" id=3]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=6]
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0, 0, 0, 0.45098 )
+
+[sub_resource type="StreamTexture" id=13]
+flags = 4
+load_path = "res://.import/Box.png-7ddde33a7ad93770c050f8e72a057b52.stex"
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 250, 30 )
@@ -27,7 +30,7 @@ corner_radius_bottom_left = 13
 [sub_resource type="StyleBoxFlat" id=12]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=13]
+[sub_resource type="StyleBoxFlat" id=18]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
 [sub_resource type="StyleBoxFlat" id=14]
@@ -39,7 +42,7 @@ bg_color = Color( 0.6, 0.6, 0.6, 0 )
 [sub_resource type="Theme" id=9]
 Button/styles/disabled = null
 Button/styles/focus = SubResource( 12 )
-Button/styles/hover = SubResource( 13 )
+Button/styles/hover = SubResource( 18 )
 Button/styles/normal = SubResource( 14 )
 Button/styles/pressed = SubResource( 15 )
 
@@ -70,7 +73,7 @@ margin_left = 50.0
 margin_top = 50.0
 margin_right = 1230.0
 margin_bottom = 670.0
-texture = ExtResource( 3 )
+texture = SubResource( 13 )
 patch_margin_left = 12
 patch_margin_top = 13
 patch_margin_right = 15
@@ -86,7 +89,7 @@ collision_mask = 2
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="Pallet"]
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 
 [node name="Box" parent="." instance=ExtResource( 1 )]
 
@@ -116,7 +119,7 @@ margin_left = -295.0
 margin_top = -155.0
 margin_right = 295.0
 margin_bottom = 155.0
-texture = ExtResource( 3 )
+texture = SubResource( 13 )
 patch_margin_left = 12
 patch_margin_top = 13
 patch_margin_right = 15
@@ -165,7 +168,7 @@ margin_left = -295.0
 margin_top = -155.0
 margin_right = 295.0
 margin_bottom = 155.0
-texture = ExtResource( 3 )
+texture = SubResource( 13 )
 patch_margin_left = 12
 patch_margin_top = 13
 patch_margin_right = 15
