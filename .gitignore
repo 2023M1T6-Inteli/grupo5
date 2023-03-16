@@ -5,5 +5,3 @@ export.cfg
 
 # Mono-specific ignores
 .mono/
-
-docs/
