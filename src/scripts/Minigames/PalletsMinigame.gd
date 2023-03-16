@@ -37,3 +37,8 @@ func _process(_delta):
 	):
 		# se os pallets estão ocupando a posição que deveriam, o jogador ganha
 		$WinScreen.visible = true
+
+
+func _on_Button_pressed():
+	# Fechar o minigame pelo botão X
+	closeMinigame()

@@ -116,3 +116,9 @@ func _process(_delta):
 
 	# atualiza a pontuação na tela
 	$ScoreLabel.text = str(score)
+
+
+
+func _on_ButtonX_pressed():
+	# Botão de fechar com o X
+	closeMinigame()

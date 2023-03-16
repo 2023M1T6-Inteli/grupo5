@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/Minigames/ExamplePallet.png" type="Texture" id=1]
 [ext_resource path="res://assets/Background/Pallet.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://scripts/Minigames/WoodBox.gd" type="Script" id=7]
 [ext_resource path="res://assets/Minigames/WoodBox/3.png" type="Texture" id=8]
+[ext_resource path="res://assets/Keys/XButton.png" type="Texture" id=9]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.45098 )
@@ -180,5 +181,14 @@ mouse_filter = 2
 texture = ExtResource( 1 )
 expand = true
 
+[node name="Button" type="Button" parent="."]
+margin_left = 1222.0
+margin_top = 7.0
+margin_right = 1274.0
+margin_bottom = 48.0
+icon = ExtResource( 9 )
+flat = true
+
 [connection signal="button_down" from="WoodBox" to="WoodBox" method="_on_WoodBox_pressed"]
 [connection signal="pressed" from="WinScreen/Background2/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

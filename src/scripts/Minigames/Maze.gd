@@ -28,3 +28,8 @@ func _ready():
 	# desabilita a visibilidade da tela de vencedor
 	$WinScreen.visible = false
 	$Clipboard.slideToScreen()
+
+
+func _on_Button_pressed():
+	# Fechar o minigame a partir do botão X
+	closeMinigame()

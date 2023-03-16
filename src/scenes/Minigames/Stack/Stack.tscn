@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scenes/Minigames/Stack/Box.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/Minigames/Stack.gd" type="Script" id=2]
 [ext_resource path="res://assets/Minigames/SupportPallet.png" type="Texture" id=3]
+[ext_resource path="res://assets/Keys/XButton.png" type="Texture" id=4]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=6]
 
@@ -239,5 +240,14 @@ bbcode_text = "[center]Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 co
 text = "Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 corretamente para prosseguir"
 fit_content_height = true
 
+[node name="Button" type="Button" parent="."]
+margin_left = 1220.0
+margin_top = 5.0
+margin_right = 1272.0
+margin_bottom = 46.0
+icon = ExtResource( 4 )
+flat = true
+
 [connection signal="pressed" from="LoseScreen/Background2/RestartButton" to="." method="_on_RestartButton_pressed"]
 [connection signal="pressed" from="WinScreen/Background2/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_ButtonX_pressed"]
