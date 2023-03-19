@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://scenes/Minigames/Ph/Tape.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Minigames/Ph/Becker_1.tscn" type="PackedScene" id=2]
@@ -16,6 +16,20 @@
 [ext_resource path="res://scripts/Minigames/Ph/Tape_5.gd" type="Script" id=14]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://scripts/Minigames/Ph/Main_Ph.gd" type="Script" id=16]
+[ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/Minigames/PhTest/PhTape_Right.png" type="Texture" id=18]
+[ext_resource path="res://scenes/Minigames/Ph/check_right1.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scripts/Minigames/Ph/check_right1.gd" type="Script" id=20]
+[ext_resource path="res://scenes/Minigames/Ph/check_right2.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scripts/Minigames/Ph/check_right2.gd" type="Script" id=22]
+[ext_resource path="res://scenes/Minigames/Ph/check_wrong2.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/Minigames/Ph/check_wrong1.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/Minigames/Ph/check_wrong3.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/Minigames/Ph/check_wrong4.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scripts/Minigames/Ph/check_wrong1.gd" type="Script" id=27]
+[ext_resource path="res://scripts/Minigames/Ph/check_wrong3.gd" type="Script" id=28]
+[ext_resource path="res://scripts/Minigames/Ph/check_wrong2.gd" type="Script" id=29]
+[ext_resource path="res://scripts/Minigames/Ph/check_wrong4.gd" type="Script" id=30]
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0, 0, 0, 0.45098 )
@@ -55,85 +69,152 @@ Button/styles/pressed = SubResource( 7 )
 size = 30
 font_data = ExtResource( 15 )
 
+[sub_resource type="DynamicFont" id=13]
+size = 20
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0, 0, 0, 0.45098 )
+corner_radius_top_left = 13
+corner_radius_top_right = 13
+corner_radius_bottom_right = 13
+corner_radius_bottom_left = 13
+
+[sub_resource type="StreamTexture" id=20]
+flags = 4
+load_path = "res://.import/Box.png-7ddde33a7ad93770c050f8e72a057b52.stex"
+
+[sub_resource type="DynamicFont" id=21]
+size = 50
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=23]
+Button/styles/disabled = null
+Button/styles/focus = SubResource( 22 )
+Button/styles/hover = SubResource( 18 )
+Button/styles/normal = SubResource( 14 )
+Button/styles/pressed = SubResource( 15 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 30
+font_data = ExtResource( 15 )
+
 [node name="MinigamePh" type="Node2D"]
 script = ExtResource( 16 )
 
 [node name="Tape_6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 218, 274 )
+position = Vector2( 1136, 229 )
 monitoring = false
 script = ExtResource( 13 )
 
 [node name="Tape_5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 231, 289 )
+position = Vector2( 1130, 234 )
 monitoring = false
 script = ExtResource( 14 )
 
 [node name="Tape_4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 242, 273 )
+position = Vector2( 1155, 229 )
 monitoring = false
 script = ExtResource( 11 )
 
 [node name="Tape_3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 254, 306 )
+position = Vector2( 1165, 257 )
 monitoring = false
 script = ExtResource( 12 )
 
 [node name="Tape_2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 273, 291 )
+position = Vector2( 1157, 230 )
 monitoring = false
 script = ExtResource( 10 )
 
 [node name="Tape_1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 258, 279 )
+position = Vector2( 1169, 230 )
 monitoring = false
 
 [node name="Becker_1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 534, 238 )
+position = Vector2( 150, 210 )
 scale = Vector2( 2, 2 )
 collision_layer = 63
 collision_mask = 63
 script = ExtResource( 8 )
 
 [node name="Becker_2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 718, 233 )
+position = Vector2( 490, 210 )
 scale = Vector2( 2, 2 )
 collision_layer = 63
 collision_mask = 63
 script = ExtResource( 8 )
 
 [node name="Becker_3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 891, 236 )
+position = Vector2( 830, 210 )
 scale = Vector2( 2, 2 )
 collision_layer = 63
 collision_mask = 63
 script = ExtResource( 8 )
 
 [node name="Becker_4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 528, 497 )
+position = Vector2( 150, 510 )
 scale = Vector2( 2, 2 )
 collision_layer = 63
 collision_mask = 63
 script = ExtResource( 8 )
 
 [node name="Becker_5" parent="." instance=ExtResource( 7 )]
-position = Vector2( 729, 500 )
+position = Vector2( 490, 510 )
 scale = Vector2( 2, 2 )
 collision_layer = 63
 collision_mask = 63
 script = ExtResource( 8 )
 
 [node name="Becker_6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 912, 506 )
+position = Vector2( 830, 510 )
 scale = Vector2( 2, 2 )
 collision_layer = 63
 collision_mask = 63
 script = ExtResource( 8 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 244, 370 )
+position = Vector2( 1149, 308 )
 texture = ExtResource( 9 )
 
+[node name="check_right1" parent="." instance=ExtResource( 19 )]
+position = Vector2( 260, 220 )
+script = ExtResource( 20 )
+
+[node name="check_right2" parent="." instance=ExtResource( 21 )]
+position = Vector2( 609, 520 )
+script = ExtResource( 22 )
+
+[node name="check_wrong1" parent="." instance=ExtResource( 24 )]
+position = Vector2( 600, 220 )
+script = ExtResource( 27 )
+
+[node name="check_wrong2" parent="." instance=ExtResource( 23 )]
+position = Vector2( 940, 220 )
+script = ExtResource( 29 )
+
+[node name="check_wrong3" parent="." instance=ExtResource( 25 )]
+position = Vector2( 262, 520 )
+script = ExtResource( 28 )
+
+[node name="check_wrong4" parent="." instance=ExtResource( 26 )]
+position = Vector2( 942, 520 )
+script = ExtResource( 30 )
+
 [node name="WinScreen" type="Panel" parent="."]
+visible = false
 margin_left = 50.0
 margin_top = 50.0
 margin_right = 1230.0
@@ -155,7 +236,7 @@ patch_margin_top = 13
 patch_margin_right = 15
 patch_margin_bottom = 11
 
-[node name="Lose" type="Label" parent="WinScreen/Background2"]
+[node name="Win" type="Label" parent="WinScreen/Background2"]
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
@@ -183,11 +264,91 @@ custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
 custom_fonts/font = SubResource( 12 )
 text = "Continuar"
 
-[connection signal="area_entered" from="Tape_6" to="Tape_6" method="_on_Tape_6_area_entered"]
+[node name="Clipboard" parent="." instance=ExtResource( 17 )]
+margin_left = 821.0
+margin_top = 547.0
+margin_right = 1225.0
+margin_bottom = 1147.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Clipboard"]
+anchor_right = 0.099
+anchor_bottom = 0.033
+margin_left = 60.0
+margin_top = 193.0
+margin_right = 305.004
+margin_bottom = 478.2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 13 )
+text = "Na caixa \"PH\" pegue uma fita e use em um becker para medir seu pH, se correto a fita vai mostrar as cores:
+
+Então marque a caixa ao lado do becker com este pH certo.
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Clipboard"]
+margin_left = 304.0
+margin_top = 294.0
+margin_right = 453.0
+margin_bottom = 527.0
+rect_rotation = 90.0
+texture = ExtResource( 18 )
+expand = true
+
+[node name="LoseScreen" type="Panel" parent="."]
+visible = false
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 1230.0
+margin_bottom = 670.0
+custom_styles/panel = SubResource( 19 )
+
+[node name="Background2" type="NinePatchRect" parent="LoseScreen"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -295.0
+margin_top = -155.0
+margin_right = 295.0
+margin_bottom = 155.0
+texture = SubResource( 20 )
+patch_margin_left = 12
+patch_margin_top = 13
+patch_margin_right = 15
+patch_margin_bottom = 11
+
+[node name="Lose" type="Label" parent="LoseScreen/Background2"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -44.0
+margin_bottom = 20.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 21 )
+text = "Você perdeu!"
+align = 1
+valign = 1
+
+[node name="RestartButton" type="Button" parent="LoseScreen/Background2"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 25.0
+margin_bottom = 64.0
+focus_neighbour_top = NodePath("../QuitButton")
+focus_neighbour_bottom = NodePath("../LanguageButton")
+theme = SubResource( 23 )
+custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
+custom_colors/font_color = Color( 0.988235, 0.984314, 0.984314, 1 )
+custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
+custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
+custom_fonts/font = SubResource( 24 )
+text = "Reiniciar"
+
 [connection signal="input_event" from="Tape_6" to="Tape_6" method="_on_Tape_6_input_event"]
 [connection signal="mouse_entered" from="Tape_6" to="Tape_6" method="_on_Tape_6_mouse_entered"]
 [connection signal="mouse_exited" from="Tape_6" to="Tape_6" method="_on_Tape_6_mouse_exited"]
-[connection signal="area_entered" from="Tape_5" to="Tape_5" method="_on_Tape_5_area_entered"]
 [connection signal="input_event" from="Tape_5" to="Tape_5" method="_on_Tape_5_input_event"]
 [connection signal="mouse_entered" from="Tape_5" to="Tape_5" method="_on_Tape_5_mouse_entered"]
 [connection signal="mouse_exited" from="Tape_5" to="Tape_5" method="_on_Tape_5_mouse_exited"]
@@ -195,11 +356,9 @@ text = "Continuar"
 [connection signal="input_event" from="Tape_4" to="Tape_4" method="_on_Tape_4_input_event"]
 [connection signal="mouse_entered" from="Tape_4" to="Tape_4" method="_on_Tape_4_mouse_entered"]
 [connection signal="mouse_exited" from="Tape_4" to="Tape_4" method="_on_Tape_4_mouse_exited"]
-[connection signal="area_entered" from="Tape_3" to="Tape_3" method="_on_Tape_3_area_entered"]
 [connection signal="input_event" from="Tape_3" to="Tape_3" method="_on_Tape_3_input_event"]
 [connection signal="mouse_entered" from="Tape_3" to="Tape_3" method="_on_Tape_3_mouse_entered"]
 [connection signal="mouse_exited" from="Tape_3" to="Tape_3" method="_on_Tape_3_mouse_exited"]
-[connection signal="area_entered" from="Tape_2" to="Tape_2" method="_on_Tape_2_area_entered"]
 [connection signal="input_event" from="Tape_2" to="Tape_2" method="_on_Tape_2_input_event"]
 [connection signal="mouse_entered" from="Tape_2" to="Tape_2" method="_on_Tape_2_mouse_entered"]
 [connection signal="mouse_exited" from="Tape_2" to="Tape_2" method="_on_Tape_2_mouse_exited"]
@@ -211,4 +370,10 @@ text = "Continuar"
 [connection signal="area_entered" from="Becker_4" to="Becker_4" method="_on_Becker_4_area_entered"]
 [connection signal="area_entered" from="Becker_5" to="Becker_5" method="_on_Becker_5_area_entered"]
 [connection signal="area_entered" from="Becker_6" to="Becker_6" method="_on_Becker_6_area_entered"]
+[connection signal="input_event" from="check_right1" to="check_right1" method="_on_Area2D_input_event"]
+[connection signal="input_event" from="check_right2" to="check_right2" method="_on_check_right2_input_event"]
+[connection signal="input_event" from="check_wrong1" to="check_wrong1" method="_on_check_wrong1_input_event"]
+[connection signal="input_event" from="check_wrong2" to="check_wrong2" method="_on_check_wrong2_input_event"]
+[connection signal="input_event" from="check_wrong3" to="check_wrong3" method="_on_check_wrong3_input_event"]
+[connection signal="input_event" from="check_wrong4" to="check_wrong4" method="_on_check_wrong4_input_event"]
 [connection signal="pressed" from="WinScreen/Background2/ContinueButton" to="." method="_on_ContinueButton_pressed"]

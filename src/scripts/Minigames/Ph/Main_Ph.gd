@@ -12,7 +12,12 @@ func _on_ContinueButton_pressed():
 	
 func _ready():
 	$WinScreen.visible = false
+	$LoseScreen.visible = false
 
 func _process(_delta):
-	if PhGlobal.points ==6:
+	if PhGlobal.points ==4:
 		$WinScreen.visible = true
+	print(PhGlobal.points)
+	if PhGlobal.error >=1:
+		$LoseScreen.visible = true
+	

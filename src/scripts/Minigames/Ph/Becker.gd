@@ -11,7 +11,7 @@ func _on_Becker_1_area_entered(area):
 	area.queue_free() #desaparece com a fita de ph que utilizamos para mover até o becker
 	$CollisionShape2D.set_deferred("disabled", true ) #impede que a fita de ph já utilizada e agora invisivel interaja com outros beckers
 	$CollisionShape2D2.set_deferred("disabled", true )
-	PhGlobal.points += 1 #adiciona pontos ao minigame
+	PhGlobal.checked += 1 #verifica se o becker foi testado com a fita de ph
 	PhGlobal.selected1 = false
 	PhGlobal.selected2 = false
 	PhGlobal.selected3 = false
@@ -31,7 +31,7 @@ func _on_Becker_2_area_entered(area):
 	area.queue_free()
 	$CollisionShape2D.set_deferred("disabled", true )
 	$CollisionShape2D2.set_deferred("disabled", true )
-	PhGlobal.points += 1
+	PhGlobal.checked += 1 #verifica se o becker foi testado com a fita de ph
 	PhGlobal.selected1 = false
 	PhGlobal.selected2 = false
 	PhGlobal.selected3 = false
@@ -53,7 +53,7 @@ func _on_Becker_3_area_entered(area):
 	area.queue_free()
 	$CollisionShape2D.set_deferred("disabled", true )
 	$CollisionShape2D2.set_deferred("disabled", true )
-	PhGlobal.points += 1
+	PhGlobal.checked += 1 #verifica se o becker foi testado com a fita de ph
 	PhGlobal.selected1 = false
 	PhGlobal.selected2 = false
 	PhGlobal.selected3 = false
@@ -74,7 +74,7 @@ func _on_Becker_4_area_entered(area):
 	area.queue_free()
 	$CollisionShape2D.set_deferred("disabled", true )
 	$CollisionShape2D2.set_deferred("disabled", true )
-	PhGlobal.points += 1
+	PhGlobal.checked += 1 #verifica se o becker foi testado com a fita de ph
 	PhGlobal.selected1 = false
 	PhGlobal.selected2 = false
 	PhGlobal.selected3 = false
@@ -95,7 +95,7 @@ func _on_Becker_5_area_entered(area):
 	area.queue_free()
 	$CollisionShape2D.set_deferred("disabled", true )
 	$CollisionShape2D2.set_deferred("disabled", true )
-	PhGlobal.points += 1
+	PhGlobal.checked += 1 #verifica se o becker foi testado com a fita de ph
 	PhGlobal.selected1 = false
 	PhGlobal.selected2 = false
 	PhGlobal.selected3 = false
@@ -115,7 +115,7 @@ func _on_Becker_6_area_entered(area):
 	area.queue_free()
 	$CollisionShape2D.set_deferred("disabled", true )
 	$CollisionShape2D2.set_deferred("disabled", true )
-	PhGlobal.points += 1
+	PhGlobal.checked += 1 #verifica se o becker foi testado com a fita de ph
 	PhGlobal.selected1 = false
 	PhGlobal.selected2 = false
 	PhGlobal.selected3 = false
