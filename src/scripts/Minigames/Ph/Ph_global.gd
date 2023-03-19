@@ -1,10 +1,16 @@
 extends Node
 
-var counter1 = 0
-var counter2 = 0
-var counter3 = 0
-var counter4 = 0
-var counter5 = 0
-var counter6 = 0
+var selected1 = false
+var selected2 = false
+var selected3 = false
+var selected4 = false
+var selected5 = false
+var selected6 = false
 
 var points = 0
+var zoom1 = false
+var zoom2 = false
+var zoom3 = false
+var zoom4 = false
+var zoom5 = false
+var zoom6 = false
