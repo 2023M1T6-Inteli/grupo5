@@ -49,7 +49,7 @@
         ],
         "Stack": [
             "Stack boxes on the pallet to optimize storage. It is important to pay attention to the centralization of them to distribute the weight efficiently.",
-            "When stacking a box, a new one will appear, stack 10 correctly to proceed"
+            "When stacking a box, a new one will appear, stack 12 correctly to proceed"
         ]
     },
     "dialogs": [

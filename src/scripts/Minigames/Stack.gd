@@ -47,7 +47,7 @@ func win():
 	# desativa o jogo
 	playing = false
 	# pinta a box atual de verde
-	currentBox.get_node('ColorRect').modulate = Color(0, 1, 0, 1)
+	currentBox.get_node('Sprite').modulate = Color(0, 1, 0, 1)
 	$WinScreen.visible = true
 
 
@@ -55,7 +55,7 @@ func lose():
 	# desativa o jogo
 	playing = false
 	# pinta a box atual de vermelho
-	currentBox.get_node('ColorRect').modulate = Color(1, 0, 0, 1)
+	currentBox.get_node('Sprite').modulate = Color(1, 0, 0, 1)
 	$LoseScreen.visible = true
 
 
@@ -107,7 +107,7 @@ func _process(_delta):
 			# se a box atual colide com a anterior
 			# aumenta o score
 			score += 1
-			if score == 10:
+			if score == 12:
 				# ganha ao atingir 10 caixas
 				win()
 				return

@@ -10,7 +10,7 @@ var reversedTween = false
 
 func startTween():
 	# calcula tamanho da caixa para compensar a borda
-	var boxSize = ($ColorRect.rect_size.x/2)*scale.x
+	var boxSize = ($Sprite.scale.x/2)*scale.x
 	# configura a animação
 	$Tween.interpolate_property(
 		self,
@@ -25,7 +25,7 @@ func startTween():
 
 func reverseTween():
 	# calcula tamanho da caixa para compensar a borda
-	var boxSize = ($ColorRect.rect_size.x/2)*scale.x
+	var boxSize = ($Sprite.scale.x/2)*scale.x
 	# configura a animação
 	$Tween.interpolate_property(
 		self,

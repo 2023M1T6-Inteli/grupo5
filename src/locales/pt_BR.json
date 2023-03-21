@@ -49,7 +49,7 @@
         ],
         "Stack": [
             "Empilhe caixas no pallet para otimizar o armazenamento. É importante se atentar à centralização delas para distribuir o peso eficientemente.",
-            "Ao empilhar uma caixa, uma nova aparecerá, empilhe 10 corretamente para prosseguir"
+            "Ao empilhar uma caixa, uma nova aparecerá, empilhe 12 corretamente para prosseguir"
         ]
     },
     "dialogs": [
