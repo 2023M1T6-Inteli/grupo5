@@ -43,6 +43,12 @@
         "Level1": [
             "Welcome to soUni, talk to the chemical operator and collect the PPE's"
         ],
+        "Level2": [
+            "Welcome to the PVC themed level! Go through all the platform challenges and open all the valves using the interaction button to release the PVC powder into the container and advance to the next stage. Don't forget to play the forklift mini-game at the end of the level."
+        ],
+        "Level3": [
+            "Hello, welcome to level 3, with the theme of liquids. First, you will play a mini-game of acidic and basic solutions, with the identification of a pH strip, after which you will pass through obstacles to reach the end."
+        ],
         "Pallets": [
             "Follow the instructions below to assemble your pallet",
             "Use the wood inside the box to fill in the remaining spaces in the fixed wood, they must be aligned and at a predetermined distance and following the fitting pattern, as shown in the image above"

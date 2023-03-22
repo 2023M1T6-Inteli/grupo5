@@ -43,6 +43,12 @@
         "Level1": [
             "Seja bem vindo ao soUni, converse com o operador químico e colete os EPIs"
         ],
+        "Level2": [
+            "Bem vindo ao nível temático de PVC! Passe por todos os desafios das plataformas e abra todas as válvulas com o botão do interação para liberar o pó de PVC dentro do contâiner e passar de fase. Não se esqueça de realizar o minigame da empilhadeira ao final do nível."
+        ],
+        "Level3": [
+            "Olá, seja bem vindo ao nível 3, com a temática líquidos, primeiramente você jogará um minigame de soluções ácidas e básicas, com a identificação de uma fita de ph, após isso irá passar por obstáculos para chegar ao final."
+        ],
         "Pallets": [
             "Siga as instruções abaixo pra montar o seu pallet",
             "Use as madeiras de dentro da caixa para preencher os espaços restantes nas madeiras fixas, elas devem estar alinhadas e a uma distância predeterminada e seguindo o padrão de encaixe, como mostra a imagem acima"

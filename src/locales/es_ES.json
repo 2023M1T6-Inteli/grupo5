@@ -43,6 +43,12 @@
         "Level1": [
             "Sea bienvenido a soUni, hable con el operador químico y recoja los EPIs"
         ],
+        "Level2": [
+            "¡Bienvenido al nivel temático de PVC! Supera todos los desafíos de las plataformas y abre todas las válvulas con el botón de interacción para liberar el polvo de PVC dentro del contenedor y avanzar de fase. No te olvides de completar el minijuego de la carretilla elevadora al final del nivel."
+        ],
+        "Level3": [
+            "Hola, bienvenido al nivel 3, con la temática de líquidos. Primero, jugarás un mini-juego de soluciones ácidas y básicas, con la identificación de una tira de pH, luego pasarás por obstáculos para llegar al final."
+        ],
         "Pallets": [
             "Siga las instrucciones abajo para armar su tarima",
             "Utilice la madera dentro de la caja para rellenar los espacios restantes en las maderas fijas, la tarima debe estar alineada y a una distancia predeterminada y siguiendo el patrón de ajuste, como se muestra en la imagen de arriba."
