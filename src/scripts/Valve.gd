@@ -3,6 +3,8 @@ extends Area2D
 export (String) var Valves = 'valve'
 var canInteract = false
 
+signal valveActivated
+
 func _on_Valve_body_entered(_body):
 	$Stroke.visible = true
 	canInteract = true
@@ -17,4 +19,4 @@ func _on_Valve_body_exited(_body):
 
 func _input(event):
 	if event.is_action_pressed('interact') and canInteract:
-		print('Válvula') # colocar som de valvula
+		emit_signal("valveActivated")
