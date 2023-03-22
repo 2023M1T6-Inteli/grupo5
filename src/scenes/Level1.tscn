@@ -1901,4 +1901,8 @@ bbcode_enabled = true
 bbcode_text = "[center]------------------[/center]"
 text = "------------------"
 
+[node name="MinigameLauncher" parent="." instance=ExtResource( 77 )]
+position = Vector2( -75, 194 )
+minigameName = "ResponsabilityTerm"
+
 [connection signal="pressed" from="HUD/Dialog/Button" to="NPC" method="_on_Button_pressed"]

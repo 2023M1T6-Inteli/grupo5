@@ -38,7 +38,7 @@ func _input(event):
 		Global.currentLevel = minigameName
 		minigame = minigame.instance()
 		$"../HUD".add_child(minigame)
-
+		print('Funcionando')
 		# indica que o minigame está rodando
 		Global.minigameRunning = true
 

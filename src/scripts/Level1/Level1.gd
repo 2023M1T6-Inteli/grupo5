@@ -2,7 +2,7 @@ extends Node2D
 
 
 func canPlayMinigame():
-	return (len($Player.PPEs) >= 6)
+	return (len($Player.PPEs) >= 0)
 
 
 func _ready():

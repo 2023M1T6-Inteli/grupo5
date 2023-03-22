@@ -1,0 +1,123 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scripts/Level1/ResponsabilityTerm.gd" type="Script" id=2]
+[ext_resource path="res://assets/responsabilityterm/Comprovante de EPIs.png" type="Texture" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/ClipboardBG.png-4e8f40e5bdcb6a227f0de451fa34facf.stex"
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+extra_spacing_top = -4
+extra_spacing_char = -1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+extra_spacing_top = 1
+extra_spacing_bottom = 1
+extra_spacing_space = 2
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=27]
+Button/styles/disabled = null
+Button/styles/focus = SubResource( 23 )
+Button/styles/hover = SubResource( 24 )
+Button/styles/normal = SubResource( 25 )
+Button/styles/pressed = SubResource( 26 )
+
+[sub_resource type="DynamicFont" id=28]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=29]
+size = 24
+font_data = ExtResource( 1 )
+
+[node name="Responsability" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ComprovanteDeEpis" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Clipboard" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 1.54569, 1.60232 )
+texture = SubResource( 1 )
+
+[node name="parteSuperiorTermoDeResponsabilidade" type="Label" parent="."]
+margin_left = 414.0
+margin_top = 151.0
+margin_right = 857.0
+margin_bottom = 235.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Comprovante de Entrega de EPI - Termo de Responsabilidade"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="parteInferiorTermoDeResponsabilidade" type="Label" parent="."]
+margin_left = 427.0
+margin_top = 246.0
+margin_right = 861.0
+margin_bottom = 583.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "1. Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.
+2. Comprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.
+3. Devo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.
+4. Devo reembolsar a empresa pelo custo atualizado do EPI extraviado.
+5. Devo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização.
+6. Ao concordar com o termo de responsabilidade, expresso meu acordo com a legislação em vigor."
+align = 1
+autowrap = true
+
+[node name="AssignButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 429.0
+margin_top = 603.0
+margin_right = 860.0
+margin_bottom = 642.0
+focus_neighbour_top = NodePath("../QuitButton")
+focus_neighbour_bottom = NodePath("../LanguageButton")
+theme = SubResource( 27 )
+custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
+custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
+custom_fonts/font = SubResource( 28 )
+text = "Assinatura: "
+align = 0
+
+[node name="NomePersonagem" type="Label" parent="."]
+margin_left = 648.0
+margin_top = 602.0
+margin_right = 845.0
+margin_bottom = 644.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 29 )
+text = "Gabriel"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="AssignButton" to="." method="_on_AssignButton_pressed"]
