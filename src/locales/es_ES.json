@@ -49,7 +49,7 @@
         ],
         "Stack": [
             "Apile las cajas en la tarima para optimizar el almacenamiento. Es importante prestar atención a la centralización de los mismos para repartir el peso de manera eficiente.",
-            "Al apilar una caja, aparecerá una nueva, apila 10 correctamente para continuar"
+            "Al apilar una caja, aparecerá una nueva, apila 12 correctamente para continuar"
         ]
     },
     "dialogs": [
