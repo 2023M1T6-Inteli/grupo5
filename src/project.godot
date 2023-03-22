@@ -19,7 +19,6 @@ config/icon="res://icon.png"
 Global="*res://scripts/Global.gd"
 Music="*res://scenes/Interface/Music.tscn"
 Locales="*res://scripts/Locales.gd"
-PhGlobal="*res://scripts/Minigames/Ph/Ph_global.gd"
 
 [display]
 

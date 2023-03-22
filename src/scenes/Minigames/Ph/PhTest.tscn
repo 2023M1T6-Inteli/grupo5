@@ -1,0 +1,126 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/Minigames/Ph/Becker.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/Minigames/Ph/PhTest.gd" type="Script" id=2]
+[ext_resource path="res://assets/Minigames/PhTest/phTapeBeforeUse.png" type="Texture" id=3]
+[ext_resource path="res://assets/Minigames/PhTest/BowlPhTapes.png" type="Texture" id=4]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 0.45098 )
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/Box.png-7ddde33a7ad93770c050f8e72a057b52.stex"
+
+[node name="PhTest" type="Node2D"]
+position = Vector2( 3, 0 )
+script = ExtResource( 2 )
+
+[node name="Darkener" type="Panel" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 2 )
+
+[node name="Background" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 140.0
+margin_top = 110.0
+margin_right = 1140.0
+margin_bottom = 610.0
+texture = SubResource( 1 )
+patch_margin_left = 12
+patch_margin_top = 13
+patch_margin_right = 15
+patch_margin_bottom = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Becker" parent="." instance=ExtResource( 1 )]
+position = Vector2( 316, 260 )
+
+[node name="Becker2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 541, 260 )
+
+[node name="Becker3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 766, 260 )
+
+[node name="Becker4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 316, 460 )
+
+[node name="Becker5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 541, 460 )
+
+[node name="Becker6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 766, 460 )
+
+[node name="Bowl" type="Button" parent="."]
+margin_left = 929.0
+margin_top = 252.0
+margin_right = 1012.0
+margin_bottom = 475.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+icon_align = 1
+
+[node name="Tape1" type="Sprite" parent="Bowl" groups=["TapeInsideBowl"]]
+position = Vector2( 26, 101 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tape2" type="Sprite" parent="Bowl" groups=["TapeInsideBowl"]]
+position = Vector2( 21, 108 )
+rotation = 0.0513244
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tape3" type="Sprite" parent="Bowl" groups=["TapeInsideBowl"]]
+position = Vector2( 18, 108 )
+rotation = -0.100679
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tape4" type="Sprite" parent="Bowl" groups=["TapeInsideBowl"]]
+position = Vector2( 63, 108 )
+rotation = 0.0893143
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tape5" type="Sprite" parent="Bowl" groups=["TapeInsideBowl"]]
+position = Vector2( 48, 104 )
+rotation = 0.044208
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tape6" type="Sprite" parent="Bowl" groups=["TapeInsideBowl"]]
+position = Vector2( 37, 114 )
+rotation = -0.0605935
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BowlSprite" type="Sprite" parent="Bowl"]
+position = Vector2( 0, 99 )
+texture = ExtResource( 4 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="Bowl" to="." method="_on_Bowl_pressed"]
