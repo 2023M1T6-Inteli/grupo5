@@ -1773,10 +1773,6 @@ minigameName = "Stack"
 spriteTexture = ExtResource( 83 )
 strokeTexture = ExtResource( 78 )
 
-[node name="Elevator" parent="." instance=ExtResource( 81 )]
-position = Vector2( 3411, 174 )
-scale = Vector2( 0.5, 0.5 )
-
 [node name="FallingPlatform" parent="." instance=ExtResource( 84 )]
 position = Vector2( 2077, -44 )
 
@@ -1794,6 +1790,10 @@ position = Vector2( -75, 182 )
 minigameName = "ResponsabilityTerm"
 spriteTexture = ExtResource( 85 )
 strokeTexture = ExtResource( 86 )
+
+[node name="Elevator" parent="." instance=ExtResource( 81 )]
+position = Vector2( 3383, 173 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Player" parent="." instance=ExtResource( 70 )]
 position = Vector2( -566, 171 )

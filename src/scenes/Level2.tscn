@@ -2099,6 +2099,8 @@ scale = Vector2( 0.2, 0.2 )
 [node name="Elevator" parent="." instance=ExtResource( 76 )]
 position = Vector2( -532, 210 )
 scale = Vector2( 0.5, 0.5 )
+monitoring = false
+monitorable = false
 
 [node name="Elevator2" parent="." instance=ExtResource( 76 )]
 position = Vector2( 7984, 211 )
