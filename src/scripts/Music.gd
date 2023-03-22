@@ -7,8 +7,8 @@ var currentMusic = 'Main'
 var fadingOut = false
 
 var musics = {
-	'Main' : load("res://assets/Sounds/Music/8bit_lets_go.ogg"),
-	'Level1' : load("res://assets/Sounds/Music/8bit_move.ogg")
+	'Main' : preload("res://assets/Sounds/Music/8bit_lets_go.ogg"),
+	'Level1' : preload("res://assets/Sounds/Music/8bit_move.ogg")
 }
 
 
@@ -54,8 +54,8 @@ func change(name):
 	fadeOut()
 	currentMusic = name
 	fadingOut = true
-	
-	
+
+
 func _ready():
 	fadeIn()
 	play()

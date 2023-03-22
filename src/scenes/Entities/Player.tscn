@@ -114,7 +114,7 @@ anims/runGabriel = SubResource( 5 )
 physics_interpolation_mode = 2
 position = Vector2( 120, -9 )
 scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 offset = Vector2( -171.429, 12.8571 )
 region_rect = Rect2( 24.0732, 9.39769, 853.919, 173.352 )
 
