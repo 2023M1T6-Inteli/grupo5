@@ -1,4 +1,4 @@
-[gd_scene load_steps=154 format=2]
+[gd_scene load_steps=156 format=2]
 
 [ext_resource path="res://assets/Industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/Industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
@@ -84,6 +84,8 @@
 [ext_resource path="res://scripts/Level1/Level1.gd" type="Script" id=82]
 [ext_resource path="res://assets/Minigames/BigBagsIcon.png" type="Texture" id=83]
 [ext_resource path="res://scenes/Objects/FallingPlatform.tscn" type="PackedScene" id=84]
+[ext_resource path="res://assets/Minigames/pranchetaIcon.png" type="Texture" id=85]
+[ext_resource path="res://assets/Minigames/pranchetaStroke.png" type="Texture" id=86]
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -1787,6 +1789,12 @@ position = Vector2( 2578, -44 )
 [node name="FallingPlatform3" parent="." instance=ExtResource( 84 )]
 position = Vector2( 2938, 26 )
 
+[node name="ResponsabilityTerm" parent="." instance=ExtResource( 77 )]
+position = Vector2( -75, 182 )
+minigameName = "ResponsabilityTerm"
+spriteTexture = ExtResource( 85 )
+strokeTexture = ExtResource( 86 )
+
 [node name="Player" parent="." instance=ExtResource( 70 )]
 position = Vector2( -566, 171 )
 
@@ -1900,9 +1908,5 @@ custom_fonts/normal_font = SubResource( 88 )
 bbcode_enabled = true
 bbcode_text = "[center]------------------[/center]"
 text = "------------------"
-
-[node name="MinigameLauncher" parent="." instance=ExtResource( 77 )]
-position = Vector2( -75, 194 )
-minigameName = "ResponsabilityTerm"
 
 [connection signal="pressed" from="HUD/Dialog/Button" to="NPC" method="_on_Button_pressed"]
