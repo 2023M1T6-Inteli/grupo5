@@ -4,6 +4,10 @@ var tapeSelected = false
 var tapesTypes = []
 
 
+func _ready():
+	get_parent().get_node('Clipboard').visible = false
+
+
 func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena
 	Global.minigameRunning = false
