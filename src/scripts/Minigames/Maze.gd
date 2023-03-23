@@ -17,6 +17,7 @@ func _on_continueButton_pressed():
 func _on_Parking_body_entered(body):
 	if body.name == 'Forklift':
 		$WinScreen.visible = true
+		$WinScreen/continueButton.grab_focus()
 
 
 func _input(event):

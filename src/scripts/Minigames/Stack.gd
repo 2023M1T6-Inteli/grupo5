@@ -49,6 +49,7 @@ func win():
 	# pinta a box atual de verde
 	currentBox.get_node('Sprite').modulate = Color(0, 1, 0, 1)
 	$WinScreen.visible = true
+	$WinScreen/Background2/ContinueButton.grab_focus()
 
 
 func lose():
@@ -57,6 +58,7 @@ func lose():
 	# pinta a box atual de vermelho
 	currentBox.get_node('Sprite').modulate = Color(1, 0, 0, 1)
 	$LoseScreen.visible = true
+	$LoseScreen/Background2/RestartButton.grab_focus()
 
 
 func closeMinigame():

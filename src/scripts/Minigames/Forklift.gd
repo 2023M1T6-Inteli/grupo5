@@ -8,7 +8,7 @@ func _physics_process(_delta):
 		return
 
 	var velocity = Vector2()
-	
+
 	# interpreta os inputs de movimentação, aplica as velocidades e seleciona a animação certa para cada direção
 	if Input.is_action_pressed("ui_left"):
 		velocity.x= -1

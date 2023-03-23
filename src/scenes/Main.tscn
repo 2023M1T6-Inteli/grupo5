@@ -142,6 +142,7 @@ margin_right = 244.0
 margin_bottom = 21.0
 focus_neighbour_top = NodePath("../PlayButton")
 focus_neighbour_bottom = NodePath("../QuitButton")
+focus_mode = 2
 theme = SubResource( 13 )
 custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
 custom_colors/font_color = Color( 0.988235, 0.984314, 0.984314, 1 )

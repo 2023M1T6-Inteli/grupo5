@@ -38,6 +38,7 @@ func _process(_delta):
 	):
 		# se os pallets estão ocupando a posição que deveriam, o jogador ganha
 		$WinScreen.visible = true
+		$WinScreen/Background2/ContinueButton.grab_focus()
 
 
 func _on_Button_pressed():
