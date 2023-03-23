@@ -11,5 +11,5 @@ dest_files=[ "res://.import/valve_sfx.ogg-943f4029c400375bc0881931250b66da.oggst
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

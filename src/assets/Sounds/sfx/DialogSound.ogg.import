@@ -11,5 +11,5 @@ dest_files=[ "res://.import/DialogSound.ogg-43bfbe10d44a8b7520c04a593202daba.ogg
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
