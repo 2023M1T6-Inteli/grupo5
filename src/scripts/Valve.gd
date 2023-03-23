@@ -2,6 +2,7 @@ extends Area2D
 
 export (String) var Valves = 'valve'
 var canInteract = false
+var active = false
 
 signal valveActivated
 
@@ -18,5 +19,9 @@ func _on_Valve_body_exited(_body):
 
 
 func _input(event):
+	if active:
+		return
+
 	if event.is_action_pressed('interact') and canInteract:
+		active = true
 		emit_signal("valveActivated")

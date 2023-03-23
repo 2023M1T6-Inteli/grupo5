@@ -25,9 +25,9 @@ func _on_valveActivated():
 		tween.interpolate_property(
 			$PVC,
 			'position:y',
-			-960,
-			700,
-			1,
+			-1240,
+			1000,
+			5,
 			Tween.TRANS_SINE,
 			Tween.EASE_IN_OUT
 		)
