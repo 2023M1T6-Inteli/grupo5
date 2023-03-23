@@ -1,10 +1,9 @@
-[gd_scene load_steps=148 format=2]
+[gd_scene load_steps=149 format=2]
 
 [ext_resource path="res://assets/background/BackgroundLevel2.png" type="Texture" id=1]
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/interface/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/Objects/Elevator.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/Entities/NPC.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://assets/industrial/IndustrialTile_66.png" type="Texture" id=8]
@@ -69,7 +68,7 @@
 [ext_resource path="res://assets/industrial/IndustrialTile_25.png" type="Texture" id=67]
 [ext_resource path="res://assets/industrial/IndustrialTile_28.png" type="Texture" id=68]
 [ext_resource path="res://assets/industrial/IndustrialTile_40.png" type="Texture" id=69]
-[ext_resource path="res://assets/NPCs/msgbox.png" type="Texture" id=70]
+[ext_resource path="res://assets/NPCs/MsgBox.png" type="Texture" id=70]
 [ext_resource path="res://assets/industrial/IndustrialTile_11.png" type="Texture" id=71]
 [ext_resource path="res://assets/industrial/IndustrialTile_13.png" type="Texture" id=72]
 [ext_resource path="res://assets/industrial/IndustrialTile_32.png" type="Texture" id=73]
@@ -78,7 +77,7 @@
 [ext_resource path="res://scenes/Objects/MovingPlatform.tscn" type="PackedScene" id=76]
 [ext_resource path="res://scenes/Objects/FallingPlatform.tscn" type="PackedScene" id=77]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=78]
-[ext_resource path="res://scripts/Level3.gd" type="Script" id=79]
+[ext_resource path="res://scripts/Level3/Level3.gd" type="Script" id=79]
 
 [sub_resource type="ConvexPolygonShape2D" id=92]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -1694,8 +1693,14 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 73/z_index = 0
 
+[sub_resource type="DynamicFont" id=161]
+font_data = ExtResource( 7 )
+
 [sub_resource type="DynamicFont" id=159]
 font_data = ExtResource( 7 )
+
+[sub_resource type="RectangleShape2D" id=160]
+extents = Vector2( 3698, 50 )
 
 [node name="Level3" type="Node2D"]
 script = ExtResource( 79 )
@@ -1716,7 +1721,7 @@ scale = Vector2( 2.5, 2.5 )
 tile_set = SubResource( 158 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( -524297, 39, 0, -589773, 59, 0, -458761, 39, 0, -524237, 59, 0, -393225, 39, 0, -458715, 59, 0, -327689, 39, 0, -393181, 64, 0, -393180, 64, 0, -393179, 59, 0, -393178, 64, 0, -393177, 64, 0, -393176, 64, 0, -393175, 64, 0, -393174, 64, 0, -393149, 64, 0, -393148, 64, 0, -393147, 64, 0, -393146, 64, 0, -393145, 64, 0, -393144, 64, 0, -262153, 39, 0, -327650, 66, 0, -327649, 67, 0, -327648, 68, 0, -327645, 71, 0, -327644, 71, 0, -327643, 71, 0, -327642, 71, 0, -327641, 71, 0, -327640, 71, 0, -327639, 71, 0, -327638, 71, 0, -327613, 69, 0, -327612, 69, 0, -327611, 69, 0, -327610, 69, 0, -327609, 69, 0, -327608, 69, 0, -196617, 39, 0, -131081, 39, 0, -196520, 66, 0, -196519, 67, 0, -196518, 67, 0, -196517, 68, 0, -65545, 39, 0, -9, 39, 0, -65524, 66, 0, -65523, 67, 0, -65522, 68, 0, 65527, 39, 0, 131063, 39, 0, 65612, 66, 0, 65613, 67, 0, 65614, 68, 0, 196599, 39, 0, 262135, 10, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196704, 4, 0, 196705, 4, 0, 196706, 4, 0, 196707, 4, 0, 196708, 4, 0, 196709, 4, 0, 327671, 10, 0, 327672, 19, 0, 327673, 19, 0, 327674, 19, 0, 327675, 19, 0, 327676, 19, 0, 327677, 19, 0, 327678, 19, 0, 327679, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262148, 19, 0, 262149, 19, 0, 262150, 19, 0, 262151, 19, 0, 262152, 19, 0, 262153, 19, 0, 262154, 19, 0, 262155, 19, 0, 262156, 19, 0, 262157, 19, 0, 262158, 19, 0, 262159, 19, 0, 262160, 19, 0, 262161, 19, 0, 262162, 19, 0, 262163, 19, 0, 262164, 19, 0, 262165, 19, 0, 262166, 19, 0, 262167, 19, 0, 262168, 19, 0, 262169, 19, 0, 262170, 19, 0, 262171, 19, 0, 262172, 19, 0, 262173, 19, 0, 262174, 19, 0, 262175, 19, 0, 262176, 19, 0, 262177, 19, 0, 262178, 19, 0, 262179, 19, 0, 262180, 19, 0, 262181, 19, 0, 262182, 19, 0, 262183, 19, 0, 262184, 19, 0, 262185, 19, 0, 262186, 19, 0, 262187, 19, 0, 262188, 19, 0, 262189, 19, 0, 262190, 19, 0, 262191, 19, 0, 262192, 19, 0, 262193, 19, 0, 262194, 19, 0, 262195, 19, 0, 262196, 19, 0, 262197, 19, 0, 262198, 19, 0, 262199, 19, 0, 262200, 19, 0, 262201, 19, 0, 262202, 19, 0, 262203, 19, 0, 262204, 19, 0, 262205, 19, 0, 262206, 19, 0, 262207, 19, 0, 262208, 19, 0, 262209, 19, 0, 262210, 19, 0, 262211, 19, 0, 262212, 19, 0, 262213, 19, 0, 262214, 19, 0, 262215, 19, 0, 262216, 19, 0, 262217, 19, 0, 262218, 19, 0, 262219, 19, 0, 262220, 19, 0, 262221, 19, 0, 262222, 19, 0, 262223, 19, 0, 262224, 19, 0, 262225, 19, 0, 262226, 19, 0, 262227, 19, 0, 262228, 19, 0, 262229, 19, 0, 262230, 19, 0, 262231, 19, 0, 262232, 19, 0, 262233, 19, 0, 262234, 19, 0, 262235, 19, 0, 262236, 19, 0, 262237, 19, 0, 262238, 19, 0, 262239, 19, 0, 262240, 19, 0, 262241, 19, 0, 262242, 19, 0, 262243, 19, 0, 262244, 19, 0, 262245, 19, 0 )
+tile_data = PoolIntArray( -524297, 39, 0, -589773, 59, 0, -458761, 39, 0, -524237, 59, 0, -393225, 39, 0, -458715, 59, 0, -327689, 39, 0, -393181, 64, 0, -393180, 64, 0, -393179, 59, 0, -393178, 64, 0, -393177, 64, 0, -393176, 64, 0, -393175, 64, 0, -393174, 64, 0, -393149, 64, 0, -393148, 64, 0, -393147, 64, 0, -393146, 64, 0, -393145, 64, 0, -393144, 64, 0, -262153, 39, 0, -327650, 66, 0, -327649, 67, 0, -327648, 68, 0, -327645, 71, 0, -327644, 71, 0, -327643, 71, 0, -327642, 71, 0, -327641, 71, 0, -327640, 71, 0, -327639, 71, 0, -327638, 71, 0, -327613, 69, 0, -327612, 69, 0, -327611, 69, 0, -327610, 69, 0, -327609, 69, 0, -327608, 69, 0, -196617, 39, 0, -131081, 39, 0, -196520, 66, 0, -196519, 67, 0, -196518, 67, 0, -196517, 68, 0, -65545, 39, 0, -9, 39, 0, -65524, 66, 0, -65523, 67, 0, -65522, 68, 0, 65527, 39, 0, 131063, 39, 0, 65612, 66, 0, 65613, 67, 0, 65614, 68, 0, 196599, 39, 0, 262135, 10, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196704, 4, 0, 196705, 4, 0, 196706, 4, 0, 196707, 4, 0, 196708, 4, 0, 196709, 4, 0, 327671, 10, 0, 327672, 19, 0, 327673, 19, 0, 327674, 19, 0, 327675, 19, 0, 327676, 19, 0, 327677, 19, 0, 327678, 19, 0, 327679, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262240, 19, 0, 262241, 19, 0, 262242, 19, 0, 262243, 19, 0, 262244, 19, 0, 262245, 19, 0 )
 
 [node name="Elevator" parent="." instance=ExtResource( 4 )]
 position = Vector2( -532, 212 )
@@ -1727,7 +1732,7 @@ position = Vector2( 7984, 211 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -527, 126 )
+position = Vector2( 7736, 126 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -1741,9 +1746,6 @@ drag_margin_top = 1.0
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
-[node name="NPC" parent="." instance=ExtResource( 5 )]
-position = Vector2( -206, 223 )
-
 [node name="HUD" parent="." instance=ExtResource( 3 )]
 follow_viewport_enable = false
 
@@ -1753,11 +1755,17 @@ margin_top = 563.0
 margin_right = 996.0
 margin_bottom = 1163.0
 
-[node name="LevelText" type="RichTextLabel" parent="HUD/Clipboard" groups=["Level Text"]]
-margin_left = 89.0
-margin_top = 207.0
-margin_right = 328.0
-margin_bottom = 272.0
+[node name="LevelText" type="RichTextLabel" parent="HUD/Clipboard" groups=["LevelText"]]
+margin_left = 57.0
+margin_top = 211.0
+margin_right = 352.0
+margin_bottom = 462.0
+mouse_filter = 2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 161 )
+bbcode_enabled = true
+bbcode_text = "[center]Hello, welcome to level 3, with the theme of liquids. First, you will play a mini-game of acidic and basic solutions, with the identification of a pH strip, after which you will pass through obstacles to reach the end..[/center]"
+text = "Hello, welcome to level 3, with the theme of liquids. First, you will play a mini-game of acidic and basic solutions, with the identification of a pH strip, after which you will pass through obstacles to reach the end.."
 
 [node name="Dialog" type="TextureRect" parent="HUD"]
 visible = false
@@ -1834,5 +1842,13 @@ position = Vector2( 6066, -220 )
 position = Vector2( 6678, 42 )
 
 [node name="MinigameLauncher" parent="." instance=ExtResource( 78 )]
-position = Vector2( -358, 223 )
+position = Vector2( 7745, 223 )
 minigameName = "PhTest"
+
+[node name="DeadZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeadZone"]
+position = Vector2( 3984, 454 )
+shape = SubResource( 160 )
+
+[connection signal="body_entered" from="DeadZone" to="." method="_on_DeadZone_body_entered"]

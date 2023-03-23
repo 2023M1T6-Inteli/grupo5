@@ -1,6 +1,7 @@
-[gd_scene load_steps=158 format=2]
+[gd_scene load_steps=162 format=2]
 
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Valves/Valve.png" type="Texture" id=2]
 [ext_resource path="res://assets/Industrial/IndustrialTile_07.png" type="Texture" id=3]
 [ext_resource path="res://assets/Background/BackgroundLevel2.png" type="Texture" id=4]
 [ext_resource path="res://assets/Industrial/IndustrialTile_05_flipped.png" type="Texture" id=5]
@@ -83,6 +84,7 @@
 [ext_resource path="res://assets/PVC.png" type="Texture" id=82]
 [ext_resource path="res://assets/sounds/sfx/valve_sfx.ogg" type="AudioStream" id=83]
 [ext_resource path="res://scenes/Objects/FallingPlatform.tscn" type="PackedScene" id=84]
+[ext_resource path="res://scripts/Level2/ValveCounter.gd" type="Script" id=85]
 [ext_resource path="res://scenes/Objects/Rope.tscn" type="PackedScene" id=87]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=88]
 [ext_resource path="res://scripts/Level2/Level2.gd" type="Script" id=89]
@@ -1710,7 +1712,14 @@ extents = Vector2( 87, 87 )
 [sub_resource type="RectangleShape2D" id=91]
 extents = Vector2( 82.5, 178.5 )
 
+[sub_resource type="DynamicFont" id=225]
+font_data = ExtResource( 73 )
+
 [sub_resource type="DynamicFont" id=88]
+font_data = ExtResource( 73 )
+
+[sub_resource type="DynamicFont" id=226]
+size = 60
 font_data = ExtResource( 73 )
 
 [node name="Level2" type="Node2D"]
@@ -2254,11 +2263,17 @@ margin_top = 563.0
 margin_right = 996.0
 margin_bottom = 1163.0
 
-[node name="LevelText" type="RichTextLabel" parent="HUD/Clipboard" groups=["Level Text"]]
-margin_left = 89.0
-margin_top = 207.0
-margin_right = 328.0
-margin_bottom = 272.0
+[node name="LevelText" type="RichTextLabel" parent="HUD/Clipboard" groups=["LevelText"]]
+margin_left = 57.0
+margin_top = 217.0
+margin_right = 352.0
+margin_bottom = 468.0
+mouse_filter = 2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 225 )
+bbcode_enabled = true
+bbcode_text = "[center]Welcome to the PVC themed level! Go through all the platform challenges and open all the valves using the interaction button to release the PVC powder into the container and advance to the next stage. Don't forget to play the forklift mini-game at the end of the level.[/center]"
+text = "Welcome to the PVC themed level! Go through all the platform challenges and open all the valves using the interaction button to release the PVC powder into the container and advance to the next stage. Don't forget to play the forklift mini-game at the end of the level."
 
 [node name="Dialog" type="TextureRect" parent="HUD"]
 visible = false
@@ -2303,6 +2318,30 @@ bbcode_enabled = true
 bbcode_text = "[center]------------------[/center]"
 text = "------------------"
 
+[node name="Valve" type="Sprite" parent="HUD/Dialog"]
+position = Vector2( 628, -101 )
+texture = ExtResource( 2 )
+
+[node name="Valve2" type="Sprite" parent="HUD/Dialog"]
+position = Vector2( 208, -1103 )
+texture = ExtResource( 2 )
+
+[node name="Valve" type="Sprite" parent="HUD"]
+position = Vector2( 1115, 81 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="ValveCounter" type="Label" parent="HUD"]
+margin_left = 1169.0
+margin_top = 36.0
+margin_right = 1273.0
+margin_bottom = 113.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 226 )
+text = "x1"
+autowrap = true
+script = ExtResource( 85 )
+
 [node name="valve_sfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 83 )
 volume_db = -4.0
@@ -2312,8 +2351,14 @@ pitch_scale = 1.8
 position = Vector2( 7394, -100 )
 
 [connection signal="valveActivated" from="Valve_1" to="." method="_on_valveActivated"]
+[connection signal="valveActivated" from="Valve_1" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_2" to="." method="_on_valveActivated"]
+[connection signal="valveActivated" from="Valve_2" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_3" to="." method="_on_valveActivated"]
+[connection signal="valveActivated" from="Valve_3" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_4" to="." method="_on_valveActivated"]
+[connection signal="valveActivated" from="Valve_4" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_5" to="." method="_on_valveActivated"]
+[connection signal="valveActivated" from="Valve_5" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_6" to="." method="_on_valveActivated"]
+[connection signal="valveActivated" from="Valve_6" to="HUD/ValveCounter" method="_on_valveActivated"]
