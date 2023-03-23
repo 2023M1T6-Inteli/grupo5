@@ -237,13 +237,12 @@ func nextBecker():
 	if currentBecker >= 6:
 		# TODO que isso
 		Global.minigameRunning = false
-		get_parent().close_minigame()
+		get_parent().closeMinigame()
 		return
 
 	loadBecker(get_parent().tapesTypes[currentBecker])
 	yield(get_tree().create_timer(1.5), "timeout")
 	showTape()
-
 
 
 func _on_tween_completed(_node, _key):
