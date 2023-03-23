@@ -20,14 +20,25 @@
 📜 Nosso projeto consiste em um jogo de plataforma 2D, com minigames e quizzes visando conscientizar e reforçar as regras e condutas para os operadores, com o objetivo de diminuir significantemente os acidentes dentro da [Unipar](https://www.unipar.com/). Assim, de forma divertida, os trabalhadores podem usar o seu intervalo na empresa para revisar os procedimentos e ganhar bonificações com o jogo. 
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="imagens/tela_inicial.png">
+<img src="imagens/tutorial_prancheta.png">
 </p>
 
 
-💡   O souUni é um jogo 2D, feito na engine Godot, que visa revisar as regras para os operadores químicos dentro da indústria da Unipar, tanto em unidades nacionais quanto internacionais. Dessa forma, ele foi pensado e dividido em 3 modalidades: os níveis de plataforma, os minigames e o quiz final. A proposta de cada etapa busca reforçar o conhecimento de maneiras diferentes, a coleta de EPI's na fase inicial, demonstra que o operador deve estar sempre com os equipamentos corretos para então trabalhar dentro do setor químico.
+
+💡   O soUni é um jogo 2D, feito na engine Godot, que visa revisar as regras para os operadores químicos dentro da indústria da Unipar, tanto em unidades nacionais quanto internacionais. Dessa forma, ele foi pensado e dividido em 3 modalidades: os níveis de plataforma, os minigames e o quiz final. A proposta de cada etapa busca reforçar o conhecimento de maneiras diferentes, a coleta de EPI's na fase inicial, demonstra que o operador deve estar sempre com os equipamentos corretos para então trabalhar dentro do setor químico.
+
+<p align="center">
+<img src="imagens/tela_personagem.png">
+<img src="imagens/Lvl1.png">
+</p>
 
 💡   Ademais, há os minigames, que exemplificam e ensinam praticas de segurança e execução de protocolos, com curiosidades sobre o material trabalhado. Então, após passar por níveis de PVC, Cloro e Soda, que são os principais produtos da Unipar, o jogador chega ao quiz final, em que haverão perguntas relacionadas a todo o processo que ele vivenciou no jogo, com um sistema de ranking que mostra sua colocação final.
+
+<p align="center">
+<img src="imagens/gif_pallet.gif">
+<img src="imagens/gif_stack.gif">
+</p>
 
 ## 🛠 Estrutura de pastas
 
@@ -48,16 +59,16 @@
 
 ## 🛠 Instalação
 
-**Android:**
+--Android:--
 
 Por enquanto não há a versão android, mas é possível jogar o jogo mobile através do GitHub Pages
 
-**Windows:**
+--Windows:--
 
 Não há instalação! Apenas executável!
 Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
 
-**HTML:**
+--HTML:--
 
 Não há instalação!
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
@@ -84,18 +95,61 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+
+- 4.0 - 24/03/2023
+    - Padronização de Assets 
+    - Deploy no GithubPages
+    - Correção no collision shape do personagem
+    - PopUp do E ao passar pelo químico
+    - Fechar o Minigame com o botão X
+    - Minigame do PH
+    - Adição do Nível 3
+    - Correção no minigame do stack de 10 para 12 sacarias
+    - Adição do sprite de sacarias no minigame do stack
+    - Termo de responsabilidade de EPIs
+    - Correção da musica travando
+    - Biggame da válvula
+    - Efeito sonoro na válvula
+- 3.0 - 10/03/2023
+    - Efeitos sonóros de diálogo e pulo
+    - Músicas no Menu e nível
+    - Efeito de Fadein e Fadeout
+    - Adicionamos a personagem Beatriz
+    - Fizemos a animação da Beatriz
+    - Tradução dos Minigames 
+    - Minigame do Labirinto
+    - Renomeação das pastas para padronização
+    - Cenas de tutorial
+    - Cenas de seleção do personagem
+    - Prancheta fica na tela até o jogador passar o cursor
+    - Plataformas que caem (Pallets)
+    - Stroke no Pallet
+    - Mecânica de Subir na corda 
+    - Mecância das válvulas no nível2
+    - Adição do Nível 2
+- 2.0 - 24/02/2023
+    - Normalização do tamanho dos EPIs
+    - Tela Principal
+    - Menu
+    - Botão de Mudança de Idioma 
+    - Adição de Espanhol e Inglês
+    - Minigame dos Pallets 
+    - Minigame do Stack
+    - Novo background e novo player
+    - Touchscreen Buttons 
+    - Efeito parallax
+    - Prancheta
+    - Textos da Prancheta
+    - Json em HTML export
+    - Telas de vitória e derrota no stack e pallet
+    - Minigame Launcher
+    - Prancheta nos Minigames
+    - Restart do Diálogo
+- 1.0 - 10/02/2023
+    - Movimentação do Personagem
+    - Coleta de EPIs
+    - Primeiro Diálogo
+    - Adição do Químico (NPC)
 
 ## 📋 Licença/License
 
@@ -103,10 +157,10 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 ## 🎓 Referências
 
-Aqui estão as referências usadas no projeto.
-
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: [DaveJf](https://freesound.org/people/DaveJf/sounds/616544/) e [DRFX](https://freesound.org/people/DRFX/sounds/338986/) ambas com Licença CC 0.
+1. Músicas por: [HeatleyBros](https://heatleybros.com/)
+2. Projeto de inspiração: [MY roadlab (Jogo desenvolvido por alunos do Inteli)](https://github.com/2022M1T4-Inteli/My-roadlab)
+3. Documentação: [Classes em Godot](https://docs.godotengine.org/pt_BR/latest/tutorials/best_practices/what_are_godot_classes.html?)
+4. Site: [Unipar](unipar.com)
+5. Processo Produtivo : [Unipar](https://www.unipar.com/processo-produtivo/)
+6. Relatório de Sustentabilidade: [Unipar](https://www.unipar.com/relatorio-de-sustentabilidade/)
+7. Documentação: [Godot](https://docs.godotengine.org/en/stable/tutorials/2d/index.html)
