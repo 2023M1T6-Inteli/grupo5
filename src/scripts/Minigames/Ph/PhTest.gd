@@ -4,6 +4,24 @@ var tapeSelected = false
 var tapesTypes = []
 
 
+func closeMinigame():
+	# fecha o minigame, desligando a indicação e limpando a instância da cena
+	Global.minigameRunning = false
+	get_parent().get_node('Clipboard').visible = true
+	Global.currentLevel = 'Level3'
+	queue_free()
+
+
+func _on_ContinueButton_pressed():
+	closeMinigame()
+
+
+func _input(event):
+	if event.is_action_pressed('ui_cancel'):
+		# tecla ESC fecha o minigame
+		closeMinigame()
+
+
 func _on_Bowl_pressed():
 	if tapeSelected:
 		return

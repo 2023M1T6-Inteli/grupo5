@@ -6,6 +6,7 @@ var canInteract = false
 func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena
 	Global.minigameRunning = false
+	Global.currentLevel = 'Level2'
 	queue_free()
 
 

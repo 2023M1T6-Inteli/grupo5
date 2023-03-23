@@ -237,7 +237,7 @@ func nextBecker():
 	if currentBecker >= 6:
 		# TODO que isso
 		Global.minigameRunning = false
-		get_parent().queue_free()
+		get_parent().close_minigame()
 		return
 
 	loadBecker(get_parent().tapesTypes[currentBecker])

@@ -8,6 +8,7 @@ func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena
 	Global.minigameRunning = false
 	get_parent().get_node('Clipboard').visible = true
+	Global.currentLevel = 'Level1'
 	queue_free()
 
 

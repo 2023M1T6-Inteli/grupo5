@@ -7,6 +7,9 @@ var active = false
 signal valveActivated
 
 func _on_Valve_body_entered(_body):
+	if active:
+		return
+
 	$Stroke.visible = true
 	canInteract = true
 	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 0.4)

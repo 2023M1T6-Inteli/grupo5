@@ -76,15 +76,15 @@
             "text": "Pode deixar! Estou super confiante para o primeiro dia!"
         }
     ],
-    "responsabilityTerm": {
-        "title": "Comprovante de Entrega de EPI - Termo de Responsabilidade",
-        "term": "Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.\nComprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.\nDevo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.\nDevo reembolsar a empresa pelo custo atualizado do EPI extraviado.\nDevo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização.\nAo concordar com o termo de responsabilidade, expresso meu acordo com a legislação em vigor.",
-        "signature": "Assinatura:"
-    },
     "others": {
         "win": "Você venceu!",
         "lose": "Você perdeu!",
         "continue": "Continuar",
-        "restart": "Reiniciar"
+        "restart": "Reiniciar",
+        "responsabilityTerm": {
+            "title": "Comprovante de Entrega de EPI - Termo de Responsabilidade",
+            "term": "Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.\nComprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.\nDevo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.\nDevo reembolsar a empresa pelo custo atualizado do EPI extraviado.\nDevo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização.\nAo concordar com o termo de responsabilidade, expresso meu acordo com a legislação em vigor.",
+            "signature": "Assinatura:"
+        }
     }
 }
