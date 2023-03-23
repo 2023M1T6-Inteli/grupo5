@@ -41,7 +41,7 @@
     },
     "clipboard": {
         "Level1": [
-            "Sea bienvenido a soUni, hable con el operador químico y recoja los EPIs"
+            "Sea bienvenido a soUni, hable con el operador químico y recoja los EPPss"
         ],
         "Level2": [
             "¡Bienvenido al nivel temático de PVC! Supera todos los desafíos de las plataformas y abre todas las válvulas con el botón de interacción para liberar el polvo de PVC dentro del contenedor y avanzar de fase. No te olvides de completar el minijuego de la carretilla elevadora al final del nivel."
@@ -76,6 +76,11 @@
             "text": "¡Puede dejar! ¡Estoy muy emocionado para el primer día!"
         }
     ],
+    "responsabilityTerm": {
+        "title": "Comprobante de Entrega de EPP - Término de Responsabilidad",
+        "term": "Asumo total responsabilidad por la custodia y conservación de los EPPs proporcionados gratuitamente por la empresa.\nMe comprometo a utilizar los EPPs sólo para el fin al que se destina, de acuerdo con las normas de la empresa y la legislación vigente.\nDebo ser responsable de cualquier daño causado al EPPs por un uso inadecuado o fuera de las actividades a las que se destina.\nDebo reembolsar a la empresa el costo actualizado del EPPs extraviado.\nDebo informar inmediatamente a mi jefe directo de cualquier cambio en el EPPs que lo haga parcial o totalmente inapropiado para su uso. \nAl aceptar los términos de responsabilidad, expreso mi acuerdo con la legislación vigente.",
+        "signature": "Firma:"
+    },
     "others": {
         "win": "Ganaste!",
         "lose": "Tú perdiste!",
