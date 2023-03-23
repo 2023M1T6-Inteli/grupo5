@@ -18,6 +18,7 @@ func _on_valveActivated():
 		return
 
 	valveCounter += 1
+	$valve_sfx.play()
 	if valveCounter > 5:
 		var tween = Tween.new()
 		add_child(tween)
