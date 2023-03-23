@@ -126,4 +126,4 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[connection signal="pressed" from="Bowl" to="." method="_on_Bowl_pressed"]
+[connection signal="button_down" from="Bowl" to="." method="_on_Bowl_pressed"]
