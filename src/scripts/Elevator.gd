@@ -24,6 +24,7 @@ func _input(event):
 	if not event.is_action_pressed('interact'):
 		return
 
+	# faz a troca de cena baseada na variável global do nível
 	if Global.currentLevel == 'Level1':
 		Global.currentLevel = 'Level2'
 		if get_tree().change_scene('res://scenes/Level2.tscn') != OK:

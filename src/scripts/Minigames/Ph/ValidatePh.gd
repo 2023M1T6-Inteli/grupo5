@@ -18,7 +18,7 @@ func showTape():
 	$Tape.modulate = Color(1, 1, 1, 1)
 	$Tape.scale = Vector2(1, 1)
 
-
+	# usamos o tween para mover a fita de denro do becker para a posição correta 
 	tween.interpolate_property(
 		$Tape,
 		"position",

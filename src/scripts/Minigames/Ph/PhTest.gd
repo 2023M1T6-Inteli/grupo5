@@ -5,6 +5,7 @@ var tapesTypes = []
 
 
 func _ready():
+	# torna a prancheta invisivel ao iniciar o jogo
 	get_parent().get_node('Clipboard').visible = false
 
 
