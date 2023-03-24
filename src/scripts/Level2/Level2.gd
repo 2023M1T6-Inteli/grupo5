@@ -5,21 +5,27 @@ var pvcReleased = false
 
 
 func canPlayMinigame():
+	# força a permissão do player jogue o minigame sempre (TODO)
 	return true
 
 
 func _ready():
+	# mostra a prancheta
 	$HUD/Clipboard.slideToScreen()
 
 
-
 func _on_valveActivated():
+	# quando a válvula é ativada, toca o som e incrementa o contador
+
 	if pvcReleased:
+		# se o PVC já foi liberado, não faz nada
 		return
 
 	valveCounter += 1
 	$valve_sfx.play()
+
 	if valveCounter > 5:
+		# se o contador for maior que 5, libera o PVC
 		var tween = Tween.new()
 		add_child(tween)
 		tween.interpolate_property(

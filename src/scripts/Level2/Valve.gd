@@ -7,7 +7,9 @@ var active = false
 signal valveActivated
 
 func _on_Valve_body_entered(_body):
+	# destaca a vávula ao se aproximar
 	if active:
+		# se já foi acionada, não faz nada
 		return
 
 	$Stroke.visible = true
@@ -23,6 +25,7 @@ func _on_Valve_body_exited(_body):
 
 func _input(event):
 	if active:
+		# se já foi acionada, não faz nada
 		return
 
 	if event.is_action_pressed('interact') and canInteract:

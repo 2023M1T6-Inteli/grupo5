@@ -9,6 +9,8 @@ func _ready():
 
 
 func _on_valveActivated():
+    # quando uma valvula for acionada, atualiza o contador
+
     valveCounter += 1
     text = 'x' + str(valveCounter)
     modulate = Color(0.95, 0.98, 0.04, 1)

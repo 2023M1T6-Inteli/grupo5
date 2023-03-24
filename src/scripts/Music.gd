@@ -15,12 +15,12 @@ var musics = {
 func fadeIn():
 	# chama o tween para executar a função de fade in da música
 	$Tween.interpolate_property(
-		self, 
-		'volume_db', 
-		minVolume, 
-		volume, 
-		1.0, 
-		Tween.TRANS_LINEAR, 
+		self,
+		'volume_db',
+		minVolume,
+		volume,
+		1.0,
+		Tween.TRANS_LINEAR,
 		Tween.EASE_IN
 	)
 	$Tween.start()
@@ -28,12 +28,12 @@ func fadeIn():
 
 func fadeOut():
 	$Tween.interpolate_property(
-		self, 
-		'volume_db', 
-		volume, 
-		minVolume, 
-		0.2, 
-		Tween.TRANS_LINEAR, 
+		self,
+		'volume_db',
+		volume,
+		minVolume,
+		0.2,
+		Tween.TRANS_LINEAR,
 		Tween.EASE_IN
 	)
 	$Tween.start()

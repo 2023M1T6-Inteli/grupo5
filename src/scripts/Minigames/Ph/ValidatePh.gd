@@ -6,6 +6,7 @@ var animationPlaying = false
 var currentBecker = -1
 
 func showTape():
+	# anima a fita saindo do becker
 	if animationPlaying:
 		return
 
@@ -52,6 +53,7 @@ func showTape():
 
 
 func discardTape():
+	# anima a fita sendo descartada
 	tween.interpolate_property(
 		$Tape,
 		'modulate:a',
@@ -66,6 +68,7 @@ func discardTape():
 
 
 func loadBecker(tapeType):
+	# anima um novo becker sendo carregado
 	if animationPlaying:
 		return
 
@@ -103,6 +106,7 @@ func loadBecker(tapeType):
 
 
 func discardWrongBecker():
+	# anima o becker errado sendo descartado
 	if animationPlaying:
 		return
 
@@ -154,6 +158,7 @@ func discardWrongBecker():
 
 
 func saveRightBecker():
+	# anima o becker certo sendo salvo
 	if animationPlaying:
 		return
 
@@ -185,6 +190,7 @@ func saveRightBecker():
 
 
 func wrongChoice():
+	# anima uma escolha errada (shake e cor vermelha)
 	if animationPlaying:
 		return
 
@@ -232,10 +238,11 @@ func wrongChoice():
 
 
 func nextBecker():
+	# troca para o próximo becker
 	currentBecker += 1
 
 	if currentBecker >= 6:
-		# TODO que isso
+		# se acabaram os becker, termina o minigame
 		Global.minigameRunning = false
 		get_parent().closeMinigame()
 		return
@@ -253,6 +260,8 @@ func _on_WrongButton_pressed():
 	if animationPlaying:
 		return
 
+	# ao clicar no botão errado, verifica se a escolha foi correta
+
 	if not get_parent().tapesTypes[currentBecker] != 'Right':
 		wrongChoice()
 		return
@@ -265,6 +274,8 @@ func _on_WrongButton_pressed():
 func _on_RightButton_pressed():
 	if animationPlaying:
 		return
+
+	# ao clicar no botão certo, verifica se a escolha foi correta
 
 	if not get_parent().tapesTypes[currentBecker] == 'Right':
 		wrongChoice()

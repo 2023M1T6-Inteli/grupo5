@@ -11,6 +11,7 @@ var phraseFinished = false
 
 
 func showE():
+	# mostra o E na tela, em cima do químico
 	$E.visible = true
 	$Tween.interpolate_property(
 		$E,
@@ -30,6 +31,7 @@ func showE():
 
 
 func hideE():
+	# esconde o E na tela, de cima do químico
 	$Tween.interpolate_property(
 		$E,
 		'position:y',
@@ -72,7 +74,7 @@ func nextDialog():
 		# se acabaram as frases, finaliza o diálogo
 		closeDialog()
 		return
-	
+
 
 	# altera o nome do personagem para o da fala atual
 	var characterName = Locales.characters.get(Locales.dialogs[currentDialog].character)
@@ -99,7 +101,7 @@ func nextDialog():
 
 	# atualiza o índice do diálogo atual
 	currentDialog += 1
-	
+
 
 func _on_npc_quimico_body_entered(_body):
 	# quando o player se aproximar, destaca o NPC e liga a interação
@@ -107,7 +109,6 @@ func _on_npc_quimico_body_entered(_body):
 	canInteract = true
 	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 0.4)
 	showE()
-	
 
 
 func _on_npc_quimico_body_exited(_body):

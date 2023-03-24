@@ -2,9 +2,12 @@ extends Node2D
 
 
 func canPlayMinigame():
-	return (len($Player.PPEs) >= 0)
+	# força a permissão do player jogue o minigame sempre (TODO)
+	return true
 
 
 func _ready():
+	# inicia a música do nível
 	Music.change('Level1')
+	# mostra a prancheta
 	$HUD/Clipboard.slideToScreen()

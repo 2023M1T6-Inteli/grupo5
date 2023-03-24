@@ -229,9 +229,9 @@ fit_content_height = true
 
 [node name="LevelText3" type="RichTextLabel" parent="Clipboard" groups=["LevelText"]]
 margin_left = 87.0
-margin_top = 378.0
+margin_top = 391.0
 margin_right = 339.0
-margin_bottom = 466.0
+margin_bottom = 479.0
 mouse_filter = 2
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 16 )

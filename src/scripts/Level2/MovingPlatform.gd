@@ -11,12 +11,16 @@ onready var initialPosition = position
 func startTween():
 	var targetPosition = initialPosition
 
+	# configura a posição alvo de acordo com a direção
 	if horizontal:
 		targetPosition += Vector2.RIGHT*distance
 	else:
 		targetPosition += Vector2.UP*distance
 
+	# calcula a duração da animação
 	var duration = (targetPosition-initialPosition).length() / float(speed * 16)
+
+	# anima a ida e a volta da plataforma
 
 	$Tween.interpolate_property(
 		self,

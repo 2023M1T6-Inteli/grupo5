@@ -2,6 +2,7 @@ extends Node2D
 
 
 func _ready():
+	# carrega os textos do termo de responsabilidade
 	$characterName.text = Global.characterName
 	$Title.text = Locales.others.responsabilityTerm.title
 	$Term.text = Locales.others.responsabilityTerm.term
@@ -15,8 +16,8 @@ func closeMinigame():
 	queue_free()
 
 
-# Função confirma a assinatura do usuário no termo de responsabilidade fazendo-o retornar ao jogo.
 func _on_Signature_pressed():
+	# função confirma a assinatura do usuário no termo de responsabilidade fazendo-o retornar ao jogo.
 	$characterName.visible = true
 	yield(get_tree().create_timer(1), "timeout")
 	closeMinigame()

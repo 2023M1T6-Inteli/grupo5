@@ -8,6 +8,7 @@ func _on_Back_pressed():
 
 
 func _on_Next_pressed():
+	# vai para a proxima cena de tutorial
 	Global.currentLevel = 'Level1'
 	if get_tree().change_scene('res://scenes/Level1.tscn') != OK:
 		print ('An unexpected error occured when trying to switch to next scene')
