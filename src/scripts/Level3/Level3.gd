@@ -14,3 +14,7 @@ func _on_DeadZone_body_entered(body:Node):
 	if get_tree().reload_current_scene() != OK:
 		print ('An unexpected error occured when trying to reload current scene')
 
+
+func _ready():
+	$Acid/Animation.play("acid")
+	$Acid2/Animation.play("acid")
