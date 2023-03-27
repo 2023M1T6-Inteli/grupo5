@@ -17,7 +17,7 @@ func changeLanguage(id):
 
 func _on_PlayButton_pressed():
 	# ao apertar start, abre a escolha de personagem
-	if get_tree().change_scene('res://scenes/Tutorial/Character.tscn') != OK:
+	if get_tree().change_scene('res://scenes/Character.tscn') != OK:
 		print ('An unexpected error occured when trying to switch to next scene')
 
 

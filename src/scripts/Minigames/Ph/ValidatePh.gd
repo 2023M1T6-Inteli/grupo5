@@ -243,7 +243,7 @@ func nextBecker():
 
 	if currentBecker >= 6:
 		# se acabaram os becker, termina o minigame
-		Global.minigameRunning = false
+		Global.playerPaused = false
 		get_parent().closeMinigame()
 		return
 

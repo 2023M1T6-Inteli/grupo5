@@ -11,7 +11,7 @@ var paused = false
 
 
 func movePlayer():
-	if Global.minigameRunning or $"../HUD/Dialog".visible:
+	if Global.playerPaused:
 		$Animation.play("reset" + Global.characterName)
 		velocity = Vector2.ZERO
 		return

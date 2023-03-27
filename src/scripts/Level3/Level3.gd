@@ -10,7 +10,7 @@ func _on_DeadZone_body_entered(body:Node):
 
 	# quando o player cair no deadzone, ele vai ser teleportado para o spawnpoint (morre)
 
-	yield(get_tree().create_timer(2), "timeout")
+	yield(get_tree().create_timer(1), "timeout")
 	if get_tree().reload_current_scene() != OK:
 		print ('An unexpected error occured when trying to reload current scene')
 

@@ -11,6 +11,6 @@ var minigames = {
 	'ResponsabilityTerm': load("res://scenes/Minigames/ResponsabilityTerm/ResponsabilityTerm.tscn")
 }
 
-var minigameRunning = false
+var playerPaused = false
 var stackBox = load('res://scenes/Minigames/Stack/Box.tscn')
-var currentLevel = 'Level1'
+var currentLevel = 'Tutorial'

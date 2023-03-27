@@ -1,293 +1,293 @@
-[gd_scene load_steps=156 format=2]
+[gd_scene load_steps=161 format=2]
 
-[ext_resource path="res://assets/Industrial/IndustrialTile_03_light.jpg" type="Texture" id=1]
-[ext_resource path="res://assets/Industrial/IndustrialTile_05_flipped.png" type="Texture" id=2]
-[ext_resource path="res://assets/Background/Background.png" type="Texture" id=3]
-[ext_resource path="res://assets/Industrial/IndustrialTile_07.png" type="Texture" id=4]
-[ext_resource path="res://assets/Industrial/IndustrialTile_27.png" type="Texture" id=5]
-[ext_resource path="res://assets/Industrial/IndustrialTile_05.png" type="Texture" id=6]
-[ext_resource path="res://assets/Industrial/IndustrialTile_80.png" type="Texture" id=7]
-[ext_resource path="res://assets/Industrial/IndustrialTile_04.png" type="Texture" id=8]
-[ext_resource path="res://assets/Industrial/IndustrialTile_72.png" type="Texture" id=9]
-[ext_resource path="res://assets/Industrial/IndustrialTile_36.png" type="Texture" id=10]
-[ext_resource path="res://assets/Industrial/IndustrialTile_81.png" type="Texture" id=11]
-[ext_resource path="res://assets/Industrial/IndustrialTile_25.png" type="Texture" id=12]
-[ext_resource path="res://assets/Industrial/IndustrialTile_28.png" type="Texture" id=13]
-[ext_resource path="res://assets/Industrial/IndustrialTile_24.png" type="Texture" id=14]
-[ext_resource path="res://assets/Industrial/IndustrialTile_20.png" type="Texture" id=15]
-[ext_resource path="res://assets/Industrial/IndustrialTile_14.png" type="Texture" id=16]
-[ext_resource path="res://assets/Industrial/IndustrialTile_12.png" type="Texture" id=17]
-[ext_resource path="res://assets/Industrial/IndustrialTile_13.png" type="Texture" id=18]
-[ext_resource path="res://assets/Industrial/IndustrialTile_18.png" type="Texture" id=19]
-[ext_resource path="res://assets/Industrial/IndustrialTile_34.png" type="Texture" id=20]
-[ext_resource path="res://assets/Industrial/IndustrialTile_19.png" type="Texture" id=21]
-[ext_resource path="res://assets/Industrial/IndustrialTile_32.png" type="Texture" id=22]
-[ext_resource path="res://assets/Industrial/IndustrialTile_26.png" type="Texture" id=23]
-[ext_resource path="res://assets/Industrial/IndustrialTile_16.png" type="Texture" id=24]
-[ext_resource path="res://assets/Industrial/IndustrialTile_29.png" type="Texture" id=25]
-[ext_resource path="res://assets/Industrial/IndustrialTile_15.png" type="Texture" id=26]
-[ext_resource path="res://assets/Industrial/IndustrialTile_17.png" type="Texture" id=27]
-[ext_resource path="res://assets/Industrial/IndustrialTile_21.png" type="Texture" id=28]
-[ext_resource path="res://assets/Industrial/IndustrialTile_11.png" type="Texture" id=29]
+[ext_resource path="res://assets/Industrial/IndustrialTile_04.png" type="Texture" id=1]
+[ext_resource path="res://assets/Industrial/IndustrialTile_36.png" type="Texture" id=2]
+[ext_resource path="res://assets/Industrial/IndustrialTile_72.png" type="Texture" id=3]
+[ext_resource path="res://assets/Industrial/IndustrialTile_81.png" type="Texture" id=4]
+[ext_resource path="res://assets/Industrial/IndustrialTile_25.png" type="Texture" id=5]
+[ext_resource path="res://assets/Industrial/IndustrialTile_05_flipped.png" type="Texture" id=6]
+[ext_resource path="res://assets/Background/Background.png" type="Texture" id=7]
+[ext_resource path="res://assets/Industrial/IndustrialTile_07.png" type="Texture" id=8]
+[ext_resource path="res://assets/Industrial/IndustrialTile_27.png" type="Texture" id=9]
+[ext_resource path="res://assets/Industrial/IndustrialTile_05.png" type="Texture" id=10]
+[ext_resource path="res://assets/Industrial/IndustrialTile_03_light.jpg" type="Texture" id=11]
+[ext_resource path="res://assets/Industrial/IndustrialTile_80.png" type="Texture" id=12]
+[ext_resource path="res://assets/Industrial/IndustrialTile_45.png" type="Texture" id=13]
+[ext_resource path="res://assets/Industrial/IndustrialTile_57.png" type="Texture" id=14]
+[ext_resource path="res://assets/Industrial/IndustrialTile_41.png" type="Texture" id=15]
+[ext_resource path="res://assets/Industrial/IndustrialTile_18.png" type="Texture" id=16]
+[ext_resource path="res://assets/Industrial/IndustrialTile_24.png" type="Texture" id=17]
+[ext_resource path="res://assets/Industrial/IndustrialTile_34.png" type="Texture" id=18]
+[ext_resource path="res://assets/Industrial/IndustrialTile_26.png" type="Texture" id=19]
+[ext_resource path="res://assets/Industrial/IndustrialTile_66.png" type="Texture" id=20]
+[ext_resource path="res://assets/Industrial/IndustrialTile_55.png" type="Texture" id=21]
+[ext_resource path="res://assets/Industrial/IndustrialTile_43.png" type="Texture" id=22]
+[ext_resource path="res://assets/Industrial/IndustrialTile_23.png" type="Texture" id=23]
+[ext_resource path="res://assets/Industrial/IndustrialTile_39.png" type="Texture" id=24]
+[ext_resource path="res://assets/Industrial/IndustrialTile_20.png" type="Texture" id=25]
+[ext_resource path="res://assets/Industrial/IndustrialTile_21.png" type="Texture" id=26]
+[ext_resource path="res://assets/Industrial/IndustrialTile_40.png" type="Texture" id=27]
+[ext_resource path="res://assets/Industrial/IndustrialTile_28.png" type="Texture" id=28]
+[ext_resource path="res://assets/Industrial/IndustrialTile_31.png" type="Texture" id=29]
 [ext_resource path="res://assets/Industrial/IndustrialTile_65.png" type="Texture" id=30]
-[ext_resource path="res://assets/Industrial/IndustrialTile_66.png" type="Texture" id=31]
-[ext_resource path="res://assets/Industrial/IndustrialTile_40.png" type="Texture" id=32]
-[ext_resource path="res://assets/Industrial/IndustrialTile_38.png" type="Texture" id=33]
-[ext_resource path="res://assets/Industrial/IndustrialTile_45.png" type="Texture" id=34]
-[ext_resource path="res://assets/Industrial/IndustrialTile_42.png" type="Texture" id=35]
-[ext_resource path="res://assets/Industrial/IndustrialTile_55.png" type="Texture" id=36]
-[ext_resource path="res://assets/Industrial/IndustrialTile_50.png" type="Texture" id=37]
-[ext_resource path="res://assets/Industrial/IndustrialTile_57.png" type="Texture" id=38]
-[ext_resource path="res://assets/Industrial/IndustrialTile_43.png" type="Texture" id=39]
-[ext_resource path="res://assets/Industrial/IndustrialTile_31.png" type="Texture" id=40]
-[ext_resource path="res://assets/Industrial/IndustrialTile_35.png" type="Texture" id=41]
-[ext_resource path="res://assets/Industrial/IndustrialTile_23.png" type="Texture" id=42]
-[ext_resource path="res://assets/Industrial/IndustrialTile_41.png" type="Texture" id=43]
-[ext_resource path="res://assets/Industrial/IndustrialTile_37.png" type="Texture" id=44]
-[ext_resource path="res://assets/Industrial/IndustrialTile_39.png" type="Texture" id=45]
-[ext_resource path="res://assets/Industrial/IndustrialTile_63.png" type="Texture" id=46]
-[ext_resource path="res://assets/Industrial/IndustrialTile_06.png" type="Texture" id=47]
-[ext_resource path="res://assets/Industrial/IndustrialTile_33.png" type="Texture" id=48]
-[ext_resource path="res://assets/Industrial/IndustrialTile_49.png" type="Texture" id=49]
-[ext_resource path="res://assets/Industrial/IndustrialTile_44.png" type="Texture" id=50]
-[ext_resource path="res://assets/Industrial/IndustrialTile_70.png" type="Texture" id=51]
-[ext_resource path="res://assets/Industrial/IndustrialTile_30.png" type="Texture" id=52]
-[ext_resource path="res://assets/Industrial/IndustrialTile_73.png" type="Texture" id=53]
-[ext_resource path="res://assets/Industrial/IndustrialTile_71.png" type="Texture" id=54]
-[ext_resource path="res://assets/Industrial/IndustrialTile_56.png" type="Texture" id=55]
+[ext_resource path="res://assets/Industrial/IndustrialTile_63.png" type="Texture" id=31]
+[ext_resource path="res://assets/Industrial/IndustrialTile_06.png" type="Texture" id=32]
+[ext_resource path="res://assets/Industrial/IndustrialTile_37.png" type="Texture" id=33]
+[ext_resource path="res://assets/Industrial/IndustrialTile_15.png" type="Texture" id=34]
+[ext_resource path="res://assets/Industrial/IndustrialTile_29.png" type="Texture" id=35]
+[ext_resource path="res://assets/Industrial/IndustrialTile_19.png" type="Texture" id=36]
+[ext_resource path="res://assets/Industrial/IndustrialTile_12.png" type="Texture" id=37]
+[ext_resource path="res://assets/Industrial/IndustrialTile_17.png" type="Texture" id=38]
+[ext_resource path="res://assets/Industrial/IndustrialTile_38.png" type="Texture" id=39]
+[ext_resource path="res://assets/Industrial/IndustrialTile_42.png" type="Texture" id=40]
+[ext_resource path="res://assets/Industrial/IndustrialTile_50.png" type="Texture" id=41]
+[ext_resource path="res://assets/Industrial/IndustrialTile_35.png" type="Texture" id=42]
+[ext_resource path="res://assets/Industrial/IndustrialTile_13.png" type="Texture" id=43]
+[ext_resource path="res://assets/Industrial/IndustrialTile_14.png" type="Texture" id=44]
+[ext_resource path="res://assets/Industrial/IndustrialTile_32.png" type="Texture" id=45]
+[ext_resource path="res://assets/Industrial/IndustrialTile_16.png" type="Texture" id=46]
+[ext_resource path="res://assets/Industrial/IndustrialTile_11.png" type="Texture" id=47]
+[ext_resource path="res://assets/Tutorial/Keys/A.png" type="Texture" id=48]
+[ext_resource path="res://assets/Tutorial/Keys/LeftButton.png" type="Texture" id=49]
+[ext_resource path="res://assets/Tutorial/Keys/RightButton.png" type="Texture" id=50]
+[ext_resource path="res://assets/Tutorial/Keys/D.png" type="Texture" id=51]
+[ext_resource path="res://assets/Tutorial/Keys/key_w 1.png" type="Texture" id=52]
+[ext_resource path="res://assets/Tutorial/Keys/key_space 1.png" type="Texture" id=53]
+[ext_resource path="res://assets/Tutorial/Keys/UpButton.png" type="Texture" id=54]
+[ext_resource path="res://scripts/InteractiveTutorial.gd" type="Script" id=55]
 [ext_resource path="res://assets/Industrial/IndustrialTile_62.png" type="Texture" id=56]
-[ext_resource path="res://assets/Industrial/IndustrialTile_74.png" type="Texture" id=57]
-[ext_resource path="res://assets/Industrial/IndustrialTile_47.png" type="Texture" id=58]
-[ext_resource path="res://assets/Industrial/IndustrialTile_48.png" type="Texture" id=59]
-[ext_resource path="res://assets/Industrial/IndustrialTile_64.png" type="Texture" id=60]
-[ext_resource path="res://assets/Industrial/IndustrialTile_75.png" type="Texture" id=61]
+[ext_resource path="res://assets/Industrial/IndustrialTile_48.png" type="Texture" id=57]
+[ext_resource path="res://assets/Industrial/IndustrialTile_46.png" type="Texture" id=58]
+[ext_resource path="res://assets/Industrial/IndustrialTile_78.png" type="Texture" id=59]
+[ext_resource path="res://assets/Industrial/IndustrialTile_56.png" type="Texture" id=60]
+[ext_resource path="res://assets/Industrial/IndustrialTile_64.png" type="Texture" id=61]
 [ext_resource path="res://assets/Industrial/IndustrialTile_76.png" type="Texture" id=62]
 [ext_resource path="res://assets/Industrial/IndustrialTile_22.png" type="Texture" id=63]
-[ext_resource path="res://assets/Industrial/IndustrialTile_46.png" type="Texture" id=64]
-[ext_resource path="res://assets/Industrial/IndustrialTile_61.png" type="Texture" id=65]
-[ext_resource path="res://assets/Industrial/IndustrialTile_79.png" type="Texture" id=66]
-[ext_resource path="res://assets/Industrial/IndustrialTile_77.png" type="Texture" id=67]
-[ext_resource path="res://assets/Industrial/IndustrialTile_78.png" type="Texture" id=68]
-[ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=69]
-[ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=70]
-[ext_resource path="res://scenes/Entities/NPC.tscn" type="PackedScene" id=71]
-[ext_resource path="res://scenes/Interface/HUD.tscn" type="PackedScene" id=72]
-[ext_resource path="res://assets/NPCs/MsgBox.png" type="Texture" id=73]
-[ext_resource path="res://scenes/Objects/PPE.tscn" type="PackedScene" id=74]
-[ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=75]
-[ext_resource path="res://scripts/Level1/Inventory.gd" type="Script" id=76]
-[ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=77]
-[ext_resource path="res://assets/Minigames/StackStroke.png" type="Texture" id=78]
-[ext_resource path="res://assets/Minigames/PalletIcon.png" type="Texture" id=79]
-[ext_resource path="res://assets/Minigames/PalletStroke.png" type="Texture" id=80]
-[ext_resource path="res://scenes/Objects/Elevator.tscn" type="PackedScene" id=81]
-[ext_resource path="res://scripts/Level1/Level1.gd" type="Script" id=82]
-[ext_resource path="res://assets/Minigames/BigBagsIcon.png" type="Texture" id=83]
-[ext_resource path="res://scenes/Objects/FallingPlatform.tscn" type="PackedScene" id=84]
-[ext_resource path="res://assets/Minigames/pranchetaIcon.png" type="Texture" id=85]
-[ext_resource path="res://assets/Minigames/pranchetaStroke.png" type="Texture" id=86]
+[ext_resource path="res://assets/Industrial/IndustrialTile_33.png" type="Texture" id=64]
+[ext_resource path="res://assets/Industrial/IndustrialTile_75.png" type="Texture" id=65]
+[ext_resource path="res://assets/Industrial/IndustrialTile_77.png" type="Texture" id=66]
+[ext_resource path="res://assets/Industrial/IndustrialTile_79.png" type="Texture" id=67]
+[ext_resource path="res://assets/Industrial/IndustrialTile_49.png" type="Texture" id=68]
+[ext_resource path="res://assets/Industrial/IndustrialTile_30.png" type="Texture" id=69]
+[ext_resource path="res://assets/Industrial/IndustrialTile_47.png" type="Texture" id=70]
+[ext_resource path="res://assets/Industrial/IndustrialTile_70.png" type="Texture" id=71]
+[ext_resource path="res://assets/Industrial/IndustrialTile_73.png" type="Texture" id=72]
+[ext_resource path="res://assets/Industrial/IndustrialTile_61.png" type="Texture" id=73]
+[ext_resource path="res://assets/Industrial/IndustrialTile_74.png" type="Texture" id=74]
+[ext_resource path="res://assets/Industrial/IndustrialTile_44.png" type="Texture" id=75]
+[ext_resource path="res://assets/Industrial/IndustrialTile_71.png" type="Texture" id=76]
+[ext_resource path="res://assets/NPCs/MsgBox.png" type="Texture" id=77]
+[ext_resource path="res://assets/ClipboardTutorial/ExampleSpritesheet.png" type="Texture" id=78]
+[ext_resource path="res://assets/Tutorial/Keys/Vector.png" type="Texture" id=79]
+[ext_resource path="res://scenes/Objects/Elevator.tscn" type="PackedScene" id=80]
+[ext_resource path="res://scenes/Interface/HUD.tscn" type="PackedScene" id=81]
+[ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=82]
+[ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=83]
+[ext_resource path="res://scenes/Entities/NPC.tscn" type="PackedScene" id=84]
+[ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=85]
+[ext_resource path="res://assets/Tutorial/Keys/E.png" type="Texture" id=86]
 
-[sub_resource type="ConvexPolygonShape2D" id=89]
+[sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=90]
+[sub_resource type="ConvexPolygonShape2D" id=26]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=91]
+[sub_resource type="ConvexPolygonShape2D" id=27]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=92]
+[sub_resource type="ConvexPolygonShape2D" id=28]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=93]
+[sub_resource type="ConvexPolygonShape2D" id=29]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=94]
+[sub_resource type="ConvexPolygonShape2D" id=30]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=95]
+[sub_resource type="ConvexPolygonShape2D" id=31]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=96]
+[sub_resource type="ConvexPolygonShape2D" id=32]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=97]
+[sub_resource type="ConvexPolygonShape2D" id=33]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=98]
+[sub_resource type="ConvexPolygonShape2D" id=34]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=99]
+[sub_resource type="ConvexPolygonShape2D" id=35]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=100]
+[sub_resource type="ConvexPolygonShape2D" id=36]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=101]
+[sub_resource type="ConvexPolygonShape2D" id=37]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=102]
+[sub_resource type="ConvexPolygonShape2D" id=38]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=103]
+[sub_resource type="ConvexPolygonShape2D" id=39]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=104]
+[sub_resource type="ConvexPolygonShape2D" id=40]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=105]
+[sub_resource type="ConvexPolygonShape2D" id=41]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=106]
+[sub_resource type="ConvexPolygonShape2D" id=42]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=107]
+[sub_resource type="ConvexPolygonShape2D" id=43]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=108]
+[sub_resource type="ConvexPolygonShape2D" id=18]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=109]
+[sub_resource type="ConvexPolygonShape2D" id=44]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=110]
+[sub_resource type="ConvexPolygonShape2D" id=45]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=111]
+[sub_resource type="ConvexPolygonShape2D" id=46]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=112]
+[sub_resource type="ConvexPolygonShape2D" id=47]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=113]
+[sub_resource type="ConvexPolygonShape2D" id=48]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=114]
+[sub_resource type="ConvexPolygonShape2D" id=49]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=115]
+[sub_resource type="ConvexPolygonShape2D" id=50]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=116]
+[sub_resource type="ConvexPolygonShape2D" id=51]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=117]
+[sub_resource type="ConvexPolygonShape2D" id=52]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=118]
+[sub_resource type="ConvexPolygonShape2D" id=53]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=119]
+[sub_resource type="ConvexPolygonShape2D" id=19]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=120]
+[sub_resource type="ConvexPolygonShape2D" id=54]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=121]
+[sub_resource type="ConvexPolygonShape2D" id=55]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=122]
+[sub_resource type="ConvexPolygonShape2D" id=56]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=123]
+[sub_resource type="ConvexPolygonShape2D" id=57]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=124]
+[sub_resource type="ConvexPolygonShape2D" id=58]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=125]
+[sub_resource type="ConvexPolygonShape2D" id=59]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=126]
+[sub_resource type="ConvexPolygonShape2D" id=60]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=127]
+[sub_resource type="ConvexPolygonShape2D" id=61]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=128]
+[sub_resource type="ConvexPolygonShape2D" id=62]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=129]
+[sub_resource type="ConvexPolygonShape2D" id=63]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=130]
+[sub_resource type="ConvexPolygonShape2D" id=20]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=131]
+[sub_resource type="ConvexPolygonShape2D" id=64]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=132]
+[sub_resource type="ConvexPolygonShape2D" id=65]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=133]
+[sub_resource type="ConvexPolygonShape2D" id=66]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=134]
+[sub_resource type="ConvexPolygonShape2D" id=67]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=135]
+[sub_resource type="ConvexPolygonShape2D" id=68]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=136]
+[sub_resource type="ConvexPolygonShape2D" id=69]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=137]
+[sub_resource type="ConvexPolygonShape2D" id=70]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=138]
+[sub_resource type="ConvexPolygonShape2D" id=71]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=139]
+[sub_resource type="ConvexPolygonShape2D" id=72]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=140]
+[sub_resource type="ConvexPolygonShape2D" id=73]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=141]
+[sub_resource type="ConvexPolygonShape2D" id=21]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=142]
+[sub_resource type="ConvexPolygonShape2D" id=74]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=143]
+[sub_resource type="ConvexPolygonShape2D" id=75]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=144]
+[sub_resource type="ConvexPolygonShape2D" id=76]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=145]
+[sub_resource type="ConvexPolygonShape2D" id=77]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=146]
+[sub_resource type="ConvexPolygonShape2D" id=78]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=147]
+[sub_resource type="ConvexPolygonShape2D" id=79]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=148]
+[sub_resource type="ConvexPolygonShape2D" id=80]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=149]
+[sub_resource type="ConvexPolygonShape2D" id=81]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=150]
+[sub_resource type="ConvexPolygonShape2D" id=82]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=151]
+[sub_resource type="ConvexPolygonShape2D" id=83]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=152]
+[sub_resource type="ConvexPolygonShape2D" id=84]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=153]
+[sub_resource type="ConvexPolygonShape2D" id=85]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=154]
+[sub_resource type="ConvexPolygonShape2D" id=86]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
-[sub_resource type="TileSet" id=14]
+[sub_resource type="TileSet" id=87]
 3/name = "IndustrialTile_04.png 3"
-3/texture = ExtResource( 8 )
+3/texture = ExtResource( 1 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 0, 32, 32 )
@@ -296,19 +296,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 3/navigation_offset = Vector2( 0, 0 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 108 )
+3/shape = SubResource( 18 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 108 ),
+"shape": SubResource( 18 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
 4/name = "IndustrialTile_05.png 4"
-4/texture = ExtResource( 6 )
+4/texture = ExtResource( 10 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 32, 32 )
@@ -317,19 +317,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 4/navigation_offset = Vector2( 0, 0 )
 4/shape_offset = Vector2( 0, 0 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape = SubResource( 119 )
+4/shape = SubResource( 19 )
 4/shape_one_way = false
 4/shape_one_way_margin = 1.0
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 119 ),
+"shape": SubResource( 19 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 4/z_index = 0
 5/name = "IndustrialTile_06.png 5"
-5/texture = ExtResource( 47 )
+5/texture = ExtResource( 32 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 0, 32, 32 )
@@ -338,19 +338,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 5/navigation_offset = Vector2( 0, 0 )
 5/shape_offset = Vector2( 0, 0 )
 5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape = SubResource( 130 )
+5/shape = SubResource( 20 )
 5/shape_one_way = false
 5/shape_one_way_margin = 1.0
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 130 ),
+"shape": SubResource( 20 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 5/z_index = 0
 6/name = "IndustrialTile_07.png 6"
-6/texture = ExtResource( 4 )
+6/texture = ExtResource( 8 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 32, 32 )
@@ -359,19 +359,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 6/navigation_offset = Vector2( 0, 0 )
 6/shape_offset = Vector2( 0, 0 )
 6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-6/shape = SubResource( 141 )
+6/shape = SubResource( 21 )
 6/shape_one_way = false
 6/shape_one_way_margin = 1.0
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 141 ),
+"shape": SubResource( 21 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 6/z_index = 0
 10/name = "IndustrialTile_25.png 10"
-10/texture = ExtResource( 12 )
+10/texture = ExtResource( 5 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 0, 0, 32, 32 )
@@ -380,19 +380,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 10/navigation_offset = Vector2( 0, 0 )
 10/shape_offset = Vector2( 0, 0 )
 10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-10/shape = SubResource( 89 )
+10/shape = SubResource( 25 )
 10/shape_one_way = false
 10/shape_one_way_margin = 1.0
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 89 ),
+"shape": SubResource( 25 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 10/z_index = 0
 11/name = "IndustrialTile_27.png 11"
-11/texture = ExtResource( 5 )
+11/texture = ExtResource( 9 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 0, 0, 32, 16 )
@@ -401,19 +401,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 11/navigation_offset = Vector2( 0, 0 )
 11/shape_offset = Vector2( 0, 0 )
 11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-11/shape = SubResource( 90 )
+11/shape = SubResource( 26 )
 11/shape_one_way = false
 11/shape_one_way_margin = 1.0
 11/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 90 ),
+"shape": SubResource( 26 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 11/z_index = 0
 12/name = "IndustrialTile_80.png 12"
-12/texture = ExtResource( 7 )
+12/texture = ExtResource( 12 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 0, 0, 32, 16 )
@@ -422,19 +422,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 12/navigation_offset = Vector2( 0, 0 )
 12/shape_offset = Vector2( 0, 0 )
 12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-12/shape = SubResource( 91 )
+12/shape = SubResource( 27 )
 12/shape_one_way = true
 12/shape_one_way_margin = 1.0
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 91 ),
+"shape": SubResource( 27 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 12/z_index = 0
 13/name = "IndustrialTile_81.png 13"
-13/texture = ExtResource( 11 )
+13/texture = ExtResource( 4 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 0, 0, 32, 16 )
@@ -443,19 +443,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 13/navigation_offset = Vector2( 0, 0 )
 13/shape_offset = Vector2( 0, 0 )
 13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-13/shape = SubResource( 92 )
+13/shape = SubResource( 28 )
 13/shape_one_way = true
 13/shape_one_way_margin = 1.0
 13/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 92 ),
+"shape": SubResource( 28 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 13/z_index = 0
 14/name = "IndustrialTile_72.png 14"
-14/texture = ExtResource( 9 )
+14/texture = ExtResource( 3 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 0, 0, 32, 16 )
@@ -464,19 +464,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 14/navigation_offset = Vector2( 0, 0 )
 14/shape_offset = Vector2( 0, 0 )
 14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-14/shape = SubResource( 93 )
+14/shape = SubResource( 29 )
 14/shape_one_way = true
 14/shape_one_way_margin = 1.0
 14/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 93 ),
+"shape": SubResource( 29 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 14/z_index = 0
 15/name = "IndustrialTile_11.png 15"
-15/texture = ExtResource( 29 )
+15/texture = ExtResource( 47 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 0, 0, 32, 32 )
@@ -490,7 +490,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 15/shapes = [  ]
 15/z_index = 0
 16/name = "IndustrialTile_11.png 16"
-16/texture = ExtResource( 29 )
+16/texture = ExtResource( 47 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 0, 0, 32, 32 )
@@ -499,19 +499,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 16/navigation_offset = Vector2( 0, 0 )
 16/shape_offset = Vector2( 0, 0 )
 16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-16/shape = SubResource( 94 )
+16/shape = SubResource( 30 )
 16/shape_one_way = false
 16/shape_one_way_margin = 1.0
 16/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 94 ),
+"shape": SubResource( 30 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 16/z_index = 0
 17/name = "IndustrialTile_12.png 17"
-17/texture = ExtResource( 17 )
+17/texture = ExtResource( 37 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 0, 0, 32, 32 )
@@ -520,19 +520,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 17/navigation_offset = Vector2( 0, 0 )
 17/shape_offset = Vector2( 0, 0 )
 17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-17/shape = SubResource( 95 )
+17/shape = SubResource( 31 )
 17/shape_one_way = false
 17/shape_one_way_margin = 1.0
 17/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 95 ),
+"shape": SubResource( 31 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 17/z_index = 0
 18/name = "IndustrialTile_13.png 18"
-18/texture = ExtResource( 18 )
+18/texture = ExtResource( 43 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 0, 0, 32, 32 )
@@ -541,19 +541,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 18/navigation_offset = Vector2( 0, 0 )
 18/shape_offset = Vector2( 0, 0 )
 18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-18/shape = SubResource( 96 )
+18/shape = SubResource( 32 )
 18/shape_one_way = false
 18/shape_one_way_margin = 1.0
 18/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 96 ),
+"shape": SubResource( 32 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 18/z_index = 0
 19/name = "IndustrialTile_14.png 19"
-19/texture = ExtResource( 16 )
+19/texture = ExtResource( 44 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 0, 0, 32, 32 )
@@ -562,19 +562,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 19/navigation_offset = Vector2( 0, 0 )
 19/shape_offset = Vector2( 0, 0 )
 19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-19/shape = SubResource( 97 )
+19/shape = SubResource( 33 )
 19/shape_one_way = false
 19/shape_one_way_margin = 1.0
 19/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 97 ),
+"shape": SubResource( 33 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 19/z_index = 0
 20/name = "IndustrialTile_15.png 20"
-20/texture = ExtResource( 26 )
+20/texture = ExtResource( 34 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 0, 0, 32, 32 )
@@ -583,19 +583,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 20/navigation_offset = Vector2( 0, 0 )
 20/shape_offset = Vector2( 0, 0 )
 20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-20/shape = SubResource( 98 )
+20/shape = SubResource( 34 )
 20/shape_one_way = false
 20/shape_one_way_margin = 1.0
 20/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 98 ),
+"shape": SubResource( 34 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 20/z_index = 0
 21/name = "IndustrialTile_16.png 21"
-21/texture = ExtResource( 24 )
+21/texture = ExtResource( 46 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 0, 0, 32, 32 )
@@ -604,19 +604,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 21/navigation_offset = Vector2( 0, 0 )
 21/shape_offset = Vector2( 0, 0 )
 21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-21/shape = SubResource( 99 )
+21/shape = SubResource( 35 )
 21/shape_one_way = false
 21/shape_one_way_margin = 1.0
 21/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 99 ),
+"shape": SubResource( 35 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 21/z_index = 0
 22/name = "IndustrialTile_17.png 22"
-22/texture = ExtResource( 27 )
+22/texture = ExtResource( 38 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 0, 0, 32, 32 )
@@ -625,19 +625,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 22/navigation_offset = Vector2( 0, 0 )
 22/shape_offset = Vector2( 0, 0 )
 22/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-22/shape = SubResource( 100 )
+22/shape = SubResource( 36 )
 22/shape_one_way = false
 22/shape_one_way_margin = 1.0
 22/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 100 ),
+"shape": SubResource( 36 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 22/z_index = 0
 23/name = "IndustrialTile_18.png 23"
-23/texture = ExtResource( 19 )
+23/texture = ExtResource( 16 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 0, 0, 32, 16 )
@@ -646,19 +646,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 23/navigation_offset = Vector2( 0, 0 )
 23/shape_offset = Vector2( 0, 0 )
 23/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-23/shape = SubResource( 101 )
+23/shape = SubResource( 37 )
 23/shape_one_way = false
 23/shape_one_way_margin = 1.0
 23/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 101 ),
+"shape": SubResource( 37 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 23/z_index = 0
 24/name = "IndustrialTile_19.png 24"
-24/texture = ExtResource( 21 )
+24/texture = ExtResource( 36 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 0, 0, 32, 32 )
@@ -667,19 +667,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 24/navigation_offset = Vector2( 0, 0 )
 24/shape_offset = Vector2( 0, 0 )
 24/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-24/shape = SubResource( 102 )
+24/shape = SubResource( 38 )
 24/shape_one_way = false
 24/shape_one_way_margin = 1.0
 24/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 102 ),
+"shape": SubResource( 38 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 24/z_index = 0
 25/name = "IndustrialTile_20.png 25"
-25/texture = ExtResource( 15 )
+25/texture = ExtResource( 25 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 0, 0, 32, 32 )
@@ -688,19 +688,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 25/navigation_offset = Vector2( 0, 0 )
 25/shape_offset = Vector2( 0, 0 )
 25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-25/shape = SubResource( 103 )
+25/shape = SubResource( 39 )
 25/shape_one_way = false
 25/shape_one_way_margin = 1.0
 25/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 103 ),
+"shape": SubResource( 39 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 25/z_index = 0
 26/name = "IndustrialTile_21.png 26"
-26/texture = ExtResource( 28 )
+26/texture = ExtResource( 26 )
 26/tex_offset = Vector2( 0, 0 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 0, 0, 32, 32 )
@@ -709,14 +709,14 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 26/navigation_offset = Vector2( 0, 0 )
 26/shape_offset = Vector2( 0, 0 )
 26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-26/shape = SubResource( 104 )
+26/shape = SubResource( 40 )
 26/shape_one_way = false
 26/shape_one_way_margin = 1.0
 26/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 104 ),
+"shape": SubResource( 40 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 26/z_index = 0
@@ -730,19 +730,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 27/navigation_offset = Vector2( 0, 0 )
 27/shape_offset = Vector2( 0, 0 )
 27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-27/shape = SubResource( 105 )
+27/shape = SubResource( 41 )
 27/shape_one_way = false
 27/shape_one_way_margin = 1.0
 27/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 105 ),
+"shape": SubResource( 41 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 27/z_index = 0
 28/name = "IndustrialTile_23.png 28"
-28/texture = ExtResource( 42 )
+28/texture = ExtResource( 23 )
 28/tex_offset = Vector2( 0, 0 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 0, 0, 32, 32 )
@@ -751,19 +751,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 28/navigation_offset = Vector2( 0, 0 )
 28/shape_offset = Vector2( 0, 0 )
 28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-28/shape = SubResource( 106 )
+28/shape = SubResource( 42 )
 28/shape_one_way = false
 28/shape_one_way_margin = 1.0
 28/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 106 ),
+"shape": SubResource( 42 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 28/z_index = 0
 29/name = "IndustrialTile_24.png 29"
-29/texture = ExtResource( 14 )
+29/texture = ExtResource( 17 )
 29/tex_offset = Vector2( 0, 0 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 0, 0, 32, 32 )
@@ -772,19 +772,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 29/navigation_offset = Vector2( 0, 0 )
 29/shape_offset = Vector2( 0, 0 )
 29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-29/shape = SubResource( 107 )
+29/shape = SubResource( 43 )
 29/shape_one_way = false
 29/shape_one_way_margin = 1.0
 29/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 107 ),
+"shape": SubResource( 43 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 29/z_index = 0
 30/name = "IndustrialTile_26.png 30"
-30/texture = ExtResource( 23 )
+30/texture = ExtResource( 19 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 0, 0, 32, 32 )
@@ -793,19 +793,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 30/navigation_offset = Vector2( 0, 0 )
 30/shape_offset = Vector2( 0, 0 )
 30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-30/shape = SubResource( 109 )
+30/shape = SubResource( 44 )
 30/shape_one_way = false
 30/shape_one_way_margin = 1.0
 30/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 109 ),
+"shape": SubResource( 44 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 30/z_index = 0
 31/name = "IndustrialTile_28.png 31"
-31/texture = ExtResource( 13 )
+31/texture = ExtResource( 28 )
 31/tex_offset = Vector2( 0, 0 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 0, 0, 32, 32 )
@@ -814,19 +814,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 31/navigation_offset = Vector2( 0, 0 )
 31/shape_offset = Vector2( 0, 0 )
 31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-31/shape = SubResource( 110 )
+31/shape = SubResource( 45 )
 31/shape_one_way = false
 31/shape_one_way_margin = 1.0
 31/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 110 ),
+"shape": SubResource( 45 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 31/z_index = 0
 32/name = "IndustrialTile_29.png 32"
-32/texture = ExtResource( 25 )
+32/texture = ExtResource( 35 )
 32/tex_offset = Vector2( 0, 0 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 0, 0, 32, 32 )
@@ -835,19 +835,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 32/navigation_offset = Vector2( 0, 0 )
 32/shape_offset = Vector2( 0, 0 )
 32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-32/shape = SubResource( 111 )
+32/shape = SubResource( 46 )
 32/shape_one_way = false
 32/shape_one_way_margin = 1.0
 32/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 111 ),
+"shape": SubResource( 46 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 32/z_index = 0
 33/name = "IndustrialTile_30.png 33"
-33/texture = ExtResource( 52 )
+33/texture = ExtResource( 69 )
 33/tex_offset = Vector2( 0, 0 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 0, 0, 32, 32 )
@@ -856,19 +856,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 33/navigation_offset = Vector2( 0, 0 )
 33/shape_offset = Vector2( 0, 0 )
 33/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-33/shape = SubResource( 112 )
+33/shape = SubResource( 47 )
 33/shape_one_way = false
 33/shape_one_way_margin = 1.0
 33/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 112 ),
+"shape": SubResource( 47 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 33/z_index = 0
 34/name = "IndustrialTile_31.png 34"
-34/texture = ExtResource( 40 )
+34/texture = ExtResource( 29 )
 34/tex_offset = Vector2( 0, 0 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 0, 0, 32, 32 )
@@ -877,19 +877,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 34/navigation_offset = Vector2( 0, 0 )
 34/shape_offset = Vector2( 0, 0 )
 34/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-34/shape = SubResource( 113 )
+34/shape = SubResource( 48 )
 34/shape_one_way = false
 34/shape_one_way_margin = 1.0
 34/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 113 ),
+"shape": SubResource( 48 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 34/z_index = 0
 35/name = "IndustrialTile_32.png 35"
-35/texture = ExtResource( 22 )
+35/texture = ExtResource( 45 )
 35/tex_offset = Vector2( 0, 0 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 0, 0, 32, 32 )
@@ -898,19 +898,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 35/navigation_offset = Vector2( 0, 0 )
 35/shape_offset = Vector2( 0, 0 )
 35/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-35/shape = SubResource( 114 )
+35/shape = SubResource( 49 )
 35/shape_one_way = false
 35/shape_one_way_margin = 1.0
 35/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 114 ),
+"shape": SubResource( 49 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 35/z_index = 0
 36/name = "IndustrialTile_33.png 36"
-36/texture = ExtResource( 48 )
+36/texture = ExtResource( 64 )
 36/tex_offset = Vector2( 0, 0 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 0, 0, 32, 32 )
@@ -919,19 +919,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 36/navigation_offset = Vector2( 0, 0 )
 36/shape_offset = Vector2( 0, 0 )
 36/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-36/shape = SubResource( 115 )
+36/shape = SubResource( 50 )
 36/shape_one_way = false
 36/shape_one_way_margin = 1.0
 36/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 115 ),
+"shape": SubResource( 50 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 36/z_index = 0
 37/name = "IndustrialTile_34.png 37"
-37/texture = ExtResource( 20 )
+37/texture = ExtResource( 18 )
 37/tex_offset = Vector2( 0, 0 )
 37/modulate = Color( 1, 1, 1, 1 )
 37/region = Rect2( 0, 0, 32, 32 )
@@ -940,19 +940,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 37/navigation_offset = Vector2( 0, 0 )
 37/shape_offset = Vector2( 0, 0 )
 37/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-37/shape = SubResource( 116 )
+37/shape = SubResource( 51 )
 37/shape_one_way = false
 37/shape_one_way_margin = 1.0
 37/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 116 ),
+"shape": SubResource( 51 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 37/z_index = 0
 38/name = "IndustrialTile_35.png 38"
-38/texture = ExtResource( 41 )
+38/texture = ExtResource( 42 )
 38/tex_offset = Vector2( 0, 0 )
 38/modulate = Color( 1, 1, 1, 1 )
 38/region = Rect2( 0, 0, 32, 32 )
@@ -961,19 +961,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 38/navigation_offset = Vector2( 0, 0 )
 38/shape_offset = Vector2( 0, 0 )
 38/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-38/shape = SubResource( 117 )
+38/shape = SubResource( 52 )
 38/shape_one_way = false
 38/shape_one_way_margin = 1.0
 38/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 117 ),
+"shape": SubResource( 52 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 38/z_index = 0
 39/name = "IndustrialTile_36.png 39"
-39/texture = ExtResource( 10 )
+39/texture = ExtResource( 2 )
 39/tex_offset = Vector2( 0, 0 )
 39/modulate = Color( 1, 1, 1, 1 )
 39/region = Rect2( 0, 0, 32, 32 )
@@ -982,19 +982,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 39/navigation_offset = Vector2( 0, 0 )
 39/shape_offset = Vector2( 0, 0 )
 39/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-39/shape = SubResource( 118 )
+39/shape = SubResource( 53 )
 39/shape_one_way = false
 39/shape_one_way_margin = 1.0
 39/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 118 ),
+"shape": SubResource( 53 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 39/z_index = 0
 40/name = "IndustrialTile_37.png 40"
-40/texture = ExtResource( 44 )
+40/texture = ExtResource( 33 )
 40/tex_offset = Vector2( 0, 0 )
 40/modulate = Color( 1, 1, 1, 1 )
 40/region = Rect2( 0, 0, 32, 32 )
@@ -1003,19 +1003,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 40/navigation_offset = Vector2( 0, 0 )
 40/shape_offset = Vector2( 0, 0 )
 40/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-40/shape = SubResource( 120 )
+40/shape = SubResource( 54 )
 40/shape_one_way = false
 40/shape_one_way_margin = 1.0
 40/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 120 ),
+"shape": SubResource( 54 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 40/z_index = 0
 41/name = "IndustrialTile_38.png 41"
-41/texture = ExtResource( 33 )
+41/texture = ExtResource( 39 )
 41/tex_offset = Vector2( 0, 0 )
 41/modulate = Color( 1, 1, 1, 1 )
 41/region = Rect2( 0, 0, 32, 32 )
@@ -1024,19 +1024,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 41/navigation_offset = Vector2( 0, 0 )
 41/shape_offset = Vector2( 0, 0 )
 41/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-41/shape = SubResource( 121 )
+41/shape = SubResource( 55 )
 41/shape_one_way = false
 41/shape_one_way_margin = 1.0
 41/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 121 ),
+"shape": SubResource( 55 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 41/z_index = 0
 42/name = "IndustrialTile_39.png 42"
-42/texture = ExtResource( 45 )
+42/texture = ExtResource( 24 )
 42/tex_offset = Vector2( 0, 0 )
 42/modulate = Color( 1, 1, 1, 1 )
 42/region = Rect2( 0, 0, 32, 32 )
@@ -1045,19 +1045,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 42/navigation_offset = Vector2( 0, 0 )
 42/shape_offset = Vector2( 0, 0 )
 42/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-42/shape = SubResource( 122 )
+42/shape = SubResource( 56 )
 42/shape_one_way = false
 42/shape_one_way_margin = 1.0
 42/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 122 ),
+"shape": SubResource( 56 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 42/z_index = 0
 43/name = "IndustrialTile_40.png 43"
-43/texture = ExtResource( 32 )
+43/texture = ExtResource( 27 )
 43/tex_offset = Vector2( 0, 0 )
 43/modulate = Color( 1, 1, 1, 1 )
 43/region = Rect2( 0, 0, 32, 32 )
@@ -1066,19 +1066,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 43/navigation_offset = Vector2( 0, 0 )
 43/shape_offset = Vector2( 0, 0 )
 43/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-43/shape = SubResource( 123 )
+43/shape = SubResource( 57 )
 43/shape_one_way = false
 43/shape_one_way_margin = 1.0
 43/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 123 ),
+"shape": SubResource( 57 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 43/z_index = 0
 44/name = "IndustrialTile_41.png 44"
-44/texture = ExtResource( 43 )
+44/texture = ExtResource( 15 )
 44/tex_offset = Vector2( 0, 0 )
 44/modulate = Color( 1, 1, 1, 1 )
 44/region = Rect2( 0, 0, 32, 32 )
@@ -1087,19 +1087,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 44/navigation_offset = Vector2( 0, 0 )
 44/shape_offset = Vector2( 0, 0 )
 44/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-44/shape = SubResource( 124 )
+44/shape = SubResource( 58 )
 44/shape_one_way = false
 44/shape_one_way_margin = 1.0
 44/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 124 ),
+"shape": SubResource( 58 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 44/z_index = 0
 45/name = "IndustrialTile_42.png 45"
-45/texture = ExtResource( 35 )
+45/texture = ExtResource( 40 )
 45/tex_offset = Vector2( 0, 0 )
 45/modulate = Color( 1, 1, 1, 1 )
 45/region = Rect2( 0, 0, 32, 32 )
@@ -1108,19 +1108,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 45/navigation_offset = Vector2( 0, 0 )
 45/shape_offset = Vector2( 0, 0 )
 45/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-45/shape = SubResource( 125 )
+45/shape = SubResource( 59 )
 45/shape_one_way = false
 45/shape_one_way_margin = 1.0
 45/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 125 ),
+"shape": SubResource( 59 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 45/z_index = 0
 46/name = "IndustrialTile_43.png 46"
-46/texture = ExtResource( 39 )
+46/texture = ExtResource( 22 )
 46/tex_offset = Vector2( 0, 0 )
 46/modulate = Color( 1, 1, 1, 1 )
 46/region = Rect2( 0, 0, 32, 32 )
@@ -1129,19 +1129,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 46/navigation_offset = Vector2( 0, 0 )
 46/shape_offset = Vector2( 0, 0 )
 46/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-46/shape = SubResource( 126 )
+46/shape = SubResource( 60 )
 46/shape_one_way = false
 46/shape_one_way_margin = 1.0
 46/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 126 ),
+"shape": SubResource( 60 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 46/z_index = 0
 47/name = "IndustrialTile_44.png 47"
-47/texture = ExtResource( 50 )
+47/texture = ExtResource( 75 )
 47/tex_offset = Vector2( 0, 0 )
 47/modulate = Color( 1, 1, 1, 1 )
 47/region = Rect2( 0, 0, 32, 32 )
@@ -1150,19 +1150,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 47/navigation_offset = Vector2( 0, 0 )
 47/shape_offset = Vector2( 0, 0 )
 47/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-47/shape = SubResource( 127 )
+47/shape = SubResource( 61 )
 47/shape_one_way = false
 47/shape_one_way_margin = 1.0
 47/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 127 ),
+"shape": SubResource( 61 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 47/z_index = 0
 48/name = "IndustrialTile_45.png 48"
-48/texture = ExtResource( 34 )
+48/texture = ExtResource( 13 )
 48/tex_offset = Vector2( 0, 0 )
 48/modulate = Color( 1, 1, 1, 1 )
 48/region = Rect2( 0, 0, 32, 32 )
@@ -1171,19 +1171,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 48/navigation_offset = Vector2( 0, 0 )
 48/shape_offset = Vector2( 0, 0 )
 48/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-48/shape = SubResource( 128 )
+48/shape = SubResource( 62 )
 48/shape_one_way = false
 48/shape_one_way_margin = 1.0
 48/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 128 ),
+"shape": SubResource( 62 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 48/z_index = 0
 49/name = "IndustrialTile_46.png 49"
-49/texture = ExtResource( 64 )
+49/texture = ExtResource( 58 )
 49/tex_offset = Vector2( 0, 0 )
 49/modulate = Color( 1, 1, 1, 1 )
 49/region = Rect2( 0, 0, 32, 32 )
@@ -1192,19 +1192,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 49/navigation_offset = Vector2( 0, 0 )
 49/shape_offset = Vector2( 0, 0 )
 49/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-49/shape = SubResource( 129 )
+49/shape = SubResource( 63 )
 49/shape_one_way = false
 49/shape_one_way_margin = 1.0
 49/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 129 ),
+"shape": SubResource( 63 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 49/z_index = 0
 50/name = "IndustrialTile_47.png 50"
-50/texture = ExtResource( 58 )
+50/texture = ExtResource( 70 )
 50/tex_offset = Vector2( 0, 0 )
 50/modulate = Color( 1, 1, 1, 1 )
 50/region = Rect2( 0, 0, 32, 32 )
@@ -1213,19 +1213,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 50/navigation_offset = Vector2( 0, 0 )
 50/shape_offset = Vector2( 0, 0 )
 50/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-50/shape = SubResource( 131 )
+50/shape = SubResource( 64 )
 50/shape_one_way = false
 50/shape_one_way_margin = 1.0
 50/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 131 ),
+"shape": SubResource( 64 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 50/z_index = 0
 51/name = "IndustrialTile_48.png 51"
-51/texture = ExtResource( 59 )
+51/texture = ExtResource( 57 )
 51/tex_offset = Vector2( 0, 0 )
 51/modulate = Color( 1, 1, 1, 1 )
 51/region = Rect2( 0, 0, 32, 32 )
@@ -1234,19 +1234,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 51/navigation_offset = Vector2( 0, 0 )
 51/shape_offset = Vector2( 0, 0 )
 51/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-51/shape = SubResource( 132 )
+51/shape = SubResource( 65 )
 51/shape_one_way = false
 51/shape_one_way_margin = 1.0
 51/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 132 ),
+"shape": SubResource( 65 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 51/z_index = 0
 52/name = "IndustrialTile_49.png 52"
-52/texture = ExtResource( 49 )
+52/texture = ExtResource( 68 )
 52/tex_offset = Vector2( 0, 0 )
 52/modulate = Color( 1, 1, 1, 1 )
 52/region = Rect2( 0, 0, 32, 32 )
@@ -1255,19 +1255,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 52/navigation_offset = Vector2( 0, 0 )
 52/shape_offset = Vector2( 0, 0 )
 52/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-52/shape = SubResource( 133 )
+52/shape = SubResource( 66 )
 52/shape_one_way = false
 52/shape_one_way_margin = 1.0
 52/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 133 ),
+"shape": SubResource( 66 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 52/z_index = 0
 53/name = "IndustrialTile_50.png 53"
-53/texture = ExtResource( 37 )
+53/texture = ExtResource( 41 )
 53/tex_offset = Vector2( 0, 0 )
 53/modulate = Color( 1, 1, 1, 1 )
 53/region = Rect2( 0, 0, 32, 32 )
@@ -1276,19 +1276,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 53/navigation_offset = Vector2( 0, 0 )
 53/shape_offset = Vector2( 0, 0 )
 53/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-53/shape = SubResource( 134 )
+53/shape = SubResource( 67 )
 53/shape_one_way = false
 53/shape_one_way_margin = 1.0
 53/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 134 ),
+"shape": SubResource( 67 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 53/z_index = 0
 54/name = "IndustrialTile_55.png 54"
-54/texture = ExtResource( 36 )
+54/texture = ExtResource( 21 )
 54/tex_offset = Vector2( 0, 0 )
 54/modulate = Color( 1, 1, 1, 1 )
 54/region = Rect2( 0, 0, 32, 32 )
@@ -1297,19 +1297,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 54/navigation_offset = Vector2( 0, 0 )
 54/shape_offset = Vector2( 0, 0 )
 54/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-54/shape = SubResource( 135 )
+54/shape = SubResource( 68 )
 54/shape_one_way = false
 54/shape_one_way_margin = 1.0
 54/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 135 ),
+"shape": SubResource( 68 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 54/z_index = 0
 55/name = "IndustrialTile_56.png 55"
-55/texture = ExtResource( 55 )
+55/texture = ExtResource( 60 )
 55/tex_offset = Vector2( 0, 0 )
 55/modulate = Color( 1, 1, 1, 1 )
 55/region = Rect2( 0, 0, 32, 32 )
@@ -1318,19 +1318,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 55/navigation_offset = Vector2( 0, 0 )
 55/shape_offset = Vector2( 0, 0 )
 55/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-55/shape = SubResource( 136 )
+55/shape = SubResource( 69 )
 55/shape_one_way = false
 55/shape_one_way_margin = 1.0
 55/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 136 ),
+"shape": SubResource( 69 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 55/z_index = 0
 56/name = "IndustrialTile_57.png 56"
-56/texture = ExtResource( 38 )
+56/texture = ExtResource( 14 )
 56/tex_offset = Vector2( 0, 0 )
 56/modulate = Color( 1, 1, 1, 1 )
 56/region = Rect2( 0, 0, 32, 32 )
@@ -1339,19 +1339,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 56/navigation_offset = Vector2( 0, 0 )
 56/shape_offset = Vector2( 0, 0 )
 56/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-56/shape = SubResource( 137 )
+56/shape = SubResource( 70 )
 56/shape_one_way = false
 56/shape_one_way_margin = 1.0
 56/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 137 ),
+"shape": SubResource( 70 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 56/z_index = 0
 57/name = "IndustrialTile_61.png 57"
-57/texture = ExtResource( 65 )
+57/texture = ExtResource( 73 )
 57/tex_offset = Vector2( 0, 0 )
 57/modulate = Color( 1, 1, 1, 1 )
 57/region = Rect2( 0, 0, 32, 32 )
@@ -1360,14 +1360,14 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 57/navigation_offset = Vector2( 0, 0 )
 57/shape_offset = Vector2( 0, 0 )
 57/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-57/shape = SubResource( 138 )
+57/shape = SubResource( 71 )
 57/shape_one_way = false
 57/shape_one_way_margin = 1.0
 57/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 138 ),
+"shape": SubResource( 71 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 57/z_index = 0
@@ -1381,19 +1381,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 58/navigation_offset = Vector2( 0, 0 )
 58/shape_offset = Vector2( 0, 0 )
 58/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-58/shape = SubResource( 139 )
+58/shape = SubResource( 72 )
 58/shape_one_way = false
 58/shape_one_way_margin = 1.0
 58/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 139 ),
+"shape": SubResource( 72 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 58/z_index = 0
 59/name = "IndustrialTile_63.png 59"
-59/texture = ExtResource( 46 )
+59/texture = ExtResource( 31 )
 59/tex_offset = Vector2( 0, 0 )
 59/modulate = Color( 1, 1, 1, 1 )
 59/region = Rect2( 0, 0, 32, 32 )
@@ -1402,19 +1402,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 59/navigation_offset = Vector2( 0, 0 )
 59/shape_offset = Vector2( 0, 0 )
 59/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-59/shape = SubResource( 140 )
+59/shape = SubResource( 73 )
 59/shape_one_way = false
 59/shape_one_way_margin = 1.0
 59/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 140 ),
+"shape": SubResource( 73 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 59/z_index = 0
 60/name = "IndustrialTile_64.png 60"
-60/texture = ExtResource( 60 )
+60/texture = ExtResource( 61 )
 60/tex_offset = Vector2( 0, 0 )
 60/modulate = Color( 1, 1, 1, 1 )
 60/region = Rect2( 0, 0, 32, 32 )
@@ -1423,14 +1423,14 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 60/navigation_offset = Vector2( 0, 0 )
 60/shape_offset = Vector2( 0, 0 )
 60/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-60/shape = SubResource( 142 )
+60/shape = SubResource( 74 )
 60/shape_one_way = false
 60/shape_one_way_margin = 1.0
 60/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 142 ),
+"shape": SubResource( 74 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 60/z_index = 0
@@ -1444,19 +1444,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 61/navigation_offset = Vector2( 0, 0 )
 61/shape_offset = Vector2( 0, 0 )
 61/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-61/shape = SubResource( 143 )
+61/shape = SubResource( 75 )
 61/shape_one_way = false
 61/shape_one_way_margin = 1.0
 61/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 143 ),
+"shape": SubResource( 75 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 61/z_index = 0
 62/name = "IndustrialTile_66.png 62"
-62/texture = ExtResource( 31 )
+62/texture = ExtResource( 20 )
 62/tex_offset = Vector2( 0, 0 )
 62/modulate = Color( 1, 1, 1, 1 )
 62/region = Rect2( 0, 0, 32, 32 )
@@ -1465,19 +1465,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 62/navigation_offset = Vector2( 0, 0 )
 62/shape_offset = Vector2( 0, 0 )
 62/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-62/shape = SubResource( 144 )
+62/shape = SubResource( 76 )
 62/shape_one_way = false
 62/shape_one_way_margin = 1.0
 62/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 144 ),
+"shape": SubResource( 76 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 62/z_index = 0
 63/name = "IndustrialTile_70.png 63"
-63/texture = ExtResource( 51 )
+63/texture = ExtResource( 71 )
 63/tex_offset = Vector2( 0, 0 )
 63/modulate = Color( 1, 1, 1, 1 )
 63/region = Rect2( 0, 0, 32, 32 )
@@ -1486,19 +1486,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 63/navigation_offset = Vector2( 0, 0 )
 63/shape_offset = Vector2( 0, 0 )
 63/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-63/shape = SubResource( 145 )
+63/shape = SubResource( 77 )
 63/shape_one_way = false
 63/shape_one_way_margin = 1.0
 63/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 145 ),
+"shape": SubResource( 77 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 63/z_index = 0
 64/name = "IndustrialTile_71.png 64"
-64/texture = ExtResource( 54 )
+64/texture = ExtResource( 76 )
 64/tex_offset = Vector2( 0, 0 )
 64/modulate = Color( 1, 1, 1, 1 )
 64/region = Rect2( 0, 0, 32, 32 )
@@ -1507,19 +1507,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 64/navigation_offset = Vector2( 0, 0 )
 64/shape_offset = Vector2( 0, 0 )
 64/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-64/shape = SubResource( 146 )
+64/shape = SubResource( 78 )
 64/shape_one_way = false
 64/shape_one_way_margin = 1.0
 64/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 146 ),
+"shape": SubResource( 78 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 64/z_index = 0
 65/name = "IndustrialTile_73.png 65"
-65/texture = ExtResource( 53 )
+65/texture = ExtResource( 72 )
 65/tex_offset = Vector2( 0, 0 )
 65/modulate = Color( 1, 1, 1, 1 )
 65/region = Rect2( 0, 0, 32, 32 )
@@ -1528,19 +1528,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 65/navigation_offset = Vector2( 0, 0 )
 65/shape_offset = Vector2( 0, 0 )
 65/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-65/shape = SubResource( 147 )
+65/shape = SubResource( 79 )
 65/shape_one_way = false
 65/shape_one_way_margin = 1.0
 65/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 147 ),
+"shape": SubResource( 79 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 65/z_index = 0
 66/name = "IndustrialTile_74.png 66"
-66/texture = ExtResource( 57 )
+66/texture = ExtResource( 74 )
 66/tex_offset = Vector2( 0, 0 )
 66/modulate = Color( 1, 1, 1, 1 )
 66/region = Rect2( 0, 0, 32, 16 )
@@ -1549,19 +1549,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 66/navigation_offset = Vector2( 0, 0 )
 66/shape_offset = Vector2( 0, 0 )
 66/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-66/shape = SubResource( 148 )
+66/shape = SubResource( 80 )
 66/shape_one_way = false
 66/shape_one_way_margin = 1.0
 66/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 148 ),
+"shape": SubResource( 80 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 66/z_index = 0
 67/name = "IndustrialTile_75.png 67"
-67/texture = ExtResource( 61 )
+67/texture = ExtResource( 65 )
 67/tex_offset = Vector2( 0, 0 )
 67/modulate = Color( 1, 1, 1, 1 )
 67/region = Rect2( 0, 0, 32, 16 )
@@ -1570,14 +1570,14 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 67/navigation_offset = Vector2( 0, 0 )
 67/shape_offset = Vector2( 0, 0 )
 67/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-67/shape = SubResource( 149 )
+67/shape = SubResource( 81 )
 67/shape_one_way = false
 67/shape_one_way_margin = 1.0
 67/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 149 ),
+"shape": SubResource( 81 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 67/z_index = 0
@@ -1591,19 +1591,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 68/navigation_offset = Vector2( 0, 0 )
 68/shape_offset = Vector2( 0, 0 )
 68/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-68/shape = SubResource( 150 )
+68/shape = SubResource( 82 )
 68/shape_one_way = false
 68/shape_one_way_margin = 1.0
 68/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 150 ),
+"shape": SubResource( 82 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 68/z_index = 0
 69/name = "IndustrialTile_77.png 69"
-69/texture = ExtResource( 67 )
+69/texture = ExtResource( 66 )
 69/tex_offset = Vector2( 0, 0 )
 69/modulate = Color( 1, 1, 1, 1 )
 69/region = Rect2( 0, 0, 32, 16 )
@@ -1612,19 +1612,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 69/navigation_offset = Vector2( 0, 0 )
 69/shape_offset = Vector2( 0, 0 )
 69/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-69/shape = SubResource( 151 )
+69/shape = SubResource( 83 )
 69/shape_one_way = true
 69/shape_one_way_margin = 1.0
 69/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 151 ),
+"shape": SubResource( 83 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 69/z_index = 0
 70/name = "IndustrialTile_78.png 70"
-70/texture = ExtResource( 68 )
+70/texture = ExtResource( 59 )
 70/tex_offset = Vector2( 0, 0 )
 70/modulate = Color( 1, 1, 1, 1 )
 70/region = Rect2( 0, 0, 32, 16 )
@@ -1633,19 +1633,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 70/navigation_offset = Vector2( 0, 0 )
 70/shape_offset = Vector2( 0, 0 )
 70/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-70/shape = SubResource( 152 )
+70/shape = SubResource( 84 )
 70/shape_one_way = true
 70/shape_one_way_margin = 1.0
 70/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 152 ),
+"shape": SubResource( 84 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 70/z_index = 0
 71/name = "IndustrialTile_79.png 71"
-71/texture = ExtResource( 66 )
+71/texture = ExtResource( 67 )
 71/tex_offset = Vector2( 0, 0 )
 71/modulate = Color( 1, 1, 1, 1 )
 71/region = Rect2( 0, 0, 32, 16 )
@@ -1654,19 +1654,19 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 71/navigation_offset = Vector2( 0, 0 )
 71/shape_offset = Vector2( 0, 0 )
 71/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-71/shape = SubResource( 153 )
+71/shape = SubResource( 85 )
 71/shape_one_way = true
 71/shape_one_way_margin = 1.0
 71/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 153 ),
+"shape": SubResource( 85 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 71/z_index = 0
 72/name = "IndustrialTile_03_light.jpg 72"
-72/texture = ExtResource( 1 )
+72/texture = ExtResource( 11 )
 72/tex_offset = Vector2( 0, 0 )
 72/modulate = Color( 1, 1, 1, 1 )
 72/region = Rect2( 0, 0, 32, 32 )
@@ -1680,7 +1680,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 72/shapes = [  ]
 72/z_index = 0
 73/name = "IndustrialTile_05_flipped.png 73"
-73/texture = ExtResource( 2 )
+73/texture = ExtResource( 6 )
 73/tex_offset = Vector2( 0, 0 )
 73/modulate = Color( 1, 1, 1, 1 )
 73/region = Rect2( 0, 0, 32, 32 )
@@ -1689,120 +1689,235 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 73/navigation_offset = Vector2( 0, 0 )
 73/shape_offset = Vector2( 0, 0 )
 73/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-73/shape = SubResource( 154 )
+73/shape = SubResource( 86 )
 73/shape_one_way = false
 73/shape_one_way_margin = 1.0
 73/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 154 ),
+"shape": SubResource( 86 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 73/z_index = 0
 
-[sub_resource type="DynamicFont" id=87]
-font_data = ExtResource( 75 )
+[sub_resource type="StreamTexture" id=91]
+flags = 4
+load_path = "res://.import/Box.png-7ddde33a7ad93770c050f8e72a057b52.stex"
 
-[sub_resource type="DynamicFont" id=88]
-font_data = ExtResource( 75 )
+[sub_resource type="DynamicFont" id=93]
+size = 20
+font_data = ExtResource( 85 )
 
-[node name="Level1" type="Node2D"]
-script = ExtResource( 82 )
+[sub_resource type="Animation" id=94]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("gif:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-scroll_ignore_camera_zoom = true
+[sub_resource type="Animation" id=95]
+resource_name = "gif"
+length = 2.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("gif:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24 ]
+}
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.3, 0 )
-motion_mirroring = Vector2( 2525, 0 )
+[sub_resource type="DynamicFont" id=92]
+size = 28
+font_data = ExtResource( 85 )
 
-[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[sub_resource type="DynamicFont" id=89]
+size = 22
+font_data = ExtResource( 85 )
+
+[sub_resource type="DynamicFont" id=90]
+font_data = ExtResource( 85 )
+
+[node name="InteractiveTutorial" type="Node2D"]
+script = ExtResource( 55 )
+
+[node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 600, -10 )
-texture = ExtResource( 3 )
+texture = ExtResource( 7 )
 
 [node name="Ground" type="TileMap" parent="."]
 scale = Vector2( 2.5, 2.5 )
-tile_set = SubResource( 14 )
+tile_set = SubResource( 87 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( -262153, 20, 0, -327636, 18, 0, -196617, 20, 0, -262100, 18, 0, -131081, 20, 0, -196564, 18, 0, -65545, 20, 0, -131062, 12, 0, -131061, 12, 0, -131060, 12, 0, -131049, 60, 0, -131038, 63, 0, -131028, 18, 0, -9, 20, 0, -65513, 61, 0, -65502, 57, 0, -65492, 18, 0, 65527, 20, 0, 6, 14, 0, 7, 14, 0, 15, 14, 0, 16, 14, 0, 17, 14, 0, 18, 14, 0, 19, 14, 0, 23, 62, 0, 34, 57, 0, 44, 18, 0, 131063, 20, 0, 65537, 12, 0, 65538, 12, 0, 65539, 12, 0, 65570, 57, 0, 65580, 18, 0, 196599, 20, 0, 131106, 57, 0, 131116, 18, 0, 262135, 10, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 196624, 4, 0, 196625, 4, 0, 196626, 4, 0, 196627, 4, 0, 196628, 4, 0, 196629, 4, 0, 196630, 4, 0, 196631, 4, 0, 196632, 4, 0, 196633, 4, 0, 196634, 4, 0, 196635, 4, 0, 196636, 4, 0, 196637, 4, 0, 196638, 4, 0, 196639, 4, 0, 196640, 4, 0, 196641, 4, 0, 196642, 4, 0, 196643, 4, 0, 196644, 4, 0, 196645, 4, 0, 196646, 4, 0, 196647, 4, 0, 196648, 4, 0, 196649, 4, 0, 196650, 4, 0, 196651, 4, 0, 196652, 4, 0, 196653, 4, 0, 196654, 4, 0, 196655, 4, 0, 196656, 4, 0, 196657, 4, 0, 196658, 4, 0, 196659, 4, 0, 196660, 4, 0, 196661, 4, 0, 196662, 4, 0, 196663, 4, 0, 196664, 4, 0, 196665, 4, 0, 196666, 4, 0, 196667, 4, 0, 196668, 4, 0, 196669, 4, 0, 196670, 4, 0, 196671, 4, 0, 196672, 4, 0, 196673, 4, 0, 196674, 4, 0, 196675, 4, 0, 327671, 10, 0, 327672, 19, 0, 327673, 19, 0, 327674, 19, 0, 327675, 19, 0, 327676, 19, 0, 327677, 19, 0, 327678, 19, 0, 327679, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262148, 19, 0, 262149, 19, 0, 262150, 19, 0, 262151, 19, 0, 262152, 19, 0, 262153, 19, 0, 262154, 19, 0, 262155, 19, 0, 262156, 19, 0, 262157, 19, 0, 262158, 19, 0, 262159, 19, 0, 262160, 19, 0, 262161, 19, 0, 262162, 19, 0, 262163, 19, 0, 262164, 19, 0, 262165, 19, 0, 262166, 19, 0, 262167, 19, 0, 262168, 19, 0, 262169, 19, 0, 262170, 19, 0, 262171, 19, 0, 262172, 19, 0, 262173, 19, 0, 262174, 19, 0, 262175, 19, 0, 262176, 19, 0, 262177, 19, 0, 262178, 19, 0, 262179, 19, 0, 262180, 19, 0, 262181, 19, 0, 262182, 19, 0, 262183, 19, 0, 262184, 19, 0, 262185, 19, 0, 262186, 19, 0, 262187, 19, 0, 262188, 19, 0, 262189, 19, 0, 262190, 19, 0, 262191, 19, 0, 262192, 19, 0, 262193, 19, 0, 262194, 19, 0, 262195, 19, 0, 262196, 19, 0, 262197, 19, 0, 262198, 19, 0, 262199, 19, 0, 262200, 19, 0, 262201, 19, 0, 262202, 19, 0, 262203, 19, 0, 262204, 19, 0, 262205, 19, 0, 262206, 19, 0, 262207, 19, 0, 262208, 19, 0, 262209, 19, 0, 262210, 19, 0, 262211, 19, 0 )
+tile_data = PoolIntArray( -262153, 20, 0, -327673, -1073741820, 0, -196617, 20, 0, -262137, -1073741820, 0, -131081, 20, 0, -196601, -1073741820, 0, -65545, 20, 0, -131065, -1073741820, 0, -9, 20, 0, -65529, -1073741820, 0, 65527, 20, 0, 7, -1073741820, 0, 131063, 20, 0, 65536, 3, 0, 65537, 4, 0, 65538, 4, 0, 65539, 4, 0, 65540, 4, 0, 65541, 4, 0, 65542, 4, 0, 65543, 19, 0, 196599, 20, 0, 131072, -1610612708, 0, 131073, 19, 0, 131074, 19, 0, 131075, 19, 0, 131076, 19, 0, 131077, 19, 0, 131078, 19, 0, 131079, 19, 0, 262135, 10, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 1610612742, 0, 196609, 19, 0, 196610, 19, 0, 196611, 19, 0, 196612, 19, 0, 196613, 19, 0, 196614, 19, 0, 196615, 19, 0, 327671, 10, 0, 327672, 19, 0, 327673, 19, 0, 327674, 19, 0, 327675, 19, 0, 327676, 19, 0, 327677, 19, 0, 327678, 19, 0, 327679, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262148, 19, 0, 262149, 19, 0, 262150, 19, 0, 262151, 19, 0 )
 
-[node name="PPE1" parent="." instance=ExtResource( 74 )]
-position = Vector2( 277, 42 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+[node name="Instruction3" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -579.0
+margin_top = -256.0
+margin_right = -184.0
+texture = SubResource( 91 )
+patch_margin_left = 12
+patch_margin_top = 13
+patch_margin_right = 15
+patch_margin_bottom = 11
 
-[node name="PPE2" parent="." instance=ExtResource( 74 )]
-position = Vector2( 1707, -167 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Helmet"
+[node name="RichTextLabel" type="Label" parent="Instruction3"]
+margin_left = 11.0
+margin_top = -8.0
+margin_right = 383.0
+margin_bottom = 96.0
+custom_fonts/font = SubResource( 93 )
+text = "Use o mouse para interagir com a prancheta"
+align = 1
+valign = 1
+autowrap = true
 
-[node name="PPE3" parent="." instance=ExtResource( 74 )]
-position = Vector2( 911, -190 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Glove"
+[node name="gif" type="Sprite" parent="Instruction3"]
+position = Vector2( 246.5, 160 )
+scale = Vector2( 0.238675, 0.238675 )
+texture = ExtResource( 78 )
+hframes = 5
+vframes = 5
 
-[node name="PPE4" parent="." instance=ExtResource( 74 )]
-position = Vector2( 2552, -128 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Coat"
+[node name="Mouse" type="Sprite" parent="Instruction3"]
+position = Vector2( 78.5, 160 )
+texture = ExtResource( 79 )
 
-[node name="PPE5" parent="." instance=ExtResource( 74 )]
-position = Vector2( 1238, -142 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Belt"
+[node name="Animation" type="AnimationPlayer" parent="Instruction3"]
+anims/RESET = SubResource( 94 )
+anims/gif = SubResource( 95 )
 
-[node name="PPE6" parent="." instance=ExtResource( 74 )]
-position = Vector2( 1475, -30 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Headset"
+[node name="Instruction2" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -579.0
+margin_top = -256.0
+margin_right = -184.0
+texture = SubResource( 91 )
+patch_margin_left = 12
+patch_margin_top = 13
+patch_margin_right = 15
+patch_margin_bottom = 11
 
-[node name="NPC" parent="." instance=ExtResource( 71 )]
-position = Vector2( -300, 182 )
+[node name="RichTextLabel" type="Label" parent="Instruction2"]
+margin_left = 11.0
+margin_top = 16.0
+margin_right = 383.0
+margin_bottom = 169.0
+custom_fonts/font = SubResource( 92 )
+text = "Se aproxime do químico e aperte uma das teclas de interação"
+align = 1
+valign = 1
+autowrap = true
 
-[node name="PalletsLauncher" parent="." instance=ExtResource( 77 )]
-position = Vector2( 2911, 181 )
-minigameName = "Pallets"
-spriteTexture = ExtResource( 79 )
-strokeTexture = ExtResource( 80 )
+[node name="Keys" type="Node2D" parent="Instruction2"]
+position = Vector2( 171, 208 )
 
-[node name="StackLauncher" parent="." instance=ExtResource( 77 )]
-position = Vector2( 3086, 186 )
-minigameName = "Stack"
-spriteTexture = ExtResource( 83 )
-strokeTexture = ExtResource( 78 )
+[node name="Space" type="Sprite" parent="Instruction2/Keys"]
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 53 )
 
-[node name="FallingPlatform" parent="." instance=ExtResource( 84 )]
-position = Vector2( 2077, -44 )
+[node name="E" type="Sprite" parent="Instruction2/Keys"]
+position = Vector2( 70.8, 0 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 86 )
 
-[node name="FallingPlatform1" parent="." instance=ExtResource( 84 )]
-position = Vector2( 2329, -44 )
+[node name="Instruction1" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -579.0
+margin_top = -256.0
+margin_right = -184.0
+texture = SubResource( 91 )
+patch_margin_left = 12
+patch_margin_top = 13
+patch_margin_right = 15
+patch_margin_bottom = 11
 
-[node name="FallingPlatform2" parent="." instance=ExtResource( 84 )]
-position = Vector2( 2578, -44 )
+[node name="RichTextLabel" type="Label" parent="Instruction1"]
+margin_left = 11.0
+margin_top = 16.0
+margin_right = 383.0
+margin_bottom = 169.0
+custom_fonts/font = SubResource( 92 )
+text = "Use as setas do teclado ou A, W e D para se movimentar!"
+align = 1
+valign = 1
+autowrap = true
 
-[node name="FallingPlatform3" parent="." instance=ExtResource( 84 )]
-position = Vector2( 2938, 26 )
+[node name="Keys" type="Node2D" parent="Instruction1"]
+position = Vector2( 59, 192 )
 
-[node name="ResponsabilityTerm" parent="." instance=ExtResource( 77 )]
-position = Vector2( -75, 182 )
-minigameName = "ResponsabilityTerm"
-spriteTexture = ExtResource( 85 )
-strokeTexture = ExtResource( 86 )
+[node name="A" type="Sprite" parent="Instruction1/Keys"]
+position = Vector2( 0, -3.05176e-05 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 48 )
 
-[node name="Elevator" parent="." instance=ExtResource( 81 )]
-position = Vector2( 3383, 173 )
+[node name="W" type="Sprite" parent="Instruction1/Keys"]
+position = Vector2( 52.8, -3.05176e-05 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 52 )
+
+[node name="D" type="Sprite" parent="Instruction1/Keys"]
+position = Vector2( 103.8, -3.05176e-05 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 51 )
+
+[node name="Arrows" type="Node2D" parent="Instruction1"]
+position = Vector2( 235, 192 )
+
+[node name="Left" type="Sprite" parent="Instruction1/Arrows"]
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 49 )
+
+[node name="Up" type="Sprite" parent="Instruction1/Arrows"]
+position = Vector2( 48.6, 0 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 54 )
+
+[node name="Right" type="Sprite" parent="Instruction1/Arrows"]
+position = Vector2( 97.2, 0 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 50 )
+
+[node name="NPC" parent="." instance=ExtResource( 84 )]
+position = Vector2( 184, 24 )
+
+[node name="Elevator" parent="." instance=ExtResource( 80 )]
+position = Vector2( 468, 14 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Player" parent="." instance=ExtResource( 70 )]
+[node name="Player" parent="." instance=ExtResource( 83 )]
 position = Vector2( -566, 171 )
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 current = true
 limit_left = -700
 limit_top = -320
-limit_right = 3600
+limit_right = 580
 limit_bottom = 400
 limit_smoothed = true
 smoothing_enabled = true
@@ -1810,61 +1925,34 @@ drag_margin_top = 1.0
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
-[node name="HUD" parent="." instance=ExtResource( 72 )]
+[node name="HUD" parent="." instance=ExtResource( 81 )]
 follow_viewport_enable = false
 
-[node name="Clipboard" parent="HUD" instance=ExtResource( 69 )]
+[node name="Clipboard" parent="HUD" instance=ExtResource( 82 )]
 
 [node name="LevelText" type="RichTextLabel" parent="HUD/Clipboard" groups=["LevelText"]]
 margin_left = 57.0
-margin_top = 192.0
+margin_top = 201.0
 margin_right = 352.0
-margin_bottom = 262.0
+margin_bottom = 382.0
 mouse_filter = 2
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-custom_fonts/normal_font = SubResource( 87 )
+custom_fonts/normal_font = SubResource( 89 )
 bbcode_enabled = true
-bbcode_text = "[center]Seja bem vindo ao souUni, converse com o operador químico e colete os EPIs[/center]"
-text = "Seja bem vindo ao souUni, converse com o operador químico e colete os EPIs"
+bbcode_text = "[center]Fico sempre no canto da sua tela, para me consultar basta me chamar passando o mouse por cima de mim![/center]"
+text = "Fico sempre no canto da sua tela, para me consultar basta me chamar passando o mouse por cima de mim!"
 
-[node name="Inventory" type="Control" parent="HUD/Clipboard"]
-script = ExtResource( 76 )
-
-[node name="PPE" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 108, 319 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
-
-[node name="PPE2" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 205, 319 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Helmet"
-
-[node name="PPE3" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 302, 319 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Glove"
-
-[node name="PPE4" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 108, 416 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Coat"
-
-[node name="PPE5" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 205, 416 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Belt"
-
-[node name="PPE6" parent="HUD/Clipboard/Inventory" instance=ExtResource( 74 )]
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 302, 416 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Headset"
+[node name="LevelText2" type="RichTextLabel" parent="HUD/Clipboard" groups=["LevelText"]]
+margin_left = 57.0
+margin_top = 406.0
+margin_right = 352.0
+margin_bottom = 499.0
+mouse_filter = 2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 89 )
+bbcode_enabled = true
+bbcode_text = "[center]Vá em direção ao elevador para iniciar o nível 1[/center]"
+text = "Vá em direção ao elevador para iniciar o nível 1"
 
 [node name="Dialog" type="TextureRect" parent="HUD"]
 visible = false
@@ -1876,7 +1964,7 @@ margin_left = -793580.0
 margin_top = -49830.0
 margin_right = -792340.0
 margin_bottom = -49690.0
-texture = ExtResource( 73 )
+texture = ExtResource( 77 )
 stretch_mode = 1
 
 [node name="DialogText" type="RichTextLabel" parent="HUD/Dialog"]
@@ -1885,7 +1973,7 @@ margin_top = 57.0
 margin_right = 1163.0
 margin_bottom = 108.0
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-custom_fonts/normal_font = SubResource( 88 )
+custom_fonts/normal_font = SubResource( 90 )
 meta_underlined = false
 text = "dialogs/level/text"
 fit_content_height = true
@@ -1904,9 +1992,7 @@ margin_top = 12.0
 margin_right = -376.16
 margin_bottom = 45.0
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-custom_fonts/normal_font = SubResource( 88 )
+custom_fonts/normal_font = SubResource( 90 )
 bbcode_enabled = true
 bbcode_text = "[center]------------------[/center]"
 text = "------------------"
-
-[connection signal="pressed" from="HUD/Dialog/Button" to="NPC" method="_on_Button_pressed"]

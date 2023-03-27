@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://scripts/Tutorial/Character.gd" type="Script" id=2]
+[ext_resource path="res://scripts/Character.gd" type="Script" id=2]
 [ext_resource path="res://assets/Character/Background.png" type="Texture" id=4]
 [ext_resource path="res://assets/Character/Bia.png" type="Texture" id=5]
 [ext_resource path="res://assets/Character/Gabriel.png" type="Texture" id=6]

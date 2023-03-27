@@ -5,7 +5,7 @@ var canInteract = false
 
 func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena
-	Global.minigameRunning = false
+	Global.playerPaused = false
 	Global.currentLevel = 'Level2'
 	queue_free()
 
@@ -30,6 +30,7 @@ func _ready():
 	# desabilita a visibilidade da tela de vencedor
 	$WinScreen.visible = false
 	$Clipboard.slideToScreen()
+	Input.warp_mouse_position(Vector2(750, 600))
 
 
 func _on_Button_pressed():

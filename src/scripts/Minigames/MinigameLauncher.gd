@@ -8,11 +8,51 @@ export (Texture) var strokeTexture
 var canInteract = false
 
 
+func showE():
+	# mostra o E na tela, em cima do químico
+	$E.visible = true
+	$Tween.interpolate_property(
+		$E,
+		'position:y',
+		-55,
+		-80,
+		0.2
+	)
+	$Tween.interpolate_property(
+		$E,
+		'modulate:a',
+		0,
+		1,
+		0.3
+	)
+	$Tween.start()
+
+
+func hideE():
+	# esconde o E na tela, de cima do químico
+	$Tween.interpolate_property(
+		$E,
+		'position:y',
+		-80,
+		-55,
+		0.2
+	)
+	$Tween.interpolate_property(
+		$E,
+		'modulate:a',
+		1,
+		0,
+		0.3
+	)
+	$Tween.start()
+
+
 func _on_minigame_body_entered(_body):
 	# ao entrar na área de interação, o stroke aparece, a flag é setada e a tecla E é destacada
 	$Stroke.visible = true
 	canInteract = true
 	$"../HUD/Gamepad/interact".modulate = Color(1, 1, 0.4)
+	showE()
 
 
 func _on_minigame_body_exited(_body):
@@ -20,10 +60,11 @@ func _on_minigame_body_exited(_body):
 	$Stroke.visible = false
 	canInteract = false
 	$"../HUD/Gamepad/interact".modulate = Color(1, 1, 1)
+	hideE()
 
 
 func _input(event):
-	if Global.minigameRunning:
+	if Global.playerPaused:
 		# se o minigame já está rodando, o input não é processado
 		return
 
@@ -39,7 +80,7 @@ func _input(event):
 		minigame = minigame.instance()
 		$"../HUD".add_child(minigame)
 		# indica que o minigame está rodando
-		Global.minigameRunning = true
+		Global.playerPaused = true
 
 
 func _ready():

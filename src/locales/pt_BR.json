@@ -9,6 +9,7 @@
         "player": "Operador"
     },
     "levels": {
+        "Tutorial": "Tutorial",
         "Level1": "Nível 1",
         "Stack": "Stack",
         "Pallets": "Paletes",
@@ -40,6 +41,10 @@
         ]
     },
     "clipboard": {
+        "Tutorial": [
+            "Fico sempre no canto da sua tela, para me consultar basta me chamar passando o mouse por cima de mim!",
+            "Vá em direção ao elevador para iniciar o nível 1"
+        ],
         "Level1": [
             "Seja bem vindo ao soUni, converse com o operador químico e colete os EPIs"
         ],
@@ -58,24 +63,32 @@
             "Ao empilhar uma caixa, uma nova aparecerá, empilhe 12 corretamente para prosseguir"
         ]
     },
-    "dialogs": [
-        {
-            "character": "chemical",
-            "text": "Olá! Tudo bem? Eu sou o seu gerente. Você deve ser o novo funcionário da Unipar, correto? Seja bem-vindo!"
-        },
-        {
-            "character": "player",
-            "text": "Olá! Sou eu mesmo. O novo funcionário! Estou aqui para aprender sobre o dia a dia na empresa e quais protocolos devo seguir para manter a minha segurança."
-        },
-        {
-            "character": "chemical",
-            "text": "Certo! Você já pode conhecer as áreas da nossa fábrica e suas regras. Mas antes, pegue os EPI's e fique seguro! Ocorreu um acidente em uma fábrica de uma de nossas concorrentes aqui em Camaçari e não queremos que o mesmo aconteça aqui! Vamos lá! Você tem muito a fazer!"
-        },
-        {
-            "character": "player",
-            "text": "Pode deixar! Estou super confiante para o primeiro dia!"
-        }
-    ],
+    "dialogs": {
+        "Tutorial": [
+            {
+                "character": "chemical",
+                "text": "Olá! Tudo bem? Eu sou o seu gerente. Você deve ser o novo funcionário da Unipar, correto? Seja bem-vindo!"
+            },
+            {
+                "character": "player",
+                "text": "Olá! Sou eu mesmo. O novo funcionário! Estou aqui para aprender sobre o dia a dia na empresa e quais protocolos devo seguir para manter a minha segurança."
+            },
+            {
+                "character": "chemical",
+                "text": "Ótimo! Dê uma olhada na sua prancheta e se prepare para o primeiro dia de trabalho!"
+            }
+        ],
+        "Level1": [
+            {
+                "character": "chemical",
+                "text": "Certo! Você já pode conhecer as áreas da nossa fábrica e suas regras. Mas antes, pegue os EPI's e fique seguro! Ocorreu um acidente em uma fábrica de uma de nossas concorrentes aqui em Camaçari e não queremos que o mesmo aconteça aqui! Vamos lá! Você tem muito a fazer!"
+            },
+            {
+                "character": "player",
+                "text": "Pode deixar! Estou super confiante para o primeiro dia!"
+            }
+        ]
+    },
     "others": {
         "win": "Você venceu!",
         "lose": "Você perdeu!",

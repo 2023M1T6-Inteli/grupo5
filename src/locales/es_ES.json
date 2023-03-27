@@ -9,6 +9,7 @@
         "player": "Operador"
     },
     "levels": {
+        "Tutorial": "Tutorial",
         "Level1": "Nivel 1",
         "Stack": "Stack",
         "Pallets": "Tarimas",
@@ -40,6 +41,10 @@
         ]
     },
     "clipboard": {
+        "Tutorial": [
+            "Fico sempre no canto da sua tela, para me consultar basta me chamar passando o mouse por cima de mim!",
+            "Vá em direção ao elevador para iniciar o nível 1"
+        ],
         "Level1": [
             "Sea bienvenido a soUni, hable con el operador químico y recoja los EPPss"
         ],

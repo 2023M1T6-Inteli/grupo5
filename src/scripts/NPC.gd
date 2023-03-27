@@ -55,6 +55,7 @@ func loadDialog():
 	$"../HUD/Dialog".visible = true
 	get_parent().get_node("HUD/Gamepad").hide()
 	nextDialog()
+	Global.playerPaused = true
 
 
 func closeDialog():
@@ -65,22 +66,22 @@ func closeDialog():
 	$dialog_sound.stop()
 	currentDialog = 0
 	canInteract = false
+	Global.playerPaused = false
 
 
 func nextDialog():
 	$dialog_sound.play()
 	# passa para a próxima frase do diálogo
-	if currentDialog >= len(Locales.dialogs):
+	if currentDialog >= len(Locales.dialogs.get(Global.currentLevel)):
 		# se acabaram as frases, finaliza o diálogo
 		closeDialog()
 		return
 
-
 	# altera o nome do personagem para o da fala atual
-	var characterName = Locales.characters.get(Locales.dialogs[currentDialog].character)
+	var characterName = Locales.characters.get(Locales.dialogs.get(Global.currentLevel)[currentDialog].character)
 	$"../HUD/Dialog/Name".bbcode_text = '[center]' + characterName + '[/center]'
 	# altera o texto para a fala atual
-	$"../HUD/Dialog/DialogText".text = Locales.dialogs[currentDialog].text
+	$"../HUD/Dialog/DialogText".text = Locales.dialogs.get(Global.currentLevel)[currentDialog].text
 
 	# reseta a flag
 	phraseFinished = false

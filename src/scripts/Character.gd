@@ -15,8 +15,8 @@ func _on_Bia_mouse_exited():
 func _on_Bia_pressed():
 	# função para passar para a próxima tela do tutorial ao clicar no personagem
 	Global.characterName = 'Beatriz'
-	if get_tree().change_scene('res://scenes/Tutorial/Tutorial.tscn') != OK:
-		print ('An unexpected error occured when trying to switch to next scene')
+	if get_tree().change_scene('res://scenes/InteractiveTutorial.tscn') != OK:
+		print('An unexpected error occured when trying to switch to next scene')
 
 
 func _on_Gabriel_mouse_entered():
@@ -31,7 +31,7 @@ func _on_Gabriel_mouse_exited():
 
 func _on_Gabriel_pressed():
 	Global.characterName = 'Gabriel'
-	if get_tree().change_scene('res://scenes/Tutorial/Tutorial.tscn') != OK:
+	if get_tree().change_scene('res://scenes/InteractiveTutorial.tscn') != OK:
 		print ('An unexpected error occured when trying to switch to next scene')
 
 

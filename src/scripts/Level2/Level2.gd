@@ -12,6 +12,7 @@ func canPlayMinigame():
 func _ready():
 	# mostra a prancheta
 	$HUD/Clipboard.slideToScreen()
+	Input.warp_mouse_position(Vector2(750, 600))
 
 
 func _on_valveActivated():
