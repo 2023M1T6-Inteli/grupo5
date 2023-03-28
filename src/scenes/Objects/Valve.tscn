@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/Level2/Valve.gd" type="Script" id=1]
 [ext_resource path="res://assets/Valves/Valve.png" type="Texture" id=2]
 [ext_resource path="res://assets/Valves/ValveStroke.png" type="Texture" id=3]
+[ext_resource path="res://assets/Tutorial/Keys/E.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 269, 201.5 )
@@ -14,12 +15,20 @@ script = ExtResource( 1 )
 position = Vector2( -3, -3 )
 shape = SubResource( 1 )
 
+[node name="E" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -99 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 4 )
+
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
 [node name="Stroke" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_Valve_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_Valve_body_exited"]
