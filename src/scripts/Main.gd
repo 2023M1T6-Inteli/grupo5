@@ -4,7 +4,7 @@ func loadMenuLanguage():
 	# configura os textos dos botões de acordo com o idiomas escolhida
 	$PlayButton.text = Locales.buttons.play
 	$QuitButton.text = Locales.buttons.quit
-	$LanguageButton.text = Locales.buttons.selectLanguage
+	$SettingsButton.text = Locales.buttons.settings
 
 
 func changeLanguage(id):
@@ -21,6 +21,12 @@ func _on_PlayButton_pressed():
 		print ('An unexpected error occured when trying to switch to next scene')
 
 
+func _on_SettingsButton_pressed():
+		var settings = load('res://scenes/Interface/Settings.tscn')
+		settings = settings.instance()
+		$"..".add_child(settings)
+
+
 func _on_QuitButton_pressed():
 	# ao apertar sair, fecha o jogo
 	get_tree().quit()
@@ -29,15 +35,15 @@ func _on_QuitButton_pressed():
 func _ready():
 	loadMenuLanguage()
 	# pega a referência do menu de opções
-	var popup = $LanguageButton.get_popup()
+	#var popup = $LanguageButton.get_popup()
 	# limpa as opções
-	popup.clear()
+	#popup.clear()
 
 	# conecta a seleção de um idioma com a função de mudar o idiomas
-	popup.connect('id_pressed', self, 'changeLanguage')
+	#popup.connect('id_pressed', self, 'changeLanguage')
 
 	# adiciona os idiomas disponíveis nas opções
-	for language in Locales.getAvailableLanguages():
-		popup.add_item(language)
+	#for language in Locales.getAvailableLanguages():
+	#	popup.add_item(language)
 
 	$PlayButton.grab_focus()

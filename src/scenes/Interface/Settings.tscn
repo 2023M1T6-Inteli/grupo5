@@ -50,6 +50,7 @@ border_width_bottom = 20
 border_color = Color( 0.8, 0.8, 0.8, 0 )
 
 [node name="Settings" type="Node2D"]
+position = Vector2( -640, -360 )
 script = ExtResource( 15 )
 
 [node name="Darkener" type="Panel" parent="."]
@@ -116,10 +117,10 @@ text = "Volume
 "
 
 [node name="Fullscreen" type="Label" parent="."]
-margin_left = 605.0
-margin_top = 348.0
-margin_right = 799.0
-margin_bottom = 387.0
+margin_left = 549.0
+margin_top = 347.0
+margin_right = 743.0
+margin_bottom = 386.0
 custom_fonts/font = SubResource( 3 )
 text = "Tela cheia"
 
@@ -154,3 +155,5 @@ custom_styles/grabber_area = SubResource( 6 )
 value = 55.0
 
 [connection signal="toggled" from="FullScreenButton" to="." method="_on_FullScreenButton_toggled"]
+[connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
+[connection signal="value_changed" from="VolumeSlider" to="." method="_on_VolumeSlider_value_changed"]
