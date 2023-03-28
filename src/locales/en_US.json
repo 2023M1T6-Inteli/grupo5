@@ -1,8 +1,8 @@
 {
     "buttons": {
         "play": "Play",
-        "quit": "Quit",
-        "selectLanguage": "Select Language"
+        "settings": "Settings",
+        "quit": "Quit"
     },
     "characters": {
         "chemical": "Chemical",

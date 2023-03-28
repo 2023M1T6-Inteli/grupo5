@@ -1,7 +1,7 @@
 {
     "buttons": {
         "play": "Jogar",
-        "selectLanguage": "Selecionar idioma",
+        "settings": "Configurações",
         "quit": "Sair"
     },
     "characters": {

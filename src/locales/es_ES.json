@@ -1,8 +1,8 @@
 {
     "buttons": {
         "play": "Jugar",
-        "quit": "Salir",
-        "selectLanguage": "Seleccione El Idioma"
+        "settings": "Configuración",
+        "quit": "Salir"
     },
     "characters": {
         "chemical": "Quimico",
