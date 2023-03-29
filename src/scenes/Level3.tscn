@@ -1795,10 +1795,12 @@ tile_data = PoolIntArray( -524297, 39, 0, -589773, 59, 0, -458761, 39, 0, -52423
 [node name="Elevator" parent="." instance=ExtResource( 4 )]
 position = Vector2( -532, 212 )
 scale = Vector2( 0.5, 0.5 )
+targetLevel = "Level2"
 
 [node name="Elevator2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 7984, 211 )
 scale = Vector2( 0.5, 0.5 )
+targetLevel = "Level3"
 
 [node name="MinigameLauncher" parent="." instance=ExtResource( 78 )]
 position = Vector2( 7745, 223 )

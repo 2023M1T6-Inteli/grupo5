@@ -2,6 +2,8 @@ extends Area2D
 
 var canInteract = false
 
+export (String) var targetLevel = 'Level1'
+
 
 func showE():
 	# mostra o E na tela, em cima do químico
@@ -58,11 +60,6 @@ func _on_Elevator_body_exited(_body):
 	hideE()
 
 
-func changeLevel():
-	if get_tree().change_scene('res://scenes/' + Global.currentLevel + '.tscn') != OK:
-		print('An unexpected error occured when trying to switch to next scene')
-
-
 func _input(event):
 	if not canInteract:
 		return
@@ -70,15 +67,8 @@ func _input(event):
 	if not event.is_action_pressed('interact'):
 		return
 
+	Global.currentLevel = targetLevel
+
 	# faz a troca de cena baseada na variável global do nível
-	if Global.currentLevel == 'Tutorial':
-		Global.currentLevel = 'Level1'
-		changeLevel()
-
-	elif Global.currentLevel == 'Level1':
-		Global.currentLevel = 'Level2'
-		changeLevel()
-
-	elif Global.currentLevel == 'Level2':
-		Global.currentLevel = 'Level3'
-		changeLevel()
+	if get_tree().change_scene('res://scenes/' + targetLevel + '.tscn') != OK:
+		print('An unexpected error occured when trying to switch to next scene')
