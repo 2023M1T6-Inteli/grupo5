@@ -11,4 +11,3 @@ func _ready():
 	Music.change('Level1')
 	# mostra a prancheta
 	$HUD/Clipboard.slideToScreen()
-	Input.warp_mouse_position(Vector2(750, 600))

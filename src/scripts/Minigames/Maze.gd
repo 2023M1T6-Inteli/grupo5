@@ -30,7 +30,6 @@ func _ready():
 	# desabilita a visibilidade da tela de vencedor
 	$WinScreen.visible = false
 	$Clipboard.slideToScreen()
-	Input.warp_mouse_position(Vector2(750, 600))
 
 
 func _on_Button_pressed():

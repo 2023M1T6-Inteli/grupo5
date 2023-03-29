@@ -96,7 +96,6 @@ func _ready():
 	$WinScreen/Background2/ContinueButton.text = Locales.others.continue
 	get_parent().get_node('Clipboard').visible = false
 	$Clipboard.slideToScreen()
-	Input.warp_mouse_position(Vector2(750, 600))
 
 
 func _process(_delta):
