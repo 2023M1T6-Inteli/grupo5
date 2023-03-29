@@ -1,8 +1,16 @@
 extends CanvasLayer
 
+var is_paused = false
 
-func _on_PauseButton_pressed():
+
+func pauseGame():
 	var settings = load('res://scenes/Interface/Settings.tscn')
 	settings = settings.instance()
 	add_child(settings)
-	$Settings.position = Vector2(0, 0)
+
+func _on_PauseButton_pressed():
+	pauseGame()
+	
+func _input(event):
+	if event.is_action_pressed('pause'):
+		pauseGame()

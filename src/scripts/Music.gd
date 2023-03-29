@@ -1,7 +1,6 @@
 extends AudioStreamPlayer
 
 var minVolume = -80
-var volume = -15
 
 var currentMusic = 'Main'
 var fadingOut = false
@@ -18,7 +17,7 @@ func fadeIn():
 		self,
 		'volume_db',
 		minVolume,
-		volume,
+		volume_db,
 		1.0,
 		Tween.TRANS_LINEAR,
 		Tween.EASE_IN
@@ -30,7 +29,7 @@ func fadeOut():
 	$Tween.interpolate_property(
 		self,
 		'volume_db',
-		volume,
+		volume_db,
 		minVolume,
 		0.2,
 		Tween.TRANS_LINEAR,

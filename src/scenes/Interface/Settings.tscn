@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/Tutorial/Config/PT-BRHover.png" type="Texture" id=2]
 [ext_resource path="res://assets/Tutorial/Interactions/Back.png" type="Texture" id=3]
 [ext_resource path="res://assets/Tutorial/Config/EN-US.png" type="Texture" id=4]
-[ext_resource path="res://assets/Tutorial/Config/bar.png" type="Texture" id=5]
+[ext_resource path="res://assets/Tutorial/Config/Bar.png" type="Texture" id=5]
 [ext_resource path="res://assets/Tutorial/Config/Box.png" type="Texture" id=6]
 [ext_resource path="res://assets/Tutorial/Config/ES-ESHover.png" type="Texture" id=7]
 [ext_resource path="res://assets/Tutorial/Config/Grabber.png" type="Texture" id=8]
@@ -50,7 +50,6 @@ border_width_bottom = 20
 border_color = Color( 0.8, 0.8, 0.8, 0 )
 
 [node name="Settings" type="Node2D"]
-position = Vector2( -640, -360 )
 script = ExtResource( 15 )
 
 [node name="Darkener" type="Panel" parent="."]
@@ -152,7 +151,8 @@ custom_icons/grabber = ExtResource( 8 )
 custom_styles/slider = SubResource( 4 )
 custom_styles/grabber_area_highlight = SubResource( 5 )
 custom_styles/grabber_area = SubResource( 6 )
-value = 55.0
+min_value = -30.0
+max_value = 10.0
 
 [connection signal="toggled" from="FullScreenButton" to="." method="_on_FullScreenButton_toggled"]
 [connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
