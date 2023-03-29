@@ -2,7 +2,13 @@
     "buttons": {
         "play": "Play",
         "settings": "Settings",
+        "language": "Language",
         "quit": "Quit"
+    },
+    "settings": {
+        "settings": "Settings",
+        "volume": "Volume",
+        "fullscreen": "Fullscreen"
     },
     "characters": {
         "chemical": "Chemical",

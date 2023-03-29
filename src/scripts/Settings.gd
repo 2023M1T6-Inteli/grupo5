@@ -1,6 +1,13 @@
 extends Node2D
 
 
+func loadMenuLanguage():
+	# configura os textos dos botões de acordo com o idiomas escolhida
+	$Title.text = Locales.settings.settings
+	$Volume.text = Locales.settings.volume
+	$Fullscreen.text = Locales.settings.fullscreen
+
+
 func closeSettings():
 	Global.playerPaused = false
 	queue_free()
@@ -26,3 +33,4 @@ func _input(event):
 func _ready():
 	$VolumeSlider.value = Music.volume_db
 	$FullScreenButton.pressed = OS.window_fullscreen
+	loadMenuLanguage()
