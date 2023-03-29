@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/Minigames/Maze/Fork_lift.tscn" type="PackedScene" id=2]
@@ -7,9 +7,11 @@
 [ext_resource path="res://scripts/Minigames/Maze.gd" type="Script" id=5]
 [ext_resource path="res://assets/Minigames/GreenTile.png" type="Texture" id=6]
 [ext_resource path="res://assets/Keys/XButton.png" type="Texture" id=7]
+[ext_resource path="res://scenes/Objects/PPE.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/Minigames/ContainerTile.png" type="Texture" id=9]
 [ext_resource path="res://assets/Background/Maze.png" type="Texture" id=10]
 [ext_resource path="res://assets/Box.png" type="Texture" id=11]
+[ext_resource path="res://scripts/Level1/PPE.gd" type="Script" id=12]
 
 [sub_resource type="CanvasItemMaterial" id=4]
 
@@ -185,6 +187,45 @@ collision_mask = 2
 position = Vector2( 146, 448 )
 collision_layer = 2
 collision_mask = 2
+
+[node name="BigBag" parent="." instance=ExtResource( 8 )]
+position = Vector2( 69, 459 )
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 2
+collision_mask = 2
+PPEName = "BigBag"
+
+[node name="BigBag2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 375, 385 )
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 12 )
+PPEName = "BigBag"
+
+[node name="BigBag3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 756, 563 )
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 12 )
+PPEName = "BigBag"
+
+[node name="BigBag5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 692, 184 )
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 12 )
+PPEName = "BigBag"
+
+[node name="BigBag4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1205, 622 )
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 12 )
+PPEName = "BigBag"
 
 [node name="WinScreen" type="Panel" parent="."]
 visible = false

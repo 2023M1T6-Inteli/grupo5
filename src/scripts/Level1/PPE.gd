@@ -6,12 +6,14 @@ var collecting = false
 
 
 func _on_body_entered(body):
+	print(body)
 	if body is KinematicBody2D:
 		# para a animação se o player entrar em contato com o EPI
 		$Animation.seek(0.5, true)
 		$Animation.stop()
-		# adiciona o EPI ao inventário
-		body.PPEs.append(PPEName)
+		if body.name == 'Player':
+			# adiciona o EPI ao inventário
+			body.PPEs.append(PPEName)
 		# chama a animação de coleta
 		if !collecting:
 			# a animação dá queue_free() no PPE ao finalizar
