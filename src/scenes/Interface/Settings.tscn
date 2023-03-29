@@ -151,8 +151,9 @@ custom_icons/grabber = ExtResource( 8 )
 custom_styles/slider = SubResource( 4 )
 custom_styles/grabber_area_highlight = SubResource( 5 )
 custom_styles/grabber_area = SubResource( 6 )
-min_value = -30.0
-max_value = 10.0
+min_value = -65.0
+max_value = 5.0
+value = -40.0
 
 [connection signal="toggled" from="FullScreenButton" to="." method="_on_FullScreenButton_toggled"]
 [connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]

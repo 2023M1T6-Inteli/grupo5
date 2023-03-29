@@ -58,3 +58,7 @@ func _physics_process(delta):
 			return
 
 		collision.collider.fall()
+
+
+func _process(_delta):
+	$jump_sound.volume_db = Music.volume_db
