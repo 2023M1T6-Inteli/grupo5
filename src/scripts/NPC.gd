@@ -147,3 +147,8 @@ func _input(event):
 
 func _ready():
 	closeDialog()
+
+
+func _process(_delta):
+	$dialog_sound.volume_db = Music.volume_db
+

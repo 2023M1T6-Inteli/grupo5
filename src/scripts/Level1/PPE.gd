@@ -27,3 +27,7 @@ func _ready():
 	$Animation.play('Float')
 	# carrega a imagem de acordo com o nome do EPI
 	$Sprite.texture = load('res://assets/PPE/' + PPEName + '.png')
+
+
+func _process(_delta):
+	$CollectSound.volume_db = Music.volume_db

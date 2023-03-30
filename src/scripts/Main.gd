@@ -4,6 +4,7 @@ func loadMenuLanguage():
 	# configura os textos dos botões de acordo com o idiomas escolhida
 	$PlayButton.text = Locales.buttons.play
 	$QuitButton.text = Locales.buttons.quit
+	$LanguageButton.text = Locales.buttons.language
 	$SettingsButton.text = Locales.buttons.settings
 
 
@@ -35,15 +36,15 @@ func _on_QuitButton_pressed():
 func _ready():
 	loadMenuLanguage()
 	# pega a referência do menu de opções
-	#var popup = $LanguageButton.get_popup()
+	var popup = $LanguageButton.get_popup()
 	# limpa as opções
-	#popup.clear()
+	popup.clear()
 
 	# conecta a seleção de um idioma com a função de mudar o idiomas
-	#popup.connect('id_pressed', self, 'changeLanguage')
+	popup.connect('id_pressed', self, 'changeLanguage')
 
 	# adiciona os idiomas disponíveis nas opções
-	#for language in Locales.getAvailableLanguages():
-	#	popup.add_item(language)
+	for language in Locales.getAvailableLanguages():
+		popup.add_item(language)
 
 	$PlayButton.grab_focus()

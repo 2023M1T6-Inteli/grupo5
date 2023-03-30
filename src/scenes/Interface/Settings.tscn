@@ -1,17 +1,11 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://assets/Tutorial/Config/PT-BRHover.png" type="Texture" id=2]
 [ext_resource path="res://assets/Tutorial/Interactions/Back.png" type="Texture" id=3]
-[ext_resource path="res://assets/Tutorial/Config/EN-US.png" type="Texture" id=4]
 [ext_resource path="res://assets/Tutorial/Config/Bar.png" type="Texture" id=5]
 [ext_resource path="res://assets/Tutorial/Config/Box.png" type="Texture" id=6]
-[ext_resource path="res://assets/Tutorial/Config/ES-ESHover.png" type="Texture" id=7]
 [ext_resource path="res://assets/Tutorial/Config/Grabber.png" type="Texture" id=8]
 [ext_resource path="res://assets/Tutorial/Config/FullScreenBox.png" type="Texture" id=9]
-[ext_resource path="res://assets/Tutorial/Config/ES-ES.png" type="Texture" id=10]
-[ext_resource path="res://assets/Tutorial/Config/PT-BR.png" type="Texture" id=11]
-[ext_resource path="res://assets/Tutorial/Config/EN-USHover.png" type="Texture" id=12]
 [ext_resource path="res://assets/Tutorial/Config/Gear.png" type="Texture" id=13]
 [ext_resource path="res://assets/Tutorial/Config/FullScreenBoxCheck.png" type="Texture" id=14]
 [ext_resource path="res://scripts/Settings.gd" type="Script" id=15]
@@ -63,73 +57,42 @@ texture = ExtResource( 6 )
 
 [node name="Title" type="Label" parent="."]
 margin_left = 383.0
-margin_top = 77.0
+margin_top = 102.0
 margin_right = 986.0
-margin_bottom = 159.0
+margin_bottom = 184.0
 custom_fonts/font = SubResource( 1 )
 text = "Configurações"
+align = 1
 
 [node name="Gear" type="Sprite" parent="."]
-position = Vector2( 335, 119 )
+position = Vector2( 335, 144 )
 texture = ExtResource( 13 )
 
 [node name="FullScreenButton" type="TextureButton" parent="."]
 margin_left = 478.0
-margin_top = 338.0
+margin_top = 438.0
 margin_right = 536.0
-margin_bottom = 396.0
+margin_bottom = 496.0
 toggle_mode = true
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 14 )
 
-[node name="PT-BR" type="TextureButton" parent="."]
-margin_left = 337.0
-margin_top = 535.0
-margin_right = 472.0
-margin_bottom = 565.0
-texture_normal = ExtResource( 11 )
-texture_hover = ExtResource( 2 )
-
-[node name="ES-ES" type="TextureButton" parent="."]
-margin_left = 813.0
-margin_top = 535.0
-margin_right = 947.0
-margin_bottom = 565.0
-texture_normal = ExtResource( 10 )
-texture_hover = ExtResource( 7 )
-
-[node name="EN-US" type="TextureButton" parent="."]
-margin_left = 573.0
-margin_top = 534.0
-margin_right = 708.0
-margin_bottom = 564.0
-texture_normal = ExtResource( 4 )
-texture_hover = ExtResource( 12 )
-
 [node name="Volume" type="Label" parent="."]
 margin_left = 575.0
-margin_top = 176.0
+margin_top = 226.0
 margin_right = 702.0
-margin_bottom = 257.0
+margin_bottom = 307.0
 custom_fonts/font = SubResource( 2 )
 text = "Volume
 "
 
 [node name="Fullscreen" type="Label" parent="."]
-margin_left = 549.0
-margin_top = 347.0
-margin_right = 743.0
-margin_bottom = 386.0
+margin_left = 554.0
+margin_top = 447.0
+margin_right = 748.0
+margin_bottom = 486.0
 custom_fonts/font = SubResource( 3 )
 text = "Tela cheia"
-
-[node name="Languages" type="Label" parent="."]
-margin_left = 567.0
-margin_top = 435.0
-margin_right = 761.0
-margin_bottom = 474.0
-custom_fonts/font = SubResource( 3 )
-text = "Idiomas"
 
 [node name="Return" type="Button" parent="."]
 margin_left = 190.0
@@ -141,9 +104,9 @@ flat = true
 
 [node name="VolumeSlider" type="HSlider" parent="."]
 margin_left = 447.0
-margin_top = 237.0
+margin_top = 287.0
 margin_right = 847.0
-margin_bottom = 305.0
+margin_bottom = 355.0
 custom_icons/tick = ExtResource( 8 )
 custom_icons/grabber_disabled = ExtResource( 8 )
 custom_icons/grabber_highlight = ExtResource( 8 )
@@ -151,8 +114,9 @@ custom_icons/grabber = ExtResource( 8 )
 custom_styles/slider = SubResource( 4 )
 custom_styles/grabber_area_highlight = SubResource( 5 )
 custom_styles/grabber_area = SubResource( 6 )
-min_value = -30.0
-max_value = 10.0
+min_value = -65.0
+max_value = 5.0
+value = -40.0
 
 [connection signal="toggled" from="FullScreenButton" to="." method="_on_FullScreenButton_toggled"]
 [connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]

@@ -2,7 +2,13 @@
     "buttons": {
         "play": "Jogar",
         "settings": "Configurações",
+        "language": "Idioma",
         "quit": "Sair"
+    },
+    "settings": {
+        "settings": "Configurações",
+        "volume": "Volume",
+        "fullscreen": "Tela Cheia"
     },
     "characters": {
         "chemical": "Químico",

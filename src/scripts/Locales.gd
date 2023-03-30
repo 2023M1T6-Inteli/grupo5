@@ -13,6 +13,8 @@ var characters = {}
 var dialogs = {}
 # textos de botões
 var buttons = {}
+# textos configuracao
+var settings = {}
 # nomes de levels
 var levels = []
 # textos da prancheta
@@ -59,6 +61,7 @@ func loadLanguage():
 	characters = locale.characters
 	dialogs = locale.dialogs
 	buttons = locale.buttons
+	settings = locale.settings
 	levels = locale.levels
 	clipboard = locale.clipboard
 	tutorial = locale.tutorial
