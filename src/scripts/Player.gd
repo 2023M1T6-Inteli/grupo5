@@ -9,6 +9,10 @@ var velocity = Vector2()
 
 
 func movePlayer():
+	if Global.playerPaused:
+		$Animation.play("reset" + Global.characterName)
+		velocity = Vector2.ZERO
+		return
 
 	# interpreta os inputs de movimentação e aplica as velocidades	
 	velocity.x = 0
@@ -35,6 +39,7 @@ func movePlayer():
 
 func _ready():
 	get_tree().paused = false
+	Global.playerPaused = false
 
 
 func _physics_process(delta):
@@ -44,7 +49,7 @@ func _physics_process(delta):
 	# calcula a velocidade em y de acordo com a gravidade
 	velocity.y += gravity * delta
 	velocity = move_and_slide(velocity, Vector2(0, -1))
-	
+
 	for platforms in get_slide_count():
 		var collision = get_slide_collision(platforms)
 		if not collision.collider.has_method('fall'):

@@ -64,7 +64,7 @@ func _on_minigame_body_exited(_body):
 
 
 func _input(event):
-	if get_tree().paused:
+	if Global.playerPaused:
 		# se o minigame já está rodando, o input não é processado
 		return
 
@@ -80,7 +80,7 @@ func _input(event):
 		minigame = minigame.instance()
 		$"../HUD".add_child(minigame)
 		# indica que o minigame está rodando
-		get_tree().paused = true
+		Global.playerPaused = true
 
 
 func _ready():

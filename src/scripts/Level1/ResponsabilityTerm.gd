@@ -11,7 +11,7 @@ func _ready():
 
 func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena
-	get_tree().paused = false
+	Global.playerPaused = false
 	Global.currentLevel = 'Level1'
 	queue_free()
 

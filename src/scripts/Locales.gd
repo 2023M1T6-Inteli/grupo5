@@ -36,7 +36,7 @@ func getAvailableLanguages():
 	localesDirectory.open('res://locales/')
 	localesDirectory.list_dir_begin()
 	var file = localesDirectory.get_next()
-	
+
 	# passa arquivo por arquivo dentro da pasta
 	while file != '':
 		if (file.ends_with('.json')):
