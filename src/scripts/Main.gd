@@ -25,5 +25,6 @@ func _on_QuitButton_pressed():
 
 
 func _ready():
+	Global.currentLevel = 'Tutorial'
 	loadMenuLanguage()
 	$PlayButton.grab_focus()
