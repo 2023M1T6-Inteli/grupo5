@@ -67,6 +67,7 @@ func closeDialog():
 	currentDialog = 0
 	canInteract = false
 	Global.playerPaused = false
+	Global.score += 1
 
 
 func nextDialog():
@@ -143,10 +144,6 @@ func _input(event):
 		elif canInteract:
 			# se o diálogo não está ativo e o personagem está na área de interação, carrega o diálogo
 			loadDialog()
-
-
-func _ready():
-	closeDialog()
 
 
 func _process(_delta):

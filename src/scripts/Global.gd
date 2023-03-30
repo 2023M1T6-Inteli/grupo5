@@ -2,6 +2,8 @@ extends Node
 
 var characterName = 'Gabriel'
 
+signal update_score()
+
 # load das cenas dos minigames
 var minigames = {
 	'Stack': load('res://scenes/Minigames/Stack/Stack.tscn'),
@@ -14,3 +16,10 @@ var minigames = {
 var playerPaused = false
 var stackBox = load('res://scenes/Minigames/Stack/Box.tscn')
 var currentLevel = 'Tutorial'
+var score = 0 setget setScore
+
+
+func setScore(newScore):
+	print('Score: ' + str(newScore))
+	score = newScore
+	emit_signal('update_score')

@@ -8,6 +8,7 @@ var currentInstruction = 1
 
 
 func _ready():
+	Global.score = 0
 	$'Instruction3/Animation'.play('gif')
 
 
