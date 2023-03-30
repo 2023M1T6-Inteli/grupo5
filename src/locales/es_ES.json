@@ -2,13 +2,18 @@
     "buttons": {
         "play": "Jugar",
         "settings": "Configuración",
-        "language": "Idioma",
         "quit": "Salir"
     },
     "settings": {
         "settings": "Configuración",
         "volume": "Volume",
-        "fullscreen": "Pantalla completa"
+        "fullscreen": "Pantalla completa",
+        "language": "Idioma"
+    },
+    "pause": {
+        "play": "Jugar",
+        "settings": "Configuración",
+        "mainmenu": "Menú Principal"
     },
     "characters": {
         "chemical": "Quimico",
