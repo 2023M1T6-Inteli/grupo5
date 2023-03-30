@@ -12,6 +12,7 @@ func _ready():
 func pauseGame():
 	if is_paused:
 		return
+
 	var pause = load('res://scenes/Interface/Pause.tscn')
 	pause = pause.instance()
 	add_child(pause)

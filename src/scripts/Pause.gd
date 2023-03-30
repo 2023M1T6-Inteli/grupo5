@@ -13,7 +13,7 @@ func _on_Play_pressed():
 func _on_Settings_pressed():
 	var settings = load('res://scenes/Interface/Settings.tscn')
 	settings = settings.instance()
-	$"..".add_child(settings)
+	add_child(settings)
 
 
 func _on_MainMenu_pressed():

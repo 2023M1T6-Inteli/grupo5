@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/Level1/ResponsabilityTerm.gd" type="Script" id=2]
@@ -22,25 +22,6 @@ extra_spacing_top = 1
 extra_spacing_bottom = 1
 extra_spacing_space = 2
 font_data = ExtResource( 1 )
-
-[sub_resource type="StyleBoxFlat" id=23]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
-
-[sub_resource type="StyleBoxFlat" id=24]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
-
-[sub_resource type="StyleBoxFlat" id=25]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
-
-[sub_resource type="StyleBoxFlat" id=26]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
-
-[sub_resource type="Theme" id=27]
-Button/styles/disabled = null
-Button/styles/focus = SubResource( 23 )
-Button/styles/hover = SubResource( 24 )
-Button/styles/normal = SubResource( 25 )
-Button/styles/pressed = SubResource( 26 )
 
 [sub_resource type="DynamicFont" id=28]
 size = 30
@@ -99,13 +80,15 @@ margin_left = 429.0
 margin_top = 603.0
 margin_right = 860.0
 margin_bottom = 642.0
-theme = SubResource( 27 )
+focus_mode = 0
 custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
 custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
 custom_fonts/font = SubResource( 28 )
+enabled_focus_mode = 0
 text = "Assinatura: "
+flat = true
 align = 0
 
 [node name="characterName" type="Label" parent="."]
