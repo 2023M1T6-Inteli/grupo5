@@ -1,7 +1,7 @@
 extends Node2D
 
 func closePause():
-	Global.playerPaused = false
+	get_tree().paused = false
 	$'..'.is_paused = false
 	queue_free()
 
@@ -27,7 +27,7 @@ func _input(event):
 
 
 func _ready():
-	Global.playerPaused = true
+	get_tree().paused = true
 	$'..'.is_paused = true
 	$Play.text = Locales.pause.play
 	$Settings.text = Locales.pause.settings

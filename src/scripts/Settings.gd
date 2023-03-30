@@ -18,7 +18,7 @@ func changeLanguage(id):
 
 
 func closeSettings():
-	Global.playerPaused = false
+	get_tree().paused = false
 	queue_free()
 
 

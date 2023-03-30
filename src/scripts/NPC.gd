@@ -55,7 +55,7 @@ func loadDialog():
 	$"../HUD/Dialog".visible = true
 	get_parent().get_node("HUD/Gamepad").hide()
 	nextDialog()
-	Global.playerPaused = true
+	get_tree().paused = true
 
 
 func closeDialog():
@@ -66,7 +66,7 @@ func closeDialog():
 	$dialog_sound.stop()
 	currentDialog = 0
 	canInteract = false
-	Global.playerPaused = false
+	get_tree().paused = false
 	Global.score += 1
 
 

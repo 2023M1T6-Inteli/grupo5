@@ -7,14 +7,8 @@ export (int) var gravity = 3000
 var PPEs = []
 var velocity = Vector2()
 
-var paused = false
-
 
 func movePlayer():
-	if Global.playerPaused:
-		$Animation.play("reset" + Global.characterName)
-		velocity = Vector2.ZERO
-		return
 
 	# interpreta os inputs de movimentação e aplica as velocidades	
 	velocity.x = 0
@@ -39,9 +33,11 @@ func movePlayer():
 		$Animation.play("reset" + Global.characterName)
 
 
+func _ready():
+	get_tree().paused = false
+
+
 func _physics_process(delta):
-	if paused:
-		return
 
 	# realiza a movimentação do player
 	movePlayer()

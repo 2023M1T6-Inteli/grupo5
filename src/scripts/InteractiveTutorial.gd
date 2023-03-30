@@ -14,7 +14,7 @@ func _ready():
 
 func _input(event):
 
-	if currentInstruction == 3 and not Global.playerPaused:
+	if currentInstruction == 3 and not get_tree().paused:
 		$'Instruction2/'.visible = false
 
 	if currentInstruction > 2:

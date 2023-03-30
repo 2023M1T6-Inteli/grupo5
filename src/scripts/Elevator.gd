@@ -22,6 +22,7 @@ func showE():
 		1,
 		0.3
 	)
+
 	$Tween.start()
 
 
@@ -41,6 +42,7 @@ func hideE():
 		0,
 		0.3
 	)
+
 	$Tween.start()
 
 
