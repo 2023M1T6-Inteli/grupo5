@@ -7,7 +7,7 @@ var active = false
 signal valveActivated
 
 func showE():
-	# mostra o E na tela, em cima do químico
+	# mostra o E na tela, em cima do objeto
 	$E.visible = true
 	$Tween.interpolate_property(
 		$E,
@@ -27,7 +27,7 @@ func showE():
 
 
 func hideE():
-	# esconde o E na tela, de cima do químico
+	# esconde o E na tela, de cima do objeto
 	$Tween.interpolate_property(
 		$E,
 		'position:y',
