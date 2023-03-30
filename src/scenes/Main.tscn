@@ -4,24 +4,24 @@
 [ext_resource path="res://scripts/Main.gd" type="Script" id=2]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=3]
 
-[sub_resource type="StyleBoxFlat" id=23]
+[sub_resource type="StyleBoxFlat" id=19]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=24]
+[sub_resource type="StyleBoxFlat" id=20]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=25]
+[sub_resource type="StyleBoxFlat" id=21]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=26]
+[sub_resource type="StyleBoxFlat" id=22]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
 [sub_resource type="Theme" id=8]
 Button/styles/disabled = null
-Button/styles/focus = SubResource( 23 )
-Button/styles/hover = SubResource( 24 )
-Button/styles/normal = SubResource( 25 )
-Button/styles/pressed = SubResource( 26 )
+Button/styles/focus = SubResource( 19 )
+Button/styles/hover = SubResource( 20 )
+Button/styles/normal = SubResource( 21 )
+Button/styles/pressed = SubResource( 22 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -65,9 +65,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 398.0
-margin_top = 248.0
+margin_top = 259.0
 margin_right = 885.0
-margin_bottom = 287.0
+margin_bottom = 298.0
 focus_neighbour_top = NodePath("../QuitButton")
 theme = SubResource( 8 )
 custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
@@ -83,9 +83,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 398.0
-margin_top = 341.0
+margin_top = 343.0
 margin_right = 885.0
-margin_bottom = 380.0
+margin_bottom = 382.0
 focus_neighbour_top = NodePath("../QuitButton")
 theme = SubResource( 8 )
 custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
@@ -95,31 +95,13 @@ custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "buttons/settings"
 
-[node name="LanguageButton" type="MenuButton" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 398.0
-margin_top = 431.0
-margin_right = 885.0
-margin_bottom = 470.0
-focus_neighbour_top = NodePath("../QuitButton")
-theme = SubResource( 8 )
-custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
-custom_colors/font_color = Color( 0.988235, 0.984314, 0.984314, 1 )
-custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
-custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
-custom_fonts/font = SubResource( 1 )
-text = "buttons/languages"
-
 [node name="QuitButton" type="Button" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = 396.0
-margin_top = 520.0
+margin_top = 427.0
 margin_right = 883.0
-margin_bottom = 559.0
+margin_bottom = 466.0
 focus_neighbour_bottom = NodePath("../PlayButton")
 theme = SubResource( 18 )
 custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )

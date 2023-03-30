@@ -10,9 +10,11 @@ func _ready():
 
 
 func pauseGame():
-	var settings = load('res://scenes/Interface/Settings.tscn')
-	settings = settings.instance()
-	add_child(settings)
+	if is_paused:
+		return
+	var pause = load('res://scenes/Interface/Pause.tscn')
+	pause = pause.instance()
+	add_child(pause)
 
 
 func update_score():

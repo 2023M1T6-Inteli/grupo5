@@ -6,6 +6,15 @@ func loadMenuLanguage():
 	$Title.text = Locales.settings.settings
 	$Volume.text = Locales.settings.volume
 	$Fullscreen.text = Locales.settings.fullscreen
+	$LanguageButton.text = Locales.settings.language
+
+
+func changeLanguage(id):
+	# muda o idioma de acordo com a escolha
+	Locales.language = Locales.getAvailableLanguages()[id]
+	Locales.loadLanguage()
+	# atuailza o menu
+	loadMenuLanguage()
 
 
 func closeSettings():
@@ -34,3 +43,14 @@ func _ready():
 	$VolumeSlider.value = Music.volume_db
 	$FullScreenButton.pressed = OS.window_fullscreen
 	loadMenuLanguage()
+	# pega a referência do menu de opções
+	var popup = $LanguageButton.get_popup()
+	# limpa as opções
+	popup.clear()
+
+	# conecta a seleção de um idioma com a função de mudar o idiomas
+	popup.connect('id_pressed', self, 'changeLanguage')
+
+	# adiciona os idiomas disponíveis nas opções
+	for language in Locales.getAvailableLanguages():
+		popup.add_item(language)
