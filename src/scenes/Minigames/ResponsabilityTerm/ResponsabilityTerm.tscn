@@ -50,7 +50,7 @@ font_data = ExtResource( 1 )
 size = 24
 font_data = ExtResource( 1 )
 
-[node name="Responsability" type="Node2D"]
+[node name="ResponsabilityTerm" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Darkener" type="Panel" parent="."]
@@ -99,8 +99,6 @@ margin_left = 429.0
 margin_top = 603.0
 margin_right = 860.0
 margin_bottom = 642.0
-focus_neighbour_top = NodePath("../QuitButton")
-focus_neighbour_bottom = NodePath("../LanguageButton")
 theme = SubResource( 27 )
 custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=162 format=2]
+[gd_scene load_steps=161 format=2]
 
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/Valves/Valve.png" type="Texture" id=2]
@@ -84,7 +84,6 @@
 [ext_resource path="res://assets/PVC.png" type="Texture" id=82]
 [ext_resource path="res://assets/Sounds/sfx/valve_sfx.ogg" type="AudioStream" id=83]
 [ext_resource path="res://scenes/Objects/FallingPlatform.tscn" type="PackedScene" id=84]
-[ext_resource path="res://scripts/Level2/ValveCounter.gd" type="Script" id=85]
 [ext_resource path="res://scenes/Objects/Rope.tscn" type="PackedScene" id=87]
 [ext_resource path="res://scenes/Objects/MinigameLauncher.tscn" type="PackedScene" id=88]
 [ext_resource path="res://scripts/Level2/Level2.gd" type="Script" id=89]
@@ -1719,7 +1718,7 @@ font_data = ExtResource( 73 )
 font_data = ExtResource( 73 )
 
 [sub_resource type="DynamicFont" id=226]
-size = 60
+size = 30
 font_data = ExtResource( 73 )
 
 [node name="Level2" type="Node2D"]
@@ -2327,21 +2326,47 @@ texture = ExtResource( 2 )
 position = Vector2( 208, -1103 )
 texture = ExtResource( 2 )
 
-[node name="Valve" type="Sprite" parent="HUD"]
-position = Vector2( 1115, 81 )
-scale = Vector2( 0.4, 0.4 )
-texture = ExtResource( 2 )
+[node name="ScoreLabel" type="Label" parent="HUD/Dialog"]
+margin_left = 44.0
+margin_top = -522.0
+margin_right = 172.0
+margin_bottom = -483.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 226 )
+text = "SCORE:"
+autowrap = true
+
+[node name="Score" type="Label" parent="HUD/Dialog"]
+margin_left = 172.0
+margin_top = -522.0
+margin_right = 268.0
+margin_bottom = -483.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 226 )
+text = "0"
+align = 2
+autowrap = true
+
+[node name="ValveLabel" type="Label" parent="HUD"]
+margin_left = 64.0
+margin_top = 88.0
+margin_right = 216.0
+margin_bottom = 127.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 226 )
+text = "VALVES:"
+autowrap = true
 
 [node name="ValveCounter" type="Label" parent="HUD"]
-margin_left = 1169.0
-margin_top = 36.0
-margin_right = 1273.0
-margin_bottom = 113.0
-grow_horizontal = 0
+margin_left = 192.0
+margin_top = 88.0
+margin_right = 288.0
+margin_bottom = 127.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 226 )
-text = "x1"
+text = "0"
+align = 2
 autowrap = true
-script = ExtResource( 85 )
 
 [node name="valve_sfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 83 )
@@ -2352,14 +2377,8 @@ pitch_scale = 1.8
 position = Vector2( 7394, -100 )
 
 [connection signal="valveActivated" from="Valve_1" to="." method="_on_valveActivated"]
-[connection signal="valveActivated" from="Valve_1" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_2" to="." method="_on_valveActivated"]
-[connection signal="valveActivated" from="Valve_2" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_3" to="." method="_on_valveActivated"]
-[connection signal="valveActivated" from="Valve_3" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_4" to="." method="_on_valveActivated"]
-[connection signal="valveActivated" from="Valve_4" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_5" to="." method="_on_valveActivated"]
-[connection signal="valveActivated" from="Valve_5" to="HUD/ValveCounter" method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_6" to="." method="_on_valveActivated"]
-[connection signal="valveActivated" from="Valve_6" to="HUD/ValveCounter" method="_on_valveActivated"]

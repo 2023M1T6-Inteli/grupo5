@@ -16,8 +16,12 @@ func pauseGame():
 
 
 func update_score():
-	print(Global.score)
 	$Score.text = str(Global.score)
+	$ScoreLabel.modulate = Color(0.95, 0.98, 0.04, 1)
+	$Score.modulate = Color(0.95, 0.98, 0.04, 1)
+	yield(get_tree().create_timer(0.5), 'timeout')
+	$ScoreLabel.modulate = Color(1, 1, 1, 1)
+	$Score.modulate = Color(1, 1, 1, 1)
 
 
 func _on_PauseButton_pressed():
