@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Wonderful_life.ogg-3209de7c990a8e694381117996fd6f4d.oggstr"
+
+[deps]
+
+source_file="res://assets/Sounds/Music/Wonderful_life.ogg"
+dest_files=[ "res://.import/Wonderful_life.ogg-3209de7c990a8e694381117996fd6f4d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

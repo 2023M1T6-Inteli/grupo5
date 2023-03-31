@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/8bit_hideout.ogg-5d3815a1f44c16e248b8b142e807ee13.oggstr"
+
+[deps]
+
+source_file="res://assets/Sounds/Music/8bit_hideout.ogg"
+dest_files=[ "res://.import/8bit_hideout.ogg-5d3815a1f44c16e248b8b142e807ee13.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

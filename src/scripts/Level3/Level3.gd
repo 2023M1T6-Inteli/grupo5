@@ -15,5 +15,6 @@ func _on_DeadZone_body_entered(body:Node):
 
 
 func _ready():
+	Music.change('Level3')
 	$Acid/Animation.play("acid")
 	$Acid2/Animation.play("acid")
