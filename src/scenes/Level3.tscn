@@ -1,4 +1,4 @@
-[gd_scene load_steps=156 format=2]
+[gd_scene load_steps=157 format=2]
 
 [ext_resource path="res://assets/Background/BackgroundLevel2.png" type="Texture" id=1]
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=2]
@@ -81,6 +81,7 @@
 [ext_resource path="res://scripts/Level3/Level3.gd" type="Script" id=79]
 [ext_resource path="res://assets/Minigames/PhTest/phTestIcon.png" type="Texture" id=80]
 [ext_resource path="res://assets/Background/waterspritesheet.png" type="Texture" id=81]
+[ext_resource path="res://scenes/Objects/PPE.tscn" type="PackedScene" id=82]
 
 [sub_resource type="ConvexPolygonShape2D" id=92]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -1790,7 +1791,7 @@ scale = Vector2( 2.5, 2.5 )
 tile_set = SubResource( 158 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( -524297, 39, 0, -589773, 59, 0, -458761, 39, 0, -524237, 59, 0, -393225, 39, 0, -458715, 59, 0, -327689, 39, 0, -393181, 64, 0, -393180, 64, 0, -393179, 59, 0, -393178, 64, 0, -393177, 64, 0, -393176, 64, 0, -393175, 64, 0, -393174, 64, 0, -393149, 64, 0, -393148, 64, 0, -393147, 64, 0, -393146, 64, 0, -393145, 64, 0, -393144, 64, 0, -262153, 39, 0, -327650, 66, 0, -327649, 67, 0, -327648, 68, 0, -327645, 71, 0, -327644, 71, 0, -327643, 71, 0, -327642, 71, 0, -327641, 71, 0, -327640, 71, 0, -327639, 71, 0, -327638, 71, 0, -327613, 69, 0, -327612, 69, 0, -327611, 69, 0, -327610, 69, 0, -327609, 69, 0, -327608, 69, 0, -196617, 39, 0, -131081, 39, 0, -196520, 66, 0, -196519, 67, 0, -196518, 67, 0, -196517, 68, 0, -65545, 39, 0, -9, 39, 0, -65524, 66, 0, -65523, 67, 0, -65522, 68, 0, 65527, 39, 0, 131063, 39, 0, 65612, 66, 0, 65613, 67, 0, 65614, 68, 0, 196599, 39, 0, 262135, 10, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196704, 4, 0, 196705, 4, 0, 196706, 4, 0, 196707, 4, 0, 196708, 4, 0, 196709, 4, 0, 327671, 10, 0, 327672, 19, 0, 327673, 19, 0, 327674, 19, 0, 327675, 19, 0, 327676, 19, 0, 327677, 19, 0, 327678, 19, 0, 327679, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262240, 19, 0, 262241, 19, 0, 262242, 19, 0, 262243, 19, 0, 262244, 19, 0, 262245, 19, 0 )
+tile_data = PoolIntArray( -524297, 39, 0, -458761, 39, 0, -393225, 39, 0, -327689, 39, 0, -393181, 64, 0, -393180, 64, 0, -393179, 64, 0, -393178, 64, 0, -393177, 64, 0, -393176, 64, 0, -393175, 64, 0, -393174, 64, 0, -393149, 64, 0, -393148, 64, 0, -393147, 64, 0, -393146, 64, 0, -393145, 64, 0, -393144, 64, 0, -262153, 39, 0, -327650, 66, 0, -327649, 67, 0, -327648, 68, 0, -327645, 71, 0, -327644, 71, 0, -327643, 71, 0, -327642, 71, 0, -327641, 71, 0, -327640, 71, 0, -327639, 71, 0, -327638, 71, 0, -327613, 69, 0, -327612, 69, 0, -327611, 69, 0, -327610, 69, 0, -327609, 69, 0, -327608, 69, 0, -196617, 39, 0, -131081, 39, 0, -196520, 66, 0, -196519, 67, 0, -196518, 67, 0, -196517, 68, 0, -65545, 39, 0, -9, 39, 0, -65524, 66, 0, -65523, 67, 0, -65522, 68, 0, 65527, 39, 0, 93, 66, 0, 94, 67, 0, 95, 68, 0, 131063, 39, 0, 196599, 39, 0, 262135, 10, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196704, 4, 0, 196705, 4, 0, 196706, 4, 0, 196707, 4, 0, 196708, 4, 0, 196709, 4, 0, 327671, 10, 0, 327672, 19, 0, 327673, 19, 0, 327674, 19, 0, 327675, 19, 0, 327676, 19, 0, 327677, 19, 0, 327678, 19, 0, 327679, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262240, 19, 0, 262241, 19, 0, 262242, 19, 0, 262243, 19, 0, 262244, 19, 0, 262245, 19, 0 )
 
 [node name="Elevator" parent="." instance=ExtResource( 4 )]
 position = Vector2( -532, 212 )
@@ -1803,10 +1804,30 @@ scale = Vector2( 0.5, 0.5 )
 targetLevel = "Level3"
 
 [node name="MinigameLauncher" parent="." instance=ExtResource( 78 )]
-position = Vector2( 7745, 223 )
+position = Vector2( 5638, -498 )
 minigameName = "PhTest"
 spriteTexture = ExtResource( 80 )
 strokeTexture = ExtResource( 5 )
+
+[node name="PPE1" parent="." instance=ExtResource( 82 )]
+position = Vector2( 4563, -182 )
+scale = Vector2( 0.2, 0.2 )
+PPEName = "Boot"
+
+[node name="PPE2" parent="." instance=ExtResource( 82 )]
+position = Vector2( 3134, -498 )
+scale = Vector2( 0.2, 0.2 )
+PPEName = "Boot"
+
+[node name="PPE3" parent="." instance=ExtResource( 82 )]
+position = Vector2( 1085, -94 )
+scale = Vector2( 0.2, 0.2 )
+PPEName = "Boot"
+
+[node name="PPE4" parent="." instance=ExtResource( 82 )]
+position = Vector2( 87, 218 )
+scale = Vector2( 0.2, 0.2 )
+PPEName = "Boot"
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( -527, 126 )
@@ -1901,22 +1922,21 @@ position = Vector2( 3705, -263 )
 
 [node name="MovingPlatform" parent="." instance=ExtResource( 76 )]
 position = Vector2( 435, 194 )
+waitDuration = 3.0
 
 [node name="MovingPlatform2" parent="." instance=ExtResource( 76 )]
 position = Vector2( 1450, -23 )
 distance = 400
+waitDuration = 2.0
 
 [node name="MovingPlatform3" parent="." instance=ExtResource( 76 )]
-position = Vector2( 2238, -93 )
+position = Vector2( 2238, -261 )
 horizontal = false
-distance = 200
-waitDuration = 2.5
+distance = -400
+waitDuration = 2.0
 
 [node name="MovingPlatform4" parent="." instance=ExtResource( 76 )]
 position = Vector2( 6066, -220 )
-
-[node name="MovingPlatform5" parent="." instance=ExtResource( 76 )]
-position = Vector2( 6678, 42 )
 
 [node name="DeadZone" type="Area2D" parent="."]
 
