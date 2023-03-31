@@ -18,11 +18,11 @@ func _on_body_exited(body):
 
 func _process(_delta):
 	if not canInteract:
-		$"../Player".paused = false
+		Global.playerPaused = false
 		return
 
 	# Pausa o processamento padrão de movimentação do player
-	$"../Player".paused = true
+	Global.playerPaused = true
 	$"../Player/Animation".play("reset" + Global.characterName)
 
 	# Interpreta os inputs de movimentação
