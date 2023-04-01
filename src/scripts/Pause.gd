@@ -2,7 +2,6 @@ extends Node2D
 
 func closePause():
 	get_tree().paused = false
-	$'..'.is_paused = false
 	queue_free()
 
 
@@ -17,6 +16,7 @@ func _on_Settings_pressed():
 
 
 func _on_MainMenu_pressed():
+	get_tree().paused = false
 	if get_tree().change_scene('res://scenes/Main.tscn') != OK:
 		print ('An unexpected error occured when trying to switch to main scene')
 
@@ -28,7 +28,6 @@ func _input(event):
 
 func _ready():
 	get_tree().paused = true
-	$'..'.is_paused = true
 	$Play.text = Locales.pause.play
 	$Settings.text = Locales.pause.settings
 	$MainMenu.text = Locales.pause.mainmenu
