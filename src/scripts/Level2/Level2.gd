@@ -41,7 +41,7 @@ func _on_valveActivated():
 		tween.start()
 		pvcReleased = true
 
-	$'HUD/ValveCounter'.text = str(valveCounter)
+	$'HUD/ValveCounter'.text = str(valveCounter) + '/6'
 
 	$'HUD/ValveCounter'.modulate = Color(0.95, 0.98, 0.04, 1)
 	$'HUD/ValveLabel'.modulate = Color(0.95, 0.98, 0.04, 1)

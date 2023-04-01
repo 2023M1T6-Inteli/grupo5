@@ -67,9 +67,9 @@ text = "SCORE:"
 autowrap = true
 
 [node name="Score" type="Label" parent="."]
-margin_left = 192.0
+margin_left = 216.0
 margin_top = 48.0
-margin_right = 288.0
+margin_right = 312.0
 margin_bottom = 87.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )

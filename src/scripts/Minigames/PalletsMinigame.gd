@@ -14,7 +14,8 @@ func closeMinigame():
 
 func _on_ContinueButton_pressed():
 	closeMinigame()
-	
+
+
 func _input(event):
 	if event.is_action_pressed('ui_cancel'):
 		# tecla ESC fecha o minigame
