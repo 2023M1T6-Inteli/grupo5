@@ -1,7 +1,5 @@
 extends Node2D
 
-var canInteract = false
-
 
 func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena

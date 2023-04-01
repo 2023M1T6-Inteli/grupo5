@@ -2363,13 +2363,13 @@ text = "VALVES:"
 autowrap = true
 
 [node name="ValveCounter" type="Label" parent="HUD"]
-margin_left = 192.0
+margin_left = 216.0
 margin_top = 88.0
-margin_right = 288.0
+margin_right = 312.0
 margin_bottom = 127.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 226 )
-text = "0"
+text = "0/6"
 align = 2
 autowrap = true
 
@@ -2381,6 +2381,8 @@ pitch_scale = 1.8
 [node name="FallingPlatform" parent="." instance=ExtResource( 84 )]
 position = Vector2( 7394, -100 )
 
+[connection signal="inRope" from="Rope" to="Player" method="_on_inRope"]
+[connection signal="outRope" from="Rope" to="Player" method="_on_outRope"]
 [connection signal="valveActivated" from="Valve_1" to="." method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_2" to="." method="_on_valveActivated"]
 [connection signal="valveActivated" from="Valve_3" to="." method="_on_valveActivated"]

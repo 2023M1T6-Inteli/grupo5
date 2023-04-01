@@ -4,12 +4,14 @@ export (int) var runSpeed = 500
 export (int) var jumpSpeed = -1250
 export (int) var gravity = 3000
 
+var inRope = false
+
 var PPEs = []
 var velocity = Vector2()
 
 
 func movePlayer():
-	if Global.playerPaused:
+	if Global.playerPaused or inRope:
 		$Animation.play("reset" + Global.characterName)
 		velocity = Vector2.ZERO
 		return
@@ -35,6 +37,16 @@ func movePlayer():
 		$Sprite.flip_h = true
 	else:
 		$Animation.play("reset" + Global.characterName)
+
+
+func _on_inRope():
+	gravity = 0
+	inRope = true
+
+
+func _on_outRope():
+	gravity = 3000
+	inRope = false
 
 
 func _ready():

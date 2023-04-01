@@ -4,6 +4,10 @@ var canInteract = false
 var verticalVelocity = 200
 
 
+signal inRope
+signal outRope
+
+
 func _on_body_entered(body):
 	if body.name != 'Player':
 		return
@@ -18,12 +22,10 @@ func _on_body_exited(body):
 
 func _process(_delta):
 	if not canInteract:
-		Global.playerPaused = false
+		emit_signal('outRope')
 		return
 
-	# Pausa o processamento padrão de movimentação do player
-	Global.playerPaused = true
-	$"../Player/Animation".play("reset" + Global.characterName)
+	emit_signal('inRope')
 
 	# Interpreta os inputs de movimentação
 	if Input.is_action_pressed("climb_up"):
