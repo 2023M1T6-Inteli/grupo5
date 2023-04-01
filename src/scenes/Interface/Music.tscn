@@ -4,6 +4,7 @@
 [ext_resource path="res://assets/Sounds/Music/8bit_lets_go.ogg" type="AudioStream" id=2]
 
 [node name="Music" type="AudioStreamPlayer"]
+pause_mode = 2
 stream = ExtResource( 2 )
 volume_db = -20.0
 script = ExtResource( 1 )
