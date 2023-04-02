@@ -40,6 +40,7 @@ func _on_valveActivated():
 		)
 		tween.start()
 		pvcReleased = true
+		Global.score += 15
 
 	$'HUD/ValveCounter'.text = str(valveCounter) + '/6'
 

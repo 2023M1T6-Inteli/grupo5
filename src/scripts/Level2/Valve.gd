@@ -90,3 +90,4 @@ func _input(event):
 		$Tween.start()
 		active = true
 		emit_signal("valveActivated")
+		Global.score += 1

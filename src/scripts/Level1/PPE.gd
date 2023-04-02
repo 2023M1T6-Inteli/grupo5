@@ -19,6 +19,7 @@ func _on_body_entered(body):
 			$Animation.play('collect')
 			$CollectSound.play()
 			collecting = true
+			Global.score += 1
 
 
 func _ready():

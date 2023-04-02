@@ -4,6 +4,7 @@ var tween = Tween.new()
 
 var animationPlaying = false
 var currentBecker = -1
+var minigameScore = 15
 
 func showTape():
 	# anima a fita saindo do becker
@@ -236,6 +237,8 @@ func wrongChoice():
 	$Tape.modulate = Color(1, 1, 1, 1)
 	$Becker.modulate = Color(1, 1, 1, 1)
 
+	minigameScore -= 1
+
 
 func nextBecker():
 	# troca para o próximo becker
@@ -244,6 +247,7 @@ func nextBecker():
 	if currentBecker >= 6:
 		# se acabaram os becker, termina o minigame
 		Global.playerPaused = false
+		Global.score += minigameScore
 		get_parent().closeMinigame()
 		return
 

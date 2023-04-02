@@ -13,6 +13,7 @@ func closeMinigame():
 
 
 func _on_ContinueButton_pressed():
+	Global.score += 15
 	closeMinigame()
 
 

@@ -18,7 +18,7 @@ func duplicateBox():
 	cropBox()
 	updateBox()
 	lastBoxPosition = currentBox.position
-	
+
 	# carrega e instancia uma nova box na cena
 	currentBox = Global.stackBox.instance()
 
@@ -76,6 +76,7 @@ func _on_RestartButton_pressed():
 
 
 func _on_ContinueButton_pressed():
+	Global.score += int(15*currentBox.scale.x)
 	closeMinigame()
 
 
