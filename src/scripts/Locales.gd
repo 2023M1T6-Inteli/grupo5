@@ -23,6 +23,8 @@ var levels = []
 var clipboard = {}
 # textos do tutorial
 var tutorial = {}
+# textos do quiz
+var quiz = {}
 # outros textos
 var others = {}
 
@@ -68,6 +70,7 @@ func loadLanguage():
 	levels = locale.levels
 	clipboard = locale.clipboard
 	tutorial = locale.tutorial
+	quiz = locale.quiz
 	others = locale.others
 
 

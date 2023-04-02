@@ -12,6 +12,8 @@ var lastScale = 1
 # diferença de posição entre a última box e a atual
 var deltaPosition = 0
 
+var stackBox = load('res://scenes/Minigames/Stack/Box.tscn')
+
 
 func duplicateBox():
 	# corta e atualiza escala e posição a box atual
@@ -20,7 +22,7 @@ func duplicateBox():
 	lastBoxPosition = currentBox.position
 
 	# carrega e instancia uma nova box na cena
-	currentBox = Global.stackBox.instance()
+	currentBox = stackBox.instance()
 
 	# configura a nova box com as configurações atuais 
 	updateBox()

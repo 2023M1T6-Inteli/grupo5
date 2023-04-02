@@ -100,6 +100,22 @@
             }
         ]
     },
+    "quiz": {
+        "title": "Quiz",
+        "questions": [
+            {
+                "question": "Qual o nome do equipamento de proteção individual que protege os olhos?",
+                "tip": "Você usou EPIs ao longo do jogo. Lembre-se sempre deles!",
+                "answers": [
+                    "Óculos de segurança",
+                    "Capacete",
+                    "Luvas",
+                    "Máscara"
+                ],
+                "correctAnswer": "Óculos de segurança"
+            }
+        ]
+    },
     "others": {
         "win": "Você venceu!",
         "lose": "Você perdeu!",
