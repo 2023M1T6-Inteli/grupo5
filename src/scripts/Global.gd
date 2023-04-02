@@ -14,12 +14,13 @@ var minigames = {
 }
 
 var playerPaused = false
-var stackBox = load('res://scenes/Minigames/Stack/Box.tscn')
 var currentLevel = 'Tutorial'
 var score = 0 setget setScore
 
 
 func setScore(newScore):
-	print('Score: ' + str(newScore))
+	if newScore < 0:
+		newScore = 0
+
 	score = newScore
 	emit_signal('update_score')
