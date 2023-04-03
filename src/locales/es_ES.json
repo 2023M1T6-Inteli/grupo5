@@ -74,24 +74,48 @@
             "Al apilar una caja, aparecerá una nueva, apila 12 correctamente para continuar"
         ]
     },
-    "dialogs": [
-        {
-            "character": "chemical",
-            "text": "¡Hola! ¿Todo bien? Soy tu gerente. Debes ser el nuevo empleado de Unipar, ¿correcto? ¡Sea bienvenido!"
-        },
-        {
-            "character": "player",
-            "text": "¡Hola! Soy yo mismo. ¡El nuevo empleado! Estoy aquí para aprender sobre el día a día en la empresa y qué protocolos debo seguir para evitar accidentes."
-        },
-        {
-            "character": "chemical",
-            "text": "¡Bien! Ya puedes conocer las áreas de nuestra fábrica y sus reglas. ¡Pero primero, pónganse los EPP y manténganse seguros! ¡Hubo un accidente en una fábrica de uno de nuestros competidores aquí en Camaçari y no queremos que pase lo mismo aquí! ¡Vamos, tienes mucho que hacer!"
-        },
-        {
-            "character": "player",
-            "text": "¡Puede dejar! ¡Estoy muy emocionado para el primer día!"
-        }
-    ],
+    "dialogs": {
+        "Tutorial": [
+            {
+                "character": "chemical",
+                "text": "¡Hola! ¿Cómo estás? Soy tu gerente. Debes ser el nuevo empleado de Unipar, ¿verdad? ¡Bienvenido!"
+            },
+            {
+                "character": "player",
+                "text": "¡Hola! ¡Soy yo mismo! ¡El nuevo empleado! Estoy aquí para aprender sobre el día a día en la empresa y qué protocolos debo seguir para mantener mi seguridad."
+            },
+            {
+                "character": "chemical",
+                "text": "¡Genial! ¡Echa un vistazo a tu portapapeles y prepárate para el primer día de trabajo!"
+            }
+        ],
+        "Level1": [
+            {
+                "character": "chemical",
+                "text": "¡Correcto! Ya puedes conocer las áreas de nuestra fábrica y sus reglas. Pero antes, ¡toma los EPI's y mantente seguro! Hubo un accidente en una fábrica de uno de nuestros competidores aquí en Camaçari y no queremos que lo mismo suceda aquí. ¡Vamos! ¡Tienes mucho que hacer!"
+            },
+            {
+                "character": "player",
+                "text": "¡Estoy muy emocionado para el primer día!"
+            }
+        ]
+    },
+    "quiz": {
+        "title": "Quiz",
+        "questions": [
+            {
+                "question": "¿Cuál es la cantidad máxima permitida de sacos apilados?",
+                "tip": "Apilaste sacos en el minijuego del Nivel 1.",
+                "answers": [
+                    "10",
+                    "12",
+                    "7",
+                    "20"
+                ],
+                "correctAnswer": "12"
+            }
+        ]
+    },
     "others": {
         "win": "Ganaste!",
         "lose": "Tú perdiste!",

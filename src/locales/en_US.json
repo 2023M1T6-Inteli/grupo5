@@ -53,8 +53,8 @@
     },
     "clipboard": {
         "Tutorial": [
-            "Fico sempre no canto da sua tela, para me consultar basta me chamar passando o mouse por cima de mim!",
-            "Vá em direção ao elevador para iniciar o nível 1"
+            "I always stay in the corner of your screen, to consult me just call me by hovering your mouse over me!",
+            "Go towards the elevator to start level 1."
         ],
         "Level1": [
             "Welcome to soUni, talk to the chemical operator and collect the PPE's"
@@ -74,24 +74,48 @@
             "When stacking a box, a new one will appear, stack 12 correctly to proceed"
         ]
     },
-    "dialogs": [
-        {
-            "character": "chemical",
-            "text": "Hello! How are you? I am your manager. You must be the new employee of Unipar, right? Welcome!"
-        },
-        {
-            "character": "player",
-            "text": "Hello! I am the new employee! I am here to learn about the daily life in the company and what safety protocols I should follow to keep my safety."
-        },
-        {
-            "character": "chemical",
-            "text": "Right! You can already know the areas of our factory and their rules. But first, take the PPE's and stay safe! An accident occurred in a factory of one of our competitors here in Camaçari and we don't want the same to happen here! Let's go! You have a lot to do!"
-        },
-        {
-            "character": "player",
-            "text": "Ok! I will be very careful!"
-        }
-    ],
+    "dialogs": {
+        "Tutorial": [
+            {
+                "character": "chemical",
+                "text": "Hello! How are you? I'm your manager. You must be the new employee at Unipar, right? Welcome!"
+            },
+            {
+                "character": "player",
+                "text": "Hi! It's me. The new employee! I'm here to learn about the day-to-day operations in the company and which protocols I should follow to ensure my safety."
+            },
+            {
+                "character": "chemical",
+                "text": "Great! Take a look at your clipboard and get ready for your first day at work!"
+            }
+        ],
+        "Level1": [
+            {
+                "character": "chemical",
+                "text": "Alright! You may already know the different areas of our factory and their respective rules. But before that, grab your PPEs and stay safe! There was an accident at one of our competitor's factories here in Camaçari, and we don't want the same to happen here! Let's go! You have a lot to do!"
+            },
+            {
+                "character": "player",
+                "text": "I'm confident you'll have a great first day!"
+            }
+        ]
+    },
+    "quiz": {
+        "title": "Quiz",
+        "questions": [
+            {
+                "question": "The maximum allowed quantity of stacked sacks?",
+                "tip": "You stacked sacks in the Level 1 minigame.",
+                "answers": [
+                    "10",
+                    "12",
+                    "7",
+                    "20"
+                ],
+                "correctAnswer": "12"
+            }
+        ]
+    },
     "others": {
         "win": "You win!",
         "lose": "You lost!",
