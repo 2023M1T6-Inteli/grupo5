@@ -113,6 +113,17 @@
                     "20"
                 ],
                 "correctAnswer": "12"
+            },
+            {
+                "question": "Quais são os EPIs utilizados para proteção de líquidos?",
+                "tip": "O último nível do jogo é sobre líquidos",
+                "answers": [
+                    "Capacete, bota, luva, protetor auricular, cinto e jaleco",
+                    "Máscara com filtro, capacete, óculos de segurança, luva, protetor auricular",
+                    "Máscara com filtro, máscara de fuga, óculos de segurança, capuz de PVC com visor, luva, vestimenta de PVC e botas de PVC",
+                    "Avental, protetor de tireoide, luva, saiote, óculos, touca e demais vestimentas de uso pessoal"
+                ],
+                "correctAnswer": "Máscara com filtro, máscara de fuga, óculos de segurança, capuz de PVC com visor, luva, vestimenta de PVC e botas de PVC"
             }
         ]
     },
