@@ -1,7 +1,6 @@
-[gd_scene load_steps=162 format=2]
+[gd_scene load_steps=159 format=2]
 
 [ext_resource path="res://scenes/Entities/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/Valves/Valve.png" type="Texture" id=2]
 [ext_resource path="res://assets/Industrial/IndustrialTile_07.png" type="Texture" id=3]
 [ext_resource path="res://assets/Background/BackgroundLevel2.png" type="Texture" id=4]
 [ext_resource path="res://assets/Industrial/IndustrialTile_05_flipped.png" type="Texture" id=5]
@@ -73,7 +72,6 @@
 [ext_resource path="res://scenes/Interface/HUD.tscn" type="PackedScene" id=71]
 [ext_resource path="res://scenes/Objects/Clipboard.tscn" type="PackedScene" id=72]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=73]
-[ext_resource path="res://assets/NPCs/MsgBox.png" type="Texture" id=74]
 [ext_resource path="res://scenes/Objects/Valve.tscn" type="PackedScene" id=75]
 [ext_resource path="res://scenes/Objects/Elevator.tscn" type="PackedScene" id=76]
 [ext_resource path="res://assets/Container/ContainerSide.png" type="Texture" id=77]
@@ -1715,9 +1713,6 @@ extents = Vector2( 82.5, 178.5 )
 [sub_resource type="DynamicFont" id=225]
 font_data = ExtResource( 73 )
 
-[sub_resource type="DynamicFont" id=88]
-font_data = ExtResource( 73 )
-
 [sub_resource type="DynamicFont" id=226]
 size = 30
 font_data = ExtResource( 73 )
@@ -2279,78 +2274,6 @@ custom_fonts/normal_font = SubResource( 225 )
 bbcode_enabled = true
 bbcode_text = "[center]Welcome to the PVC themed level! Go through all the platform challenges and open all the valves using the interaction button to release the PVC powder into the container and advance to the next stage. Don't forget to play the forklift mini-game at the end of the level.[/center]"
 text = "Welcome to the PVC themed level! Go through all the platform challenges and open all the valves using the interaction button to release the PVC powder into the container and advance to the next stage. Don't forget to play the forklift mini-game at the end of the level."
-
-[node name="Dialog" type="TextureRect" parent="HUD"]
-visible = false
-anchor_left = 620.0
-anchor_top = 70.0
-anchor_right = 620.0
-anchor_bottom = 70.0
-margin_left = -793580.0
-margin_top = -49830.0
-margin_right = -792340.0
-margin_bottom = -49690.0
-texture = ExtResource( 74 )
-stretch_mode = 1
-
-[node name="DialogText" type="RichTextLabel" parent="HUD/Dialog"]
-margin_left = 38.0
-margin_top = 57.0
-margin_right = 1163.0
-margin_bottom = 108.0
-custom_colors/default_color = Color( 1, 1, 1, 1 )
-custom_fonts/normal_font = SubResource( 88 )
-meta_underlined = false
-text = "dialogs/level/text"
-fit_content_height = true
-
-[node name="Button" type="Button" parent="HUD/Dialog"]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 293.0
-margin_top = -14.0
-margin_right = 1260.0
-margin_bottom = 145.0
-
-[node name="Name" type="RichTextLabel" parent="HUD/Dialog"]
-anchor_right = 0.459
-margin_left = 38.0
-margin_top = 12.0
-margin_right = -376.16
-margin_bottom = 45.0
-custom_colors/default_color = Color( 1, 1, 1, 1 )
-custom_fonts/normal_font = SubResource( 88 )
-bbcode_enabled = true
-bbcode_text = "[center]------------------[/center]"
-text = "------------------"
-
-[node name="Valve" type="Sprite" parent="HUD/Dialog"]
-position = Vector2( 628, -101 )
-texture = ExtResource( 2 )
-
-[node name="Valve2" type="Sprite" parent="HUD/Dialog"]
-position = Vector2( 208, -1103 )
-texture = ExtResource( 2 )
-
-[node name="ScoreLabel" type="Label" parent="HUD/Dialog"]
-margin_left = 44.0
-margin_top = -522.0
-margin_right = 172.0
-margin_bottom = -483.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 226 )
-text = "SCORE:"
-autowrap = true
-
-[node name="Score" type="Label" parent="HUD/Dialog"]
-margin_left = 172.0
-margin_top = -522.0
-margin_right = 268.0
-margin_bottom = -483.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 226 )
-text = "0"
-align = 2
-autowrap = true
 
 [node name="ValveLabel" type="Label" parent="HUD"]
 margin_left = 64.0
