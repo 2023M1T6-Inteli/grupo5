@@ -11,8 +11,6 @@ func canPlayMinigame():
 
 func _ready():
 	Music.change('Level2')
-	# mostra a prancheta
-	$HUD/Clipboard.slideToScreen()
 
 
 func _on_valveActivated():

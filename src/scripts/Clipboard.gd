@@ -77,6 +77,10 @@ func _ready():
 		node.bbcode_text = '[center]' + Locales.clipboard.get(Global.currentLevel)[nodeCounter] + '[/center]'
 		nodeCounter += 1
 
+	slideToScreen()
+	yield(get_tree().create_timer(1), 'timeout')
+	slideOffScreen()
+
 
 func _on_tween_completed(_object, _key):
 	animationPlaying = false

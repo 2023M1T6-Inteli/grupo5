@@ -9,5 +9,3 @@ func canPlayMinigame():
 func _ready():
 	# inicia a música do nível
 	Music.change('Level1')
-	# mostra a prancheta
-	$HUD/Clipboard.slideToScreen()

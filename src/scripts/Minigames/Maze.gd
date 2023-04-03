@@ -27,7 +27,6 @@ func _input(event):
 func _ready():
 	# desabilita a visibilidade da tela de vencedor
 	$WinScreen.visible = false
-	$Clipboard.slideToScreen()
 
 
 func _on_Button_pressed():

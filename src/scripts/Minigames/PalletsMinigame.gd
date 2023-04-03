@@ -30,7 +30,6 @@ func _ready():
 	$WinScreen/Background2/Lose.text = Locales.others.win
 	$WinScreen/Background2/ContinueButton.text = Locales.others.continue
 	get_parent().get_node('Clipboard').visible = false
-	$Clipboard.slideToScreen()
 
 
 func _process(_delta):
