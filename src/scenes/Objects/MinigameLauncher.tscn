@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/Minigames/MinigameLauncher.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://assets/Tutorial/Keys/E.png" type="Texture" id=3]
+[ext_resource path="res://assets/quizIconn.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=89]
 extents = Vector2( 50, 50 )
@@ -16,6 +16,7 @@ length = 0.001
 
 [node name="MinigameLauncher" type="Area2D"]
 script = ExtResource( 1 )
+spriteTexture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 89 )
@@ -27,7 +28,6 @@ scale = Vector2( 0.452941, 0.452941 )
 texture = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
 
 [node name="Stroke" type="Sprite" parent="."]
 visible = false
