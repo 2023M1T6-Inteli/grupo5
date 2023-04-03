@@ -4,6 +4,7 @@ extends Node2D
 func closeMinigame():
 	# fecha o minigame, desligando a indicação e limpando a instância da cena
 	Global.playerPaused = false
+	Global.alreadyPlayed.append(Global.currentLevel)
 	Global.currentLevel = 'Level2'
 	queue_free()
 

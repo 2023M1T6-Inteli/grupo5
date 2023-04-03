@@ -62,6 +62,10 @@ func _on_minigame_body_exited(_body):
 	$"../HUD/Gamepad/interact".modulate = Color(1, 1, 1)
 	hideE()
 
+	if minigameName in Global.alreadyPlayed:
+		set_deferred("monitoring", false)
+		set_deferred("monitorable", true)
+
 
 func _input(event):
 	if Global.playerPaused:
@@ -81,6 +85,7 @@ func _input(event):
 		$"../HUD".add_child(minigame)
 		# indica que o minigame está rodando
 		Global.playerPaused = true
+		canInteract = false
 
 
 func _ready():

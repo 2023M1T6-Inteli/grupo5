@@ -66,6 +66,7 @@ func lose():
 func closeMinigame():
 	Global.playerPaused = false
 	get_parent().get_node('Clipboard').visible = true
+	Global.alreadyPlayed.append(Global.currentLevel)
 	Global.currentLevel = 'Level1'
 	queue_free()
 
