@@ -18,6 +18,8 @@ var playerPaused = false
 var currentLevel = 'Tutorial'
 var score = 0 setget setScore
 
+var alreadyPlayed = []
+
 
 func setScore(newScore):
 	if newScore < 0:

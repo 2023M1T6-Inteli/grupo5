@@ -1801,7 +1801,7 @@ targetLevel = "Level2"
 [node name="Elevator2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 7984, 211 )
 scale = Vector2( 0.5, 0.5 )
-targetLevel = "Level3"
+targetLevel = "Level4"
 
 [node name="MinigameLauncher" parent="." instance=ExtResource( 78 )]
 position = Vector2( 5638, -498 )

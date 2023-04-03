@@ -1,6 +1,5 @@
 extends Node2D
 
-
 onready var question = Locales.quiz.questions[randi() % Locales.quiz.questions.size()]
 var rightBox = load('res://assets/Minigames/PhTest/rightBox.png')
 var wrongBox = load('res://assets/Minigames/PhTest/wrongBox.png')
@@ -39,6 +38,7 @@ func _input(event):
 		# tecla ESC fecha o minigame
 		closeMinigame()
 
+
 func on_answer_pressed(chosen):
 	for answer in get_tree().get_nodes_in_group('answer'):
 		answer.disabled = true
@@ -64,6 +64,7 @@ func on_answer_pressed(chosen):
 	else:
 		Global.score += quizScore
 		closeMinigame()
+
 
 func _ready():
 	for answer in get_tree().get_nodes_in_group('answer'):

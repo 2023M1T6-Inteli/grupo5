@@ -15,6 +15,7 @@ func _ready():
 func _input(event):
 
 	if currentInstruction == 3 and not Global.playerPaused:
+		currentInstruction += 1
 		$'Instruction2/'.visible = false
 
 	if currentInstruction > 2:

@@ -68,6 +68,8 @@ margin_right = 709.0
 margin_bottom = 128.0
 custom_fonts/font = SubResource( 3 )
 text = "Quiz"
+align = 1
+valign = 1
 
 [node name="Question" type="Label" parent="."]
 margin_left = 200.0
