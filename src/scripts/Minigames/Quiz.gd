@@ -5,12 +5,13 @@ var rightBox = load('res://assets/Minigames/PhTest/rightBox.png')
 var wrongBox = load('res://assets/Minigames/PhTest/wrongBox.png')
 var questionCounter = 0
 
-var quizScore = 25
+var quizScore = 5
 
 
 func closeMinigame():
 	Global.playerPaused = false
 	get_parent().get_node('Clipboard').visible = true
+	Global.alreadyPlayed.append(Global.currentLevel)
 	Global.currentLevel = 'Level4'
 	queue_free()
 
@@ -53,13 +54,13 @@ func on_answer_pressed(chosen):
 
 
 	if chosen.get_node('Label').text == question.correctAnswer:
-		quizScore += 1
+		quizScore += 5
 	else:
 		quizScore -= 1
 
 	yield(get_tree().create_timer(3), 'timeout')
 
-	if questionCounter < 3:
+	if questionCounter < 5:
 		load_new_question()
 	else:
 		Global.score += quizScore
