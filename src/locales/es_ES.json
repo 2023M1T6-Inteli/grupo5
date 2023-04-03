@@ -57,7 +57,7 @@
             "Vá em direção ao elevador para iniciar o nível 1"
         ],
         "Level1": [
-            "Sea bienvenido a soUni, hable con el operador químico y recoja los EPPss"
+            "Sea bienvenido a soUni, hable con el operador químico y recoja los EPPs"
         ],
         "Level2": [
             "¡Bienvenido al nivel temático de PVC! Supera todos los desafíos de las plataformas y abre todas las válvulas con el botón de interacción para liberar el polvo de PVC dentro del contenedor y avanzar de fase. No te olvides de completar el minijuego de la carretilla elevadora al final del nivel."
@@ -113,6 +113,17 @@
                     "20"
                 ],
                 "correctAnswer": "12"
+            },
+            {
+                "question": "¿Cuáles son los EPPs utilizados para la protección de líquidos?",
+                "tip": "El último nivel del juego trata sobre líquidos.",
+                "answers": [
+                    "Casco, bota, guante, protector auditivo, cinturón y guardapolvo.",
+                    "Máscara con filtro, casco, gafas de seguridad, guante, protector auditivo.",
+                    "Mascarilla con filtro, máscara de escape, gafas de seguridad, capucha de PVC con visor, guante, vestimenta de PVC y botas de PVC.",
+                    "Delantal, protector de tiroides, guante, falda, gafas, gorro y otras prendas de protección personal."
+                ],
+                "correctAnswer": "Mascarilla con filtro, máscara de escape, gafas de seguridad, capucha de PVC con visor, guante, vestimenta de PVC y botas de PVC."
             }
         ]
     },

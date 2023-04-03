@@ -1,14 +1,16 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://assets/Keys/KeyUpReleased.jpg" type="Texture" id=1]
+[ext_resource path="res://assets/Tutorial/Keys/LeftButton.png" type="Texture" id=1]
 [ext_resource path="res://assets/Tutorial/Config/PauseButton.png" type="Texture" id=2]
 [ext_resource path="res://scripts/HUD.gd" type="Script" id=3]
-[ext_resource path="res://assets/Keys/EPressed.jpg" type="Texture" id=4]
-[ext_resource path="res://assets/Keys/KeyLeftReleased.jpg" type="Texture" id=5]
-[ext_resource path="res://assets/Keys/EReleased.jpg" type="Texture" id=6]
-[ext_resource path="res://assets/Keys/KeyUpPressed.jpg" type="Texture" id=7]
-[ext_resource path="res://assets/Keys/KeyRightReleased.jpg" type="Texture" id=8]
+[ext_resource path="res://assets/Tutorial/Keys/RightButton.png" type="Texture" id=4]
+[ext_resource path="res://assets/Tutorial/Keys/UpButton.png" type="Texture" id=5]
+[ext_resource path="res://assets/Tutorial/Keys/E.png" type="Texture" id=6]
+[ext_resource path="res://assets/Tutorial/Keys/LeftButtonPressed.png" type="Texture" id=7]
+[ext_resource path="res://assets/Tutorial/Keys/RightButtonPressed.png" type="Texture" id=8]
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://assets/Tutorial/Keys/UpButtonPressed.png" type="Texture" id=10]
+[ext_resource path="res://assets/Tutorial/Keys/EPressed.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -21,31 +23,31 @@ script = ExtResource( 3 )
 [node name="Gamepad" type="Node2D" parent="."]
 
 [node name="left" type="TouchScreenButton" parent="Gamepad"]
-position = Vector2( 26, 642 )
-scale = Vector2( 3, 3 )
-normal = ExtResource( 5 )
-pressed = ExtResource( 5 )
+position = Vector2( 64, 648 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 7 )
 action = "move_left"
 
 [node name="right" type="TouchScreenButton" parent="Gamepad"]
-position = Vector2( 125, 642 )
-scale = Vector2( 3, 3 )
-normal = ExtResource( 8 )
+position = Vector2( 208, 648 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 4 )
 pressed = ExtResource( 8 )
 action = "move_right"
 
 [node name="jump" type="TouchScreenButton" parent="Gamepad"]
-position = Vector2( 76, 584 )
-scale = Vector2( 3, 3 )
-normal = ExtResource( 1 )
-pressed = ExtResource( 7 )
+position = Vector2( 140, 568 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 10 )
 action = "jump"
 
 [node name="interact" type="TouchScreenButton" parent="Gamepad"]
-position = Vector2( 1121, 602 )
-scale = Vector2( 3, 3 )
+position = Vector2( 1144, 616 )
+scale = Vector2( 0.8, 0.8 )
 normal = ExtResource( 6 )
-pressed = ExtResource( 4 )
+pressed = ExtResource( 11 )
 action = "interact"
 
 [node name="PauseButton" type="Button" parent="."]

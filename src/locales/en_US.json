@@ -113,6 +113,17 @@
                     "20"
                 ],
                 "correctAnswer": "12"
+            },
+            {
+                "question": "What are the PPEs used for liquid protection?",
+                "tip": "The last level of the game is about liquids.",
+                "answers": [
+                    "Helmet, boot, glove, ear protector, belt, and lab coat.",
+                    "Mask with filter, helmet, safety goggles, glove, ear protector.",
+                    "Mask with filter, escape mask, safety goggles, PVC hood with visor, glove, PVC clothing, and PVC boots.",
+                    "Apron, thyroid protector, glove, skirt, glasses, cap, and other personal protective clothing."
+                ],
+                "correctAnswer": "Mask with filter, escape mask, safety goggles, PVC hood with visor, glove, PVC clothing, and PVC boots."
             }
         ]
     },
