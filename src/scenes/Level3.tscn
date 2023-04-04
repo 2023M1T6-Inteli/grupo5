@@ -1792,7 +1792,9 @@ tile_data = PoolIntArray( -524297, 39, 0, -458761, 39, 0, -393225, 39, 0, -32768
 [node name="Elevator" parent="." instance=ExtResource( 4 )]
 position = Vector2( -532, 212 )
 scale = Vector2( 0.5, 0.5 )
-targetLevel = "Level2"
+monitoring = false
+monitorable = false
+targetLevel = "Level3"
 
 [node name="Elevator2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 7984, 211 )
@@ -1839,6 +1841,9 @@ smoothing_enabled = true
 drag_margin_top = 1.0
 editor_draw_limits = true
 editor_draw_drag_margin = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="HUD" parent="." instance=ExtResource( 3 )]
 follow_viewport_enable = false
