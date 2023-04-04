@@ -2235,12 +2235,12 @@ PPEName = "Boot"
 [node name="PPE2" parent="." instance=ExtResource( 85 )]
 position = Vector2( 3238, 221 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+PPEName = "Helmet"
 
 [node name="PPE3" parent="." instance=ExtResource( 85 )]
 position = Vector2( 5039, 219 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+PPEName = "Belt"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -527, 126 )
