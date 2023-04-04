@@ -1,6 +1,7 @@
 extends Node
 
 var characterName = 'Gabriel'
+var playerId = 'Teste#1234'
 
 signal update_score()
 
