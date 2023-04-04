@@ -20,6 +20,7 @@ func load_new_question():
 	# carrega uma nova questao
 	randomize()
 	question = Locales.quiz.questions[randi() % Locales.quiz.questions.size()]
+	Locales.quiz.questions.erase(question)
 	$Question.text = question.question
 	$Tip.text = question.tip
 
