@@ -78,8 +78,13 @@ func _ready():
 		nodeCounter += 1
 
 	slideToScreen()
-	yield(get_tree().create_timer(1), 'timeout')
+	yield(get_tree().create_timer(5), 'timeout')
 	slideOffScreen()
+
+
+func _input(event):
+	if event is InputEventKey:
+		slideOffScreen()
 
 
 func _on_tween_completed(_object, _key):
