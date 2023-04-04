@@ -1,0 +1,146 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/Background/UniparRoom.png" type="Texture" id=2]
+[ext_resource path="res://scripts/Credits.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texts:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "run"
+length = 27.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texts:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 9.9, 25.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -387 ), Vector2( 0, -1300 ) ]
+}
+
+[node name="Credits" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color( 0.376471, 0.376471, 0.376471, 1 )
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="Texts" type="Node2D" parent="."]
+
+[node name="Title" type="Label" parent="Texts"]
+margin_left = 335.0
+margin_top = 45.0
+margin_right = 995.0
+margin_bottom = 96.0
+custom_colors/font_color = Color( 0.0588235, 0.937255, 0.105882, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Projeto Desenvolvido por:"
+
+[node name="Names" type="Label" parent="Texts"]
+margin_left = 381.0
+margin_top = 116.0
+margin_right = 988.0
+margin_bottom = 773.0
+custom_fonts/font = SubResource( 2 )
+text = "Anna Carolina Silva Aragão
+
+Bruna Brasil Alexandre
+
+Eduardo Santos Barreto
+
+Gabriel de Macedo Santos
+
+Hugo Noyma Povoleri
+
+Raissa de Cássia Moraes Paula
+
+Vitto Picchi Mazeto 
+
+"
+
+[node name="Especifications" type="Label" parent="Texts"]
+margin_left = 262.0
+margin_top = 728.0
+margin_right = 1421.0
+margin_bottom = 2793.0
+custom_fonts/font = SubResource( 2 )
+text = "Alunos do Inteli - Turma 6 - Grupo 5
+
+
+Início do projeto: 30 de janeiro de 2023
+
+Final do projeto: 05 de abril de 2023
+
+
+Empresa parceira: Unipar
+
+
+Sobre o projeto:
+
+
+Estilo: Serious Game em plataforma 2D
+
+
+Engine: Godot
+
+
+Linguagem de programação: GDScript
+
+
+Design assets e sprites: Pixlr e Piskel
+
+
+Design telas: Figma
+
+
+Trilha sonora: estilo 2D pixel,
+produzida por ‘HeatleyBros’
+
+Música menu: ‘8 Bit Let' s Go - Heatley Bros’
+
+Música primeira fase: ‘8 Bit Move - Heatley Bros’
+
+Música Segunda fase: ‘Trainingmode - Heatley Bros’
+
+Música Terceira fase: ‘Hideout - Heatley Bros’
+
+Música Quiz: ‘WonderfulLife - Heatley Bros’
+
+Música Créditos: ‘8bitwin - Heatley Bros’
+
+
+
+"
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+anims/run = SubResource( 4 )
+
+[connection signal="animation_finished" from="Animation" to="." method="_on_Animation_animation_finished"]
