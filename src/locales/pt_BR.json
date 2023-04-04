@@ -124,6 +124,61 @@
                     "Avental, protetor de tireoide, luva, saiote, óculos, touca e demais vestimentas de uso pessoal"
                 ],
                 "correctAnswer": "Máscara com filtro, máscara de fuga, óculos de segurança, capuz de PVC com visor, luva, vestimenta de PVC e botas de PVC"
+            },
+            {
+                "question": "Por que as sacarias devem estar empilhadas alinhadas?",
+                "tip": "Você empilhou sacarias no minigame do Level 1",
+                "answers": [
+                    "Para facilitar o transporte pela empresa e nos caminhões",
+                    "Para organizar o ambiente da empresa e evitar acidentes por conta de quedas de sacarias",
+                    "Para preservar a integridade dos pallets",
+                    "Todas as alternativas estão corretas"
+                ],
+                "correctAnswer": "Todas as alternativas estão corretas"
+            },
+            {
+                "question": "Sabendo que as sacarias são empilhadas em cima de um pallet, por que o pallet precisa estar montado corretamente?",
+                "tip": "O minigame do primeiro nível é sobre pallets",
+                "answers": [
+                    "O pallet precisa suportar pesos, portanto um pallet mal projetado pode causar acidentes",
+                    "Para gastar menos material",
+                    "Para substituir o uso de materiais mais caros no empilhamento de sacarias",
+                    "Para ficar bonito esteticamente"
+                ],
+                "correctAnswer": "O pallet precisa suportar pesos, portanto um pallet mal projetado pode causar acidentes"
+            },
+            {
+                "question": "O que sempre deve ser usado em todo carregamento de carreta granel?",
+                "tip": "O carregamento a granel é uma forma de transporte de materiais sólidos ou líquidos em grandes quantidades, sem o uso de embalagens individuais",
+                "answers": [
+                    "Cinto Trava-Quedas",
+                    "Máscara de Gás",
+                    "Luvas de Nylon",
+                    "Jaleco de Proteção"
+                ],
+                "correctAnswer": "Cinto Trava-Quedas"
+            },
+            {
+                "question": "Qual é a melhor ação a ser tomada ao tocar o alarme em uma indústria química?",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho, pois qualquer descuido pode causar acidentes",
+                "answers": [
+                    "Ignorar o alarme e continuar trabalhando normalmente.",
+                    "Sair imediatamente da área afetada pelo alarme e seguir as instruções de segurança.",
+                    "Ligar para a gerência e perguntar o que fazer.",
+                    "Tentar desativar o alarme sem a ajuda de um profissional qualificado."
+                ],
+                "correctAnswer": "Sair imediatamente da área afetada pelo alarme e seguir as instruções de segurança."
+            },
+            {
+                "question": "Qual é a medida de segurança mais importante ao manusear soda líquida em uma indústria química?",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho, pois qualquer descuido pode causar acidentes",
+                "answers": [
+                    "Usar equipamentos de proteção individual, como óculos de segurança e luvas de borracha.",
+                    "Armazenar a soda líquida em recipientes de plástico em um local ventilado e seco.",
+                    "Misturar a soda líquida com outros produtos químicos para aumentar sua eficácia.",
+                    "Descartar a soda líquida diretamente no sistema de esgoto quando não for mais necessária."
+                ],
+                "correctAnswer": "Usar equipamentos de proteção individual, como óculos de segurança e luvas de borracha."
             }
         ]
     },

@@ -124,6 +124,61 @@
                     "Delantal, protector de tiroides, guante, falda, gafas, gorro y otras prendas de protección personal."
                 ],
                 "correctAnswer": "Mascarilla con filtro, máscara de escape, gafas de seguridad, capucha de PVC con visor, guante, vestimenta de PVC y botas de PVC."
+            },
+            {
+                "question": "¿Por qué los sacos deben estar apilados alineados?",
+                "tip": "Has apilado sacos en el minijuego del Nivel 1.",
+                "answers": [
+                    "Para facilitar el transporte dentro de la empresa y en los camiones.",
+                    "Para organizar el entorno de la empresa y evitar accidentes por caídas de sacos.",
+                    "Para preservar la integridad de los palets.",
+                    "Todas las alternativas son correctas."
+                ],
+                "correctAnswer": "Todas las alternativas son correctas."
+            },
+            {
+                "question": "Sabiendo que los sacos son apilados sobre un pallet, ¿por qué es necesario que el pallet esté ensamblado correctamente?",
+                "tip": "El minijuego del primer nivel trata sobre pallets",
+                "answers": [
+                    "El pallet necesita soportar pesos, por lo tanto, un pallet mal diseñado puede causar accidentes",
+                    "Para gastar menos material",
+                    "Para reemplazar el uso de materiales más costosos en el apilamiento de sacos",
+                    "Para tener una apariencia estética agradable"
+                ],
+                "correctAnswer": "El pallet necesita soportar pesos, por lo tanto, un pallet mal diseñado puede causar accidentes"
+            },
+            {
+                "question": "¿Qué siempre debe ser utilizado en cada carga de remolque a granel?",
+                "tip": "El transporte a granel es una forma de transporte de materiales sólidos o líquidos en grandes cantidades, sin el uso de embalajes individuales",
+                "answers": [
+                    "Cinturón de seguridad",
+                    "Máscara de gas",
+                    "Guantes de nylon",
+                    "Bata de protección"
+                ],
+                "correctAnswer": "Cinturón de seguridad"
+            },
+            {
+                "question": "¿Cuál es la mejor acción a tomar al activar la alarma en una industria química?",
+                "tip": "Siempre mantenga la atención y la concentración en el trabajo, ya que cualquier descuido puede causar accidentes.",
+                "answers": [
+                    "Ignorar la alarma y continuar trabajando normalmente.",
+                    "Salir inmediatamente del área afectada por la alarma y seguir las instrucciones de seguridad.",
+                    "Llamar a la gerencia y preguntar qué hacer.",
+                    "Intentar desactivar la alarma sin la ayuda de un profesional calificado."
+                ],
+                "correctAnswer": "Salir inmediatamente del área afectada por la alarma y seguir las instrucciones de seguridad."
+            },
+            {
+                "question": "¿Cuál es la medida de seguridad más importante al manipular soda líquida en una industria química?",
+                "tip": "Siempre mantenga su atención y enfoque en el trabajo, ya que cualquier descuido puede causar accidentes.",
+                "answers": [
+                    "Usar equipos de protección personal, como gafas de seguridad y guantes de goma.",
+                    "Almacenar la soda líquida en recipientes de plástico en un lugar ventilado y seco.",
+                    "No mezclar la soda líquida con otros productos químicos para aumentar su eficacia.",
+                    "No desechar la soda líquida directamente en el sistema de alcantarillado cuando ya no sea necesaria."
+                ],
+                "correctAnswer": "Usar equipos de protección personal, como gafas de seguridad y guantes de goma."
             }
         ]
     },

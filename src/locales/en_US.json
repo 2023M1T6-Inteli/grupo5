@@ -124,6 +124,61 @@
                     "Apron, thyroid protector, glove, skirt, glasses, cap, and other personal protective clothing."
                 ],
                 "correctAnswer": "Mask with filter, escape mask, safety goggles, PVC hood with visor, glove, PVC clothing, and PVC boots."
+            },
+            {
+                "question": "Why should the sacks be stacked aligned?",
+                "tip": "You stacked sacks in the Level 1 minigame.",
+                "answers": [
+                    "To facilitate transportation by the company and in trucks.",
+                    "To organize the company's environment and prevent accidents due to sacks falling.",
+                    "To preserve the integrity of the pallets.",
+                    "All options are correct"
+                ],
+                "correctAnswer": "All options are correct"
+            },
+            {
+                "question": "Knowing that the sacks are stacked on top of a pallet, why does the pallet need to be assembled correctly?",
+                "tip": "The first level's minigame is about pallets.",
+                "answers": [
+                    "The pallet needs to support weights, so a poorly designed pallet can cause accidents.",
+                    "To use less material.",
+                    "To replace the use of more expensive materials in bag stacking.",
+                    "To look aesthetically pleasing."
+                ],
+                "correctAnswer": "The pallet needs to support weights, so a poorly designed pallet can cause accidents."
+            },
+            {
+                "question": "What should always be used in every bulk trailer loading?",
+                "tip": "Bulk loading is a form of transportation for solid or liquid materials in large quantities, without the use of individual packaging.",
+                "answers": [
+                    "Fall Arrest Harness",
+                    "Gas Mask",
+                    "Nylon Gloves",
+                    "Protective Lab Coat"
+                ],
+                "correctAnswer": "Fall Arrest Harness"
+            },
+            {
+                "question": "What is the best course of action when sounding an alarm in a chemical industry?",
+                "tip": "Always maintain attention and focus on work, as any carelessness can cause accidents.",
+                "answers": [
+                    "Ignoring the alarm and continuing to work normally.",
+                    "Immediately leaving the area affected by the alarm and following safety instructions.",
+                    "Calling management and asking what to do.",
+                    "Trying to disable the alarm without the help of a qualified professional"
+                ],
+                "correctAnswer": "Immediately leaving the area affected by the alarm and following safety instructions."
+            },
+            {
+                "question": "What is the most important safety measure when handling liquid soda in a chemical industry?",
+                "tip": "Always maintain focus and attention at work, as any carelessness can cause accidents.",
+                "answers": [
+                    "Using personal protective equipment such as safety glasses and rubber gloves.",
+                    "Storing the liquid soda in plastic containers in a ventilated and dry location.",
+                    "Mixing the liquid soda with other chemicals to increase its effectiveness.",
+                    "Disposing of the liquid soda directly into the sewage system when it is no longer needed."
+                ],
+                "correctAnswer": "Using personal protective equipment such as safety glasses and rubber gloves."
             }
         ]
     },
