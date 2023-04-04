@@ -10,7 +10,6 @@ var quizScore = 5
 
 func closeMinigame():
 	Global.playerPaused = false
-	get_parent().get_node('Clipboard').visible = true
 	Global.alreadyPlayed.append(Global.currentLevel)
 	Global.currentLevel = 'Level4'
 	queue_free()
