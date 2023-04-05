@@ -181,6 +181,11 @@
             "term": "Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.\nComprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.\nDevo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.\nDevo reembolsar a empresa pelo custo atualizado do EPI extraviado.\nDevo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização.\nAo concordar com o termo de responsabilidade, expresso meu acordo com a legislação em vigor.",
             "signature": "Assinatura:"
         },
+        "end": {
+            "title": "Parabéns",
+            "subtitle": "Você finalizou o jogo",
+            "credits": "Créditos"
+        },
         "credits": {
             "title" : "Projeto desenvolvido por:",
             "especifications" : "Alunos do Inteli - Turma 6 - Grupo 5\n\nInício do projeto: 30 de janeiro de 2023\n\nFinal do projeto: 05 de abril de 2023\n\nEmpresa parceira: Unipar\n\nSobre o projeto:\n\nEstilo: Serious Game em plataforma 2D\n\nEngine: Godot\n\nLinguagem de programação: GDScript\n\nDesign assets e sprites: Pixlr e Piskel\n\nDesign telas: Figma\n\nTrilha sonora: estilo 2D pixel produzida por HeatleyBros\n\nMúsica menu: 8 Bit Let' s Go - Heatley Bros\nMúsica primeira fase: 8 Bit Move - Heatley Bros\nMúsica Segunda fase: Trainingmode - Heatley Bros\nMúsica Terceira fase: Hideout - Heatley Bros\nMúsica Quiz: WonderfulLife - Heatley Bros\nMúsica Créditos: 8bitwin - Heatley Bros"
