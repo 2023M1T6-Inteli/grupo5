@@ -95,7 +95,19 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-
+- 5.0 - 06/04/2023
+    - Tutorial interativo
+    - Interação com o E no elevador
+    - Level 3 de ácido 
+    - Estacionamento da empilhadeira
+    - Score do quiz
+    - Questões do quiz
+    - Minigame do quiz
+    - Número total de valvulas foi setado
+    - Configuração no menu
+    - Tela cheia no jogo
+    - Volume do jogo é variável
+    - Cena de configuração
 - 4.0 - 24/03/2023
     - Padronização de Assets 
     - Deploy no GithubPages
