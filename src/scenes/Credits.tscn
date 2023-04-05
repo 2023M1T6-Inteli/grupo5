@@ -64,10 +64,10 @@ custom_fonts/font = SubResource( 1 )
 text = "Projeto Desenvolvido por:"
 
 [node name="Names" type="Label" parent="Texts"]
-margin_left = 381.0
-margin_top = 116.0
-margin_right = 988.0
-margin_bottom = 773.0
+margin_left = 360.0
+margin_top = 112.0
+margin_right = 967.0
+margin_bottom = 769.0
 custom_fonts/font = SubResource( 2 )
 text = "Anna Carolina Silva Aragão
 
@@ -84,12 +84,13 @@ Raissa de Cássia Moraes Paula
 Vitto Picchi Mazeto 
 
 "
+align = 1
 
 [node name="Especifications" type="Label" parent="Texts"]
-margin_left = 262.0
-margin_top = 728.0
-margin_right = 1421.0
-margin_bottom = 2793.0
+margin_left = 72.0
+margin_top = 720.0
+margin_right = 1231.0
+margin_bottom = 2785.0
 custom_fonts/font = SubResource( 2 )
 text = "Alunos do Inteli - Turma 6 - Grupo 5
 
@@ -138,6 +139,7 @@ Música Créditos: ‘8bitwin - Heatley Bros’
 
 
 "
+align = 1
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 3 )
