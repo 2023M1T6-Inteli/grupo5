@@ -5,3 +5,4 @@ func canPlayMinigame():
 
 func _ready():
 	Music.change('Quiz')
+	Global.currentLevel = 'Level4'

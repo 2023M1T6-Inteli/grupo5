@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/Background/UniparRoom.png" type="Texture" id=2]
 [ext_resource path="res://scripts/Credits.gd" type="Script" id=3]
+[ext_resource path="res://assets/Tutorial/Interactions/Back.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -51,6 +52,14 @@ modulate = Color( 0.376471, 0.376471, 0.376471, 1 )
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 2 )
+
+[node name="Return" type="Button" parent="."]
+margin_left = 48.0
+margin_top = 656.0
+margin_right = 90.0
+margin_bottom = 695.0
+icon = ExtResource( 4 )
+flat = true
 
 [node name="Texts" type="Node2D" parent="."]
 
@@ -145,4 +154,5 @@ align = 1
 anims/RESET = SubResource( 3 )
 anims/run = SubResource( 4 )
 
+[connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
 [connection signal="animation_finished" from="Animation" to="." method="_on_Animation_animation_finished"]

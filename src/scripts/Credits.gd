@@ -6,8 +6,13 @@ func _on_Animation_animation_finished(_run):
 		print ('An unexpected error occured when trying to switch to main scene')
 
 
+func _on_Return_pressed():
+	return get_tree().change_scene('res://scenes/End.tscn')
+
+
 func _ready():
 	Music.change('Credits')
 	$Animation.play('run')
 	$Texts/Title.text = Locales.others.credits.title
 	$Texts/Especifications.text = Locales.others.credits.especifications
+

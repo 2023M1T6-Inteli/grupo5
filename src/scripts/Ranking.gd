@@ -42,7 +42,20 @@ static func sort(a, b):
 
 func _input(event):
 	if event.is_action_pressed('interact'):
-		return get_tree().change_scene('res://scenes/Main.tscn')
+		if Global.currentLevel == 'Tutorial':
+			return get_tree().change_scene('res://scenes/Main.tscn')
+		else:
+			return get_tree().change_scene('res://scenes/End.tscn')
 
 	if event.is_action_pressed('ui_cancel'):
+		if Global.currentLevel == 'Tutorial':
+			return get_tree().change_scene('res://scenes/Main.tscn')
+		else:
+			return get_tree().change_scene('res://scenes/End.tscn')
+
+
+func _on_Return_pressed():
+	if Global.currentLevel == 'Tutorial':
 		return get_tree().change_scene('res://scenes/Main.tscn')
+	else:
+		return get_tree().change_scene('res://scenes/End.tscn')
