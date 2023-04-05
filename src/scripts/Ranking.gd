@@ -42,7 +42,7 @@ static func sort(a, b):
 
 func _input(event):
 	if event.is_action_pressed('interact'):
-		return get_tree().change_scene('res://scenes/End.tscn')
+		return get_tree().change_scene('res://scenes/Main.tscn')
 
 	if event.is_action_pressed('ui_cancel'):
-		return get_tree().change_scene('res://scenes/End.tscn')
+		return get_tree().change_scene('res://scenes/Main.tscn')

@@ -19,6 +19,12 @@ func _on_SettingsButton_pressed():
 		add_child(settings)
 
 
+func _on_RankingButton_pressed():
+	var ranking = load('res://scenes/Ranking.tscn')
+	ranking = ranking.instance()
+	add_child(ranking)
+
+
 func _on_QuitButton_pressed():
 	# ao apertar sair, fecha o jogo
 	get_tree().quit()
