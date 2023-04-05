@@ -24,9 +24,18 @@ func loadRanking():
 		'Name': Global.playerId,
 		'Score': Global.score
 	}
+
 	rankingData.append(currentPlayer)
 	rankingData.sort_custom(self, 'sort')
 
 
 static func sort(a, b):
 	return a['Score'] > b['Score']
+
+
+func _input(event):
+	if event.is_action_pressed('interact'):
+		return get_tree().change_scene('res://scenes/End.tscn')
+
+	if event.is_action_pressed('ui_cancel'):
+		return get_tree().change_scene('res://scenes/End.tscn')
