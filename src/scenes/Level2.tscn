@@ -2281,7 +2281,7 @@ text = "Welcome to the PVC themed level! Go through all the platform challenges 
 [node name="ValveLabel" type="Label" parent="HUD"]
 margin_left = 64.0
 margin_top = 88.0
-margin_right = 216.0
+margin_right = 264.0
 margin_bottom = 127.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 226 )
@@ -2289,9 +2289,9 @@ text = "VALVES:"
 autowrap = true
 
 [node name="ValveCounter" type="Label" parent="HUD"]
-margin_left = 216.0
+margin_left = 264.0
 margin_top = 88.0
-margin_right = 312.0
+margin_right = 360.0
 margin_bottom = 127.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 226 )
