@@ -149,7 +149,7 @@
             },
             {
                 "question": "What is the best course of action when sounding an alarm in a chemical industry?",
-                "tip": "Always maintain attention and focus on work, as any carelessness can cause accidents.",
+                "tip": "Always maintain attention and focus on work",
                 "answers": [
                     "Ignoring the alarm and continuing to work normally.",
                     "Immediately leaving the area affected by the alarm and following safety instructions.",
@@ -160,7 +160,7 @@
             },
             {
                 "question": "What is the most important safety measure when handling liquid soda in a chemical industry?",
-                "tip": "Always maintain focus and attention at work, as any carelessness can cause accidents.",
+                "tip": "Always maintain focus and attention at work",
                 "answers": [
                     "Using personal protective equipment such as safety glasses and rubber gloves.",
                     "Storing the liquid soda in plastic containers in a ventilated and dry location.",

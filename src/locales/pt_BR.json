@@ -149,7 +149,7 @@
             },
             {
                 "question": "Qual é a melhor ação a ser tomada ao tocar o alarme em uma indústria química?",
-                "tip": "Sempre mantenha a atenção e o foco no trabalho, pois qualquer descuido pode causar acidentes",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho",
                 "answers": [
                     "Ignorar o alarme e continuar trabalhando normalmente.",
                     "Sair imediatamente da área afetada pelo alarme e seguir as instruções de segurança.",
@@ -160,7 +160,7 @@
             },
             {
                 "question": "Qual é a medida de segurança mais importante ao manusear soda líquida em uma indústria química?",
-                "tip": "Sempre mantenha a atenção e o foco no trabalho, pois qualquer descuido pode causar acidentes",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho",
                 "answers": [
                     "Usar equipamentos de proteção individual, como óculos de segurança e luvas de borracha.",
                     "Armazenar a soda líquida em recipientes de plástico em um local ventilado e seco.",
