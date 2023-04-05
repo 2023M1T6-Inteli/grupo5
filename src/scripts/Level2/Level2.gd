@@ -11,6 +11,7 @@ func canPlayMinigame():
 
 func _ready():
 	Music.change('Level2')
+	$HUD/ValveLabel.text = Locales.others.valve
 
 
 func _on_valveActivated():

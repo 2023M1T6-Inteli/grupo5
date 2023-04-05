@@ -176,6 +176,7 @@
         "lose": "You lost!",
         "continue": "Continue",
         "restart": "Restart",
+        "valve": "Valves:",
         "responsabilityTerm": {
             "title": "Proof of PPE Delivery - Liability Agreement",
             "term": "I assume full responsibility for the custody and conservation of the PPE provided free of charge by the company.\nI commit to using the PPE only for its intended purpose, in accordance with the company's regulations and current legislation.\nI am responsible for any damage caused to the PPE due to improper use or use outside of the intended activities.\nI must reimburse the company for the updated cost of any lost PPE.\nI must immediately inform my direct hierarchical supervisor of any changes to the PPE that make it partially or totally unsuitable for use.",
