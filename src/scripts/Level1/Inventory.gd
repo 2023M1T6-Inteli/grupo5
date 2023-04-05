@@ -8,6 +8,6 @@ func _ready():
 
 func _process(_delta):
 	for PPE in get_children():
-		if PPE.PPEName in $"../../../Player".PPEs:
+		if PPE.PPEName in $'../../../Player'.PPEs:
 			# Se o epi estiver com o player, deixa visível
 			PPE.modulate = Color(1, 1, 1, 1)

@@ -124,6 +124,50 @@
                     "Avental, protetor de tireoide, luva, saiote, óculos, touca e demais vestimentas de uso pessoal"
                 ],
                 "correctAnswer": "Máscara com filtro, máscara de fuga, óculos de segurança, capuz de PVC com visor, luva, vestimenta de PVC e botas de PVC"
+            },
+            {
+                "question": "Por que as sacarias devem estar empilhadas alinhadas?",
+                "tip": "Você empilhou sacarias no minigame do Level 1",
+                "answers": [
+                    "Para facilitar o transporte pela empresa e nos caminhões",
+                    "Para organizar o ambiente da empresa e evitar acidentes por conta de quedas de sacarias",
+                    "Para preservar a integridade dos pallets",
+                    "Todas as alternativas estão corretas"
+                ],
+                "correctAnswer": "Todas as alternativas estão corretas"
+            },
+            {
+                "question": "Sabendo que as sacarias são empilhadas em cima de um pallet, por que o pallet precisa estar montado corretamente?",
+                "tip": "O minigame do primeiro nível é sobre pallets",
+                "answers": [
+                    "O pallet precisa suportar pesos, portanto um pallet mal projetado pode causar acidentes",
+                    "Para gastar menos material",
+                    "Para substituir o uso de materiais mais caros no empilhamento de sacarias",
+                    "Para ficar bonito esteticamente"
+                ],
+                "correctAnswer": "O pallet precisa suportar pesos, portanto um pallet mal projetado pode causar acidentes"
+            },
+            {
+                "question": "Qual é a melhor ação a ser tomada ao tocar o alarme em uma indústria química?",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho",
+                "answers": [
+                    "Ignorar o alarme e continuar trabalhando normalmente.",
+                    "Sair imediatamente da área afetada pelo alarme e seguir as instruções de segurança.",
+                    "Ligar para a gerência e perguntar o que fazer.",
+                    "Tentar desativar o alarme sem a ajuda de um profissional qualificado."
+                ],
+                "correctAnswer": "Sair imediatamente da área afetada pelo alarme e seguir as instruções de segurança."
+            },
+            {
+                "question": "Qual é a medida de segurança mais importante ao manusear soda líquida em uma indústria química?",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho",
+                "answers": [
+                    "Usar equipamentos de proteção individual, como óculos de segurança e luvas de borracha.",
+                    "Armazenar a soda líquida em recipientes de plástico em um local ventilado e seco.",
+                    "Misturar a soda líquida com outros produtos químicos para aumentar sua eficácia.",
+                    "Descartar a soda líquida diretamente no sistema de esgoto quando não for mais necessária."
+                ],
+                "correctAnswer": "Usar equipamentos de proteção individual, como óculos de segurança e luvas de borracha."
             }
         ]
     },
@@ -132,10 +176,20 @@
         "lose": "Você perdeu!",
         "continue": "Continuar",
         "restart": "Reiniciar",
+        "valve": "Válvulas:",
         "responsabilityTerm": {
             "title": "Comprovante de Entrega de EPI - Termo de Responsabilidade",
-            "term": "Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.\nComprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.\nDevo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.\nDevo reembolsar a empresa pelo custo atualizado do EPI extraviado.\nDevo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização.\nAo concordar com o termo de responsabilidade, expresso meu acordo com a legislação em vigor.",
+            "term": "Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.\nComprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.\nDevo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.\nDevo reembolsar a empresa pelo custo atualizado do EPI extraviado.\nDevo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização.",
             "signature": "Assinatura:"
+        },
+        "end": {
+            "title": "Parabéns",
+            "subtitle": "Você finalizou o jogo",
+            "credits": "Créditos"
+        },
+        "credits": {
+            "title": "Projeto desenvolvido por:",
+            "especifications": "Alunos do Inteli - Turma 6 - Grupo 5\n\nInício do projeto: 30 de janeiro de 2023\n\nFinal do projeto: 05 de abril de 2023\n\nEmpresa parceira: Unipar\n\nSobre o projeto:\n\nEstilo: Serious Game em plataforma 2D\n\nEngine: Godot\n\nLinguagem de programação: GDScript\n\nDesign assets e sprites: Pixlr e Piskel\n\nDesign telas: Figma\n\nTrilha sonora: estilo 2D pixel produzida por HeatleyBros\n\nMúsica menu: 8 Bit Let' s Go - Heatley Bros\nMúsica primeira fase: 8 Bit Move - Heatley Bros\nMúsica Segunda fase: Trainingmode - Heatley Bros\nMúsica Terceira fase: Hideout - Heatley Bros\nMúsica Quiz: WonderfulLife - Heatley Bros\nMúsica Créditos: 8bitwin - Heatley Bros"
         }
     }
 }

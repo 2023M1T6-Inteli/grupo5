@@ -2073,6 +2073,9 @@ scale = Vector2( 0.2, 0.2 )
 [node name="Elevator" parent="." instance=ExtResource( 76 )]
 position = Vector2( -536, 211 )
 scale = Vector2( 0.5, 0.5 )
+monitoring = false
+monitorable = false
+targetLevel = "Level2"
 
 [node name="Elevator2" parent="." instance=ExtResource( 76 )]
 position = Vector2( 7984, 211 )
@@ -2232,12 +2235,12 @@ PPEName = "Boot"
 [node name="PPE2" parent="." instance=ExtResource( 85 )]
 position = Vector2( 3238, 221 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+PPEName = "Helmet"
 
 [node name="PPE3" parent="." instance=ExtResource( 85 )]
 position = Vector2( 5039, 219 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+PPEName = "Belt"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -527, 126 )
@@ -2278,7 +2281,7 @@ text = "Welcome to the PVC themed level! Go through all the platform challenges 
 [node name="ValveLabel" type="Label" parent="HUD"]
 margin_left = 64.0
 margin_top = 88.0
-margin_right = 216.0
+margin_right = 264.0
 margin_bottom = 127.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 226 )
@@ -2286,9 +2289,9 @@ text = "VALVES:"
 autowrap = true
 
 [node name="ValveCounter" type="Label" parent="HUD"]
-margin_left = 216.0
+margin_left = 264.0
 margin_top = 88.0
-margin_right = 312.0
+margin_right = 360.0
 margin_bottom = 127.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 226 )

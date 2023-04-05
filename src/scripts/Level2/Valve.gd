@@ -53,7 +53,7 @@ func _on_Valve_body_entered(_body):
 
 	$Stroke.visible = true
 	canInteract = true
-	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 0.4)
+	get_parent().get_node('HUD/Gamepad/interact').modulate = Color(1, 1, 0.4)
 	showE()
 
 
@@ -64,7 +64,7 @@ func _on_Valve_body_exited(_body):
 
 	$Stroke.visible = false
 	canInteract = false
-	get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 1)
+	get_parent().get_node('HUD/Gamepad/interact').modulate = Color(1, 1, 1)
 	hideE()
 
 
@@ -76,7 +76,7 @@ func _input(event):
 	if event.is_action_pressed('interact') and canInteract:
 		hideE()
 		$Stroke.visible = false
-		get_parent().get_node("HUD/Gamepad/interact").modulate = Color(1, 1, 1)
+		get_parent().get_node('HUD/Gamepad/interact').modulate = Color(1, 1, 1)
 		$Tween.interpolate_property(
 			self,
 			'rotation_degrees',
@@ -89,5 +89,5 @@ func _input(event):
 
 		$Tween.start()
 		active = true
-		emit_signal("valveActivated")
+		emit_signal('valveActivated')
 		Global.score += 1

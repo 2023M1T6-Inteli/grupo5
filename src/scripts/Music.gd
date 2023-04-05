@@ -7,12 +7,12 @@ var currentMusic = 'Main'
 var fadingOut = false
 
 var musics = {
-	'Main' : preload("res://assets/Sounds/Music/8bit_lets_go.ogg"),
-	'Level1' : preload("res://assets/Sounds/Music/8bit_move.ogg"),
-	'Level2': preload("res://assets/Sounds/Music/8bit_trainingmode.ogg"),
+	'Main' : preload('res://assets/Sounds/Music/8bit_lets_go.ogg'),
+	'Level1' : preload('res://assets/Sounds/Music/8bit_move.ogg'),
+	'Level2': preload('res://assets/Sounds/Music/8bit_trainingmode.ogg'),
 	'Level3': preload('res://assets/Sounds/Music/8bit_hideout.ogg'),
-	'Quiz': preload("res://assets/Sounds/Music/Wonderful_life.ogg"),
-	'Credits': preload("res://assets/Sounds/Music/8bit_win.ogg")
+	'Quiz': preload('res://assets/Sounds/Music/Wonderful_life.ogg'),
+	'Credits': preload('res://assets/Sounds/Music/8bit_win.ogg')
 }
 
 

@@ -1792,7 +1792,9 @@ tile_data = PoolIntArray( -524297, 39, 0, -458761, 39, 0, -393225, 39, 0, -32768
 [node name="Elevator" parent="." instance=ExtResource( 4 )]
 position = Vector2( -532, 212 )
 scale = Vector2( 0.5, 0.5 )
-targetLevel = "Level2"
+monitoring = false
+monitorable = false
+targetLevel = "Level3"
 
 [node name="Elevator2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 7984, 211 )
@@ -1808,7 +1810,7 @@ strokeTexture = ExtResource( 5 )
 [node name="PPE1" parent="." instance=ExtResource( 82 )]
 position = Vector2( 4563, -182 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+PPEName = "Belt"
 
 [node name="PPE2" parent="." instance=ExtResource( 82 )]
 position = Vector2( 3134, -498 )
@@ -1818,12 +1820,12 @@ PPEName = "Boot"
 [node name="PPE3" parent="." instance=ExtResource( 82 )]
 position = Vector2( 1085, -94 )
 scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+PPEName = "Glove"
 
 [node name="PPE4" parent="." instance=ExtResource( 82 )]
 position = Vector2( 87, 218 )
-scale = Vector2( 0.2, 0.2 )
-PPEName = "Boot"
+scale = Vector2( 0.15, 0.15 )
+PPEName = "GasMask"
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( -527, 126 )
@@ -1839,6 +1841,9 @@ smoothing_enabled = true
 drag_margin_top = 1.0
 editor_draw_limits = true
 editor_draw_drag_margin = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="HUD" parent="." instance=ExtResource( 3 )]
 follow_viewport_enable = false

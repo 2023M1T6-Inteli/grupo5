@@ -31,7 +31,7 @@ func _on_Bowl_pressed():
 	# ao clicar no bowl, cria uma nova fita e a adiciona na cena
 
 	tapeSelected = true
-	var newTape = load("res://scenes/Minigames/Ph/Tape.tscn").instance()
+	var newTape = load('res://scenes/Minigames/Ph/Tape.tscn').instance()
 	newTape.selected = true
 	newTape.connect('tapeInserted', self, 'onTapeInserted')
 	add_child(newTape)

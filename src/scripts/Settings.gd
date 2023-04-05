@@ -15,6 +15,9 @@ func changeLanguage(id):
 	Locales.loadLanguage()
 	# atuailza o menu
 	loadMenuLanguage()
+	
+	if get_parent().has_method('loadMenuLanguage'):
+		get_parent().loadMenuLanguage()
 
 
 func closeSettings():
@@ -35,7 +38,7 @@ func _on_VolumeSlider_value_changed(value):
 
 
 func _input(event):
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed('ui_cancel'):
 		closeSettings()
 
 

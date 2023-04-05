@@ -1,6 +1,7 @@
 extends Node
 
 var characterName = 'Gabriel'
+var playerID = 'Teste#1234'
 
 signal update_score()
 
@@ -10,8 +11,8 @@ var minigames = {
 	'Pallets': load('res://scenes/Minigames/Pallets/Pallets.tscn'),
 	'Maze': load('res://scenes/Minigames/Maze/Maze.tscn'),
 	'PhTest': load('res://scenes/Minigames/Ph/PhTest.tscn'),
-	'ResponsabilityTerm': load("res://scenes/Minigames/ResponsabilityTerm/ResponsabilityTerm.tscn"),
-	'Quiz': load("res://scenes/Minigames/Quiz.tscn")
+	'ResponsabilityTerm': load('res://scenes/Minigames/ResponsabilityTerm/ResponsabilityTerm.tscn'),
+	'Quiz': load('res://scenes/Minigames/Quiz.tscn')
 }
 
 var playerPaused = false

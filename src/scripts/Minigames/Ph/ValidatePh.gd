@@ -22,7 +22,7 @@ func showTape():
 	# usamos o tween para mover a fita de denro do becker para a posição correta 
 	tween.interpolate_property(
 		$Tape,
-		"position",
+		'position',
 		Vector2(640, 399),
 		Vector2(730, 240),
 		1.5,
@@ -32,7 +32,7 @@ func showTape():
 
 	tween.interpolate_property(
 		$Tape,
-		"rotation_degrees",
+		'rotation_degrees',
 		-153.2,
 		-90,
 		1.5,
@@ -42,7 +42,7 @@ func showTape():
 
 	tween.interpolate_property(
 		$Tape,
-		"scale",
+		'scale',
 		Vector2(1, 1),
 		Vector2(2, 2),
 		1.5,
@@ -75,16 +75,16 @@ func loadBecker(tapeType):
 
 	animationPlaying = true
 
-	$Becker/Tape.texture = load("res://assets/Minigames/PhTest/phTape" + tapeType + ".png")
+	$Becker/Tape.texture = load('res://assets/Minigames/PhTest/phTape' + tapeType + '.png')
 	$Becker/Tape.visible = true
 	$Becker.rotation_degrees = 0
 	$Becker.scale = Vector2(2, 2)
 	$Becker.position = Vector2(1020, 413)
-	$Tape.texture = load("res://assets/Minigames/PhTest/phTape" + tapeType + ".png")
+	$Tape.texture = load('res://assets/Minigames/PhTest/phTape' + tapeType + '.png')
 
 	tween.interpolate_property(
 		$Becker,
-		"position:x",
+		'position:x',
 		1020,
 		640,
 		1,
@@ -115,7 +115,7 @@ func discardWrongBecker():
 
 	tween.interpolate_property(
 		$Becker,
-		"position:y",
+		'position:y',
 		$Becker.position.y,
 		850,
 		1,
@@ -125,7 +125,7 @@ func discardWrongBecker():
 
 	tween.interpolate_property(
 		$Becker,
-		"scale",
+		'scale',
 		$Becker.scale,
 		Vector2(0, 0),
 		1,
@@ -135,7 +135,7 @@ func discardWrongBecker():
 
 	tween.interpolate_property(
 		$Becker,
-		"rotation_degrees",
+		'rotation_degrees',
 		$Becker.rotation_degrees,
 		-90,
 		1,
@@ -167,7 +167,7 @@ func saveRightBecker():
 
 	tween.interpolate_property(
 		$Becker,
-		"position:x",
+		'position:x',
 		640,
 		265,
 		1,
@@ -201,7 +201,7 @@ func wrongChoice():
 
 	tween.interpolate_property(
 		$Becker,
-		"rotation_degrees",
+		'rotation_degrees',
 		0,
 		10,
 		0.2,
@@ -211,7 +211,7 @@ func wrongChoice():
 
 	tween.interpolate_property(
 		$Becker,
-		"rotation_degrees",
+		'rotation_degrees',
 		10,
 		-10,
 		0.2,
@@ -222,7 +222,7 @@ func wrongChoice():
 
 	tween.interpolate_property(
 		$Becker,
-		"rotation_degrees",
+		'rotation_degrees',
 		-10,
 		0,
 		0.2,
@@ -233,7 +233,7 @@ func wrongChoice():
 
 	tween.start()
 
-	yield(get_tree().create_timer(0.6), "timeout")
+	yield(get_tree().create_timer(0.6), 'timeout')
 	$Tape.modulate = Color(1, 1, 1, 1)
 	$Becker.modulate = Color(1, 1, 1, 1)
 
@@ -252,7 +252,7 @@ func nextBecker():
 		return
 
 	loadBecker(get_parent().tapesTypes[currentBecker])
-	yield(get_tree().create_timer(1.5), "timeout")
+	yield(get_tree().create_timer(1.5), 'timeout')
 	showTape()
 
 
@@ -271,7 +271,7 @@ func _on_WrongButton_pressed():
 		return
 
 	discardWrongBecker()
-	yield(get_tree().create_timer(1.5), "timeout")
+	yield(get_tree().create_timer(1.5), 'timeout')
 	nextBecker()
 
 
@@ -286,7 +286,7 @@ func _on_RightButton_pressed():
 		return
 
 	saveRightBecker()
-	yield(get_tree().create_timer(1), "timeout")
+	yield(get_tree().create_timer(1), 'timeout')
 	nextBecker()
 
 
