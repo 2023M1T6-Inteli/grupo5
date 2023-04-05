@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/Tutorial/Interactions/Back.png" type="Texture" id=3]
@@ -52,12 +52,23 @@ bg_color = Color( 0.6, 0.6, 0.6, 0 )
 [sub_resource type="StyleBoxFlat" id=26]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
+[sub_resource type="DynamicFont" id=29]
+size = 18
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.00784314, 0.6, 0.494118, 1 )
+
 [sub_resource type="Theme" id=27]
+default_font = SubResource( 29 )
 Button/styles/disabled = null
 Button/styles/focus = SubResource( 23 )
 Button/styles/hover = SubResource( 24 )
 Button/styles/normal = SubResource( 25 )
 Button/styles/pressed = SubResource( 26 )
+PopupMenu/colors/font_color_hover = Color( 0.431373, 0.431373, 0.431373, 1 )
+PopupMenu/fonts/font = SubResource( 29 )
+PopupMenu/styles/panel = SubResource( 30 )
 
 [sub_resource type="DynamicFont" id=28]
 size = 30

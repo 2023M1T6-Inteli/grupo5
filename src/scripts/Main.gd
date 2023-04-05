@@ -16,7 +16,7 @@ func _on_PlayButton_pressed():
 func _on_SettingsButton_pressed():
 		var settings = load('res://scenes/Interface/Settings.tscn')
 		settings = settings.instance()
-		$"..".add_child(settings)
+		add_child(settings)
 
 
 func _on_QuitButton_pressed():

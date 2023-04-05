@@ -15,6 +15,9 @@ func changeLanguage(id):
 	Locales.loadLanguage()
 	# atuailza o menu
 	loadMenuLanguage()
+	
+	if get_parent().has_method('loadMenuLanguage'):
+		get_parent().loadMenuLanguage()
 
 
 func closeSettings():
