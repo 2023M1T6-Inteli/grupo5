@@ -8,7 +8,7 @@ func _ready():
 
 
 func _on_Ranking_pressed():
-	return get_tree().change_scene("res://scenes/Ranking.tscn")
+	return get_tree().change_scene('res://scenes/Ranking.tscn')
 
 
 func _on_Menu_pressed():

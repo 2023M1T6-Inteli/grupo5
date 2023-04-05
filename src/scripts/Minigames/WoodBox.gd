@@ -5,7 +5,7 @@ var woodCounter = 2
 
 
 func _on_WoodBox_pressed():
-	if $"..".woodSelected:
+	if $'..'.woodSelected:
 		# se já tem uma madeira selecionado, retorna
 		return
 
@@ -17,13 +17,13 @@ func _on_WoodBox_pressed():
 	var newWood = load('res://scenes/Minigames/Pallets/PalletWood.tscn')
 	newWood = newWood.instance()
 	newWood.position = get_global_mouse_position()
-	get_parent().add_child_below_node($"../FixedWood4", newWood)
+	get_parent().add_child_below_node($'../FixedWood4', newWood)
 
 	# carrega a textura de acordo com a quantidade de madeiras
 	texture_normal = load('res://assets/Minigames/WoodBox/' + str(woodCounter) + '.png')
 	woodCounter -= 1
 
 	# atualiza a madeira selecionada
-	$"..".woodSelected = newWood
+	$'..'.woodSelected = newWood
 	# indica que a madeira está selecionada
 	newWood.selected = true

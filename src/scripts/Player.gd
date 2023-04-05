@@ -12,7 +12,7 @@ var velocity = Vector2()
 
 func movePlayer():
 	if Global.playerPaused or inRope:
-		$Animation.play("reset" + Global.characterName)
+		$Animation.play('reset' + Global.characterName)
 		velocity = Vector2.ZERO
 		return
 
@@ -36,7 +36,7 @@ func movePlayer():
 		$Animation.play('run' + Global.characterName)
 		$Sprite.flip_h = true
 	else:
-		$Animation.play("reset" + Global.characterName)
+		$Animation.play('reset' + Global.characterName)
 
 
 func _on_inRope():

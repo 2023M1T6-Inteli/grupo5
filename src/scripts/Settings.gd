@@ -38,7 +38,7 @@ func _on_VolumeSlider_value_changed(value):
 
 
 func _input(event):
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed('ui_cancel'):
 		closeSettings()
 
 

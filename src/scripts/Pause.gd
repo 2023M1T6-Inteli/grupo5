@@ -22,7 +22,7 @@ func _on_MainMenu_pressed():
 
 
 func _input(event):
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed('ui_cancel'):
 		closePause()
 
 

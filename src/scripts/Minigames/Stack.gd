@@ -74,7 +74,7 @@ func closeMinigame():
 func _on_RestartButton_pressed():
 	# recarrega a cena na tela
 	var newScene = Global.minigames.Stack.instance()
-	get_node("/root/Level1/HUD").add_child(newScene)
+	get_node('/root/Level1/HUD').add_child(newScene)
 	queue_free()
 
 

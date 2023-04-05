@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/Retro Gaming.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/Level1/ResponsabilityTerm.gd" type="Script" id=2]
@@ -27,9 +27,9 @@ font_data = ExtResource( 1 )
 size = 30
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=29]
-size = 24
-font_data = ExtResource( 1 )
+[sub_resource type="StyleBoxEmpty" id=32]
+
+[sub_resource type="StyleBoxEmpty" id=31]
 
 [node name="ResponsabilityTerm" type="Node2D"]
 script = ExtResource( 2 )
@@ -63,44 +63,50 @@ margin_right = 861.0
 margin_bottom = 587.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
-text = "1. Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.\\n2. Comprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.
-3. Devo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.
-4. Devo reembolsar a empresa pelo custo atualizado do EPI extraviado.
-5. Devo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização.
-6. Ao concordar com o termo de responsabilidade, expresso meu acordo com a legislação em vigor."
+text = "Assumo total responsabilidade pela guarda e conservação dos EPIs fornecidos gratuitamente pela empresa.\\nComprometo-me a utilizar os EPIs somente para a finalidade a que se destina, de acordo com as normas da empresa e da legislação em vigor.\\nDevo me responsabilizar por qualquer dano causado ao EPI por uso inadequado ou fora das atividades a que se destina.\\nDevo reembolsar a empresa pelo custo atualizado do EPI extraviado.\\nDevo comunicar imediatamente meu chefe hierárquico direto qualquer alteração no EPI que o torne parcial ou totalmente impróprio para sua utilização."
 align = 1
 autowrap = true
 
-[node name="Signature" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 429.0
-margin_top = 603.0
-margin_right = 860.0
-margin_bottom = 642.0
-focus_mode = 0
-custom_colors/font_color_focus = Color( 0.0588235, 0.937255, 0.105882, 1 )
+[node name="Name" type="LineEdit" parent="."]
+margin_left = 664.0
+margin_top = 552.0
+margin_right = 864.0
+margin_bottom = 601.0
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0.0588235, 0.937255, 0.105882, 1 )
-custom_colors/font_color_pressed = Color( 0.94902, 0.976471, 0.0392157, 1 )
 custom_fonts/font = SubResource( 28 )
-enabled_focus_mode = 0
-text = "Assinatura: "
-flat = true
-align = 0
+custom_styles/focus = SubResource( 32 )
+custom_styles/normal = SubResource( 31 )
+placeholder_alpha = 0.1
+caret_blink = true
 
-[node name="characterName" type="Label" parent="."]
-visible = false
-margin_left = 648.0
-margin_top = 602.0
-margin_right = 845.0
-margin_bottom = 644.0
+[node name="Signature" type="Label" parent="."]
+margin_left = 432.0
+margin_top = 560.0
+margin_right = 664.0
+margin_bottom = 599.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 29 )
-text = "Gabriel"
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 28 )
+text = "Assinatura:"
 
-[connection signal="pressed" from="Signature" to="." method="_on_Signature_pressed"]
+[node name="ID" type="LineEdit" parent="."]
+margin_left = 664.0
+margin_top = 592.0
+margin_right = 864.0
+margin_bottom = 641.0
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 28 )
+custom_styles/focus = SubResource( 32 )
+custom_styles/normal = SubResource( 31 )
+placeholder_alpha = 0.1
+caret_blink = true
+
+[node name="IDLabel" type="Label" parent="."]
+margin_left = 432.0
+margin_top = 600.0
+margin_right = 664.0
+margin_bottom = 639.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 28 )
+text = "ID:"
