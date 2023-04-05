@@ -148,19 +148,8 @@
                 "correctAnswer": "El pallet necesita soportar pesos, por lo tanto, un pallet mal diseñado puede causar accidentes"
             },
             {
-                "question": "¿Qué siempre debe ser utilizado en cada carga de remolque a granel?",
-                "tip": "El transporte a granel es una forma de transporte de materiales sólidos o líquidos en grandes cantidades, sin el uso de embalajes individuales",
-                "answers": [
-                    "Cinturón de seguridad",
-                    "Máscara de gas",
-                    "Guantes de nylon",
-                    "Bata de protección"
-                ],
-                "correctAnswer": "Cinturón de seguridad"
-            },
-            {
                 "question": "¿Cuál es la mejor acción a tomar al activar la alarma en una industria química?",
-                "tip": "Siempre mantenga la atención y la concentración en el trabajo, ya que cualquier descuido puede causar accidentes.",
+                "tip": "Siempre mantenga la atención y la concentración en el trabajo.",
                 "answers": [
                     "Ignorar la alarma y continuar trabajando normalmente.",
                     "Salir inmediatamente del área afectada por la alarma y seguir las instrucciones de seguridad.",
@@ -171,7 +160,7 @@
             },
             {
                 "question": "¿Cuál es la medida de seguridad más importante al manipular soda líquida en una industria química?",
-                "tip": "Siempre mantenga su atención y enfoque en el trabajo, ya que cualquier descuido puede causar accidentes.",
+                "tip": "Siempre mantenga su atención y enfoque en el trabajo",
                 "answers": [
                     "Usar equipos de protección personal, como gafas de seguridad y guantes de goma.",
                     "Almacenar la soda líquida en recipientes de plástico en un lugar ventilado y seco.",
@@ -191,6 +180,10 @@
             "title": "Comprobante de Entrega de EPP - Término de Responsabilidad",
             "term": "Asumo total responsabilidad por la custodia y conservación de los EPPs proporcionados gratuitamente por la empresa.\nMe comprometo a utilizar los EPPs sólo para el fin al que se destina, de acuerdo con las normas de la empresa y la legislación vigente.\nDebo ser responsable de cualquier daño causado al EPPs por un uso inadecuado o fuera de las actividades a las que se destina.\nDebo reembolsar a la empresa el costo actualizado del EPPs extraviado.\nDebo informar inmediatamente a mi jefe directo de cualquier cambio en el EPPs que lo haga parcial o totalmente inapropiado para su uso. \nAl aceptar los términos de responsabilidad, expreso mi acuerdo con la legislación vigente.",
             "signature": "Firma:"
+        },
+        "credits": {
+            "title" : "Proyecto desarrollado por:",
+            "especifications" : "Estudiantes del Inteli - Clase 6 - Grupo 5\n\nInicio del proyecto: 30 de enero de 2023\n\nFin del proyecto: 05 de abril de 2023\n\nEmpresa asociada: Unipar\n\nSobre el proyecto:\n\nEstilo: Juego serio en plataforma 2D\n\nMotor: Godot\n\nLenguaje de programación: GDScript\n\nActivos y sprites de diseño: Pixlr y Piskel\n\nDiseño de pantallas: Figma\n\nBanda sonora: estilo 2D pixel producida por HeatleyBros\n\nMúsica del menú: 8 Bit Let's Go - Heatley Bros\nMúsica de la primera fase: 8 Bit Move - Heatley Bros\nMúsica de la segunda fase: Trainingmode - Heatley Bros\nMúsica de la tercera fase: Hideout - Heatley Bros\nMúsica del Quiz: WonderfulLife - Heatley Bros\nMúsica de los créditos: 8bitwin - Heatley Bros"
         }
     }
 }

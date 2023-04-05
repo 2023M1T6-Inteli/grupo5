@@ -148,19 +148,8 @@
                 "correctAnswer": "O pallet precisa suportar pesos, portanto um pallet mal projetado pode causar acidentes"
             },
             {
-                "question": "O que sempre deve ser usado em todo carregamento de carreta granel?",
-                "tip": "O carregamento a granel é uma forma de transporte de materiais sólidos ou líquidos em grandes quantidades, sem o uso de embalagens individuais",
-                "answers": [
-                    "Cinto Trava-Quedas",
-                    "Máscara de Gás",
-                    "Luvas de Nylon",
-                    "Jaleco de Proteção"
-                ],
-                "correctAnswer": "Cinto Trava-Quedas"
-            },
-            {
                 "question": "Qual é a melhor ação a ser tomada ao tocar o alarme em uma indústria química?",
-                "tip": "Sempre mantenha a atenção e o foco no trabalho, pois qualquer descuido pode causar acidentes",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho",
                 "answers": [
                     "Ignorar o alarme e continuar trabalhando normalmente.",
                     "Sair imediatamente da área afetada pelo alarme e seguir as instruções de segurança.",
@@ -171,7 +160,7 @@
             },
             {
                 "question": "Qual é a medida de segurança mais importante ao manusear soda líquida em uma indústria química?",
-                "tip": "Sempre mantenha a atenção e o foco no trabalho, pois qualquer descuido pode causar acidentes",
+                "tip": "Sempre mantenha a atenção e o foco no trabalho",
                 "answers": [
                     "Usar equipamentos de proteção individual, como óculos de segurança e luvas de borracha.",
                     "Armazenar a soda líquida em recipientes de plástico em um local ventilado e seco.",
@@ -194,7 +183,7 @@
         },
         "credits": {
             "title" : "Projeto desenvolvido por:",
-            "especifications" : "Alunos do Inteli - Turma 6 - Grupo 5\n\nInício do projeto: 30 de janeiro de 2023\n\nFinal do projeto: 05 de abril de 2023\n\nEmpresa parceira: Unipar\n\nSobre o projeto:\n\nEstilo: Serious Game em plataforma 2D\n\nEngine: Godot\n\nLinguagem de programação: GDScript\n\nDesign assets e sprites: Pixlr e Piskel\n\nDesign telas: Figma\n\nTrilha sonora: estilo 2D pixel\n\nproduzida por HeatleyBros\n\nMúsica menu: 8 Bit Let' s Go - Heatley Bros\nMúsica primeira fase: 8 Bit Move - Heatley Bros\nMúsica Segunda fase: Trainingmode - Heatley Bros\nMúsica Terceira fase: Hideout - Heatley Bros\nMúsica Quiz: WonderfulLife - Heatley Bros\nMúsica Créditos: 8bitwin - Heatley Bros"
+            "especifications" : "Alunos do Inteli - Turma 6 - Grupo 5\n\nInício do projeto: 30 de janeiro de 2023\n\nFinal do projeto: 05 de abril de 2023\n\nEmpresa parceira: Unipar\n\nSobre o projeto:\n\nEstilo: Serious Game em plataforma 2D\n\nEngine: Godot\n\nLinguagem de programação: GDScript\n\nDesign assets e sprites: Pixlr e Piskel\n\nDesign telas: Figma\n\nTrilha sonora: estilo 2D pixel produzida por HeatleyBros\n\nMúsica menu: 8 Bit Let' s Go - Heatley Bros\nMúsica primeira fase: 8 Bit Move - Heatley Bros\nMúsica Segunda fase: Trainingmode - Heatley Bros\nMúsica Terceira fase: Hideout - Heatley Bros\nMúsica Quiz: WonderfulLife - Heatley Bros\nMúsica Créditos: 8bitwin - Heatley Bros"
         }
     }
 }
