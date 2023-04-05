@@ -20,8 +20,7 @@ func closeMinigame():
 func _input(event):
 	if event.is_action_pressed('ui_cancel') or event.is_action_pressed('ui_accept'):
 		if $ID.text != '':
-			Global.playerId = $Name.text + '#' + $ID.text
-			print(Global.playerId)
+			Global.playerID = $Name.text + '#' + $ID.text
 			closeMinigame()
 		else:
 			$Name.release_focus()
