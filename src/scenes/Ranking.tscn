@@ -77,6 +77,7 @@ margin_bottom = 96.0
 custom_fonts/font = SubResource( 3 )
 text = "Patrick#1234"
 valign = 1
+clip_text = true
 
 [node name="Score" type="Label" parent="1st"]
 margin_left = 640.0
@@ -112,6 +113,7 @@ margin_bottom = 96.0
 custom_fonts/font = SubResource( 3 )
 text = "Bob#4321"
 valign = 1
+clip_text = true
 
 [node name="Score" type="Label" parent="2nd"]
 margin_left = 640.0
@@ -147,6 +149,7 @@ margin_bottom = 96.0
 custom_fonts/font = SubResource( 3 )
 text = "Molusco#1432"
 valign = 1
+clip_text = true
 
 [node name="Score" type="Label" parent="3rd"]
 margin_left = 640.0
