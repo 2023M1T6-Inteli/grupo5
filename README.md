@@ -40,7 +40,8 @@
 
 ## Demonstração
 O vídeo abaixo apresenta um walkthrough do jogo.
-![Demo](https://markdown-videos.deta.dev/youtube/SkXeITGXwhI)
+
+[![Demo](https://markdown-videos.deta.dev/youtube/SkXeITGXwhI)](https://youtu.be/SkXeITGXwhI)
 
 Para jogar, basta acessar o [deploy no GitHub Pages clicando aqui](https://2023m1t6-inteli.github.io/grupo5/)
 
