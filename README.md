@@ -24,8 +24,6 @@
 <img src="imagens/tutorial_prancheta.png">
 </p>
 
-
-
 💡   O soUni é um jogo 2D, feito na engine Godot, que visa revisar as regras para os operadores químicos dentro da indústria da Unipar, tanto em unidades nacionais quanto internacionais. Dessa forma, ele foi pensado e dividido em 3 modalidades: os níveis de plataforma, os minigames e o quiz final. A proposta de cada etapa busca reforçar o conhecimento de maneiras diferentes, a coleta de EPI's na fase inicial, demonstra que o operador deve estar sempre com os equipamentos corretos para então trabalhar dentro do setor químico.
 
 <p align="center">
@@ -39,6 +37,12 @@
 <img src="imagens/gif_pallet.gif">
 <img src="imagens/gif_stack.gif">
 </p>
+
+## Demonstração
+O vídeo abaixo apresenta um walkthrough do jogo.
+![Demo](https://markdown-videos.deta.dev/youtube/SkXeITGXwhI)
+
+Para jogar, basta acessar o [deploy no GitHub Pages clicando aqui](https://2023m1t6-inteli.github.io/grupo5/)
 
 ## 🛠 Estrutura de pastas
 
