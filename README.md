@@ -165,7 +165,26 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 ## 📋 Licença/License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+        rel="cc:attributionURL" href="https://github.com/2023M1T6-Inteli/grupo5">Unipixel</a> by <a
+        rel="cc:attributionURL dct:creator" property="cc:attributionName"
+        href="https://github.com/InteliProjects">INTELI</a>, <a
+        href="https://www.linkedin.com/in/ann-aragao/">Anna Aragão</a>, <a
+        href="https://www.linkedin.com/in/bruna-brasil-alexandre-734055214/">Bruna Brasil</a>, <a
+        href="https://www.linkedin.com/in/eduardosbarreto/">Eduardo Barreto</a>, <a
+        href="https://www.linkedin.com/in/gabriel-demacedosantos/">Gabriel de Macedo Santos</a>, <a
+        href="https://www.linkedin.com/in/hugo-noyma-19737b238/">Hugo Noyma</a>, <a
+        href="https://www.linkedin.com/in/raissa-moraes-a89179264/">Raissa Moraes</a> and <a
+        href="https://www.linkedin.com/in/vitto-mazeto-b62592203/">Vitto Mazeto</a> is licensed under <a
+        href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank"
+        rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img
+            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+
+
 
 ## 🎓 Referências
 
