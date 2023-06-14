@@ -1,7 +1,7 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
-<a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<a href= "https://www.inteli.edu.br/"><img src="https://s3.amazonaws.com/gupy5/production/companies/26702/career/63484/images/2022-04-28_16-56_logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
 # Unipixel - SoUni
@@ -38,12 +38,14 @@
 <img src="imagens/gif_stack.gif">
 </p>
 
+## 🎮 Jogue agora
+
+Para acessar o jogo diretamente do seu navegador entre no seguinte link: [Unipixel](https://2023m1t6-inteli.github.io/grupo5/)
+
 ## Demonstração
 O vídeo abaixo apresenta um walkthrough do jogo.
 
 [![Demo](https://markdown-videos.deta.dev/youtube/SkXeITGXwhI)](https://youtu.be/SkXeITGXwhI)
-
-Para jogar, basta acessar o [deploy no GitHub Pages clicando aqui](https://2023m1t6-inteli.github.io/grupo5/)
 
 ## 🛠 Estrutura de pastas
 
